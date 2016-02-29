@@ -10,7 +10,7 @@
           "v1/**"
         ],
         "src": null,
-        "dest": null
+        "dest": v1
       }
     ],
     "resource": [
@@ -21,7 +21,7 @@
         ],
         "exclude": [
           "**/obj/**",
-          "v1/**"
+          "v7/**"
         ],
         "src": null,
         "dest": null
