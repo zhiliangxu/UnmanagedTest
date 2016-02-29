@@ -1,0 +1,94 @@
+items:
+- uid: msipcthin2.msofflinecachelifetimeconstants_interface_objc
+  id: MSOfflineCacheLifetimeConstants
+  parent: iOS
+  children:
+  - msipcthin2.msofflinecachelifetimeconstants_cacheneverexpires_property_objc
+  - msipcthin2.msofflinecachelifetimeconstants_nocache_property_objc
+  href: MSOfflineCacheLifetimeConstants.yml
+  langs:
+  - cplusplus
+  name: MSOfflineCacheLifetimeConstants
+  fullName: msipcthin2.msofflinecachelifetimeconstants_interface_objc
+  type: Class
+  assemblies: &o0
+  - iOS
+  namespace: iOS
+  summary: >+
+    Constants for caching and off-line behaviors.
+
+
+
+
+
+
+
+  remarks: 
+  thread_safety: Members of this class are not guaranteed to be thread safe.
+  defined_in: MSOfflineCacheLifetimeConstants.h
+  syntax:
+    content: '@interface MSOfflineCacheLifetimeConstants : NSObject'
+  inheritance: []
+- uid: msipcthin2.msofflinecachelifetimeconstants_cacheneverexpires_property_objc
+  id: MSOfflineCacheLifetimeConstants CacheNeverExpires
+  parent: msipcthin2.msofflinecachelifetimeconstants_interface_objc
+  children: []
+  href: MSOfflineCacheLifetimeConstants.yml
+  langs:
+  - cplusplus
+  name: MSOfflineCacheLifetimeConstants CacheNeverExpires
+  fullName: msipcthin2.msofflinecachelifetimeconstants_cacheneverexpires_property_objc
+  type: Property
+  assemblies: *o0
+  namespace: iOS
+  summary: >+
+    Gets the current setting for @msipcthin2.msofflinecachelifetimeconstants_cacheneverexpires_property_objc.
+
+
+
+    A flag representing whether or not the offline cache will ever expire.
+
+
+
+  remarks: 
+  syntax:
+    content: + (NSInteger)CacheNeverExpires;
+    return:
+      type: NSInteger
+      description: An **NSInteger**
+  inheritance: []
+- uid: msipcthin2.msofflinecachelifetimeconstants_nocache_property_objc
+  id: MSOfflineCacheLifetimeConstants NoCache
+  parent: msipcthin2.msofflinecachelifetimeconstants_interface_objc
+  children: []
+  href: MSOfflineCacheLifetimeConstants.yml
+  langs:
+  - cplusplus
+  name: MSOfflineCacheLifetimeConstants NoCache
+  fullName: msipcthin2.msofflinecachelifetimeconstants_nocache_property_objc
+  type: Property
+  assemblies: *o0
+  namespace: iOS
+  summary: >+
+    Gets the current setting for @msipcthin2.msofflinecachelifetimeconstants_nocache_property_objc.
+
+
+
+    A flag representing whether or not the content can be accessed offline.
+
+
+
+  remarks: 
+  syntax:
+    content: + (NSInteger)NoCache;
+    return:
+      type: NSInteger
+      description: An **NSInteger**
+  inheritance: []
+references:
+- uid: msipcthin2.msofflinecachelifetimeconstants_nocache_property_objc
+  href: MSOfflineCacheLifetimeConstants NoCache.yml
+  name: NoCache
+- uid: msipcthin2.msofflinecachelifetimeconstants_cacheneverexpires_property_objc
+  href: MSOfflineCacheLifetimeConstants CacheNeverExpires.yml
+  name: CacheNeverExpires

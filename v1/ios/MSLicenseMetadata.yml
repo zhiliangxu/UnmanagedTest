@@ -1,0 +1,312 @@
+items:
+- uid: msipcthin2.mslicensemetadata_class_objc
+  id: MSLicenseMetadata
+  parent: iOS
+  children:
+  - msipcthin2.mslicensemetadata_contentdatecreated_property_objc
+  - msipcthin2.mslicensemetadata_contentdatemodified_property_objc
+  - msipcthin2.mslicensemetadata_contentname_property_objc
+  - msipcthin2.mslicensemetadata_contentpath_property_objc
+  - msipcthin2.mslicensemetadata_initwithcontentname_notificationtype_method_objc
+  - msipcthin2.mslicensemetadata_notificationpreference_property_objc
+  - msipcthin2.mslicensemetadata_notificationtype_property_objc
+  href: MSLicenseMetadata.yml
+  langs:
+  - cplusplus
+  name: MSLicenseMetadata
+  fullName: msipcthin2.mslicensemetadata_class_objc
+  type: Class
+  assemblies: &o0
+  - iOS
+  namespace: iOS
+  summary: >+
+    Information for the document tracking feature.
+
+
+
+    The required properties are contentName and notificationType which are set by the initializing method, @msipcthin2.mslicensemetadata_initwithcontentname_notificationtype_method_objc. The other properties are optional.
+
+
+
+    For more information, see @msipcthin2.how_to__use_document_tracking.
+
+
+
+  remarks: 
+  thread_safety: Members of this class are not guaranteed to be thread safe.
+  defined_in: MSLicenseMetadata.h
+  syntax:
+    content: '@interface MSLicenseMetadata : NSObject'
+  inheritance: []
+- uid: msipcthin2.mslicensemetadata_contentdatecreated_property_objc
+  id: MSLicenseMetadata contentDateCreated
+  parent: msipcthin2.mslicensemetadata_class_objc
+  children: []
+  href: MSLicenseMetadata.yml
+  langs:
+  - cplusplus
+  name: MSLicenseMetadata contentDateCreated
+  fullName: msipcthin2.mslicensemetadata_contentdatecreated_property_objc
+  type: Property
+  assemblies: *o0
+  namespace: iOS
+  summary: >+
+    Creation date of the tracked document.
+
+
+
+    This parameter is optional and can be set after the @msipcthin2.mslicensemetadata_class_objc object is initialized.
+
+
+
+  remarks: 
+  syntax:
+    content: '@property (strong) NSDate *contentDateCreated;'
+    return:
+      id: '*contentDateCreated*'
+      type: '**NSDate** *'
+      description: "This property defaults to the current date and time if property not set.\r\n\r\nThe format this property is governed by RFC3339.\r\n\r\nExample: “2015-08-20T15:17”.\r\n\r\n"
+  inheritance: []
+- uid: msipcthin2.mslicensemetadata_contentdatemodified_property_objc
+  id: MSLicenseMetadata contentDateModified
+  parent: msipcthin2.mslicensemetadata_class_objc
+  children: []
+  href: MSLicenseMetadata.yml
+  langs:
+  - cplusplus
+  name: MSLicenseMetadata contentDateModified
+  fullName: msipcthin2.mslicensemetadata_contentdatemodified_property_objc
+  type: Property
+  assemblies: *o0
+  namespace: iOS
+  summary: >+
+    Last date the  tracked document was modified.
+
+
+
+    This parameter is optional and can be set after the @msipcthin2.mslicensemetadata_class_objc object is initialized.
+
+
+
+  remarks: 
+  syntax:
+    content: '@property (strong) NSDate *contentDateModified;'
+    return:
+      id: '*contentDateModified*'
+      type: '**NSDate** *'
+      description: "This property defaults to the current date and time if property not set.\r\n\r\nThe format this property is governed by RFC3339. \r\n\r\nExample: “2015-08-20T15:17”.\r\n\r\n"
+  inheritance: []
+- uid: msipcthin2.mslicensemetadata_contentname_property_objc
+  id: MSLicenseMetadata contentName
+  parent: msipcthin2.mslicensemetadata_class_objc
+  children: []
+  href: MSLicenseMetadata.yml
+  langs:
+  - cplusplus
+  name: MSLicenseMetadata contentName
+  fullName: msipcthin2.mslicensemetadata_contentname_property_objc
+  type: Property
+  assemblies: *o0
+  namespace: iOS
+  summary: >+
+    File name of  the content to be tracked, not including the path.
+
+
+
+    This property is required. For more information see @msipcthin2.mslicensemetadata_contentpath_property_objc.
+
+
+
+  remarks: 
+  syntax:
+    content: '@property (strong, readonly) NSString *contentName;'
+    return:
+      id: '*contentName*'
+      type: '**NSString** *'
+      description: >+
+        Required
+
+
+
+        Ex: "filename.txt"
+
+
+
+  inheritance: []
+- uid: msipcthin2.mslicensemetadata_contentpath_property_objc
+  id: MSLicenseMetadata contentPath
+  parent: msipcthin2.mslicensemetadata_class_objc
+  children: []
+  href: MSLicenseMetadata.yml
+  langs:
+  - cplusplus
+  name: MSLicenseMetadata contentPath
+  fullName: msipcthin2.mslicensemetadata_contentpath_property_objc
+  type: Property
+  assemblies: *o0
+  namespace: iOS
+  summary: >+
+    Full  path of the document to be tracked up to but not including the file name.
+
+
+
+    This parameter is optional and can be set after the @msipcthin2.mslicensemetadata_class_objc object is initialized.
+
+
+
+  remarks: 
+  syntax:
+    content: '@property (strong) NSString *contentPath;'
+    return:
+      id: '*contentPath*'
+      type: '**NSString** *'
+      description: >+
+        Optional
+
+
+
+        Ex: "C:\MyDocs\"
+
+
+
+        If this property is not set the system initializes it to an empty string.
+
+
+
+  inheritance: []
+- uid: msipcthin2.mslicensemetadata_notificationpreference_property_objc
+  id: MSLicenseMetadata notificationPreference
+  parent: msipcthin2.mslicensemetadata_class_objc
+  children: []
+  href: MSLicenseMetadata.yml
+  langs:
+  - cplusplus
+  name: MSLicenseMetadata notificationPreference
+  fullName: msipcthin2.mslicensemetadata_notificationpreference_property_objc
+  type: Property
+  assemblies: *o0
+  namespace: iOS
+  summary: >+
+    Type of user notification preference  of the tracked document.
+
+
+
+    This parameter is optional and can be set after the @msipcthin2.mslicensemetadata_class_objc object is initialized.
+
+
+
+  remarks: 
+  syntax:
+    content: '@property (assign) MSNotificationPreference *notificationPreference;'
+    return:
+      id: '*notificationPreference*'
+      type: '@msipcthin2.msnotificationpreference_enum_objc *'
+      description: >+
+        If this property is not set, the system behaves as if its set to @msipcthin2.msnotificationpreference_enum_objc.
+
+
+
+  inheritance: []
+- uid: msipcthin2.mslicensemetadata_notificationtype_property_objc
+  id: MSLicenseMetadata notificationType
+  parent: msipcthin2.mslicensemetadata_class_objc
+  children: []
+  href: MSLicenseMetadata.yml
+  langs:
+  - cplusplus
+  name: MSLicenseMetadata notificationType
+  fullName: msipcthin2.mslicensemetadata_notificationtype_property_objc
+  type: Property
+  assemblies: *o0
+  namespace: iOS
+  summary: >+
+    Type of user notification for the tracked document.
+
+
+
+    This property is required.
+
+
+
+  remarks: 
+  syntax:
+    content: '@property (readonly) MSNotificationType *notificationType;'
+    return:
+      id: '*notificationType*'
+      type: '@msipcthin2.msnotificationtype_enum_objc *'
+      description: >+
+        Required
+
+
+
+  inheritance: []
+- uid: msipcthin2.mslicensemetadata_initwithcontentname_notificationtype_method_objc
+  id: MSLicenseMetadata initWithContentName:notificationType
+  parent: msipcthin2.mslicensemetadata_class_objc
+  children: []
+  href: MSLicenseMetadata.yml
+  langs:
+  - cplusplus
+  name: MSLicenseMetadata initWithContentName:notificationType
+  fullName: msipcthin2.mslicensemetadata_initwithcontentname_notificationtype_method_objc
+  type: Method
+  assemblies: *o0
+  namespace: iOS
+  summary: >+
+    Initialize an @msipcthin2.mslicensemetadata_class_objc object with the content name and notification type.
+
+
+
+
+
+
+
+  remarks: 
+  syntax:
+    content: '- (id)initWithContentName:(NSString *)contentNamenotificationType:(MSNotificationType) notificationType;'
+    parameters:
+    - id: '*contentName*'
+      type: '**NSString** *'
+      description: >+
+        Required
+
+
+
+    - id: '*notificationType*'
+      type: '@msipcthin2.msnotificationtype_enum_objc'
+      description: >+
+        Required
+
+
+
+    return:
+      type: '@msipcthin2.mslicensemetadata_class_objc'
+      description: 'Id of the initialized @msipcthin2.mslicensemetadata_class_objc. '
+  inheritance: []
+references:
+- uid: msipcthin2.mslicensemetadata_initwithcontentname_notificationtype_method_objc
+  href: MSLicenseMetadata initWithContentName_notificationType.yml
+  name: initWithContentName
+- uid: msipcthin2.how_to__use_document_tracking
+  name: 'How to: Use document tracking'
+- uid: msipcthin2.mslicensemetadata_contentdatecreated_property_objc
+  href: MSLicenseMetadata contentDateCreated.yml
+  name: contentDateCreated
+- uid: msipcthin2.mslicensemetadata_contentdatemodified_property_objc
+  href: MSLicenseMetadata contentDateModified.yml
+  name: contentDateModified
+- uid: msipcthin2.mslicensemetadata_contentname_property_objc
+  href: MSLicenseMetadata contentName.yml
+  name: contentName
+- uid: msipcthin2.mslicensemetadata_contentpath_property_objc
+  href: MSLicenseMetadata contentPath.yml
+  name: contentPath
+- uid: msipcthin2.mslicensemetadata_notificationpreference_property_objc
+  href: MSLicenseMetadata notificationPreference.yml
+  name: notificationPreference
+- uid: msipcthin2.mslicensemetadata_notificationtype_property_objc
+  href: MSLicenseMetadata notificationType.yml
+  name: notificationType
+- uid: msipcthin2.mslicensemetadata_class_objc
+  href: MSLicenseMetadata.yml
+  name: MSLicenseMeta

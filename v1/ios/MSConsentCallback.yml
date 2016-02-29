@@ -1,0 +1,82 @@
+items:
+- uid: msipcthin2.msconsentcallback_protocol_objc
+  id: MSConsentCallback
+  parent: iOS
+  children:
+  - msipcthin2.msconscentcallback_conscents_method_objc
+  href: MSConsentCallback.yml
+  langs:
+  - cplusplus
+  name: MSConsentCallback
+  fullName: msipcthin2.msconsentcallback_protocol_objc
+  type: Interface
+  assemblies: &o0
+  - iOS
+  namespace: iOS
+  summary: >+
+    Protocol for managing consent.
+
+
+
+    Your application should implement this protocol's method and pass it to the Microsoft Rights Management SDK 4.2  APIs that perform consent.
+
+
+
+  remarks: 
+  thread_safety: Members of this class are not guaranteed to be thread safe.
+  defined_in: MSConscentCallback.h
+  syntax:
+    content: '@protocol MSConsentCallback <NSObject>'
+  inheritance: []
+- uid: msipcthin2.msconscentcallback_conscents_method_objc
+  id: MSConsentCallback consents
+  parent: msipcthin2.msconsentcallback_protocol_objc
+  children: []
+  href: MSConsentCallback.yml
+  langs:
+  - cplusplus
+  name: MSConsentCallback consents
+  fullName: msipcthin2.msconscentcallback_conscents_method_objc
+  type: Method
+  assemblies: *o0
+  namespace: iOS
+  summary: >+
+    Implement this callback method to process user consent.
+
+
+
+
+
+
+
+
+
+
+
+  remarks: >+
+    This method must be implemented by you. The Microsoft Rights Management SDK 4.2  will use this method via its APIs to process user consent for  your application.
+
+
+
+  syntax:
+    content: '- (void)consents:(NSArray *)consents    consentsCompletionBlock:(void(^)(NSArray *consentsResult))consentsCompletionBlock;'
+    parameters:
+    - id: '*consents*'
+      type: '**NSArray** *'
+      description: >+
+        An array of @msipcthin2.msconscent_class_objc objects
+
+
+
+    - id: '*completionBlock*'
+      type: void(^)(**NSArray** * consentsResult)
+      description: >+
+        An array of @msipcthin2.msconscent_class_objc objects
+
+
+
+  inheritance: []
+references:
+- uid: msipcthin2.msconscentcallback_conscents_method_objc
+  href: MSConsentCallback consents.yml
+  name: consents

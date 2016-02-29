@@ -1,0 +1,165 @@
+items:
+- uid: msipcthin2.msemailrights_interface_objc
+  id: MSEmailRights
+  parent: iOS
+  children:
+  - msipcthin2.msemailrights_interface_objc.+(NSArray) all;
+  - msipcthin2.msemailrights_interface_objc.+(NSString) extract;
+  - msipcthin2.msemailrights_interface_objc.+(NSString) forward;
+  - msipcthin2.msemailrights_interface_objc.+(NSString) print;
+  - msipcthin2.msemailrights_interface_objc.+(NSString) reply;
+  - msipcthin2.msemailrights_interface_objc.+(NSString) replyAll;
+  href: MSEmailRights.yml
+  langs:
+  - cplusplus
+  name: MSEmailRights
+  fullName: msipcthin2.msemailrights_interface_objc
+  type: Class
+  assemblies: &o0
+  - iOS
+  namespace: iOS
+  summary: >+
+    Rights that apply to emails.
+
+
+
+
+
+
+
+  remarks: >+
+    For more information about the built-in rights and the usage restrictions associated with them  that apps should observe, see @msipcthin2.built-in_rights_usage_restriction_reference.
+
+
+
+  thread_safety: Members of this class are not guaranteed to be thread safe.
+  defined_in: MSRight.h
+  syntax:
+    content: '@interface MSEmailRights : NSObject'
+  inheritance: []
+- uid: msipcthin2.msemailrights_interface_objc.+(NSString) extract;
+  id: +(NSString) extract;
+  parent: msipcthin2.msemailrights_interface_objc
+  href: MSEmailRights.yml
+  langs:
+  - cplusplus
+  name: +(NSString) extract;
+  fullName: msipcthin2.msemailrights_interface_objc.+(NSString) extract;
+  type: Property
+  assemblies: *o0
+  namespace: iOS
+  summary: >+
+    Specifies a right that allows content to be extracted from a protected email and placed in an unprotected, or a different protected, format. Same value as @msipcthin2.mseditabledocumentrights_interface_objc.
+
+
+
+  syntax: {}
+- uid: msipcthin2.msemailrights_interface_objc.+(NSString) forward;
+  id: +(NSString) forward;
+  parent: msipcthin2.msemailrights_interface_objc
+  href: MSEmailRights.yml
+  langs:
+  - cplusplus
+  name: +(NSString) forward;
+  fullName: msipcthin2.msemailrights_interface_objc.+(NSString) forward;
+  type: Property
+  assemblies: *o0
+  namespace: iOS
+  summary: >+
+    Specifies a right that allows a  protected email message to be forwarded.
+
+
+
+  syntax: {}
+- uid: msipcthin2.msemailrights_interface_objc.+(NSString) print;
+  id: +(NSString) print;
+  parent: msipcthin2.msemailrights_interface_objc
+  href: MSEmailRights.yml
+  langs:
+  - cplusplus
+  name: +(NSString) print;
+  fullName: msipcthin2.msemailrights_interface_objc.+(NSString) print;
+  type: Property
+  assemblies: *o0
+  namespace: iOS
+  summary: >+
+    Specifies a right that allows protected email content to be printed.Same value as @msipcthin2.mseditabledocumentrights_interface_objc.
+
+
+
+  syntax: {}
+- uid: msipcthin2.msemailrights_interface_objc.+(NSString) reply;
+  id: +(NSString) reply;
+  parent: msipcthin2.msemailrights_interface_objc
+  href: MSEmailRights.yml
+  langs:
+  - cplusplus
+  name: +(NSString) reply;
+  fullName: msipcthin2.msemailrights_interface_objc.+(NSString) reply;
+  type: Property
+  assemblies: *o0
+  namespace: iOS
+  summary: >+
+    Specifies a right that allows a protected email message to be replied to with a message that includes a copy of the protected content.
+
+
+
+  syntax: {}
+- uid: msipcthin2.msemailrights_interface_objc.+(NSString) replyAll;
+  id: +(NSString) replyAll;
+  parent: msipcthin2.msemailrights_interface_objc
+  href: MSEmailRights.yml
+  langs:
+  - cplusplus
+  name: +(NSString) replyAll;
+  fullName: msipcthin2.msemailrights_interface_objc.+(NSString) replyAll;
+  type: Property
+  assemblies: *o0
+  namespace: iOS
+  summary: >+
+    GSpecifiesets a right that allows reply-all to a protected email message with a message that includes a copy of the protected content.
+
+
+
+  syntax: {}
+- uid: msipcthin2.msemailrights_interface_objc.+(NSArray) all;
+  id: +(NSArray) all;
+  parent: msipcthin2.msemailrights_interface_objc
+  href: MSEmailRights.yml
+  langs:
+  - cplusplus
+  name: +(NSArray) all;
+  fullName: msipcthin2.msemailrights_interface_objc.+(NSArray) all;
+  type: Property
+  assemblies: *o0
+  namespace: iOS
+  summary: >+
+    Specifies a list of all the of rights that apply to emails.
+
+
+
+  syntax: {}
+references:
+- uid: msipcthin2.mseditabledocumentrights_interface_objc
+  href: MSEditableDocumentRights.yml
+  name: '[MSEditableDocumentRights extract]'
+- uid: msipcthin2.built-in_rights_usage_restriction_reference
+  name: Built-in Rights Usage Restriction Reference
+- uid: msipcthin2.msemailrights_interface_objc.+(NSString) extract;
+  href: MSEmailRights.yml
+  name: +(NSString) extract;
+- uid: msipcthin2.msemailrights_interface_objc.+(NSString) forward;
+  href: MSEmailRights.yml
+  name: +(NSString) forward;
+- uid: msipcthin2.msemailrights_interface_objc.+(NSString) print;
+  href: MSEmailRights.yml
+  name: +(NSString) print;
+- uid: msipcthin2.msemailrights_interface_objc.+(NSString) reply;
+  href: MSEmailRights.yml
+  name: +(NSString) reply;
+- uid: msipcthin2.msemailrights_interface_objc.+(NSString) replyAll;
+  href: MSEmailRights.yml
+  name: +(NSString) replyAll;
+- uid: msipcthin2.msemailrights_interface_objc.+(NSArray) all;
+  href: MSEmailRights.yml
+  name: +(NSArray) all;

@@ -1,0 +1,475 @@
+items:
+- uid: msipcthin2.mspolicydescriptor_interface_objc
+  id: MSPolicyDescriptor
+  parent: iOS
+  children:
+  - msipcthin2.mspolicydescriptor_contentvaliduntil_property_objc
+  - msipcthin2.mspolicydescriptor_description_property_objc
+  - msipcthin2.mspolicydescriptor_encryptedappdata_property_objc
+  - msipcthin2.mspolicydescriptor_initwithuserrights_userrightslist_method_objc
+  - msipcthin2.mspolicydescriptor_initwithuserroles_objc
+  - msipcthin2.mspolicydescriptor_licensemetadata_property_objc
+  - msipcthin2.mspolicydescriptor_name_property_objc
+  - msipcthin2.mspolicydescriptor_offlinecachelifetimeindays_property_objc
+  - msipcthin2.mspolicydescriptor_referrer_property_objc
+  - msipcthin2.mspolicydescriptor_signedappdata_property_objc
+  - msipcthin2.mspolicydescriptor_userrightslist_property_objc
+  - msipcthin2.mspolicydescriptor_userroleslist_property_objc
+  href: MSPolicyDescriptor.yml
+  langs:
+  - cplusplus
+  name: MSPolicyDescriptor
+  fullName: msipcthin2.mspolicydescriptor_interface_objc
+  type: Class
+  assemblies: &o0
+  - iOS
+  namespace: iOS
+  summary: >+
+    Information for describing a policy.
+
+
+
+    Inherits from **MSSecureCodableObject**.
+
+
+
+  remarks: 
+  thread_safety: Members of this class are not guaranteed to be thread safe.
+  defined_in: MSPolicyDescriptor.h
+  syntax:
+    content: '@interface MSPolicyDescriptor : MSSecureCodableObject'
+  inheritance: []
+- uid: msipcthin2.mspolicydescriptor_contentvaliduntil_property_objc
+  id: MSPolicyDescriptor contentValidUntil
+  parent: msipcthin2.mspolicydescriptor_interface_objc
+  children: []
+  href: MSPolicyDescriptor.yml
+  langs:
+  - cplusplus
+  name: MSPolicyDescriptor contentValidUntil
+  fullName: msipcthin2.mspolicydescriptor_contentvaliduntil_property_objc
+  type: Property
+  assemblies: *o0
+  namespace: iOS
+  summary: >+
+    A date until which the content is valid.
+
+
+
+
+
+
+
+  remarks: 
+  syntax:
+    content: '@property (strong) NSDate *contentValidUntil;'
+    return:
+      id: '*contentValidUntil*'
+      type: '**NSDate**'
+      description: 
+  inheritance: []
+- uid: msipcthin2.mspolicydescriptor_encryptedappdata_property_objc
+  id: MSPolicyDescriptor encryptedAppData
+  parent: msipcthin2.mspolicydescriptor_interface_objc
+  children: []
+  href: MSPolicyDescriptor.yml
+  langs:
+  - cplusplus
+  name: MSPolicyDescriptor encryptedAppData
+  fullName: msipcthin2.mspolicydescriptor_encryptedappdata_property_objc
+  type: Property
+  assemblies: *o0
+  namespace: iOS
+  summary: >+
+    Application specific data, encrypted.
+
+
+
+
+
+
+
+  remarks: 
+  syntax:
+    content: '@property(strong) NSMutableDictionary *encryptedAppData;'
+    return:
+      id: '*encryptedAppData*'
+      type: '**NSMutableDictionary** *'
+      description: 
+  inheritance: []
+- uid: msipcthin2.mspolicydescriptor_offlinecachelifetimeindays_property_objc
+  id: MSPolicyDescriptor offlineCacheLifetimeInDays
+  parent: msipcthin2.mspolicydescriptor_interface_objc
+  children: []
+  href: MSPolicyDescriptor.yml
+  langs:
+  - cplusplus
+  name: MSPolicyDescriptor offlineCacheLifetimeInDays
+  fullName: msipcthin2.mspolicydescriptor_offlinecachelifetimeindays_property_objc
+  type: Property
+  assemblies: *o0
+  namespace: iOS
+  summary: >+
+    Number of days to maintain the off-line caching.
+
+
+
+
+
+
+
+  remarks: >+
+    Your app could use constants from the @msipcthin2.msofflinecachelifetimeconstants_interface_objc object.
+
+
+
+  syntax:
+    content: '@property (assign) NSInteger offlineCacheLifetimeInDays;'
+    return:
+      id: '*offlineCacheLifetimeInDays*'
+      type: '**NSInteger**'
+      description: 
+  inheritance: []
+- uid: msipcthin2.mspolicydescriptor_licensemetadata_property_objc
+  id: MSPolicyDescriptor licenseMetadata
+  parent: msipcthin2.mspolicydescriptor_interface_objc
+  children: []
+  href: MSPolicyDescriptor.yml
+  langs:
+  - cplusplus
+  name: MSPolicyDescriptor licenseMetadata
+  fullName: msipcthin2.mspolicydescriptor_licensemetadata_property_objc
+  type: Property
+  assemblies: *o0
+  namespace: iOS
+  summary: >+
+    Pointer to a @msipcthin2.mslicensemetadata_class_objc object containing document tracking information.See Remarks section for more details.
+
+
+
+
+
+
+
+
+
+
+
+  remarks: >+
+    This property must be initialized prior to creating the @msipcthin2.msuserpolicy_interface_objc only if you wish to make use of document tracking. If you don't want to enable document tracking, this property can be left uninitialized (nil) and the call to @msipcthin2.msuserpolicy_registerfordoctracking_userid_authenticationcallback_completionblock_method_objc on the @msipcthin2.msuserpolicy_interface_objc can be skipped.
+
+
+
+  syntax:
+    content: '@property(strong) MSLicenseMetadata *licenseMetadata;'
+    return:
+      id: '*licenseMetadata*'
+      type: '@msipcthin2.mslicensemetadata_class_objc *'
+      description: >+
+        Must be initialized before creating the @msipcthin2.msuserpolicy_interface_objc with the @msipcthin2.mspolicydescriptor_interface_objc.
+
+
+
+        See Remarks section for more details.
+
+
+
+  inheritance: []
+- uid: msipcthin2.mspolicydescriptor_name_property_objc
+  id: MSPolicyDescriptor policyName
+  parent: msipcthin2.mspolicydescriptor_interface_objc
+  children: []
+  href: MSPolicyDescriptor.yml
+  langs:
+  - cplusplus
+  name: MSPolicyDescriptor policyName
+  fullName: msipcthin2.mspolicydescriptor_name_property_objc
+  type: Property
+  assemblies: *o0
+  namespace: iOS
+  summary: >+
+    Name associated with this policy
+
+
+
+
+
+
+
+  remarks: 
+  syntax:
+    content: '@property (strong) NSString *policyName;'
+    return:
+      id: '*policyName*'
+      type: '**NSString** *'
+      description: 
+  inheritance: []
+- uid: msipcthin2.mspolicydescriptor_description_property_objc
+  id: MSPolicyDescriptor policyDescription
+  parent: msipcthin2.mspolicydescriptor_interface_objc
+  children: []
+  href: MSPolicyDescriptor.yml
+  langs:
+  - cplusplus
+  name: MSPolicyDescriptor policyDescription
+  fullName: msipcthin2.mspolicydescriptor_description_property_objc
+  type: Property
+  assemblies: *o0
+  namespace: iOS
+  summary: >+
+    Description associated with this policy
+
+
+
+
+
+
+
+  remarks: 
+  syntax:
+    content: '@property (strong) NSString *policyDescription;'
+    return:
+      id: '*policyDescription*'
+      type: '**NSString** *'
+      description: 
+  inheritance: []
+- uid: msipcthin2.mspolicydescriptor_referrer_property_objc
+  id: MSPolicyDescriptor referrer
+  parent: msipcthin2.mspolicydescriptor_interface_objc
+  children: []
+  href: MSPolicyDescriptor.yml
+  langs:
+  - cplusplus
+  name: MSPolicyDescriptor referrer
+  fullName: msipcthin2.mspolicydescriptor_referrer_property_objc
+  type: Property
+  assemblies: *o0
+  namespace: iOS
+  summary: >+
+    The URL of the referrer.
+
+
+
+
+
+
+
+  remarks: >+
+    Set this property with a URL of a referrer as in this example:
+
+    policyDescriptor.referrer = [[NSURL alloc] initWithString@"https://contoso.com"];
+
+
+
+
+  syntax:
+    content: '@property (strong) NSURL *referrer;'
+    return:
+      id: '*referrer*'
+      type: '**NSURL** *'
+      description: >+
+        See **Remarks** section.
+
+
+
+  inheritance: []
+- uid: msipcthin2.mspolicydescriptor_signedappdata_property_objc
+  id: MSPolicyDescriptor signedAppData
+  parent: msipcthin2.mspolicydescriptor_interface_objc
+  children: []
+  href: MSPolicyDescriptor.yml
+  langs:
+  - cplusplus
+  name: MSPolicyDescriptor signedAppData
+  fullName: msipcthin2.mspolicydescriptor_signedappdata_property_objc
+  type: Property
+  assemblies: *o0
+  namespace: iOS
+  summary: >+
+    Application specific data, signed.
+
+
+
+
+
+
+
+  remarks: 
+  syntax:
+    content: '@property(strong) NSMutableDictionary *signedAppData;'
+    return:
+      id: '*signedAppData*'
+      type: '**NSMutableDictionary** *'
+      description: 
+  inheritance: []
+- uid: msipcthin2.mspolicydescriptor_userrightslist_property_objc
+  id: MSPolicyDescriptor userRightsList
+  parent: msipcthin2.mspolicydescriptor_interface_objc
+  children: []
+  href: MSPolicyDescriptor.yml
+  langs:
+  - cplusplus
+  name: MSPolicyDescriptor userRightsList
+  fullName: msipcthin2.mspolicydescriptor_userrightslist_property_objc
+  type: Property
+  assemblies: *o0
+  namespace: iOS
+  summary: >+
+    Rights granted to users for this policy
+
+
+
+
+
+
+
+  remarks: 
+  syntax:
+    content: '@property (strong, readonly) NSArray/*MSUserRights*/ *userRightsList;'
+    return:
+      id: '*userRightsList*'
+      type: '**NSArray** *'
+      description: >+
+        An array of @msipcthin2.msuserrights_interface_objc
+
+
+
+  inheritance: []
+- uid: msipcthin2.mspolicydescriptor_userroleslist_property_objc
+  id: MSPolicyDescriptor userRolesList
+  parent: msipcthin2.mspolicydescriptor_interface_objc
+  children: []
+  href: MSPolicyDescriptor.yml
+  langs:
+  - cplusplus
+  name: MSPolicyDescriptor userRolesList
+  fullName: msipcthin2.mspolicydescriptor_userroleslist_property_objc
+  type: Property
+  assemblies: *o0
+  namespace: iOS
+  summary: >+
+    Roles granted to users for this policy.
+
+
+
+
+
+
+
+  remarks: 
+  syntax:
+    content: '@property (strong, readonly) NSArray/*MSUserRoles*/ *userRolesList;'
+    return:
+      id: '*userRolesList*'
+      type: '**NSArray** *'
+      description: 
+  inheritance: []
+- uid: msipcthin2.mspolicydescriptor_initwithuserroles_objc
+  id: MSPolicyDescriptor initWithUserRoles:userRoles
+  parent: msipcthin2.mspolicydescriptor_interface_objc
+  children: []
+  href: MSPolicyDescriptor.yml
+  langs:
+  - cplusplus
+  name: MSPolicyDescriptor initWithUserRoles:userRoles
+  fullName: msipcthin2.mspolicydescriptor_initwithuserroles_objc
+  type: Method
+  assemblies: *o0
+  namespace: iOS
+  summary: >+
+    Initialize an @msipcthin2.mspolicydescriptor_interface_objc with user roles.
+
+
+
+
+
+
+
+  remarks: 
+  syntax:
+    content: '- (id)initWithUserRoles:(NSArray /*MSUserRoles*/ *)userRoles;'
+    parameters:
+    - id: '*userRoles*'
+      type: '**NSArray** *'
+      description: >+
+        An array of @msipcthin2.msuserroles_class
+
+
+
+    return:
+      type: '@msipcthin2.mspolicydescriptor_interface_objc'
+      description: 'Id of the initialized @msipcthin2.mspolicydescriptor_interface_objc. '
+  inheritance: []
+- uid: msipcthin2.mspolicydescriptor_initwithuserrights_userrightslist_method_objc
+  id: MSPolicyDescriptor initWithUserRights:userRights
+  parent: msipcthin2.mspolicydescriptor_interface_objc
+  children: []
+  href: MSPolicyDescriptor.yml
+  langs:
+  - cplusplus
+  name: MSPolicyDescriptor initWithUserRights:userRights
+  fullName: msipcthin2.mspolicydescriptor_initwithuserrights_userrightslist_method_objc
+  type: Method
+  assemblies: *o0
+  namespace: iOS
+  summary: >+
+    Initialize an @msipcthin2.mspolicydescriptor_interface_objc with user rights.
+
+
+
+
+
+
+
+  remarks: 
+  syntax:
+    content: '- (id)initWithUserRights:(NSArray /*MSUserRights*/ *)userRights;'
+    parameters:
+    - id: '*userRights*'
+      type: '**NSArray** *'
+      description: >+
+        An array of @msipcthin2.msuserrights_interface_objc.
+
+
+
+    return:
+      type: '@msipcthin2.mspolicydescriptor_interface_objc'
+      description: 'Id of the initialized @msipcthin2.mspolicydescriptor_interface_objc. '
+  inheritance: []
+references:
+- uid: msipcthin2.mspolicydescriptor_initwithuserrights_userrightslist_method_objc
+  href: MSPolicyDescriptor initWithUserRights_userRights.yml
+  name: initWithUserRights
+- uid: msipcthin2.mspolicydescriptor_initwithuserroles_objc
+  href: MSPolicyDescriptor initWithUserRoles_userRoles.yml
+  name: initWithUserRoles
+- uid: msipcthin2.mspolicydescriptor_licensemetadata_property_objc
+  href: MSPolicyDescriptor licenseMetadata.yml
+  name: licenseMetadata
+- uid: msipcthin2.mspolicydescriptor_name_property_objc
+  href: MSPolicyDescriptor policyName.yml
+  name: policyName
+- uid: msipcthin2.mspolicydescriptor_description_property_objc
+  href: MSPolicyDescriptor policyDescription.yml
+  name: policyDescription
+- uid: msipcthin2.mspolicydescriptor_userrightslist_property_objc
+  href: MSPolicyDescriptor userRightsList.yml
+  name: userRightsList
+- uid: msipcthin2.mspolicydescriptor_userroleslist_property_objc
+  href: MSPolicyDescriptor userRolesList.yml
+  name: userRolesList
+- uid: msipcthin2.mspolicydescriptor_referrer_property_objc
+  href: MSPolicyDescriptor referrer.yml
+  name: referrer
+- uid: msipcthin2.mspolicydescriptor_contentvaliduntil_property_objc
+  href: MSPolicyDescriptor contentValidUntil.yml
+  name: contentValidUntil
+- uid: msipcthin2.mspolicydescriptor_offlinecachelifetimeindays_property_objc
+  href: MSPolicyDescriptor offlineCacheLifetimeInDays.yml
+  name: offlineCacheLifetimeInDays
+- uid: msipcthin2.mspolicydescriptor_encryptedappdata_property_objc
+  href: MSPolicyDescriptor encryptedAppData.yml
+  name: encryptedAppData
+- uid: msipcthin2.mspolicydescriptor_signedappdata_property_objc
+  href: MSPolicyDescriptor signedAppData.yml
+  name: signedAppData

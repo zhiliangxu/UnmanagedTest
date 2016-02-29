@@ -1,0 +1,78 @@
+items:
+- uid: msipcthin2.msauthenticationcallback_protocol_objc
+  id: MSAuthenticationCallback
+  parent: iOS
+  children:
+  - msipcthin2.msauthenticationcallback_accesstokenwithauthenticationparameters_method_objc
+  href: MSAuthenticationCallback.yml
+  langs:
+  - cplusplus
+  name: MSAuthenticationCallback
+  fullName: msipcthin2.msauthenticationcallback_protocol_objc
+  type: Interface
+  assemblies: &o0
+  - iOS
+  namespace: iOS
+  summary: >+
+    Protocol for getting an access token.
+
+
+
+    Your application should implement this protocol and pass it to the Microsoft Rights Management SDK 4.2  APIs that perform authentication.
+
+
+
+    We recommend that you use the [Azure AD Authentication Library (ADAL)](https://msdn.microsoft.com/en-us/library/jj573266.aspx). However, other authentication libraries that support OAuth 2.0 can be used as well.  For more information, see the *Prerequisites* section in the @msipcthin2.ios_sdk  topic under @msipcthin2.get_started.
+
+
+
+  remarks: 
+  thread_safety: Members of this class are not guaranteed to be thread safe.
+  defined_in: MSAuthenticationCallback.h
+  syntax:
+    content: '@protocol MSAuthenticationCallback <NSObject>'
+  inheritance: []
+- uid: msipcthin2.msauthenticationcallback_accesstokenwithauthenticationparameters_method_objc
+  id: MSAuthenticationCallback accessTokenWithAuthenticationParameters
+  parent: msipcthin2.msauthenticationcallback_protocol_objc
+  children: []
+  href: MSAuthenticationCallback.yml
+  langs:
+  - cplusplus
+  name: MSAuthenticationCallback accessTokenWithAuthenticationParameters
+  fullName: msipcthin2.msauthenticationcallback_accesstokenwithauthenticationparameters_method_objc
+  type: Method
+  assemblies: *o0
+  namespace: iOS
+  summary: "Implement this callback method to authenticate you application.\r\n\r\n\r\n\r\nWe recommend that you use the [Azure AD Authentication Library (ADAL)](https://msdn.microsoft.com/en-us/library/jj573266.aspx). However, other authentication libraries that support OAuth 2.0 can be used as well.  \r\n\r\nFor more information, see the *Prerequisites* section in the @msipcthin2.ios_sdk  topic under @msipcthin2.get_started.\r\n\r\n\r\n\r\n"
+  remarks: >+
+    This method must be implemented by you. The Microsoft Rights Management SDK 4.2  will use this method via its APIs to authenticate your application.
+
+
+
+    We recommend that you use the [Azure AD Authentication Library](https://msdn.microsoft.com/en-us/library/jj573266.aspx) and, other authentication libraries can be used.
+
+
+
+  syntax:
+    content: '- (void)accessTokenWithAuthenticationParameters:(MSAuthenticationParameters *)authenticationParameters completionBlock:(void(^)(NSString *accessToken, NSError *error))completionBlock;'
+    parameters:
+    - id: '*authenticationParameters*'
+      type: '@msipcthin2.msauthenticationparameters_class_objc *'
+      description: 
+    - id: '*completionBlock*'
+      type: void(^)(**NSString** *accessToken, **NSError** *error)
+      description: 
+  inheritance: []
+references:
+- uid: Azure AD Authentication Library (ADAL)
+  isExternal: true
+  href: https://msdn.microsoft.com/en-us/library/jj573266.aspx
+  name: Azure AD Authentication Library (ADAL)
+- uid: msipcthin2.ios_sdk
+  name: iOS and OS X  Apps
+- uid: msipcthin2.get_started
+  name: Get started
+- uid: msipcthin2.msauthenticationcallback_accesstokenwithauthenticationparameters_method_objc
+  href: MSAuthenticationCallback accessTokenWithAuthenticationParameters.yml
+  name: accessTokenWithAuthenticationParameters

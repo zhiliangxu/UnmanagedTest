@@ -1,0 +1,95 @@
+items:
+- uid: msipcthin2.msnotificationtype_enum_objc
+  id: MSNotificationType
+  parent: iOS
+  children:
+  - msipcthin2.msnotificationtype_enum_objc.NotificationTypeDenyOnly
+  - msipcthin2.msnotificationtype_enum_objc.NotificationTypeDisabled
+  - msipcthin2.msnotificationtype_enum_objc.NotificationTypeEnabled
+  href: MSNotificationType.yml
+  langs:
+  - cplusplus
+  name: MSNotificationType
+  fullName: msipcthin2.msnotificationtype_enum_objc
+  type: Enum
+  assemblies: &o0
+  - iOS
+  namespace: iOS
+  summary: >+
+    Document tracking notification type.
+
+
+
+
+
+
+
+  remarks: 
+  defined_in: MSMSLicenseMetadata.h
+  syntax:
+    content: typedef NS_ENUM(NSUInteger, MSNotificationType) {    NotificationTypeDisabled = 0,    NotificationTypeEnabled = 1,    NotificationTypeDenyOnly = 2};
+  inheritance: []
+- uid: msipcthin2.msnotificationtype_enum_objc.NotificationTypeDisabled
+  id: NotificationTypeDisabled
+  parent: msipcthin2.msnotificationtype_enum_objc
+  href: MSNotificationType.yml
+  langs:
+  - cplusplus
+  name: NotificationTypeDisabled
+  fullName: msipcthin2.msnotificationtype_enum_objc.NotificationTypeDisabled
+  type: Field
+  assemblies: *o0
+  namespace: iOS
+  summary: >+
+    No email notifications will be sent.
+
+
+
+  syntax:
+    content: NotificationTypeDisabled = 0
+- uid: msipcthin2.msnotificationtype_enum_objc.NotificationTypeEnabled
+  id: NotificationTypeEnabled
+  parent: msipcthin2.msnotificationtype_enum_objc
+  href: MSNotificationType.yml
+  langs:
+  - cplusplus
+  name: NotificationTypeEnabled
+  fullName: msipcthin2.msnotificationtype_enum_objc.NotificationTypeEnabled
+  type: Field
+  assemblies: *o0
+  namespace: iOS
+  summary: >+
+    Email notification will be sent.
+
+
+
+  syntax:
+    content: NotificationTypeEnabled = 1
+- uid: msipcthin2.msnotificationtype_enum_objc.NotificationTypeDenyOnly
+  id: NotificationTypeDenyOnly
+  parent: msipcthin2.msnotificationtype_enum_objc
+  href: MSNotificationType.yml
+  langs:
+  - cplusplus
+  name: NotificationTypeDenyOnly
+  fullName: msipcthin2.msnotificationtype_enum_objc.NotificationTypeDenyOnly
+  type: Field
+  assemblies: *o0
+  namespace: iOS
+  summary: >+
+    Email notification will only be sent for denied attempts to access the tracked document.
+
+
+
+  syntax:
+    content: NotificationTypeDenyOnly = 2
+references:
+- uid: msipcthin2.msnotificationtype_enum_objc.NotificationTypeDisabled
+  href: MSNotificationType.yml
+  name: NotificationTypeDisabled
+- uid: msipcthin2.msnotificationtype_enum_objc.NotificationTypeEnabled
+  href: MSNotificationType.yml
+  name: NotificationTypeEnabled
+- uid: msipcthin2.msnotificationtype_enum_objc.NotificationTypeDenyOnly
+  href: MSNotificationType.yml
+  name: NotificationTypeDenyOnly

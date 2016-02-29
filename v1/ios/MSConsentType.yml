@@ -1,0 +1,65 @@
+items:
+- uid: msipcthin2.msconscenttype_enum_objc
+  id: MSConsentType
+  parent: iOS
+  children:
+  - msipcthin2.msconscenttype_enum_objc.DocumentTrackingConsent
+  - 'msipcthin2.msconscenttype_enum_objc.ServiceURLConsent '
+  href: MSConsentType.yml
+  langs:
+  - cplusplus
+  name: MSConsentType
+  fullName: msipcthin2.msconscenttype_enum_objc
+  type: Enum
+  assemblies: &o0
+  - iOS
+  namespace: iOS
+  summary: >+
+    Types of user consent.
+
+
+
+
+
+
+
+  remarks: 
+  defined_in: MSConsent.h
+  syntax:
+    content: typedef NS_ENUM(NSUInteger, MSConsentType) {    DocumentTrackingConsent = 0,    ServiceURLConsent = 1};
+  inheritance: []
+- uid: msipcthin2.msconscenttype_enum_objc.DocumentTrackingConsent
+  id: DocumentTrackingConsent
+  parent: msipcthin2.msconscenttype_enum_objc
+  href: MSConsentType.yml
+  langs:
+  - cplusplus
+  name: DocumentTrackingConsent
+  fullName: msipcthin2.msconscenttype_enum_objc.DocumentTrackingConsent
+  type: Field
+  assemblies: *o0
+  namespace: iOS
+  summary: 
+  syntax:
+    content: DocumentTrackingConsent = 0
+- uid: 'msipcthin2.msconscenttype_enum_objc.ServiceURLConsent '
+  id: 'ServiceURLConsent '
+  parent: msipcthin2.msconscenttype_enum_objc
+  href: MSConsentType.yml
+  langs:
+  - cplusplus
+  name: 'ServiceURLConsent '
+  fullName: 'msipcthin2.msconscenttype_enum_objc.ServiceURLConsent '
+  type: Field
+  assemblies: *o0
+  namespace: iOS
+  summary: 
+  syntax:
+    content: ServiceURLConsent  = 1
+references:
+- uid: msipcthin2.msconscenttype_enum_objc.DocumentTrackingConsent
+  href: MSConsentType.yml
+  name: DocumentTrackingConsent
+- uid: 'msipcthin2.msconscenttype_enum_objc.ServiceURLConsent '
+  href: MSConsentType.yml
+  name: 'ServiceURLConsent '

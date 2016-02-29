@@ -1,0 +1,223 @@
+items:
+- uid: msipcthin2.msprotector_class_objc
+  id: MSProtector
+  parent: iOS
+  children:
+  - msipcthin2.msprotector_blocksize_property_objc
+  - msipcthin2.msprotector_decryptalignedblockswithstartingblocknumber_method_objc
+  - msipcthin2.msprotector_encryptalignedblockswithstartingblocknumber_method_objc
+  - msipcthin2.msprotector_initwithuserpolicy_method
+  href: MSProtector.yml
+  langs:
+  - cplusplus
+  name: MSProtector
+  fullName: msipcthin2.msprotector_class_objc
+  type: Class
+  assemblies: &o0
+  - iOS
+  namespace: iOS
+  summary: >+
+    Enables you to encrypt or decrypt any chunk of data and manage the stream.
+
+
+
+
+
+
+
+  remarks: 
+  thread_safety: Members of this class are not guaranteed to be thread safe.
+  defined_in: MSProtection.h
+  syntax:
+    content: '@interface MSProtector : NSObject'
+  inheritance: []
+- uid: msipcthin2.msprotector_blocksize_property_objc
+  id: MSProtector blockSize
+  parent: msipcthin2.msprotector_class_objc
+  children: []
+  href: MSProtector.yml
+  langs:
+  - cplusplus
+  name: MSProtector blockSize
+  fullName: msipcthin2.msprotector_blocksize_property_objc
+  type: Property
+  assemblies: *o0
+  namespace: iOS
+  summary: >+
+    Gets the minimum block size decryption/encryption calls should use, except with the last block.
+
+
+
+
+
+
+
+  remarks: 
+  syntax:
+    content: '@property (readonly) uint32_t blockSize;'
+    return:
+      id: '*blockSize*'
+      type: '**NSString** *'
+      description: >+
+        Minimum block size to use.
+
+
+
+  inheritance: []
+- uid: msipcthin2.msprotector_initwithuserpolicy_method
+  id: MSProtector initWithUserPolicy
+  parent: msipcthin2.msprotector_class_objc
+  children: []
+  href: MSProtector.yml
+  langs:
+  - cplusplus
+  name: MSProtector initWithUserPolicy
+  fullName: msipcthin2.msprotector_initwithuserpolicy_method
+  type: Method
+  assemblies: *o0
+  namespace: iOS
+  summary: >+
+    Used to initialize an @msipcthin2.msprotector_class_objc object with an @msipcthin2.msuserpolicy_interface_objc.
+
+
+
+
+
+
+
+  remarks: >+
+    @msipcthin2.mstemplatedescriptor_templatelistwithuserid_userid_authenticationcallback_completionblock_method_objc should be invoked from the main thread.
+
+
+
+  syntax:
+    content: '- (id)initWithUserPolicy:(MSUserPolicy *)userPolicy;'
+    parameters:
+    - id: '*userPolicy*'
+      type: '@msipcthin2.msuserpolicy_interface_objc *'
+      description: >+
+        Pointer to a user policy
+
+
+
+    return:
+      type: '@msipcthin2.msprotector_class_objc'
+      description: id of the initialized @msipcthin2.msprotector_class_objc object.
+  inheritance: []
+- uid: msipcthin2.msprotector_encryptalignedblockswithstartingblocknumber_method_objc
+  id: MSProtector encryptAlignedBlocksWithStartingBlockNumber
+  parent: msipcthin2.msprotector_class_objc
+  children: []
+  href: MSProtector.yml
+  langs:
+  - cplusplus
+  name: MSProtector encryptAlignedBlocksWithStartingBlockNumber
+  fullName: msipcthin2.msprotector_encryptalignedblockswithstartingblocknumber_method_objc
+  type: Method
+  assemblies: *o0
+  namespace: iOS
+  summary: >+
+    Used to encrypt a block of unencrypted data.
+
+
+
+
+
+
+
+  remarks: >+
+    @msipcthin2.mstemplatedescriptor_templatelistwithuserid_userid_authenticationcallback_completionblock_method_objc should be invoked from the main thread.
+
+
+
+  syntax:
+    content: '- (NSData *)encryptAlignedBlocksWithStartingBlockNumber:(NSUInteger)startingBlockNumber                                         unEncryptedData:(NSData *)unEncryptedData                                                 isFinal:(BOOL)isFinal                                                   error:(NSError **)errorPtr;'
+    parameters:
+    - id: '*startingBlockNumber*'
+      type: '**NSUInteger**'
+      description: 
+    - id: '*unEncryptedData*'
+      type: '**NSData** *'
+      description: 
+    - id: '*isFinal*'
+      type: '**BOOL**'
+      description: >+
+        Set to TRUE for the last block, otherwise FALSE.
+
+
+
+    - id: '*errorPtr*'
+      type: '**NSError** **'
+      description: 
+    return:
+      type: NSData
+      description: Pointer to an **NSData** object containing the block of encrypted data.
+  inheritance: []
+- uid: msipcthin2.msprotector_decryptalignedblockswithstartingblocknumber_method_objc
+  id: MSProtector decryptAlignedBlocksWithStartingBlockNumber
+  parent: msipcthin2.msprotector_class_objc
+  children: []
+  href: MSProtector.yml
+  langs:
+  - cplusplus
+  name: MSProtector decryptAlignedBlocksWithStartingBlockNumber
+  fullName: msipcthin2.msprotector_decryptalignedblockswithstartingblocknumber_method_objc
+  type: Method
+  assemblies: *o0
+  namespace: iOS
+  summary: >+
+    Used to decrypt a block of encrypted data.
+
+
+
+
+
+
+
+  remarks: >+
+    @msipcthin2.mstemplatedescriptor_templatelistwithuserid_userid_authenticationcallback_completionblock_method_objc should be invoked from the main thread.
+
+
+
+  syntax:
+    content: '- (NSData *)decryptAlignedBlocksWithStartingBlockNumber:(NSUInteger)startingBlockNumber                                           encryptedData:(NSData *)encryptedData                                                 isFinal:(BOOL)isFinal                                                   error:(NSError **)errorPtr;'
+    parameters:
+    - id: '*startingBlockNumber*'
+      type: '**NSUInteger**'
+      description: 
+    - id: '*encryptedData*'
+      type: '**NSData** *'
+      description: 
+    - id: '*isFinal*'
+      type: '**BOOL**'
+      description: >+
+        Set to TRUE for the last block, otherwise FALSE.
+
+
+
+    - id: '*errorPtr*'
+      type: '**NSError** **'
+      description: 
+    return:
+      type: NSData
+      description: Pointer to an **NSData** object containing the block of dencrypted data.
+  inheritance: []
+references:
+- uid: msipcthin2.msprotector_blocksize_property_objc
+  href: MSProtector blockSize.yml
+  name: blockSize
+- uid: msipcthin2.msprotector_initwithuserpolicy_method
+  href: MSProtector initWithUserPolicy.yml
+  name: initWithUserPolicy
+- uid: msipcthin2.msprotector_class_objc
+  href: MSProtector.yml
+  name: MSProtector
+- uid: msipcthin2.msuserpolicy_interface_objc
+  href: MSUserPolicy.yml
+  name: MSUserPolicy
+- uid: msipcthin2.msprotector_encryptalignedblockswithstartingblocknumber_method_objc
+  href: MSProtector encryptAlignedBlocksWithStartingBlockNumber.yml
+  name: encryptAlignedBlocksWithStartingBlockNumber
+- uid: msipcthin2.msprotector_decryptalignedblockswithstartingblocknumber_method_objc
+  href: MSProtector decryptAlignedBlocksWithStartingBlockNumber.yml
+  name: decryptAlignedBlocksWithStartingBlockNumber

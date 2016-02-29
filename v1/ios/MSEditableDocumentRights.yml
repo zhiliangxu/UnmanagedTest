@@ -1,0 +1,173 @@
+items:
+- uid: msipcthin2.mseditabledocumentrights_interface_objc
+  id: MSEditableDocumentRights
+  parent: iOS
+  children:
+  - msipcthin2.mseditabledocumentrights_interface_objc.+(NSArray) all;
+  - msipcthin2.mseditabledocumentrights_interface_objc.+(NSString) comment;
+  - msipcthin2.mseditabledocumentrights_interface_objc.+(NSString) edit;
+  - msipcthin2.mseditabledocumentrights_interface_objc.+(NSString) exportable;
+  - msipcthin2.mseditabledocumentrights_interface_objc.+(NSString) extract;
+  - msipcthin2.mseditabledocumentrights_interface_objc.+(NSString) print;
+  href: MSEditableDocumentRights.yml
+  langs:
+  - cplusplus
+  name: MSEditableDocumentRights
+  fullName: msipcthin2.mseditabledocumentrights_interface_objc
+  type: Class
+  assemblies: &o0
+  - iOS
+  namespace: iOS
+  summary: >+
+    Rights that apply to editable documents.
+
+
+
+
+
+
+
+  remarks: >+
+    For more information about the built-in rights and the usage restrictions associated with them  that apps should observe, see @msipcthin2.built-in_rights_usage_restriction_reference.
+
+
+
+  thread_safety: Members of this class are not guaranteed to be thread safe.
+  defined_in: MSRight.h
+  syntax:
+    content: '@interface MSEditableDocumentRights : NSObject'
+  inheritance: []
+- uid: msipcthin2.mseditabledocumentrights_interface_objc.+(NSString) edit;
+  id: +(NSString) edit;
+  parent: msipcthin2.mseditabledocumentrights_interface_objc
+  href: MSEditableDocumentRights.yml
+  langs:
+  - cplusplus
+  name: +(NSString) edit;
+  fullName: msipcthin2.mseditabledocumentrights_interface_objc.+(NSString) edit;
+  type: Property
+  assemblies: *o0
+  namespace: iOS
+  summary: >+
+    Specifies a right that allows the protected content to be edited and saved to the same protected format.
+
+
+
+  syntax: {}
+- uid: msipcthin2.mseditabledocumentrights_interface_objc.+(NSString) exportable;
+  id: +(NSString) exportable;
+  parent: msipcthin2.mseditabledocumentrights_interface_objc
+  href: MSEditableDocumentRights.yml
+  langs:
+  - cplusplus
+  name: +(NSString) exportable;
+  fullName: msipcthin2.mseditabledocumentrights_interface_objc.+(NSString) exportable;
+  type: Property
+  assemblies: *o0
+  namespace: iOS
+  summary: >+
+    Specifies a right that allows content to be extracted from a protected format and placed in a different AD RMS-protected format.
+
+
+
+  syntax: {}
+- uid: msipcthin2.mseditabledocumentrights_interface_objc.+(NSString) extract;
+  id: +(NSString) extract;
+  parent: msipcthin2.mseditabledocumentrights_interface_objc
+  href: MSEditableDocumentRights.yml
+  langs:
+  - cplusplus
+  name: +(NSString) extract;
+  fullName: msipcthin2.mseditabledocumentrights_interface_objc.+(NSString) extract;
+  type: Property
+  assemblies: *o0
+  namespace: iOS
+  summary: >+
+    Specifies a right that allows content to be extracted from a protected format and placed in an unprotected, or a different protected  format. Same value as @msipcthin2.msemailrights_interface_objc.
+
+
+
+  syntax: {}
+- uid: msipcthin2.mseditabledocumentrights_interface_objc.+(NSString) print;
+  id: +(NSString) print;
+  parent: msipcthin2.mseditabledocumentrights_interface_objc
+  href: MSEditableDocumentRights.yml
+  langs:
+  - cplusplus
+  name: +(NSString) print;
+  fullName: msipcthin2.mseditabledocumentrights_interface_objc.+(NSString) print;
+  type: Property
+  assemblies: *o0
+  namespace: iOS
+  summary: >+
+    Specifies a right that allows protected content to be printed. Same value as @msipcthin2.msemailrights_interface_objc.
+
+
+
+  syntax: {}
+- uid: msipcthin2.mseditabledocumentrights_interface_objc.+(NSString) comment;
+  id: +(NSString) comment;
+  parent: msipcthin2.mseditabledocumentrights_interface_objc
+  href: MSEditableDocumentRights.yml
+  langs:
+  - cplusplus
+  name: +(NSString) comment;
+  fullName: msipcthin2.mseditabledocumentrights_interface_objc.+(NSString) comment;
+  type: Property
+  assemblies: *o0
+  namespace: iOS
+  summary: >+
+    Specifies a right that allows protected content to have comments added.
+
+
+
+  syntax: {}
+- uid: msipcthin2.mseditabledocumentrights_interface_objc.+(NSArray) all;
+  id: +(NSArray) all;
+  parent: msipcthin2.mseditabledocumentrights_interface_objc
+  href: MSEditableDocumentRights.yml
+  langs:
+  - cplusplus
+  name: +(NSArray) all;
+  fullName: msipcthin2.mseditabledocumentrights_interface_objc.+(NSArray) all;
+  type: Property
+  assemblies: *o0
+  namespace: iOS
+  summary: >+
+    Specifies a list of all of the rights that apply to editable documents.
+
+
+
+
+
+
+
+
+
+
+
+  syntax: {}
+references:
+- uid: msipcthin2.msemailrights_interface_objc
+  href: MSEmailRights.yml
+  name: '[MSEmailRights extract]'
+- uid: msipcthin2.built-in_rights_usage_restriction_reference
+  name: Built-in Rights Usage Restriction Reference
+- uid: msipcthin2.mseditabledocumentrights_interface_objc.+(NSString) edit;
+  href: MSEditableDocumentRights.yml
+  name: +(NSString) edit;
+- uid: msipcthin2.mseditabledocumentrights_interface_objc.+(NSString) exportable;
+  href: MSEditableDocumentRights.yml
+  name: +(NSString) exportable;
+- uid: msipcthin2.mseditabledocumentrights_interface_objc.+(NSString) extract;
+  href: MSEditableDocumentRights.yml
+  name: +(NSString) extract;
+- uid: msipcthin2.mseditabledocumentrights_interface_objc.+(NSString) print;
+  href: MSEditableDocumentRights.yml
+  name: +(NSString) print;
+- uid: msipcthin2.mseditabledocumentrights_interface_objc.+(NSString) comment;
+  href: MSEditableDocumentRights.yml
+  name: +(NSString) comment;
+- uid: msipcthin2.mseditabledocumentrights_interface_objc.+(NSArray) all;
+  href: MSEditableDocumentRights.yml
+  name: +(NSArray) all;

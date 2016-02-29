@@ -1,0 +1,170 @@
+items:
+- uid: msipcthin2.msrole_class_objc
+  id: MSRole
+  parent: iOS
+  children:
+  - msipcthin2.msrole_author_property
+  - msipcthin2.msrole_coowner_property_objc
+  - msipcthin2.msrole_reviewer_property
+  - msipcthin2.msrole_viewer_property_objc
+  href: MSRole.yml
+  langs:
+  - cplusplus
+  name: MSRole
+  fullName: msipcthin2.msrole_class_objc
+  type: Class
+  assemblies: &o0
+  - iOS
+  namespace: iOS
+  summary: >+
+    Defines the roles supported by the SDK.
+
+
+
+
+
+
+
+  remarks: 
+  thread_safety: Members of this class are not guaranteed to be thread safe.
+  defined_in: MSRole.h
+  syntax:
+    content: '@interface MSRole : MSSecureCodableObject'
+  inheritance: []
+- uid: msipcthin2.msrole_author_property
+  id: MSRole author
+  parent: msipcthin2.msrole_class_objc
+  children: []
+  href: MSRole.yml
+  langs:
+  - cplusplus
+  name: MSRole author
+  fullName: msipcthin2.msrole_author_property
+  type: Property
+  assemblies: *o0
+  namespace: iOS
+  summary: >+
+    User will only be able to view, edit, copy and print the document.
+
+
+
+
+
+
+
+  remarks: 
+  syntax:
+    content: + (NSString *)author;
+    return:
+      id: '*author*'
+      type: '**NSString** *'
+      description: 
+  inheritance: []
+- uid: msipcthin2.msrole_coowner_property_objc
+  id: MSRole coOwner
+  parent: msipcthin2.msrole_class_objc
+  children: []
+  href: MSRole.yml
+  langs:
+  - cplusplus
+  name: MSRole coOwner
+  fullName: msipcthin2.msrole_coowner_property_objc
+  type: Property
+  assemblies: *o0
+  namespace: iOS
+  summary: >+
+    User will have all permissions.
+
+
+
+
+
+
+
+  remarks: 
+  syntax:
+    content: + (NSString *)coOwner;
+    return:
+      id: '*coOwner*'
+      type: '**NSString** *'
+      description: 
+  inheritance: []
+- uid: msipcthin2.msrole_reviewer_property
+  id: MSRole reviewer
+  parent: msipcthin2.msrole_class_objc
+  children: []
+  href: MSRole.yml
+  langs:
+  - cplusplus
+  name: MSRole reviewer
+  fullName: msipcthin2.msrole_reviewer_property
+  type: Property
+  assemblies: *o0
+  namespace: iOS
+  summary: >+
+    User will only be able to view and edit the document.
+
+
+
+
+
+
+
+  remarks: 
+  syntax:
+    content: + (NSString *)reviewer;
+    return:
+      id: '*reviewer*'
+      type: '**NSString** *'
+      description: >+
+        User cannot copy or print.
+
+
+
+  inheritance: []
+- uid: msipcthin2.msrole_viewer_property_objc
+  id: MSRole viewer
+  parent: msipcthin2.msrole_class_objc
+  children: []
+  href: MSRole.yml
+  langs:
+  - cplusplus
+  name: MSRole viewer
+  fullName: msipcthin2.msrole_viewer_property_objc
+  type: Property
+  assemblies: *o0
+  namespace: iOS
+  summary: >+
+    User will only be able to view the document.
+
+
+
+
+
+
+
+  remarks: 
+  syntax:
+    content: + (NSString *)viewer;
+    return:
+      id: '*viewer*'
+      type: '**NSString** *'
+      description: >+
+        User cannot edit, copy, or print.
+
+
+
+  inheritance: []
+references:
+- uid: msipcthin2.msrole_viewer_property_objc
+  href: MSRole viewer.yml
+  name: viewer
+- uid: msipcthin2.msrole_reviewer_property
+  href: MSRole reviewer.yml
+  name: reviewer
+- uid: msipcthin2.msrole_author_property
+  href: MSRole author.yml
+  name: author
+- uid: msipcthin2.msrole_coowner_property_objc
+  href: MSRole coOwner.yml
+  name: coOwner

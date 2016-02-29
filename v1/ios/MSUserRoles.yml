@@ -1,0 +1,151 @@
+items:
+- uid: msipcthin2.msuserroles_class
+  id: MSUserRoles
+  parent: iOS
+  children:
+  - msipcthin2.msuserroles_initwithusers_method_objc
+  - msipcthin2.msuserroles_roles_property_objc
+  - msipcthin2.msuserroles_users_property_objc
+  href: MSUserRoles.yml
+  langs:
+  - cplusplus
+  name: MSUserRoles
+  fullName: msipcthin2.msuserroles_class
+  type: Class
+  assemblies: &o0
+  - iOS
+  namespace: iOS
+  summary: >+
+    Represents a user's roles.
+
+
+
+
+
+
+
+  remarks: 
+  thread_safety: Members of this class are not guaranteed to be thread safe.
+  defined_in: MSUserRoles.h
+  syntax:
+    content: '@interface MSUserRoles : MSSecureCodableObject'
+  inheritance: []
+- uid: msipcthin2.msuserroles_roles_property_objc
+  id: MSUserRoles roles
+  parent: msipcthin2.msuserroles_class
+  children: []
+  href: MSUserRoles.yml
+  langs:
+  - cplusplus
+  name: MSUserRoles roles
+  fullName: msipcthin2.msuserroles_roles_property_objc
+  type: Property
+  assemblies: *o0
+  namespace: iOS
+  summary: >+
+    Gets the set of roles.
+
+
+
+
+
+
+
+  remarks: 
+  syntax:
+    content: '@property (strong, readonly) NSArray/*NSString*/ *roles;'
+    return:
+      id: '*roles*'
+      type: '**NSArray** *'
+      description: >+
+        Pointer to array of strings containing roles. See @msipcthin2.msrole_class_objc for values to use.
+
+
+
+  inheritance: []
+- uid: msipcthin2.msuserroles_users_property_objc
+  id: MSUserRoles users
+  parent: msipcthin2.msuserroles_class
+  children: []
+  href: MSUserRoles.yml
+  langs:
+  - cplusplus
+  name: MSUserRoles users
+  fullName: msipcthin2.msuserroles_users_property_objc
+  type: Property
+  assemblies: *o0
+  namespace: iOS
+  summary: >+
+    Gets the set of users.
+
+
+
+
+
+
+
+  remarks: 
+  syntax:
+    content: '@property (strong, readonly) NSArray/*NSString*/ *users;'
+    return:
+      id: '*users*'
+      type: '**NSArray** *'
+      description: >+
+        Pointer to array of strings containing users.
+
+
+
+  inheritance: []
+- uid: msipcthin2.msuserroles_initwithusers_method_objc
+  id: MSUserRoles initWithUsers
+  parent: msipcthin2.msuserroles_class
+  children: []
+  href: MSUserRoles.yml
+  langs:
+  - cplusplus
+  name: MSUserRoles initWithUsers
+  fullName: msipcthin2.msuserroles_initwithusers_method_objc
+  type: Method
+  assemblies: *o0
+  namespace: iOS
+  summary: >+
+    Initialize an @msipcthin2.msuserroles_class object with users and roles.
+
+
+
+
+
+
+
+  remarks: 
+  syntax:
+    content: '- (id)initWithUsers:(NSArray/*NSString*/*)users              roles:(NSArray/*NSString*/*)roles;'
+    parameters:
+    - id: '*users*'
+      type: '**NSArray** *'
+      description: >+
+        Set of users to whom the roles are assigned.
+
+
+
+    - id: '*roles*'
+      type: '**NSArray** *'
+      description: >+
+        See @msipcthin2.msrole_class_objc for types to use.
+
+
+
+    return:
+      type: id
+      description: An identifier of type **id** of the initialized @msipcthin2.msuserroles_class object.
+  inheritance: []
+references:
+- uid: msipcthin2.msuserroles_initwithusers_method_objc
+  href: MSUserRoles initWithUsers.yml
+  name: initWithUsers
+- uid: msipcthin2.msuserroles_roles_property_objc
+  href: MSUserRoles roles.yml
+  name: roles
+- uid: msipcthin2.msuserroles_users_property_objc
+  href: MSUserRoles users.yml
+  name: users

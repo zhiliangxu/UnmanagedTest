@@ -1,0 +1,191 @@
+items:
+- uid: msipcthin2.mstemplatedescriptor_interface_objc
+  id: MSTemplateDescriptor
+  parent: iOS
+  children:
+  - msipcthin2.mstemplatedescriptor_description_property_objc
+  - msipcthin2.mstemplatedescriptor_name_property_objc
+  - msipcthin2.mstemplatedescriptor_templateid_property_objc
+  - msipcthin2.mstemplatedescriptor_templatelistwithuserid_userid_authenticationcallback_completionblock_method_objc
+  href: MSTemplateDescriptor.yml
+  langs:
+  - cplusplus
+  name: MSTemplateDescriptor
+  fullName: msipcthin2.mstemplatedescriptor_interface_objc
+  type: Class
+  assemblies: &o0
+  - iOS
+  namespace: iOS
+  summary: >+
+    Represents a user's template.
+
+
+
+
+
+
+
+  remarks: 
+  thread_safety: Members of this class are not guaranteed to be thread safe.
+  defined_in: MSTemplateDescriptor.h
+  syntax:
+    content: '@interface MSTemplateDescriptor : NSSecureCodableObject'
+  inheritance: []
+- uid: msipcthin2.mstemplatedescriptor_description_property_objc
+  id: MSTemplateDescriptor templateDescription
+  parent: msipcthin2.mstemplatedescriptor_interface_objc
+  children: []
+  href: MSTemplateDescriptor.yml
+  langs:
+  - cplusplus
+  name: MSTemplateDescriptor templateDescription
+  fullName: msipcthin2.mstemplatedescriptor_description_property_objc
+  type: Property
+  assemblies: *o0
+  namespace: iOS
+  summary: >+
+    Description associated with this template.
+
+
+
+
+
+
+
+  remarks: 
+  syntax:
+    content: '@property (strong, readonly) NSString *templateDescription;'
+    return:
+      id: '*templateDescription*'
+      type: '**NSString** *'
+      description: 
+  inheritance: []
+- uid: msipcthin2.mstemplatedescriptor_templateid_property_objc
+  id: MSTemplateDescriptor templateId
+  parent: msipcthin2.mstemplatedescriptor_interface_objc
+  children: []
+  href: MSTemplateDescriptor.yml
+  langs:
+  - cplusplus
+  name: MSTemplateDescriptor templateId
+  fullName: msipcthin2.mstemplatedescriptor_templateid_property_objc
+  type: Property
+  assemblies: *o0
+  namespace: iOS
+  summary: >+
+    ID associated with this template.
+
+
+
+
+
+
+
+  remarks: 
+  syntax:
+    content: '@property (strong, readonly) NSString *templateId;'
+    return:
+      id: '*templateId*'
+      type: '**NSString** *'
+      description: 
+  inheritance: []
+- uid: msipcthin2.mstemplatedescriptor_name_property_objc
+  id: MSTemplateDescriptor templateName
+  parent: msipcthin2.mstemplatedescriptor_interface_objc
+  children: []
+  href: MSTemplateDescriptor.yml
+  langs:
+  - cplusplus
+  name: MSTemplateDescriptor templateName
+  fullName: msipcthin2.mstemplatedescriptor_name_property_objc
+  type: Property
+  assemblies: *o0
+  namespace: iOS
+  summary: >+
+    Name associated with this template.
+
+
+
+
+
+
+
+  remarks: 
+  syntax:
+    content: '@property (strong, readonly) NSString *templateName;'
+    return:
+      id: '*templateName*'
+      type: '**NSString** *'
+      description: 
+  inheritance: []
+- uid: msipcthin2.mstemplatedescriptor_templatelistwithuserid_userid_authenticationcallback_completionblock_method_objc
+  id: MSTemplateDescriptor templateListWithUserId:userId:authenticationCallback:completionBlock
+  parent: msipcthin2.mstemplatedescriptor_interface_objc
+  children: []
+  href: MSTemplateDescriptor.yml
+  langs:
+  - cplusplus
+  name: MSTemplateDescriptor templateListWithUserId:userId:authenticationCallback:completionBlock
+  fullName: msipcthin2.mstemplatedescriptor_templatelistwithuserid_userid_authenticationcallback_completionblock_method_objc
+  type: Method
+  assemblies: *o0
+  namespace: iOS
+  summary: >+
+    Get the templates.
+
+
+
+
+
+
+
+    @msipcthin2.mstemplatedescriptor_templatelistwithuserid_userid_authenticationcallback_completionblock_method_objc should be invoked from the main thread.
+
+
+
+
+
+
+
+  remarks: >+
+    @msipcthin2.mstemplatedescriptor_templatelistwithuserid_userid_authenticationcallback_completionblock_method_objc should be invoked from the main thread.
+
+
+
+  syntax:
+    content: + (MSAsyncControl *)templateListWithUserId:(NSString *)userId                    authenticationCallback:(id<MSAuthenticationCallback>)authenticationCallback                           completionBlock:(void(^)(NSArray/*MSTemplateDescriptor*/ *templates, NSError *error))completionBlock;
+    parameters:
+    - id: '*userId*'
+      type: '**NSString** *'
+      description: "The email address of the user for whom the templates are being retrieved. \r\n\r\nThis email address will be used to discover the RMS service instance                                        (either ADRMS server or Azure RMS) that the user's organization is using.                                        \r\n\r\n\r\n\r\n"
+    - id: '*authenticationCallback*'
+      type: 'id&lt;@msipcthin2.msauthenticationcallback_protocol_objc&gt; '
+      description: >+
+        authentication callback to be used for auth.
+
+
+
+    - id: '*completionBlock*'
+      type: (**NSArray** *templates, **NSError** *error)
+      description: >+
+        An array of @msipcthin2.mstemplatedescriptor_interface_objc matching the user's tenant template and error code.
+
+
+
+    return:
+      type: '@msipcthin2.mstemplatedescriptor_interface_objc'
+      description: An array of @msipcthin2.mstemplatedescriptor_interface_objc matching the user's tenant template.
+  inheritance: []
+references:
+- uid: msipcthin2.mstemplatedescriptor_templatelistwithuserid_userid_authenticationcallback_completionblock_method_objc
+  href: MSTemplateDescriptor templateListWithUserId_userId_authenticationCallback_completionBlock.yml
+  name: "\n        \n       templateListWithUserId"
+- uid: msipcthin2.mstemplatedescriptor_name_property_objc
+  href: MSTemplateDescriptor templateName.yml
+  name: templateName
+- uid: msipcthin2.mstemplatedescriptor_description_property_objc
+  href: MSTemplateDescriptor templateDescription.yml
+  name: templateDescription
+- uid: msipcthin2.mstemplatedescriptor_templateid_property_objc
+  href: MSTemplateDescriptor templateId.yml
+  name: templateId

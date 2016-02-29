@@ -1,0 +1,97 @@
+items:
+- uid: msipcthin2.msprotectionpolicycreationoptions_enum_objc
+  id: MSUserPolicyCreationOptions
+  parent: iOS
+  children:
+  - msipcthin2.msprotectionpolicycreationoptions_enum_objc.AllowAuditedExtraction
+  - msipcthin2.msprotectionpolicycreationoptions_enum_objc.None
+  - msipcthin2.msprotectionpolicycreationoptions_enum_objc.PreferDeprecatedAlgorithms
+  href: MSUserPolicyCreationOptions.yml
+  langs:
+  - cplusplus
+  name: MSUserPolicyCreationOptions
+  fullName: msipcthin2.msprotectionpolicycreationoptions_enum_objc
+  type: Enum
+  assemblies: &o0
+  - iOS
+  namespace: iOS
+  summary: >+
+    User policy creation option flags.
+
+
+
+
+
+
+
+  remarks: 
+  defined_in: TBD
+  syntax:
+    content: 'typedef enum MSUserPolicyCreationOptions : NSUInteger {    None = 0x0,    AllowAuditedExtraction = 0x1,     PreferDeprecatedAlgorithms = 0x2     } MSUserPolicyCreationOptions;'
+  inheritance: []
+- uid: msipcthin2.msprotectionpolicycreationoptions_enum_objc.None
+  id: None
+  parent: msipcthin2.msprotectionpolicycreationoptions_enum_objc
+  href: MSUserPolicyCreationOptions.yml
+  langs:
+  - cplusplus
+  name: None
+  fullName: msipcthin2.msprotectionpolicycreationoptions_enum_objc.None
+  type: Field
+  assemblies: *o0
+  namespace: iOS
+  summary: >+
+    No options set
+
+
+
+  syntax:
+    content: None = 0
+- uid: msipcthin2.msprotectionpolicycreationoptions_enum_objc.AllowAuditedExtraction
+  id: AllowAuditedExtraction
+  parent: msipcthin2.msprotectionpolicycreationoptions_enum_objc
+  href: MSUserPolicyCreationOptions.yml
+  langs:
+  - cplusplus
+  name: AllowAuditedExtraction
+  fullName: msipcthin2.msprotectionpolicycreationoptions_enum_objc.AllowAuditedExtraction
+  type: Field
+  assemblies: *o0
+  namespace: iOS
+  summary: >+
+    Specifies whether the content can be opened in a non-RMS aware app or not
+
+
+
+  syntax:
+    content: AllowAuditedExtraction = 1
+- uid: msipcthin2.msprotectionpolicycreationoptions_enum_objc.PreferDeprecatedAlgorithms
+  id: PreferDeprecatedAlgorithms
+  parent: msipcthin2.msprotectionpolicycreationoptions_enum_objc
+  href: MSUserPolicyCreationOptions.yml
+  langs:
+  - cplusplus
+  name: PreferDeprecatedAlgorithms
+  fullName: msipcthin2.msprotectionpolicycreationoptions_enum_objc.PreferDeprecatedAlgorithms
+  type: Field
+  assemblies: *o0
+  namespace: iOS
+  summary: >+
+    Specifies whether the @msipcthin2.terms (ECB) is preferred or not
+
+
+
+  syntax:
+    content: PreferDeprecatedAlgorithms = 2
+references:
+- uid: msipcthin2.terms
+  name: deprecated algorithms
+- uid: msipcthin2.msprotectionpolicycreationoptions_enum_objc.None
+  href: MSUserPolicyCreationOptions.yml
+  name: None
+- uid: msipcthin2.msprotectionpolicycreationoptions_enum_objc.AllowAuditedExtraction
+  href: MSUserPolicyCreationOptions.yml
+  name: AllowAuditedExtraction
+- uid: msipcthin2.msprotectionpolicycreationoptions_enum_objc.PreferDeprecatedAlgorithms
+  href: MSUserPolicyCreationOptions.yml
+  name: PreferDeprecatedAlgorithms

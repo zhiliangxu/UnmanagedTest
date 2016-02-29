@@ -1,0 +1,146 @@
+items:
+- uid: msipcthin2.msuserrights_interface_objc
+  id: MSUserRights
+  parent: iOS
+  children:
+  - msipcthin2.msuserrights_initwithusers_method_objc
+  - msipcthin2.msuserrights_rights_property_objc
+  - msipcthin2.msuserrights_users_property_objc
+  href: MSUserRights.yml
+  langs:
+  - cplusplus
+  name: MSUserRights
+  fullName: msipcthin2.msuserrights_interface_objc
+  type: Class
+  assemblies: &o0
+  - iOS
+  namespace: iOS
+  summary: >+
+    Represents a user's rights.
+
+
+
+
+
+
+
+  remarks: 
+  thread_safety: Members of this class are not guaranteed to be thread safe.
+  defined_in: MSUserRights.h
+  syntax:
+    content: '@interface MSUserRights : MSSecurableCodeObject'
+  inheritance: []
+- uid: msipcthin2.msuserrights_rights_property_objc
+  id: MSUserRights rights
+  parent: msipcthin2.msuserrights_interface_objc
+  children: []
+  href: MSUserRights.yml
+  langs:
+  - cplusplus
+  name: MSUserRights rights
+  fullName: msipcthin2.msuserrights_rights_property_objc
+  type: Property
+  assemblies: *o0
+  namespace: iOS
+  summary: >+
+    Gets the set of granted rights.
+
+
+
+
+
+
+
+  remarks: 
+  syntax:
+    content: '@property (strong, readonly) NSArray/*NSString*/ *rights;'
+    return:
+      id: '*rights*'
+      type: '**NSArray**							*'
+      description: 
+  inheritance: []
+- uid: msipcthin2.msuserrights_users_property_objc
+  id: MSUserRights users
+  parent: msipcthin2.msuserrights_interface_objc
+  children: []
+  href: MSUserRights.yml
+  langs:
+  - cplusplus
+  name: MSUserRights users
+  fullName: msipcthin2.msuserrights_users_property_objc
+  type: Property
+  assemblies: *o0
+  namespace: iOS
+  summary: >+
+    Gets the set of users.
+
+
+
+
+
+
+
+  remarks: 
+  syntax:
+    content: '@property (strong, readonly) NSArray *users;'
+    return:
+      id: '*users*'
+      type: '**NSArray** *'
+      description: 
+  inheritance: []
+- uid: msipcthin2.msuserrights_initwithusers_method_objc
+  id: MSUserRights initWithUsers
+  parent: msipcthin2.msuserrights_interface_objc
+  children: []
+  href: MSUserRights.yml
+  langs:
+  - cplusplus
+  name: MSUserRights initWithUsers
+  fullName: msipcthin2.msuserrights_initwithusers_method_objc
+  type: Method
+  assemblies: *o0
+  namespace: iOS
+  summary: >+
+    Initialize an @msipcthin2.msuserrights_interface_objc object's properties.
+
+
+
+
+
+
+
+  remarks: 
+  syntax:
+    content: '- (id)initWithUsers:(NSArray *)users             rights:(NSArray/*NSString*/*)rights;'
+    parameters:
+    - id: '*users*'
+      type: '**NSString** *'
+      description: >+
+        Set of users to whom the rights are granted
+
+
+
+    - id: '*rights*'
+      type: '**NSArray** *'
+      description: >+
+        For more information on managing user rights, see @msipcthin2.built-in_rights_usage_restriction_reference as well as @msipcthin2.mscommonrights_interface_objc, @msipcthin2.mseditabledocumentrights_interface_objc and @msipcthin2.msemailrights_interface_objc.
+
+
+
+    return:
+      type: id
+      description: An identifier of type **id** referencing the initialized @msipcthin2.msuserrights_interface_objc object.
+  inheritance: []
+references:
+- uid: msipcthin2.msuserrights_initwithusers_method_objc
+  href: MSUserRights initWithUsers.yml
+  name: initWithUsers
+- uid: msipcthin2.msuserrights_interface_objc
+  href: MSUserRights.yml
+  name: MSUserRights
+- uid: msipcthin2.msuserrights_rights_property_objc
+  href: MSUserRights rights.yml
+  name: rights
+- uid: msipcthin2.msuserrights_users_property_objc
+  href: MSUserRights users.yml
+  name: users

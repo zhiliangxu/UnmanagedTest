@@ -1,0 +1,375 @@
+items:
+- uid: msipcthin2.msprotecteddata_interface_objc
+  id: MSProtectedData
+  parent: iOS
+  children:
+  - msipcthin2.msprotecteddata_getbytes_length_error_method_objc
+  - msipcthin2.msprotecteddata_getbytes_range_error_method_objc
+  - msipcthin2.msprotecteddata_length_method_objc
+  - msipcthin2.msprotecteddata_originalfileextension
+  - msipcthin2.msprotecteddata_protecteddatawithprotectedfile_completionblock_method_objc
+  - msipcthin2.msprotecteddata_retrievedata_method_objc
+  - msipcthin2.msprotecteddata_subdatawithrange_method_objc
+  - msipcthin2.msprotecteddata_userpolicy_property_objc
+  href: MSProtectedData.yml
+  langs:
+  - cplusplus
+  name: MSProtectedData
+  fullName: msipcthin2.msprotecteddata_interface_objc
+  type: Class
+  assemblies: &o0
+  - iOS
+  namespace: iOS
+  summary: >+
+    @msipcthin2.msprotecteddata_interface_objc and its mutable subclass @msipcthin2.msmutableprotecteddata_interface_objc provide protected file data objects, object-oriented wrappers for files that are protected using the Microsoft Protected File format.
+
+
+
+    Use @msipcthin2.msprotecteddata_interface_objc to read (and transparently decrypt) protected files in consumption scenarios and @msipcthin2.msmutableprotecteddata_interface_objc to write (and transparently encrypt) data to protected files in publishing scenarios.
+
+
+
+  remarks: >+
+    The methods of the @msipcthin2.msprotecteddata_interface_objc class that read data transparently decrypt the protected content and return plaintext data.
+
+
+
+    @msipcthin2.msprotecteddata_interface_objc and @msipcthin2.msmutableprotecteddata_interface_objc are used to read and write files that are protected with the Microsoft Protected File format. To read and write data for files that are protected with a custom protected file format, use  @msipcthin2.mscustomprotecteddata_interface_objc and @msipcthin2.msmutablecustomprotecteddata_interface_objc.
+
+
+
+  thread_safety: Members of this class are not guaranteed to be thread safe.
+  defined_in: MSProtectedData.h
+  syntax:
+    content: '@interface MSProtectedData : NSSecureCodableObject'
+  inheritance: []
+- uid: msipcthin2.msprotecteddata_originalfileextension
+  id: MSProtectedData originalFileExtension
+  parent: msipcthin2.msprotecteddata_interface_objc
+  children: []
+  href: MSProtectedData.yml
+  langs:
+  - cplusplus
+  name: MSProtectedData originalFileExtension
+  fullName: msipcthin2.msprotecteddata_originalfileextension
+  type: Property
+  assemblies: *o0
+  namespace: iOS
+  summary: >+
+    Gets the file extension before encryption.
+
+
+
+
+
+
+
+  remarks: 
+  syntax:
+    content: '@property(strong, readonly) NSString *originalFileExtension;'
+    return:
+      id: '*originalFileExtension*'
+      type: '**NSString** *'
+      description: >+
+        The file extension before encryption.
+
+
+
+  inheritance: []
+- uid: msipcthin2.msprotecteddata_userpolicy_property_objc
+  id: MSProtectedData userPolicy
+  parent: msipcthin2.msprotecteddata_interface_objc
+  children: []
+  href: MSProtectedData.yml
+  langs:
+  - cplusplus
+  name: MSProtectedData userPolicy
+  fullName: msipcthin2.msprotecteddata_userpolicy_property_objc
+  type: Property
+  assemblies: *o0
+  namespace: iOS
+  summary: >+
+    Gets the user policy.
+
+
+
+
+
+
+
+  remarks: 
+  syntax:
+    content: '@property(strong, readonly) MSUserPolicy *userPolicy;'
+    return:
+      id: '*userPolicy*'
+      type: '@msipcthin2.msuserpolicy_interface_objc *'
+      description: 
+  inheritance: []
+- uid: msipcthin2.msprotecteddata_getbytes_length_error_method_objc
+  id: MSProtectedData getBytes:length:error
+  parent: msipcthin2.msprotecteddata_interface_objc
+  children: []
+  href: MSProtectedData.yml
+  langs:
+  - cplusplus
+  name: MSProtectedData getBytes:length:error
+  fullName: msipcthin2.msprotecteddata_getbytes_length_error_method_objc
+  type: Method
+  assemblies: *o0
+  namespace: iOS
+  summary: "Copies the specified number of plaintext bytes from the start of the receiver’s data into a given buffer. Decryption is transparently performed during the execution of the method. \r\n\r\n\r\n\r\n"
+  remarks: >+
+    The specified number of bytes beginning at the start of the receiver's data are copied into the buffer. The number of bytes copied is the smaller of that specified in the *length* parameter and the data encapsulated in the object.
+
+
+
+  syntax:
+    content: '- (BOOL)getBytes:(void *)buffer length:(NSUInteger)length error:(NSError **)errorPtr;'
+    parameters:
+    - id: '*buffer*'
+      type: '**void** *'
+      description: >+
+        Required. The buffer into which to copy the plaintext data.
+
+
+
+    - id: '*length*'
+      type: '**NSUInteger**'
+      description: >+
+        Required. The number of bytes to copy.
+
+
+
+    - id: '*errorPtr*'
+      type: '**NSError** **'
+      description: >+
+        Optional. If an error occurs, contains the error code and details.
+
+
+
+    return:
+      type: BOOL
+      description: 'Type: **BOOL**YES if the operation is successful; otherwise, NO.'
+  inheritance: []
+- uid: msipcthin2.msprotecteddata_getbytes_range_error_method_objc
+  id: MSProtectedData getBytes:range:error
+  parent: msipcthin2.msprotecteddata_interface_objc
+  children: []
+  href: MSProtectedData.yml
+  langs:
+  - cplusplus
+  name: MSProtectedData getBytes:range:error
+  fullName: msipcthin2.msprotecteddata_getbytes_range_error_method_objc
+  type: Method
+  assemblies: *o0
+  namespace: iOS
+  summary: "Copies a range of plaintext bytes from the receiver’s data into a given buffer. Decryption is transparently performed during the execution of the method. \r\n\r\n\r\n\r\n"
+  remarks: "If the range specified in the *range* parameter isn’t within the receiver’s range of bytes, an **NSRangeException** is raised. \r\n\r\n"
+  syntax:
+    content: '- (BOOL)getBytes:(void *)buffer range:(NSRange)range error:(NSError **)errorPtr;'
+    parameters:
+    - id: '*buffer*'
+      type: '**void** *'
+      description: >+
+        Required. The buffer into which to copy the plaintext data.
+
+
+
+    - id: '*range*'
+      type: '**NSRange**'
+      description: "Required. The range of plaintext bytes in the receiver’s data to copy to the buffer. The range must lie within the range of bytes of the receiver’s data.\r\n\r\n"
+    - id: '*errorPtr*'
+      type: '**NSError** **'
+      description: >+
+        Optional. If an error occurs, contains the error code and details.
+
+
+
+    return:
+      type: BOOL
+      description: 'Type: **BOOL**YES if the operation is successful; otherwise, NO.'
+  inheritance: []
+- uid: msipcthin2.msprotecteddata_length_method_objc
+  id: MSProtectedData length
+  parent: msipcthin2.msprotecteddata_interface_objc
+  children: []
+  href: MSProtectedData.yml
+  langs:
+  - cplusplus
+  name: MSProtectedData length
+  fullName: msipcthin2.msprotecteddata_length_method_objc
+  type: Method
+  assemblies: *o0
+  namespace: iOS
+  summary: "Returns the number of bytes contained in the receiver. \r\n\r\n\r\n\r\n"
+  remarks: 
+  syntax:
+    content: '- (int64_t)length:(NSError **)errorPtr;'
+    parameters:
+    - id: '*errorPtr*'
+      type: '**NSError** **'
+      description: >+
+        Optional. If an error occurs, contains error details.
+
+
+
+    return:
+      type: int64_t
+      description: 'Type: **int64_t**The number of bytes of the plaintext data contained in the protected file  (not including the metadata and the publishing license).'
+  inheritance: []
+- uid: msipcthin2.msprotecteddata_protecteddatawithprotectedfile_completionblock_method_objc
+  id: MSProtectedData protectedDataWithProtectedFile:completionBlock
+  parent: msipcthin2.msprotecteddata_interface_objc
+  children: []
+  href: MSProtectedData.yml
+  langs:
+  - cplusplus
+  name: MSProtectedData protectedDataWithProtectedFile:completionBlock
+  fullName: msipcthin2.msprotecteddata_protecteddatawithprotectedfile_completionblock_method_objc
+  type: Method
+  assemblies: *o0
+  namespace: iOS
+  summary: >+
+    Asynchronously creates and returns a protected file data object that can be used to read (and decrypt) data from the specified  file, which is  protected to Microsoft Protected File format.
+
+
+
+
+
+
+
+  remarks: >+
+    The @msipcthin2.msprotecteddata_userpolicy_property_objc property is set based on the policy that applies to the specified file.
+
+
+
+  syntax:
+    content: + (MSAsyncControl *)protectedDataWithProtectedFile:(NSString *)path                                            userId:(NSString *)userId                            authenticationCallback:(id<MSAuthenticationCallback>)authenticationCallback                                   consentCallback:(id<MSConsentCallback>)consentCallback                                           options:(MSPolicyAcquisitionOptions)options                                   completionBlock:(void(^)(MSProtectedData *data, NSError *error))completionBlock;
+    parameters:
+    - id: '*path*'
+      type: '**NSString** *'
+      description: >+
+        Required. The absolute path of the protected file from which to read data.
+
+
+
+    - id: '*userId*'
+      type: '**NSString** *'
+      description: 
+    - id: '*authenticationCallback*'
+      type: id&lt;@msipcthin2.msauthenticationcallback_protocol_objc&gt;
+      description: 
+    - id: '*consentCallback*'
+      type: id&lt;@msipcthin2.msconscentcallback_protocol_objc&gt;
+      description: 
+    - id: '*options*'
+      type: '@msipcthin2.mspolicyacquisitionoptions_enum_objc'
+      description: 
+    - id: '*completionBlock*'
+      type: 'void(^)(@msipcthin2.msprotecteddata_interface_objc *data,                                  **NSError** *error))       '
+      description: >+
+        Required. Called when the method is completed with the following parameters:
+
+
+
+        *data* The protected file data object.
+
+
+
+        *error* If there is an error creating the data object, contains an **NSError** object that describes the problem.
+
+
+
+
+
+
+
+        If the user cancels the operation, both the *data* and *error* parameters will be **NIL**.
+
+
+
+    return:
+      type: '@msipcthin2.msasynccontrol_class'
+      description: Returns an @msipcthin2.msasynccontrol_class object allowing you to cancel  asynchronous SDK operations including closing all  opened UI.
+  inheritance: []
+- uid: msipcthin2.msprotecteddata_retrievedata_method_objc
+  id: MSProtectedData retrieveData
+  parent: msipcthin2.msprotecteddata_interface_objc
+  children: []
+  href: MSProtectedData.yml
+  langs:
+  - cplusplus
+  name: MSProtectedData retrieveData
+  fullName: msipcthin2.msprotecteddata_retrievedata_method_objc
+  type: Method
+  assemblies: *o0
+  namespace: iOS
+  summary: "Returns an **NSData** data object that contains a copy of all of the receiver’s plaintext bytes. Decryption is transparently performed during the execution of the method. \r\n\r\n\r\n\r\n"
+  remarks: 
+  syntax:
+    content: '- (NSData *)retrieveData;'
+    return:
+      type: NSData
+      description: "A pointer to an **NSData** object   that contains a copy of the receiver’s plaintext bytes."
+  inheritance: []
+- uid: msipcthin2.msprotecteddata_subdatawithrange_method_objc
+  id: MSProtectedData subdataWithRange
+  parent: msipcthin2.msprotecteddata_interface_objc
+  children: []
+  href: MSProtectedData.yml
+  langs:
+  - cplusplus
+  name: MSProtectedData subdataWithRange
+  fullName: msipcthin2.msprotecteddata_subdatawithrange_method_objc
+  type: Method
+  assemblies: *o0
+  namespace: iOS
+  summary: "Returns an **NSData** data object that contains a copy of the receiver’s plaintext bytes that fall within the limits specified by a given range.\r\n\r\nDecryption is transparently performed during the execution of the method.\r\n\r\n"
+  remarks: "If the range specified in the *range* parameter isn’t within the receiver’s range of bytes, an **NSRangeException** is raised. \r\n\r\n"
+  syntax:
+    content: '- (NSData *)subdataWithRange:(NSRange)range;'
+    parameters:
+    - id: '*range*'
+      type: '**NSRange**'
+      description: "Required. The range of plaintext bytes in the receiver’s data to copy. The range must lie within the range of bytes of the receiver’s data.\r\n\r\n"
+    return:
+      type: NSData
+      description: "A pointer to an **NSData** object that contains a copy of the receiver’s plaintext bytes that fall within the limits specified by the *range* parameter."
+  inheritance: []
+references:
+- uid: msipcthin2.msprotecteddata_interface_objc
+  href: MSProtectedData.yml
+  name: MSProtectedData
+- uid: msipcthin2.msmutableprotecteddata_interface_objc
+  href: MSMutableProtectedData.yml
+  name: MSMutableProtectedData
+- uid: msipcthin2.msprotecteddata_originalfileextension
+  href: MSProtectedData originalFileExtension.yml
+  name: originalFileExtension
+- uid: msipcthin2.msprotecteddata_userpolicy_property_objc
+  href: MSProtectedData userPolicy.yml
+  name: userPolicy
+- uid: msipcthin2.msprotecteddata_protecteddatawithprotectedfile_completionblock_method_objc
+  href: MSProtectedData protectedDataWithProtectedFile_completionBlock.yml
+  name: protectedDataWithProtectedFile
+- uid: msipcthin2.msprotecteddata_getbytes_length_error_method_objc
+  href: MSProtectedData getBytes_length_error.yml
+  name: getBytes:length
+- uid: msipcthin2.msprotecteddata_getbytes_range_error_method_objc
+  href: MSProtectedData getBytes_range_error.yml
+  name: getBytes:range
+- uid: msipcthin2.msprotecteddata_length_method_objc
+  href: MSProtectedData length.yml
+  name: length
+- uid: msipcthin2.msprotecteddata_retrievedata_method_objc
+  href: MSProtectedData retrieveData.yml
+  name: retrieveData
+- uid: msipcthin2.msprotecteddata_subdatawithrange_method_objc
+  href: MSProtectedData subdataWithRange.yml
+  name: subdataWithRange
+- uid: msipcthin2.mscustomprotecteddata_interface_objc
+  href: MSCustomProtectedData.yml
+  name: MSCustomProtectedData
+- uid: msipcthin2.msmutablecustomprotecteddata_interface_objc
+  href: MSMutableCustomProtectedData.yml
+  name: MSMutableCustomProtectedData

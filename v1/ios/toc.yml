@@ -1,0 +1,100 @@
+- uid: iOS
+  name: iOS
+  href: iOS.yml
+  items:
+  - uid: msipcthin2.msasynccontrol_class
+    name: MSAsyncControl
+    href: MSAsyncControl.yml
+  - uid: msipcthin2.msauthenticationcallback_protocol_objc
+    name: MSAuthenticationCallback
+    href: MSAuthenticationCallback.yml
+  - uid: msipcthin2.msauthenticationparameters_class_objc
+    name: MSAuthenticationParameters
+    href: MSAuthenticationParameters.yml
+  - uid: msipcthin2.mscommonrights_interface_objc
+    name: MSCommonRights
+    href: MSCommonRights.yml
+  - uid: msipcthin2.msconscent_class_objc
+    name: MSConsent
+    href: MSConsent.yml
+  - uid: msipcthin2.msconsentcallback_protocol_objc
+    name: MSConsentCallback
+    href: MSConsentCallback.yml
+  - uid: msipcthin2.msconscentresult_class_objc
+    name: MSConsentResult
+    href: MSConsentResult.yml
+  - uid: msipcthin2.msconscenttype_enum_objc
+    name: MSConsentType
+    href: MSConsentType.yml
+  - uid: msipcthin2.mscustomprotecteddata_interface_objc
+    name: MSCustomProtectedData
+    href: MSCustomProtectedData.yml
+  - uid: msipcthin2.mseditabledocumentrights_interface_objc
+    name: MSEditableDocumentRights
+    href: MSEditableDocumentRights.yml
+  - uid: msipcthin2.msemailrights_interface_objc
+    name: MSEmailRights
+    href: MSEmailRights.yml
+  - uid: msipcthin2.mslicensemetadata_class_objc
+    name: MSLicenseMetadata
+    href: MSLicenseMetadata.yml
+  - uid: msipcthin2.msmutablecustomprotecteddata_interface_objc
+    name: MSMutableCustomProtectedData
+    href: MSMutableCustomProtectedData.yml
+  - uid: msipcthin2.msmutableprotecteddata_interface_objc
+    name: MSMutableProtectedData
+    href: MSMutableProtectedData.yml
+  - uid: msipcthin2.msnotificationpreference_enum_objc
+    name: MSNotificationPreference
+    href: MSNotificationPreference.yml
+  - uid: msipcthin2.msnotificationtype_enum_objc
+    name: MSNotificationType
+    href: MSNotificationType.yml
+  - uid: msipcthin2.msofflinecachelifetimeconstants_interface_objc
+    name: MSOfflineCacheLifetimeConstants
+    href: MSOfflineCacheLifetimeConstants.yml
+  - uid: msipcthin2.mspolicyacquisitionoptions_enum_objc
+    name: MSPolicyAcquisitionOptions
+    href: MSPolicyAcquisitionOptions.yml
+  - uid: msipcthin2.mspolicydescriptor_interface_objc
+    name: MSPolicyDescriptor
+    href: MSPolicyDescriptor.yml
+  - uid: msipcthin2.msprotecteddata_interface_objc
+    name: MSProtectedData
+    href: MSProtectedData.yml
+  - uid: msipcthin2.msprotection_class_objc
+    name: MSProtection
+    href: MSProtection.yml
+  - uid: msipcthin2.msprotector_class_objc
+    name: MSProtector
+    href: MSProtector.yml
+  - uid: msipcthin2.msrole_class_objc
+    name: MSRole
+    href: MSRole.yml
+  - uid: msipcthin2.mssdkerrorcodes_enumeration_objc
+    name: MSSdkErrorCodes
+    href: MSSdkErrorCodes.yml
+  - uid: msipcthin2.mssecurecodableobject_class_objc
+    name: MSSecureCodableObject
+    href: MSSecureCodableObject.yml
+  - uid: msipcthin2.msserviceurlconscent_class_objc
+    name: MSServiceURLConsent
+    href: MSServiceURLConsent.yml
+  - uid: msipcthin2.mstemplatedescriptor_interface_objc
+    name: MSTemplateDescriptor
+    href: MSTemplateDescriptor.yml
+  - uid: msipcthin2.msuserpolicy_interface_objc
+    name: MSUserPolicy
+    href: MSUserPolicy.yml
+  - uid: msipcthin2.msprotectionpolicycreationoptions_enum_objc
+    name: MSUserPolicyCreationOptions
+    href: MSUserPolicyCreationOptions.yml
+  - uid: msipcthin2.msprotectionpolicytype_enum_objc
+    name: MSUserPolicyType
+    href: MSUserPolicyType.yml
+  - uid: msipcthin2.msuserrights_interface_objc
+    name: MSUserRights
+    href: MSUserRights.yml
+  - uid: msipcthin2.msuserroles_class
+    name: MSUserRoles
+    href: MSUserRoles.yml

@@ -1,0 +1,431 @@
+items:
+- uid: msipcthin2.mssdkerrorcodes_enumeration_objc
+  id: MSSdkErrorCodes
+  parent: iOS
+  children:
+  - msipcthin2.mssdkerrorcodes_enumeration_objc.SDK_ERROR_AUTH_FAILED_BAD_TOKEN
+  - msipcthin2.mssdkerrorcodes_enumeration_objc.SDK_ERROR_AUTHENTICATION_BUSY
+  - msipcthin2.mssdkerrorcodes_enumeration_objc.SDK_ERROR_COMMUNICATION
+  - 'msipcthin2.mssdkerrorcodes_enumeration_objc.SDK_ERROR_DEVICE_REJECTED '
+  - msipcthin2.mssdkerrorcodes_enumeration_objc.SDK_ERROR_GENERAL
+  - msipcthin2.mssdkerrorcodes_enumeration_objc.SDK_ERROR_INVALID_PARAMETER
+  - msipcthin2.mssdkerrorcodes_enumeration_objc.SDK_ERROR_INVALID_PL
+  - 'msipcthin2.mssdkerrorcodes_enumeration_objc.SDK_ERROR_INVALID_SSL_CERTIFICATE '
+  - msipcthin2.mssdkerrorcodes_enumeration_objc.SDK_ERROR_NO_CONSUMPTION_RIGHTS
+  - msipcthin2.mssdkerrorcodes_enumeration_objc.SDK_ERROR_NO_PUBLISHING_RIGHTS
+  - msipcthin2.mssdkerrorcodes_enumeration_objc.SDK_ERROR_NOT_AVAILABLE_IN_OFFLINE_MODE
+  - msipcthin2.mssdkerrorcodes_enumeration_objc.SDK_ERROR_ONPREM_SERVERS_NOT_SUPPORTED
+  - msipcthin2.mssdkerrorcodes_enumeration_objc.SDK_ERROR_PUBLISHING_LICENSE_EXPIRED
+  - msipcthin2.mssdkerrorcodes_enumeration_objc.SDK_ERROR_REST_SERVICE_NOT_ENABLED
+  - msipcthin2.mssdkerrorcodes_enumeration_objc.SDK_ERROR_SERVICE_NOT_AVAILABLE
+  - msipcthin2.mssdkerrorcodes_enumeration_objc.SDK_ERROR_UNSUPPORTED_SDK_VERSION
+  - msipcthin2.mssdkerrorcodes_enumeration_objc.SDK_ERROR_USER_CANCELLED
+  href: MSSdkErrorCodes.yml
+  langs:
+  - cplusplus
+  name: MSSdkErrorCodes
+  fullName: msipcthin2.mssdkerrorcodes_enumeration_objc
+  type: Enum
+  assemblies: &o0
+  - iOS
+  namespace: iOS
+  summary: >+
+    Defines the error codes that can be returned.
+
+
+
+
+
+
+
+
+
+
+
+  remarks: 
+  defined_in: MSSDKErrorCodes.h
+  syntax:
+    content: typedef uint32_t MSSdkErrorCodes;
+  inheritance: []
+- uid: msipcthin2.mssdkerrorcodes_enumeration_objc.SDK_ERROR_GENERAL
+  id: SDK_ERROR_GENERAL
+  parent: msipcthin2.mssdkerrorcodes_enumeration_objc
+  href: MSSdkErrorCodes.yml
+  langs:
+  - cplusplus
+  name: SDK_ERROR_GENERAL
+  fullName: msipcthin2.mssdkerrorcodes_enumeration_objc.SDK_ERROR_GENERAL
+  type: Field
+  assemblies: *o0
+  namespace: iOS
+  summary: >+
+    The Security Token Service (STS) fails to accept a token or to issue a token for the REST service. An internal consumption related error; for example, formatting errors in JSON responses, publish license parsing, encryption initialization and template retrieval.
+
+
+
+    When this error  is encountered you will be prompted, stating that an error has occurred and allowing you to send logging information to the Rights Management Service.
+
+
+
+  syntax:
+    content: SDK_ERROR_GENERAL = -1
+- uid: msipcthin2.mssdkerrorcodes_enumeration_objc.SDK_ERROR_COMMUNICATION
+  id: SDK_ERROR_COMMUNICATION
+  parent: msipcthin2.mssdkerrorcodes_enumeration_objc
+  href: MSSdkErrorCodes.yml
+  langs:
+  - cplusplus
+  name: SDK_ERROR_COMMUNICATION
+  fullName: msipcthin2.mssdkerrorcodes_enumeration_objc.SDK_ERROR_COMMUNICATION
+  type: Field
+  assemblies: *o0
+  namespace: iOS
+  summary: >+
+    The device has no connection to the network.
+
+
+
+  syntax:
+    content: SDK_ERROR_COMMUNICATION = -2
+- uid: 'msipcthin2.mssdkerrorcodes_enumeration_objc.SDK_ERROR_DEVICE_REJECTED '
+  id: 'SDK_ERROR_DEVICE_REJECTED '
+  parent: msipcthin2.mssdkerrorcodes_enumeration_objc
+  href: MSSdkErrorCodes.yml
+  langs:
+  - cplusplus
+  name: 'SDK_ERROR_DEVICE_REJECTED '
+  fullName: 'msipcthin2.mssdkerrorcodes_enumeration_objc.SDK_ERROR_DEVICE_REJECTED '
+  type: Field
+  assemblies: *o0
+  namespace: iOS
+  summary: >+
+    The device is blocked from using RMS services.
+
+
+
+  syntax:
+    content: SDK_ERROR_DEVICE_REJECTED  = -3
+- uid: msipcthin2.mssdkerrorcodes_enumeration_objc.SDK_ERROR_NO_CONSUMPTION_RIGHTS
+  id: SDK_ERROR_NO_CONSUMPTION_RIGHTS
+  parent: msipcthin2.mssdkerrorcodes_enumeration_objc
+  href: MSSdkErrorCodes.yml
+  langs:
+  - cplusplus
+  name: SDK_ERROR_NO_CONSUMPTION_RIGHTS
+  fullName: msipcthin2.mssdkerrorcodes_enumeration_objc.SDK_ERROR_NO_CONSUMPTION_RIGHTS
+  type: Field
+  assemblies: *o0
+  namespace: iOS
+  summary: >+
+    The user doesn't have consumption rights over the content.
+
+
+
+  syntax:
+    content: SDK_ERROR_NO_CONSUMPTION_RIGHTS = -4
+- uid: msipcthin2.mssdkerrorcodes_enumeration_objc.SDK_ERROR_UNSUPPORTED_SDK_VERSION
+  id: SDK_ERROR_UNSUPPORTED_SDK_VERSION
+  parent: msipcthin2.mssdkerrorcodes_enumeration_objc
+  href: MSSdkErrorCodes.yml
+  langs:
+  - cplusplus
+  name: SDK_ERROR_UNSUPPORTED_SDK_VERSION
+  fullName: msipcthin2.mssdkerrorcodes_enumeration_objc.SDK_ERROR_UNSUPPORTED_SDK_VERSION
+  type: Field
+  assemblies: *o0
+  namespace: iOS
+  summary: >+
+    The SDK that is being used by the app is not supported.
+
+
+
+  syntax:
+    content: SDK_ERROR_UNSUPPORTED_SDK_VERSION = -5
+- uid: msipcthin2.mssdkerrorcodes_enumeration_objc.SDK_ERROR_SERVICE_NOT_AVAILABLE
+  id: SDK_ERROR_SERVICE_NOT_AVAILABLE
+  parent: msipcthin2.mssdkerrorcodes_enumeration_objc
+  href: MSSdkErrorCodes.yml
+  langs:
+  - cplusplus
+  name: SDK_ERROR_SERVICE_NOT_AVAILABLE
+  fullName: msipcthin2.mssdkerrorcodes_enumeration_objc.SDK_ERROR_SERVICE_NOT_AVAILABLE
+  type: Field
+  assemblies: *o0
+  namespace: iOS
+  summary: >+
+    The Rights Management Service is temporarily unable to answer.
+
+
+
+  syntax:
+    content: SDK_ERROR_SERVICE_NOT_AVAILABLE = -6
+- uid: msipcthin2.mssdkerrorcodes_enumeration_objc.SDK_ERROR_INVALID_PL
+  id: SDK_ERROR_INVALID_PL
+  parent: msipcthin2.mssdkerrorcodes_enumeration_objc
+  href: MSSdkErrorCodes.yml
+  langs:
+  - cplusplus
+  name: SDK_ERROR_INVALID_PL
+  fullName: msipcthin2.mssdkerrorcodes_enumeration_objc.SDK_ERROR_INVALID_PL
+  type: Field
+  assemblies: *o0
+  namespace: iOS
+  summary: >+
+    The publish license provided is not valid.
+
+
+
+    When this error  is encountered you will be prompted, stating that an error has occurred and allowing you to send logging information to the Rights Management Service.
+
+
+
+  syntax:
+    content: SDK_ERROR_INVALID_PL = -7
+- uid: msipcthin2.mssdkerrorcodes_enumeration_objc.SDK_ERROR_ONPREM_SERVERS_NOT_SUPPORTED
+  id: SDK_ERROR_ONPREM_SERVERS_NOT_SUPPORTED
+  parent: msipcthin2.mssdkerrorcodes_enumeration_objc
+  href: MSSdkErrorCodes.yml
+  langs:
+  - cplusplus
+  name: SDK_ERROR_ONPREM_SERVERS_NOT_SUPPORTED
+  fullName: msipcthin2.mssdkerrorcodes_enumeration_objc.SDK_ERROR_ONPREM_SERVERS_NOT_SUPPORTED
+  type: Field
+  assemblies: *o0
+  namespace: iOS
+  summary: >+
+    Your local AD RMS server does not support your device so, this content can not be decrypted.
+
+
+
+    Contact your administrator for more information.
+
+
+
+  syntax:
+    content: SDK_ERROR_ONPREM_SERVERS_NOT_SUPPORTED = -8
+- uid: msipcthin2.mssdkerrorcodes_enumeration_objc.SDK_ERROR_REST_SERVICE_NOT_ENABLED
+  id: SDK_ERROR_REST_SERVICE_NOT_ENABLED
+  parent: msipcthin2.mssdkerrorcodes_enumeration_objc
+  href: MSSdkErrorCodes.yml
+  langs:
+  - cplusplus
+  name: SDK_ERROR_REST_SERVICE_NOT_ENABLED
+  fullName: msipcthin2.mssdkerrorcodes_enumeration_objc.SDK_ERROR_REST_SERVICE_NOT_ENABLED
+  type: Field
+  assemblies: *o0
+  namespace: iOS
+  summary: >+
+    Azure  AD Rights Management is not enabled for your organization.
+
+
+
+    Contact your administrator for further details.
+
+
+
+  syntax:
+    content: SDK_ERROR_REST_SERVICE_NOT_ENABLED = -9
+- uid: msipcthin2.mssdkerrorcodes_enumeration_objc.SDK_ERROR_NO_PUBLISHING_RIGHTS
+  id: SDK_ERROR_NO_PUBLISHING_RIGHTS
+  parent: msipcthin2.mssdkerrorcodes_enumeration_objc
+  href: MSSdkErrorCodes.yml
+  langs:
+  - cplusplus
+  name: SDK_ERROR_NO_PUBLISHING_RIGHTS
+  fullName: msipcthin2.mssdkerrorcodes_enumeration_objc.SDK_ERROR_NO_PUBLISHING_RIGHTS
+  type: Field
+  assemblies: *o0
+  namespace: iOS
+  summary: >+
+    You do not have permission to create new protected content for this organization.
+
+
+
+    Try signing in as a different user, or contacting your administrator for additional permissions.";
+
+
+
+  syntax:
+    content: SDK_ERROR_NO_PUBLISHING_RIGHTS = -10
+- uid: msipcthin2.mssdkerrorcodes_enumeration_objc.SDK_ERROR_PUBLISHING_LICENSE_EXPIRED
+  id: SDK_ERROR_PUBLISHING_LICENSE_EXPIRED
+  parent: msipcthin2.mssdkerrorcodes_enumeration_objc
+  href: MSSdkErrorCodes.yml
+  langs:
+  - cplusplus
+  name: SDK_ERROR_PUBLISHING_LICENSE_EXPIRED
+  fullName: msipcthin2.mssdkerrorcodes_enumeration_objc.SDK_ERROR_PUBLISHING_LICENSE_EXPIRED
+  type: Field
+  assemblies: *o0
+  namespace: iOS
+  summary: >+
+    You can not view this content because the time limit has ended.
+
+
+
+    Contact the content owner or your administrator to renew this content.
+
+
+
+  syntax:
+    content: SDK_ERROR_PUBLISHING_LICENSE_EXPIRED = -11
+- uid: 'msipcthin2.mssdkerrorcodes_enumeration_objc.SDK_ERROR_INVALID_SSL_CERTIFICATE '
+  id: 'SDK_ERROR_INVALID_SSL_CERTIFICATE '
+  parent: msipcthin2.mssdkerrorcodes_enumeration_objc
+  href: MSSdkErrorCodes.yml
+  langs:
+  - cplusplus
+  name: 'SDK_ERROR_INVALID_SSL_CERTIFICATE '
+  fullName: 'msipcthin2.mssdkerrorcodes_enumeration_objc.SDK_ERROR_INVALID_SSL_CERTIFICATE '
+  type: Field
+  assemblies: *o0
+  namespace: iOS
+  summary: "User message: \"There is a problem with the service's security certificate, which may indicate an attempt to fool you or intercept any data you send to the server. If the problem continues, contact your administrator.\"\r\n\r\nThis error occurs when the AD RMS server’s SSL certificate is incorrect or cannot be trusted by the device (e.g. no equivalent root CA on the device)\r\n\r\n"
+  syntax:
+    content: SDK_ERROR_INVALID_SSL_CERTIFICATE  = -12
+- uid: msipcthin2.mssdkerrorcodes_enumeration_objc.SDK_ERROR_NOT_AVAILABLE_IN_OFFLINE_MODE
+  id: SDK_ERROR_NOT_AVAILABLE_IN_OFFLINE_MODE
+  parent: msipcthin2.mssdkerrorcodes_enumeration_objc
+  href: MSSdkErrorCodes.yml
+  langs:
+  - cplusplus
+  name: SDK_ERROR_NOT_AVAILABLE_IN_OFFLINE_MODE
+  fullName: msipcthin2.mssdkerrorcodes_enumeration_objc.SDK_ERROR_NOT_AVAILABLE_IN_OFFLINE_MODE
+  type: Field
+  assemblies: *o0
+  namespace: iOS
+  summary: "User messgage:\"You can't view this content without internet connection. Please check your connection before trying again and that your app is not working in offline mode.\"\r\n\r\nThis error occurs when the application asked the SDK to consume content with offline access only but no cached policy (i.e. EUL) was found, thus application must request online access from the SDK.\r\n\r\nIn case the 3rd party application does not handle this scenario, the error message will be confusing to the user, which might have internet connection but can’t access the content.\r\n\r\n\r\n\r\n"
+  syntax:
+    content: SDK_ERROR_NOT_AVAILABLE_IN_OFFLINE_MODE = -13
+- uid: msipcthin2.mssdkerrorcodes_enumeration_objc.SDK_ERROR_USER_CANCELLED
+  id: SDK_ERROR_USER_CANCELLED
+  parent: msipcthin2.mssdkerrorcodes_enumeration_objc
+  href: MSSdkErrorCodes.yml
+  langs:
+  - cplusplus
+  name: SDK_ERROR_USER_CANCELLED
+  fullName: msipcthin2.mssdkerrorcodes_enumeration_objc.SDK_ERROR_USER_CANCELLED
+  type: Field
+  assemblies: *o0
+  namespace: iOS
+  summary: >+
+    The user has canceled the consent process.
+
+
+
+  syntax:
+    content: SDK_ERROR_USER_CANCELLED = -14
+- uid: msipcthin2.mssdkerrorcodes_enumeration_objc.SDK_ERROR_INVALID_PARAMETER
+  id: SDK_ERROR_INVALID_PARAMETER
+  parent: msipcthin2.mssdkerrorcodes_enumeration_objc
+  href: MSSdkErrorCodes.yml
+  langs:
+  - cplusplus
+  name: SDK_ERROR_INVALID_PARAMETER
+  fullName: msipcthin2.mssdkerrorcodes_enumeration_objc.SDK_ERROR_INVALID_PARAMETER
+  type: Field
+  assemblies: *o0
+  namespace: iOS
+  summary: >+
+    Invalid input. This error is mainly for developer convenience and is not meant for the user.
+
+
+
+    When this error  is encountered you will be prompted, stating that an error has occurred and allowing you to send logging information to the Rights Management Service.
+
+
+
+  syntax:
+    content: SDK_ERROR_INVALID_PARAMETER = -1000
+- uid: msipcthin2.mssdkerrorcodes_enumeration_objc.SDK_ERROR_AUTH_FAILED_BAD_TOKEN
+  id: SDK_ERROR_AUTH_FAILED_BAD_TOKEN
+  parent: msipcthin2.mssdkerrorcodes_enumeration_objc
+  href: MSSdkErrorCodes.yml
+  langs:
+  - cplusplus
+  name: SDK_ERROR_AUTH_FAILED_BAD_TOKEN
+  fullName: msipcthin2.mssdkerrorcodes_enumeration_objc.SDK_ERROR_AUTH_FAILED_BAD_TOKEN
+  type: Field
+  assemblies: *o0
+  namespace: iOS
+  summary: >+
+    Authentication failed, bad access token.
+
+
+
+  syntax:
+    content: SDK_ERROR_AUTH_FAILED_BAD_TOKEN = -2000
+- uid: msipcthin2.mssdkerrorcodes_enumeration_objc.SDK_ERROR_AUTHENTICATION_BUSY
+  id: SDK_ERROR_AUTHENTICATION_BUSY
+  parent: msipcthin2.mssdkerrorcodes_enumeration_objc
+  href: MSSdkErrorCodes.yml
+  langs:
+  - cplusplus
+  name: SDK_ERROR_AUTHENTICATION_BUSY
+  fullName: msipcthin2.mssdkerrorcodes_enumeration_objc.SDK_ERROR_AUTHENTICATION_BUSY
+  type: Field
+  assemblies: *o0
+  namespace: iOS
+  summary: >+
+    The system detects that you are already attempting to sign in.
+
+
+
+    Complete your previous attempt before trying again.
+
+
+
+  syntax:
+    content: SDK_ERROR_AUTHENTICATION_BUSY = -3000
+references:
+- uid: msipcthin2.mssdkerrorcodes_enumeration_objc.SDK_ERROR_GENERAL
+  href: MSSdkErrorCodes.yml
+  name: SDK_ERROR_GENERAL
+- uid: msipcthin2.mssdkerrorcodes_enumeration_objc.SDK_ERROR_COMMUNICATION
+  href: MSSdkErrorCodes.yml
+  name: SDK_ERROR_COMMUNICATION
+- uid: 'msipcthin2.mssdkerrorcodes_enumeration_objc.SDK_ERROR_DEVICE_REJECTED '
+  href: MSSdkErrorCodes.yml
+  name: 'SDK_ERROR_DEVICE_REJECTED '
+- uid: msipcthin2.mssdkerrorcodes_enumeration_objc.SDK_ERROR_NO_CONSUMPTION_RIGHTS
+  href: MSSdkErrorCodes.yml
+  name: SDK_ERROR_NO_CONSUMPTION_RIGHTS
+- uid: msipcthin2.mssdkerrorcodes_enumeration_objc.SDK_ERROR_UNSUPPORTED_SDK_VERSION
+  href: MSSdkErrorCodes.yml
+  name: SDK_ERROR_UNSUPPORTED_SDK_VERSION
+- uid: msipcthin2.mssdkerrorcodes_enumeration_objc.SDK_ERROR_SERVICE_NOT_AVAILABLE
+  href: MSSdkErrorCodes.yml
+  name: SDK_ERROR_SERVICE_NOT_AVAILABLE
+- uid: msipcthin2.mssdkerrorcodes_enumeration_objc.SDK_ERROR_INVALID_PL
+  href: MSSdkErrorCodes.yml
+  name: SDK_ERROR_INVALID_PL
+- uid: msipcthin2.mssdkerrorcodes_enumeration_objc.SDK_ERROR_ONPREM_SERVERS_NOT_SUPPORTED
+  href: MSSdkErrorCodes.yml
+  name: SDK_ERROR_ONPREM_SERVERS_NOT_SUPPORTED
+- uid: msipcthin2.mssdkerrorcodes_enumeration_objc.SDK_ERROR_REST_SERVICE_NOT_ENABLED
+  href: MSSdkErrorCodes.yml
+  name: SDK_ERROR_REST_SERVICE_NOT_ENABLED
+- uid: msipcthin2.mssdkerrorcodes_enumeration_objc.SDK_ERROR_NO_PUBLISHING_RIGHTS
+  href: MSSdkErrorCodes.yml
+  name: SDK_ERROR_NO_PUBLISHING_RIGHTS
+- uid: msipcthin2.mssdkerrorcodes_enumeration_objc.SDK_ERROR_PUBLISHING_LICENSE_EXPIRED
+  href: MSSdkErrorCodes.yml
+  name: SDK_ERROR_PUBLISHING_LICENSE_EXPIRED
+- uid: 'msipcthin2.mssdkerrorcodes_enumeration_objc.SDK_ERROR_INVALID_SSL_CERTIFICATE '
+  href: MSSdkErrorCodes.yml
+  name: 'SDK_ERROR_INVALID_SSL_CERTIFICATE '
+- uid: msipcthin2.mssdkerrorcodes_enumeration_objc.SDK_ERROR_NOT_AVAILABLE_IN_OFFLINE_MODE
+  href: MSSdkErrorCodes.yml
+  name: SDK_ERROR_NOT_AVAILABLE_IN_OFFLINE_MODE
+- uid: msipcthin2.mssdkerrorcodes_enumeration_objc.SDK_ERROR_USER_CANCELLED
+  href: MSSdkErrorCodes.yml
+  name: SDK_ERROR_USER_CANCELLED
+- uid: msipcthin2.mssdkerrorcodes_enumeration_objc.SDK_ERROR_INVALID_PARAMETER
+  href: MSSdkErrorCodes.yml
+  name: SDK_ERROR_INVALID_PARAMETER
+- uid: msipcthin2.mssdkerrorcodes_enumeration_objc.SDK_ERROR_AUTH_FAILED_BAD_TOKEN
+  href: MSSdkErrorCodes.yml
+  name: SDK_ERROR_AUTH_FAILED_BAD_TOKEN
+- uid: msipcthin2.mssdkerrorcodes_enumeration_objc.SDK_ERROR_AUTHENTICATION_BUSY
+  href: MSSdkErrorCodes.yml
+  name: SDK_ERROR_AUTHENTICATION_BUSY
