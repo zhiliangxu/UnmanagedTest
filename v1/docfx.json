@@ -10,7 +10,7 @@
           "v1/**"
         ],
         "src": null,
-        "dest": v1
+        "dest": "v1"
       }
     ],
     "resource": [
