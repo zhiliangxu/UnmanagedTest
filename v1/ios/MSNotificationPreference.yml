@@ -1,0 +1,85 @@
+items:
+- uid: msipcthin2.msnotificationpreference_enum_objc
+  id: MSNotificationPreference
+  parent: iOS
+  children:
+  - msipcthin2.msnotificationpreference_enum_objc.NotificationPrefDefault
+  - msipcthin2.msnotificationpreference_enum_objc.NotificationPrefDigest
+  href: MSNotificationPreference.yml
+  langs:
+  - cplusplus
+  name: MSNotificationPreference
+  fullName: msipcthin2.msnotificationpreference_enum_objc
+  type: Enum
+  assemblies: &o0
+  - iOS
+  namespace: iOS
+  summary: >+
+    Document tracking notification preference.
+
+
+
+
+
+
+
+  remarks: 
+  defined_in: MSMSLicenseMetadata.h
+  syntax:
+    content: typedef NS_ENUM(NSUInteger, MSNotificationPreference) {    NotificationPrefDefault = 0,    NotificationPrefDigest = 1};
+  inheritance: []
+- uid: msipcthin2.msnotificationpreference_enum_objc.NotificationPrefDefault
+  id: NotificationPrefDefault
+  parent: msipcthin2.msnotificationpreference_enum_objc
+  href: MSNotificationPreference.yml
+  langs:
+  - cplusplus
+  name: NotificationPrefDefault
+  fullName: msipcthin2.msnotificationpreference_enum_objc.NotificationPrefDefault
+  type: Field
+  assemblies: *o0
+  namespace: iOS
+  summary: >+
+    Email notifications sent per access.
+
+
+
+  syntax:
+    content: NotificationPrefDefault = 0
+- uid: msipcthin2.msnotificationpreference_enum_objc.NotificationPrefDigest
+  id: NotificationPrefDigest
+  parent: msipcthin2.msnotificationpreference_enum_objc
+  href: MSNotificationPreference.yml
+  langs:
+  - cplusplus
+  name: NotificationPrefDigest
+  fullName: msipcthin2.msnotificationpreference_enum_objc.NotificationPrefDigest
+  type: Field
+  assemblies: *o0
+  namespace: iOS
+  summary: >+
+    Email notifications sent as a digest once per day.
+
+
+
+
+
+
+
+    Digest mode is a server side enabled feature which is not yet available.
+
+
+
+
+
+
+
+  syntax:
+    content: NotificationPrefDigest = 1
+references:
+- uid: msipcthin2.msnotificationpreference_enum_objc.NotificationPrefDefault
+  href: MSNotificationPreference.yml
+  name: NotificationPrefDefault
+- uid: msipcthin2.msnotificationpreference_enum_objc.NotificationPrefDigest
+  href: MSNotificationPreference.yml
+  name: NotificationPrefDigest

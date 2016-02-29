@@ -1,0 +1,70 @@
+items:
+- uid: msipcthin2.msprotection_class_objc
+  id: MSProtection
+  parent: iOS
+  children:
+  - msipcthin2.msprotection_resetstatewithcompletionblock_method_objc
+  href: MSProtection.yml
+  langs:
+  - cplusplus
+  name: MSProtection
+  fullName: msipcthin2.msprotection_class_objc
+  type: Class
+  assemblies: &o0
+  - iOS
+  namespace: iOS
+  summary: >+
+    Used for common operations such as,  reset state that clears all cache.
+
+
+
+
+
+
+
+  remarks: 
+  thread_safety: Members of this class are not guaranteed to be thread safe.
+  defined_in: MSProtection.h
+  syntax:
+    content: '@interface MSProtection : NSObject'
+  inheritance: []
+- uid: msipcthin2.msprotection_resetstatewithcompletionblock_method_objc
+  id: MSProtection resetStateWithCompletionBlock
+  parent: msipcthin2.msprotection_class_objc
+  children: []
+  href: MSProtection.yml
+  langs:
+  - cplusplus
+  name: MSProtection resetStateWithCompletionBlock
+  fullName: msipcthin2.msprotection_resetstatewithcompletionblock_method_objc
+  type: Method
+  assemblies: *o0
+  namespace: iOS
+  summary: >+
+    Use to reset the state.
+
+
+
+    This can clear all cache.
+
+
+
+  remarks: >+
+    @msipcthin2.mstemplatedescriptor_templatelistwithuserid_userid_authenticationcallback_completionblock_method_objc should be invoked from the main thread.
+
+
+
+  syntax:
+    content: + (void)resetStateWithCompletionBlock:(void(^)())completionBlock;
+    parameters:
+    - id: '*completionBlock*'
+      type: void
+      description: 
+    return:
+      type: void
+      description: void
+  inheritance: []
+references:
+- uid: msipcthin2.msprotection_resetstatewithcompletionblock_method_objc
+  href: MSProtection resetStateWithCompletionBlock.yml
+  name: resetStateWithCompletionBlock

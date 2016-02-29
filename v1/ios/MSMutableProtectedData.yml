@@ -1,0 +1,386 @@
+items:
+- uid: msipcthin2.msmutableprotecteddata_interface_objc
+  id: MSMutableProtectedData
+  parent: iOS
+  children:
+  - msipcthin2.msmutableprotecteddata___protecteddatainfile_withprotectionpolicy_completionblock_method_objc
+  - msipcthin2.msmutableprotecteddata_appendbytes_length_error_method_objc
+  - msipcthin2.msmutableprotecteddata_appenddata_error_method_objc
+  - msipcthin2.msmutableprotecteddata_close__method_objc
+  - msipcthin2.msmutableprotecteddata_protecteddatawithpolicy_path_completionblock_method_objc
+  - msipcthin2.msmutableprotecteddata_synchronizefile_method_objc
+  - msipcthin2.msmutableprotecteddata_updatedata_error_method_objc
+  href: MSMutableProtectedData.yml
+  langs:
+  - cplusplus
+  name: MSMutableProtectedData
+  fullName: msipcthin2.msmutableprotecteddata_interface_objc
+  type: Class
+  assemblies: &o0
+  - iOS
+  namespace: iOS
+  summary: >+
+    @msipcthin2.msmutableprotecteddata_interface_objc and its super-class  @msipcthin2.msprotecteddata_interface_objc provide protected file data objects, object-oriented wrappers for files that are protected using the Microsoft Protected File format.
+
+
+
+    Use @msipcthin2.msprotecteddata_interface_objc to read (and transparently decrypt) protected files in consumption scenarios and @msipcthin2.msmutableprotecteddata_interface_objc to write (and transparently encrypt) data to protected files in publishing scenarios.
+
+
+
+  remarks: >+
+    The methods of the @msipcthin2.msmutableprotecteddata_interface_objc class that write  data transparently encrypt the plaintext data.
+
+
+
+    @msipcthin2.msprotecteddata_interface_objc and @msipcthin2.msmutableprotecteddata_interface_objc are used to read and write files that are protected with the Microsoft Protected File format. To read and write data for files that are protected with a custom protected file format, use  @msipcthin2.mscustomprotecteddata_interface_objc and @msipcthin2.msmutablecustomprotecteddata_interface_objc.
+
+
+
+  thread_safety: Members of this class are not guaranteed to be thread safe.
+  defined_in: MSMutableProtectedData.h
+  syntax:
+    content: '@interface MSMutableProtectedData : MSProtectedData'
+  inheritance: []
+- uid: msipcthin2.msmutableprotecteddata_appendbytes_length_error_method_objc
+  id: MSMutableProtectedData appendBytes:length:error
+  parent: msipcthin2.msmutableprotecteddata_interface_objc
+  children: []
+  href: MSMutableProtectedData.yml
+  langs:
+  - cplusplus
+  name: MSMutableProtectedData appendBytes:length:error
+  fullName: msipcthin2.msmutableprotecteddata_appendbytes_length_error_method_objc
+  type: Method
+  assemblies: *o0
+  namespace: iOS
+  summary: >+
+    Appends the specified number of plaintext bytes from a given buffer to the receiver.
+
+
+
+    First the bytes are encrypted, and then the cipher text bytes are appended to the receiver.
+
+
+
+  remarks: >+
+    The specified number of bytes are copied from the buffer, encrypted, and appended to the receiver's data.
+
+
+
+  syntax:
+    content: '- (BOOL)appendBytes:(const void *)bytes length:(NSUInteger)length error:(NSError **)errorPtr;'
+    parameters:
+    - id: '*bytes*'
+      type: '**const void** *'
+      description: >+
+        Required. The buffer that contains the plaintext data to be encrypted and appended.
+
+
+
+    - id: '*length*'
+      type: '**NSUInteger**'
+      description: >+
+        Required. The number of bytes to copy.
+
+
+
+    - id: '*errorPtr*'
+      type: '**NSError** **'
+      description: >+
+        Optional. If an error occurs, contains the error code and details.
+
+
+
+    return:
+      type: BOOL
+      description: 'Type: **BOOL**YES if the operation is successful; otherwise, NO. If the operation isn''t successful, the *errorPtr* parameter references an **NSError** object that contains more information about the error.'
+  inheritance: []
+- uid: msipcthin2.msmutableprotecteddata_appenddata_error_method_objc
+  id: MSMutableProtectedData appendData:error
+  parent: msipcthin2.msmutableprotecteddata_interface_objc
+  children: []
+  href: MSMutableProtectedData.yml
+  langs:
+  - cplusplus
+  name: MSMutableProtectedData appendData:error
+  fullName: msipcthin2.msmutableprotecteddata_appenddata_error_method_objc
+  type: Method
+  assemblies: *o0
+  namespace: iOS
+  summary: >+
+    Appends the content of another plaintext object to the receiver.
+
+
+
+    First the data object is protected, and then the cipher text data is appended to the receiver.
+
+
+
+  remarks: 
+  syntax:
+    content: '- (BOOL)appendData:(NSData *)other error:(NSError **)errorPtr;'
+    parameters:
+    - id: '*other*'
+      type: '**NSData** *'
+      description: >+
+        Required. The data object containing the plaintext data to be protected and appended.
+
+
+
+    - id: '*errorPtr*'
+      type: '**NSError** **'
+      description: >+
+        Optional. If an error occurs, contains the error code and details.
+
+
+
+    return:
+      type: BOOL
+      description: 'Type: **BOOL**YES if the operation is successful; otherwise, NO. If the operation isn''t successful, the *errorPtr* parameter references an **NSError** object that contains more information about the error.'
+  inheritance: []
+- uid: msipcthin2.msmutableprotecteddata_close__method_objc
+  id: MSMutableProtectedData close
+  parent: msipcthin2.msmutableprotecteddata_interface_objc
+  children: []
+  href: MSMutableProtectedData.yml
+  langs:
+  - cplusplus
+  name: MSMutableProtectedData close
+  fullName: msipcthin2.msmutableprotecteddata_close__method_objc
+  type: Method
+  assemblies: *o0
+  namespace: iOS
+  summary: "Writes and finalizes the protection of any remaining data, smaller than the block size, that is  left over from preceding append and update calls. \r\n\r\n\r\n\r\n"
+  remarks: 
+  syntax:
+    content: '- (BOOL)close:(NSError **)errorPtr; '
+    parameters:
+    - id: '*errorPtr*'
+      type: '**NSError** **'
+      description: >+
+        Optional. If an error occurs, contains the error code and details.
+
+
+
+    return:
+      type: BOOL
+      description: 'Type: **BOOL**YES if the operation is successful; otherwise, NO. If the operation isn''t successful, the *errorPtr* parameter references an **NSError** object that contains more information about the error.'
+  inheritance: []
+- uid: msipcthin2.msmutableprotecteddata___protecteddatainfile_withprotectionpolicy_completionblock_method_objc
+  id: MSMutableProtectedData protectedDataInFile:withProtectionPolicy:completionBlock
+  parent: msipcthin2.msmutableprotecteddata_interface_objc
+  children: []
+  href: MSMutableProtectedData.yml
+  langs:
+  - cplusplus
+  name: MSMutableProtectedData protectedDataInFile:withProtectionPolicy:completionBlock
+  fullName: msipcthin2.msmutableprotecteddata___protecteddatainfile_withprotectionpolicy_completionblock_method_objc
+  type: Method
+  assemblies: *o0
+  namespace: iOS
+  summary: >+
+    Protects the receiver's data and creates a new @msipcthin2.msmutableprotecteddata_interface_objc object with the protected data and its metadata.
+
+
+
+
+
+
+
+  remarks: 
+  syntax:
+    content: '- (void)protectedDataInFile:(NSString *)path      originalFileExtension:(NSString *)originalFileExtension       withProtectionPolicy:(MSUserPolicy *)userPolicy            completionBlock:(void(^)(MSMutableProtectedData *data, NSError *error)              )completionBlock;'
+    parameters:
+    - id: '*path*'
+      type: '**NSString** *'
+      description: >+
+        Required. The path to the protected file.
+
+
+
+    - id: '*originalFileExtension*'
+      type: '**NSString** *'
+      description: "Required. \r\n\r\n"
+    - id: '*userPolicy*'
+      type: '@msipcthin2.msuserpolicy_interface_objc *'
+      description: >+
+        Required. The user policy to be used for protecting the receiver's data.
+
+
+
+    - id: '*completionBlock*'
+      type: '@msipcthin2.msmutableprotecteddata_interface_objc** *data, NSError *error)**'
+      description: "Required. Called with the following parameters when the method is completed:\r\n\r\n*data* “ The protected data file object.\r\n\r\n*error* “ If there is an error creating the data object, contains an **NSError** object that describes the problem.\r\n\r\n"
+    return:
+      type: Nothing.
+      description: Nothing.
+  inheritance: []
+- uid: msipcthin2.msmutableprotecteddata_protecteddatawithpolicy_path_completionblock_method_objc
+  id: MSMutableProtectedData protectedDataWithPolicy:path:completionBlock
+  parent: msipcthin2.msmutableprotecteddata_interface_objc
+  children: []
+  href: MSMutableProtectedData.yml
+  langs:
+  - cplusplus
+  name: MSMutableProtectedData protectedDataWithPolicy:path:completionBlock
+  fullName: msipcthin2.msmutableprotecteddata_protecteddatawithpolicy_path_completionblock_method_objc
+  type: Method
+  assemblies: *o0
+  namespace: iOS
+  summary: >+
+    Asynchronously creates and returns an empty @msipcthin2.msmutableprotecteddata_interface_objc object  that can be used to write and protect data to the specified file.
+
+
+
+    The file will be protected using the specified policy and saved in  Microsoft Protected File format.
+
+
+
+  remarks: 
+  syntax:
+    content: + (void)protectedDataWithPolicy:(MSUserPolicy *)userPolicy          originalFileExtension:(NSString *)originalFileExtension                           path:(NSString *)path                completionBlock:(void(^)(MSMutableProtectedData *data, NSError *error))completionBlock;
+    parameters:
+    - id: '*protectionPolicy*'
+      type: '@msipcthin2.msuserpolicy_interface_objc *'
+      description: >+
+        Required.
+
+
+
+    - id: '*originalFileExtension*'
+      type: '**NSString** *'
+      description: >+
+        Used to store the original file type, before protection.
+
+
+
+    - id: '*path*'
+      type: '**NSString** *'
+      description: >+
+        Required. The absolute path to the new protected file.
+
+
+
+    - id: '*completionBlock*'
+      type: 'void(^)(@msipcthin2.msmutableprotecteddata_interface_objc *data, **NSError** *error)       '
+      description: >+
+        Required. Called with the following parameters when the method is completed:
+
+
+
+        *data* - The protected file  object.
+
+
+
+        *error* - If there is an error creating the data object, contains an **NSError** object that describes the problem.
+
+
+
+
+
+
+
+        If the user cancels the operation, both the *data* and *error* parameters will be **NIL**.
+
+
+
+  inheritance: []
+- uid: msipcthin2.msmutableprotecteddata_synchronizefile_method_objc
+  id: MSMutableProtectedData synchronizeFile
+  parent: msipcthin2.msmutableprotecteddata_interface_objc
+  children: []
+  href: MSMutableProtectedData.yml
+  langs:
+  - cplusplus
+  name: MSMutableProtectedData synchronizeFile
+  fullName: msipcthin2.msmutableprotecteddata_synchronizefile_method_objc
+  type: Method
+  assemblies: *o0
+  namespace: iOS
+  summary: "Causes all in-memory data and attributes of the file represented by the receiver to be written to persistent storage. \r\n\r\nThis method should be invoked by apps that require the file to always be in a known state. An invocation of this method does not return until memory is flushed.\r\n\r\n"
+  remarks: >+
+    Because protection finalizes its state by calling the @msipcthin2.msmutableprotecteddata_close__method_objc function, any remaining data smaller than the block size will not be flushed.
+
+
+
+  syntax:
+    content: '- (void)synchronizeFile;'
+  inheritance: []
+- uid: msipcthin2.msmutableprotecteddata_updatedata_error_method_objc
+  id: MSMutableProtectedData updateData:error
+  parent: msipcthin2.msmutableprotecteddata_interface_objc
+  children: []
+  href: MSMutableProtectedData.yml
+  langs:
+  - cplusplus
+  name: MSMutableProtectedData updateData:error
+  fullName: msipcthin2.msmutableprotecteddata_updatedata_error_method_objc
+  type: Method
+  assemblies: *o0
+  namespace: iOS
+  summary: >+
+    Replaces the entire protected contents of the receiver with the contents of another data object.
+
+
+
+    The new content will be protected immediately and does not including the metadata and the publishing license.
+
+
+
+  remarks: 
+  syntax:
+    content: '- (BOOL)updateData:(NSData *)data error:(NSError **)errorPtr;'
+    parameters:
+    - id: '*data*'
+      type: '**NSData** *'
+      description: >+
+        Required. The data object that contains the plaintext data to be protected and replace the data of the receiver.
+
+
+
+    - id: '*errorPtr*'
+      type: '**NSError** **'
+      description: >+
+        Optional. If an error occurs, contains the error code and details.
+
+
+
+    return:
+      type: BOOL
+      description: 'Type: **BOOL**YES if the operation is successful; otherwise, NO. If the operation isn''t successful, the *errorPtr* parameter references an **NSError** object that contains more information about the error.'
+  inheritance: []
+references:
+- uid: msipcthin2.msmutableprotecteddata_interface_objc
+  href: MSMutableProtectedData.yml
+  name: MSMutableProtectedData
+- uid: msipcthin2.msprotecteddata_interface_objc
+  href: MSProtectedData.yml
+  name: MSProtectedData
+- uid: msipcthin2.msmutableprotecteddata_protecteddatawithpolicy_path_completionblock_method_objc
+  href: MSMutableProtectedData protectedDataWithPolicy_path_completionBlock.yml
+  name: protectedDataWithPolicy
+- uid: msipcthin2.msmutableprotecteddata___protecteddatainfile_withprotectionpolicy_completionblock_method_objc
+  href: MSMutableProtectedData protectedDataInFile_withProtectionPolicy_completionBlock.yml
+  name: protectedDataInFile
+- uid: msipcthin2.msmutableprotecteddata_appendbytes_length_error_method_objc
+  href: MSMutableProtectedData appendBytes_length_error.yml
+  name: appendBytes
+- uid: msipcthin2.msmutableprotecteddata_appenddata_error_method_objc
+  href: MSMutableProtectedData appendData_error.yml
+  name: appendData
+- uid: msipcthin2.msmutableprotecteddata_updatedata_error_method_objc
+  href: MSMutableProtectedData updateData_error.yml
+  name: updateData
+- uid: msipcthin2.msmutableprotecteddata_close__method_objc
+  href: MSMutableProtectedData close.yml
+  name: close
+- uid: msipcthin2.msmutableprotecteddata_synchronizefile_method_objc
+  href: MSMutableProtectedData synchronizeFile.yml
+  name: synchronizeFile
+- uid: msipcthin2.mscustomprotecteddata_interface_objc
+  href: MSCustomProtectedData.yml
+  name: MSCustomProtectedData
+- uid: msipcthin2.msmutablecustomprotecteddata_interface_objc
+  href: MSMutableCustomProtectedData.yml
+  name: MSMutableCustomProtectedData

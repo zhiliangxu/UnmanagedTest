@@ -1,0 +1,910 @@
+items:
+- uid: msipcthin2.msuserpolicy_interface_objc
+  id: MSUserPolicy
+  parent: iOS
+  children:
+  - msipcthin2.msuserpolicy_accesscheck_method_objc
+  - msipcthin2.msuserpolicy_allowauditedextract_property_objc
+  - msipcthin2.msuserpolicy_appdata_property_objc
+  - msipcthin2.msuserpolicy_contentid_property_objc
+  - msipcthin2.msuserpolicy_contentvaliduntil_property_objc
+  - msipcthin2.msuserpolicy_description_property_objc
+  - msipcthin2.msuserpolicy_doesusedeprecatedalgorithm_method_objc
+  - msipcthin2.msuserpolicy_isissuedtoowner_property_objc
+  - msipcthin2.msuserpolicy_issuedto_property_objc
+  - msipcthin2.msuserpolicy_name_property_objc
+  - msipcthin2.msuserpolicy_owner_property_objc
+  - msipcthin2.msuserpolicy_policydescriptor_property_objc
+  - msipcthin2.msuserpolicy_protectionpolicywithpolicydescriptor_userid_authenticationcallback_options_completionblock_method_objc
+  - msipcthin2.msuserpolicy_protectionpolicywithserializedpolicy_userid_authenticationcallback_options_completionblock_method_objc
+  - msipcthin2.msuserpolicy_protectionpolicywithtemplatedescriptor_userid_authenticationcallback_options_completionblock_method_objc
+  - msipcthin2.msuserpolicy_referrer_property_objc
+  - msipcthin2.msuserpolicy_registerfordoctracking_userid_authenticationcallback_completionblock_method_objc
+  - msipcthin2.msuserpolicy_serializedpolicy_method_objc
+  - msipcthin2.msuserpolicy_signedappdata_property_objc
+  - msipcthin2.msuserpolicy_templatedescriptor_property_objc
+  - msipcthin2.msuserpolicy_type_property_objc
+  href: MSUserPolicy.yml
+  langs:
+  - cplusplus
+  name: MSUserPolicy
+  fullName: msipcthin2.msuserpolicy_interface_objc
+  type: Class
+  assemblies: &o0
+  - iOS
+  namespace: iOS
+  summary: >+
+    Represents a  user policy.
+
+
+
+  remarks: "An @msipcthin2.msuserpolicy_interface_objc object defines the policy that is associated with the protected content. It can be used to examine the rights of the current user as well as  to protect or unprotect content. \r\n\r\n\r\n\r\n"
+  thread_safety: Members of this class are not guaranteed to be thread safe.
+  defined_in: MSUserPolicy.h
+  syntax:
+    content: '@interface MSUserPolicy : NSSecureCodableObject'
+  inheritance: []
+- uid: msipcthin2.msuserpolicy_allowauditedextract_property_objc
+  id: MSUserPolicy allowAuditedExtract
+  parent: msipcthin2.msuserpolicy_interface_objc
+  children: []
+  href: MSUserPolicy.yml
+  langs:
+  - cplusplus
+  name: MSUserPolicy allowAuditedExtract
+  fullName: msipcthin2.msuserpolicy_allowauditedextract_property_objc
+  type: Property
+  assemblies: *o0
+  namespace: iOS
+  summary: >+
+    Indicates whether or not the user can perform an audited extract.
+
+
+
+
+
+
+
+  remarks: 
+  syntax:
+    content: '@property(readonly) BOOL allowAuditedExtract;'
+    return:
+      id: '*allowAuditedExtract*'
+      type: '**BOOL**'
+      description: 
+  inheritance: []
+- uid: msipcthin2.msuserpolicy_contentid_property_objc
+  id: MSUserPolicy contentId
+  parent: msipcthin2.msuserpolicy_interface_objc
+  children: []
+  href: MSUserPolicy.yml
+  langs:
+  - cplusplus
+  name: MSUserPolicy contentId
+  fullName: msipcthin2.msuserpolicy_contentid_property_objc
+  type: Property
+  assemblies: *o0
+  namespace: iOS
+  summary: >+
+    The unique ID associated with the protected content.
+
+
+
+
+
+
+
+  remarks: 
+  syntax:
+    content: '@property(strong, readonly) NSString *contentId;'
+    return:
+      id: '*contentId*'
+      type: '**NSString** *'
+      description: 
+  inheritance: []
+- uid: msipcthin2.msuserpolicy_contentvaliduntil_property_objc
+  id: MSUserPolicy contentValidUntil
+  parent: msipcthin2.msuserpolicy_interface_objc
+  children: []
+  href: MSUserPolicy.yml
+  langs:
+  - cplusplus
+  name: MSUserPolicy contentValidUntil
+  fullName: msipcthin2.msuserpolicy_contentvaliduntil_property_objc
+  type: Property
+  assemblies: *o0
+  namespace: iOS
+  summary: >+
+    The date until which the content license is valid.
+
+
+
+
+
+
+
+  remarks: 
+  syntax:
+    content: '@property(strong, readonly) NSDate *contentValidUntil;'
+    return:
+      id: '*contentValidUntil*'
+      type: '**NSDate** *'
+      description: 
+  inheritance: []
+- uid: msipcthin2.msuserpolicy_doesusedeprecatedalgorithm_method_objc
+  id: MSUserPolicy doesUseDeprecatedAlgorithm
+  parent: msipcthin2.msuserpolicy_interface_objc
+  children: []
+  href: MSUserPolicy.yml
+  langs:
+  - cplusplus
+  name: MSUserPolicy doesUseDeprecatedAlgorithm
+  fullName: msipcthin2.msuserpolicy_doesusedeprecatedalgorithm_method_objc
+  type: Property
+  assemblies: *o0
+  namespace: iOS
+  summary: >+
+    Gets a flag indicating whether @msipcthin2.terms, (ECB) mode, was used to protect the content for the policy.
+
+
+
+
+
+
+
+  remarks: 
+  syntax:
+    content: '@property (readonly) BOOL doesUseDeprecatedAlgorithm;'
+  inheritance: []
+- uid: msipcthin2.msuserpolicy_appdata_property_objc
+  id: MSUserPolicy encryptedAppData
+  parent: msipcthin2.msuserpolicy_interface_objc
+  children: []
+  href: MSUserPolicy.yml
+  langs:
+  - cplusplus
+  name: MSUserPolicy encryptedAppData
+  fullName: msipcthin2.msuserpolicy_appdata_property_objc
+  type: Property
+  assemblies: *o0
+  namespace: iOS
+  summary: >+
+    The  encrypted application specific data.
+
+
+
+
+
+
+
+  remarks: 
+  syntax:
+    content: '@property(strong, readonly) NSDictionary *encryptedAppData;'
+    return:
+      id: '*encryptedAppData*'
+      type: '**NSDictionary**								 *'
+      description: 
+  inheritance: []
+- uid: msipcthin2.msuserpolicy_isissuedtoowner_property_objc
+  id: MSUserPolicy isIssuedToOwner
+  parent: msipcthin2.msuserpolicy_interface_objc
+  children: []
+  href: MSUserPolicy.yml
+  langs:
+  - cplusplus
+  name: MSUserPolicy isIssuedToOwner
+  fullName: msipcthin2.msuserpolicy_isissuedtoowner_property_objc
+  type: Property
+  assemblies: *o0
+  namespace: iOS
+  summary: >+
+    Is the current user the original owner?
+
+
+
+
+
+
+
+  remarks: 
+  syntax:
+    content: '@property (readonly) BOOL isIssuedToOwner;'
+    return:
+      id: '*isIssuedTo*'
+      type: '**NSString** *'
+      description: >+
+        Compares the @msipcthin2.msuserpolicy_issuedto_property_objc and the current @msipcthin2.msuserpolicy_owner_property_objc.
+
+
+
+  inheritance: []
+- uid: msipcthin2.msuserpolicy_issuedto_property_objc
+  id: MSUserPolicy issuedTo
+  parent: msipcthin2.msuserpolicy_interface_objc
+  children: []
+  href: MSUserPolicy.yml
+  langs:
+  - cplusplus
+  name: MSUserPolicy issuedTo
+  fullName: msipcthin2.msuserpolicy_issuedto_property_objc
+  type: Property
+  assemblies: *o0
+  namespace: iOS
+  summary: >+
+    The email address of the original content owner.
+
+
+
+    The @msipcthin2.msuserpolicy_issuedto_property_objc  content owner is potentially different than the current @msipcthin2.msuserpolicy_owner_property_objc.
+
+
+
+  remarks: 
+  syntax:
+    content: '@property(strong, readonly) NSString *issuedTo;'
+    return:
+      id: '*isIssuedToOwner*'
+      type: '**BOOL**'
+      description: 
+  inheritance: []
+- uid: msipcthin2.msuserpolicy_owner_property_objc
+  id: MSUserPolicy owner
+  parent: msipcthin2.msuserpolicy_interface_objc
+  children: []
+  href: MSUserPolicy.yml
+  langs:
+  - cplusplus
+  name: MSUserPolicy owner
+  fullName: msipcthin2.msuserpolicy_owner_property_objc
+  type: Property
+  assemblies: *o0
+  namespace: iOS
+  summary: >+
+    The email address of the current content owner.
+
+
+
+    The current content @msipcthin2.msuserpolicy_owner_property_objc is potentially different than the @msipcthin2.msuserpolicy_issuedto_property_objc owner, the original content owner.
+
+
+
+  remarks: 
+  syntax:
+    content: '@property(strong, readonly) NSString *owner;'
+    return:
+      id: '*owner*'
+      type: '**NSString** *'
+      description: 
+  inheritance: []
+- uid: msipcthin2.msuserpolicy_description_property_objc
+  id: MSUserPolicy policyDescription
+  parent: msipcthin2.msuserpolicy_interface_objc
+  children: []
+  href: MSUserPolicy.yml
+  langs:
+  - cplusplus
+  name: MSUserPolicy policyDescription
+  fullName: msipcthin2.msuserpolicy_description_property_objc
+  type: Property
+  assemblies: *o0
+  namespace: iOS
+  summary: >+
+    The description of the user policy.
+
+
+
+
+
+
+
+  remarks: 
+  syntax:
+    content: '@property (strong, readonly) NSString *policyDescription;'
+    return:
+      id: '*policyDescription*'
+      type: '**NSString** *'
+      description: 
+  inheritance: []
+- uid: msipcthin2.msuserpolicy_policydescriptor_property_objc
+  id: MSUserPolicy policyDescriptor
+  parent: msipcthin2.msuserpolicy_interface_objc
+  children: []
+  href: MSUserPolicy.yml
+  langs:
+  - cplusplus
+  name: MSUserPolicy policyDescriptor
+  fullName: msipcthin2.msuserpolicy_policydescriptor_property_objc
+  type: Property
+  assemblies: *o0
+  namespace: iOS
+  summary: >+
+    The custom policy used to protect the  content.
+
+
+
+    This property will be null for template based policies.
+
+
+
+  remarks: 
+  syntax:
+    content: '@property (strong, readonly) MSPolicyDescriptor *policyDescriptor;'
+    return:
+      id: '*policyDescriptor*'
+      type: '@msipcthin2.mspolicydescriptor_interface_objc *'
+      description: 
+  inheritance: []
+- uid: msipcthin2.msuserpolicy_name_property_objc
+  id: MSUserPolicy policyName
+  parent: msipcthin2.msuserpolicy_interface_objc
+  children: []
+  href: MSUserPolicy.yml
+  langs:
+  - cplusplus
+  name: MSUserPolicy policyName
+  fullName: msipcthin2.msuserpolicy_name_property_objc
+  type: Property
+  assemblies: *o0
+  namespace: iOS
+  summary: >+
+    Name of the user policy
+
+
+
+
+
+
+
+  remarks: 
+  syntax:
+    content: '@property (strong, readonly) NSString *policyName;'
+    return:
+      id: '*policyName*'
+      type: '**NSString** *'
+      description: 
+  inheritance: []
+- uid: msipcthin2.msuserpolicy_serializedpolicy_method_objc
+  id: MSUserPolicy serializedPolicy
+  parent: msipcthin2.msuserpolicy_interface_objc
+  children: []
+  href: MSUserPolicy.yml
+  langs:
+  - cplusplus
+  name: MSUserPolicy serializedPolicy
+  fullName: msipcthin2.msuserpolicy_serializedpolicy_method_objc
+  type: Property
+  assemblies: *o0
+  namespace: iOS
+  summary: >+
+    Gets the content policy.
+
+
+
+
+
+
+
+  remarks: 
+  syntax:
+    content: '@property (strong, readonly) NSData *serializedPolicy;'
+  inheritance: []
+- uid: msipcthin2.msuserpolicy_signedappdata_property_objc
+  id: MSUserPolicy signedAppData
+  parent: msipcthin2.msuserpolicy_interface_objc
+  children: []
+  href: MSUserPolicy.yml
+  langs:
+  - cplusplus
+  name: MSUserPolicy signedAppData
+  fullName: msipcthin2.msuserpolicy_signedappdata_property_objc
+  type: Property
+  assemblies: *o0
+  namespace: iOS
+  summary: >+
+    The application specific data, signed.
+
+
+
+
+
+
+
+  remarks: 
+  syntax:
+    content: '@property(strong, readonly) NSDictionary *signedAppData;'
+    return:
+      id: '*signedAppData*'
+      type: '**NSDictionary** *'
+      description: 
+  inheritance: []
+- uid: msipcthin2.msuserpolicy_referrer_property_objc
+  id: MSUserPolicy referrer
+  parent: msipcthin2.msuserpolicy_interface_objc
+  children: []
+  href: MSUserPolicy.yml
+  langs:
+  - cplusplus
+  name: MSUserPolicy referrer
+  fullName: msipcthin2.msuserpolicy_referrer_property_objc
+  type: Property
+  assemblies: *o0
+  namespace: iOS
+  summary: >+
+    The referral information.
+
+
+
+
+
+
+
+  remarks: 
+  syntax:
+    content: '@property(strong, readonly) NSURL *referrer;'
+    return:
+      id: '*referrer*'
+      type: '**NSURL** *'
+      description: 
+  inheritance: []
+- uid: msipcthin2.msuserpolicy_templatedescriptor_property_objc
+  id: MSUserPolicy templateDescriptor
+  parent: msipcthin2.msuserpolicy_interface_objc
+  children: []
+  href: MSUserPolicy.yml
+  langs:
+  - cplusplus
+  name: MSUserPolicy templateDescriptor
+  fullName: msipcthin2.msuserpolicy_templatedescriptor_property_objc
+  type: Property
+  assemblies: *o0
+  namespace: iOS
+  summary: "The template used to protect the content. \r\n\r\nThis property will be null for custom policies.\r\n\r\n"
+  remarks: 
+  syntax:
+    content: '@property (strong, readonly) MSTemplateDescriptor *templateDescriptor;'
+    return:
+      id: '*templateDescriptor*'
+      type: '@msipcthin2.mstemplatedescriptor_interface_objc *'
+      description: 
+  inheritance: []
+- uid: msipcthin2.msuserpolicy_type_property_objc
+  id: MSUserPolicy type
+  parent: msipcthin2.msuserpolicy_interface_objc
+  children: []
+  href: MSUserPolicy.yml
+  langs:
+  - cplusplus
+  name: MSUserPolicy type
+  fullName: msipcthin2.msuserpolicy_type_property_objc
+  type: Property
+  assemblies: *o0
+  namespace: iOS
+  summary: >+
+    Policy type, template based or custom.
+
+
+
+
+
+
+
+  remarks: 
+  syntax:
+    content: '@property (readonly) MSUserPolicyType type;'
+    return:
+      id: '*type*'
+      type: '@msipcthin2.msprotectionpolicytype_enum_objc'
+      description: 
+  inheritance: []
+- uid: msipcthin2.msuserpolicy_accesscheck_method_objc
+  id: MSUserPolicy accessCheck
+  parent: msipcthin2.msuserpolicy_interface_objc
+  children: []
+  href: MSUserPolicy.yml
+  langs:
+  - cplusplus
+  name: MSUserPolicy accessCheck
+  fullName: msipcthin2.msuserpolicy_accesscheck_method_objc
+  type: Method
+  assemblies: *o0
+  namespace: iOS
+  summary: >+
+    Returns a value that indicates whether the current user has the specified right.
+
+
+
+
+
+
+
+  remarks: 
+  syntax:
+    content: '- (BOOL)accessCheck:(NSString *)right;'
+    parameters:
+    - id: '*right*'
+      type: '**NSString** *'
+      description: >+
+        Required. The right to check.
+
+
+
+    return:
+      type: BOOL
+      description: >-
+        Type: **BOOL****YES** if the current user has the right; otherwise, **NO**.
+
+
+
+        When called on behalf of the content owner, returns YES for any right that is specified.
+  inheritance: []
+- uid: msipcthin2.msuserpolicy_registerfordoctracking_userid_authenticationcallback_completionblock_method_objc
+  id: MSUserPolicy registerForDocTracking:userId:authenticationCallback:completionBlock
+  parent: msipcthin2.msuserpolicy_interface_objc
+  children: []
+  href: MSUserPolicy.yml
+  langs:
+  - cplusplus
+  name: MSUserPolicy registerForDocTracking:userId:authenticationCallback:completionBlock
+  fullName: msipcthin2.msuserpolicy_registerfordoctracking_userid_authenticationcallback_completionblock_method_objc
+  type: Method
+  assemblies: *o0
+  namespace: iOS
+  summary: >+
+    Registers this policy with the document tracking service. See Remarks section for further details.
+
+
+
+    For more information, see @msipcthin2.how_to__use_document_tracking.
+
+
+
+  remarks: >+
+    Document tracking is currently only supported for Rights Management Services On-line scenarios. In order to conditionally register licenses based on this, we will use service discovery to determine whether or not registration is supported.
+
+
+
+    * In the case of a @msipcthin2.msmutableprotecteddata_interface_objc object, obtained after binding the user policy to a file, will have the @msipcthin2.msuserpolicy_interface_objc object within, we will not be able to register for on premises scenarios.
+
+
+
+    * In the case of Microsoft Office using the @msipcthin2.msprotector_class_objc class for buffer based protection, the @msipcthin2.msuserpolicy_interface_objc object in that class will be used to register the license.
+
+
+
+    If this method is called without setting up the corresponding @msipcthin2.mslicensemetadata_class_objc or there is a registration error with the service, there is no adverse effect and an SDK error will be produced.
+
+
+
+    Because this method is asynchronous, the returned @msipcthin2.msasynccontrol_class object can be used to cancel the request if needed.
+
+
+
+
+
+
+
+  syntax:
+    content: '- (MSAsyncControl *)    registerForDocTracking:(BOOL) sendRegistrationNotificationMail                                    userId:(NSString *)userId                   authenticationCallback:(id<MSAuthenticationCallback>)authenticationCallback                                                                              completionBlock:(void(^)(BOOL success, NSError *error))completionBlock;'
+    parameters:
+    - id: '*sendRegistrationNotificationMail*'
+      type: '**BOOL**'
+      description: >+
+        True or False
+
+
+
+    - id: '*userId*'
+      type: '**NSString** *'
+      description: >+
+        The id of the registering user in the form - userid@domain.ext
+
+
+
+    - id: '*authenticationCallback*'
+      type: id&lt;@msipcthin2.msauthenticationcallback_protocol_objc&gt;
+      description: 
+    - id: '*completionBlock*'
+      type: void(^)(**BOOL** success, **NSError** *error)
+      description: 
+    return:
+      type: '@msipcthin2.msasynccontrol_class'
+      description: A pointer to an @msipcthin2.msasynccontrol_class object.
+  inheritance: []
+- uid: msipcthin2.msuserpolicy_protectionpolicywithserializedpolicy_userid_authenticationcallback_options_completionblock_method_objc
+  id: MSUserPolicy userPolicyWithSerializedPolicy:userId:authenticationCallback:consentCallback options:completionBlock
+  parent: msipcthin2.msuserpolicy_interface_objc
+  children: []
+  href: MSUserPolicy.yml
+  langs:
+  - cplusplus
+  name: MSUserPolicy userPolicyWithSerializedPolicy:userId:authenticationCallback:consentCallback options:completionBlock
+  fullName: msipcthin2.msuserpolicy_protectionpolicywithserializedpolicy_userid_authenticationcallback_options_completionblock_method_objc
+  type: Method
+  assemblies: *o0
+  namespace: iOS
+  summary: >+
+    Creates a protection policy based on the supplied serialized policy parameter.
+
+
+
+    The following method should be invoked from your application's main thread.
+
+
+
+  remarks: >+
+    This example code snip demonstrates how to convert the embedded serialized policy within an MS Office document to aconcrete @msipcthin2.msuserpolicy_interface_objc given the current user, using the email parameter.
+
+    + (void)sampleConsumptionWithSerializedLicense:(NSData *)serializedData authenticationCallback:(id<MSAuthenticationCallback>)authenticationCallback
+
+    {
+        MSAsyncControl *asyncControl = [MSUserPolicy userPolicyWithSerializedPolicy:serializedData
+                                                                             userId:@"user@domain.com"
+                                                             authenticationCallback:authenticationCallback
+                                                                            options:default
+                                                                    completionBlock:^(MSUserPolicy *userPolicy, NSError *error)
+                                        {
+                                            // use userPolicy (Note: will be nil on error)
+                                        }];
+    }
+
+
+
+
+  syntax:
+    content: + (MSAsyncControl *)userPolicyWithSerializedPolicy:(NSData *)serializedPolicy                                             userId:(NSString *)userId                            authenticationCallback:(id<MSAuthenticationCallback>)authenticationCallback                                   consentCallback:(id<MSConsentCallback>)consentCallback                                           options:(MSPolicyAcquisitionOptions)options                                   completionBlock:(void(^)(MSUserPolicy *userPolicy, NSError *error))completionBlock;
+    parameters:
+    - id: '*serializedPolicy*'
+      type: '**NSData**         *'
+      description: >+
+        Required. The policy to be consumed
+
+
+
+    - id: '*userId*'
+      type: '**NSString** *'
+      description: "The email address of the user that is trying to consume the protected content. This email address will be used to determine which policy                                        object to use from the offline cache. If a policy object for this user is not found in the offline cache then this API will go online                                        (if allowed) to get the policy object. \r\n\r\nIf null is passed, the first policy object found in the offline cache will be used.                                        \r\n\r\n"
+    - id: '*authenticationCallback*'
+      type: id&lt;@msipcthin2.msauthenticationcallback_protocol_objc&gt;
+      description: 
+    - id: '*consentCallback*'
+      type: id&lt;@msipcthin2.msconscentcallback_protocol_objc&gt;
+      description: 
+    - id: '*options*'
+      type: '@msipcthin2.mspolicyacquisitionoptions_enum_objc'
+      description: >-
+        Options for creating user policy object. For more information, see @msipcthin2.mspolicyacquisitionoptions_enum_objc
+
+
+
+        .
+    - id: '*completionBlock*'
+      type: void(^)(@msipcthin2.msuserpolicy_interface_objc *userPolicy, **NSError** *error)
+      description: >+
+        The created protection policy.
+
+
+
+    return:
+      type: '@msipcthin2.msasynccontrol_class'
+      description: A pointer to an @msipcthin2.msasynccontrol_class object.
+  inheritance: []
+- uid: msipcthin2.msuserpolicy_protectionpolicywithtemplatedescriptor_userid_authenticationcallback_options_completionblock_method_objc
+  id: MSUserPolicy userPolicyWithTemplateDescriptor:userId:authenticationCallback:options:completionBlock
+  parent: msipcthin2.msuserpolicy_interface_objc
+  children: []
+  href: MSUserPolicy.yml
+  langs:
+  - cplusplus
+  name: MSUserPolicy userPolicyWithTemplateDescriptor:userId:authenticationCallback:options:completionBlock
+  fullName: msipcthin2.msuserpolicy_protectionpolicywithtemplatedescriptor_userid_authenticationcallback_options_completionblock_method_objc
+  type: Method
+  assemblies: *o0
+  namespace: iOS
+  summary: >+
+    This method creates a user policy based on the supplied template descriptor.
+
+
+
+    The following method should be invoked from the main thread.
+
+
+
+  remarks: >+
+    If you want to use the document tracking feature, the licenseMetadata property must be initialized prior to creating the @msipcthin2.msuserpolicy_interface_objc and you will need to register with the document tracking service via a call to @msipcthin2.msuserpolicy_registerfordoctracking_userid_authenticationcallback_completionblock_method_objc, otherwise this parameter can be left uninitialized (nil) and the call to @msipcthin2.msuserpolicy_registerfordoctracking_userid_authenticationcallback_completionblock_method_objc on the @msipcthin2.msuserpolicy_interface_objc can be skipped.
+
+
+
+    An example usage of this method:
+
+    [MSUserPolicy userPolicyWithTemplateDescriptor:[templates objectAtIndex:0]
+                                            userId:@"user@domain.com"
+                            authenticationCallback:authenticationCallback
+                                     signedAppData:appData
+                                   licenseMetadata:docTrackingData
+                                           options:None
+                                   completionBlock:^(MSUserPolicy *userPolicy, NSError *error)
+
+
+
+
+  syntax:
+    content: + (MSAsyncControl *)userPolicyWithTemplateDescriptor:(MSTemplateDescriptor *)templateDescriptor                                              userId:(NSString *)userId                                       signedAppData:(NSDictionary *)signedAppData                                     licenseMetadata:(MSLicenseMetadata*)licenseMetadata                              authenticationCallback:(id<MSAuthenticationCallback>)authenticationCallback                                             options:(MSUserPolicyCreationOptions)options                                     completionBlock:(void(^)(MSUserPolicy *userPolicy, NSError *error))completionBlock;
+    parameters:
+    - id: '*templateDescriptor*'
+      type: '@msipcthin2.mstemplatedescriptor_interface_objc         *'
+      description: >+
+        Required. The object which defines the template used to create the policy.
+
+
+
+    - id: '*userId*'
+      type: '**NSString** *'
+      description: "The email address of the user for whom the templates are being retrieved. \r\n\r\nThis email address will be used to discover the RMS service instance                                        (either AD RMS server or Azure RMS) that the user's organization is using.                                        \r\n\r\n\r\n\r\n"
+    - id: '*authenticationCallback*'
+      type: id&lt;@msipcthin2.msauthenticationcallback_protocol_objc&gt;) *
+      description: >+
+        Callback method to be used for authorization.
+
+
+
+    - id: '*signedAppData*'
+      type: '**NSDictionary** *'
+      description: 
+    - id: '*licenseMetaData*'
+      type: '@msipcthin2.mslicensemetadata_class_objc         *'
+      description: >+
+        If you want to enable document tracking, it must be initialized before creating the @msipcthin2.msuserpolicy_interface_objc with the @msipcthin2.mstemplatedescriptor_interface_objc object.
+
+
+
+        For more information, see @msipcthin2.how_to__use_document_tracking.
+
+
+
+    - id: '*options*'
+      type: '@msipcthin2.msprotectionpolicycreationoptions_enum_objc'
+      description: >+
+        Options for creating protection policy object (see @msipcthin2.msprotectionpolicycreationoptions_enum_objc)
+
+
+
+    - id: '*completionBlock*'
+      type: void(^)(@msipcthin2.msuserpolicy_interface_objc * userPolicy, **NSError** *error)
+      description: >+
+        The created user policy.
+
+
+
+    return:
+      type: '@msipcthin2.msasynccontrol_class'
+      description: A pointer to an @msipcthin2.msasynccontrol_class object.
+  inheritance: []
+- uid: msipcthin2.msuserpolicy_protectionpolicywithpolicydescriptor_userid_authenticationcallback_options_completionblock_method_objc
+  id: MSUserPolicy userPolicyWithPolicyDescriptor:userId:authenticationCallback:options:completionBlock
+  parent: msipcthin2.msuserpolicy_interface_objc
+  children: []
+  href: MSUserPolicy.yml
+  langs:
+  - cplusplus
+  name: MSUserPolicy userPolicyWithPolicyDescriptor:userId:authenticationCallback:options:completionBlock
+  fullName: msipcthin2.msuserpolicy_protectionpolicywithpolicydescriptor_userid_authenticationcallback_options_completionblock_method_objc
+  type: Method
+  assemblies: *o0
+  namespace: iOS
+  summary: >+
+    Creates a user policy based on the supplied policy descriptor.
+
+
+
+    The following method should be invoked from the main thread.
+
+
+
+  remarks: 
+  syntax:
+    content: + (MSAsyncControl *)userPolicyWithPolicyDescriptor:(MSPolicyDescriptor *)policyDescriptor                                                  userId:(NSString *)userId                                    authenticationCallback:(id<MSAuthenticationCallback>)authenticationCallback                                                   options:(MSUserPolicyCreationOptions)options                                           completionBlock:(void(^)(MSUserPolicy *userPolicy, NSError *error))completionBlock;
+    parameters:
+    - id: '*policyDescriptor*'
+      type: '@msipcthin2.mspolicydescriptor_interface_objc         *'
+      description: >+
+        Required. The object which defines the policy.
+
+
+
+    - id: '*userId*'
+      type: '**NSString** *'
+      description: "The email address of the user for whom the templates are being retrieved. \r\n\r\nThis email address will be used to discover the RMS service instance                                        (either ADRMS server or Azure RMS) that the user's organization is using.                                        \r\n\r\n"
+    - id: '*authenticationCallback*'
+      type: id&lt;@msipcthin2.msauthenticationcallback_protocol_objc&gt;) *
+      description: >+
+        Callback Id  to be used for authorization.
+
+
+
+    - id: '*options*'
+      type: '@msipcthin2.msprotectionpolicycreationoptions_enum_objc'
+      description: >+
+        Options for creating the user policy object
+
+
+
+    - id: '*completionBlock*'
+      type: void(^)(@msipcthin2.msuserpolicy_interface_objc *userPolicy, **NSError** *error)
+      description: >+
+        The created protection policy.
+
+
+
+    return:
+      type: '@msipcthin2.msasynccontrol_class'
+      description: A pointer to an @msipcthin2.msasynccontrol_class object.
+  inheritance: []
+references:
+- uid: msipcthin2.msuserpolicy_allowauditedextract_property_objc
+  href: MSUserPolicy allowAuditedExtract.yml
+  name: allowAuditedExtract
+- uid: msipcthin2.msuserpolicy_contentid_property_objc
+  href: MSUserPolicy contentId.yml
+  name: contentId
+- uid: msipcthin2.msuserpolicy_contentvaliduntil_property_objc
+  href: MSUserPolicy contentValidUntil.yml
+  name: contentValidUntil
+- uid: msipcthin2.msuserpolicy_description_property_objc
+  href: MSUserPolicy policyDescription.yml
+  name: policyDescription
+- uid: msipcthin2.msuserpolicy_doesusedeprecatedalgorithm_method_objc
+  href: MSUserPolicy doesUseDeprecatedAlgorithm.yml
+  name: doesUseDeprecatedAlgorithm
+- uid: msipcthin2.terms
+  name: Deprecated Algorithms
+- uid: msipcthin2.msuserpolicy_appdata_property_objc
+  href: MSUserPolicy encryptedAppData.yml
+  name: encryptedAppData
+- uid: msipcthin2.msuserpolicy_isissuedtoowner_property_objc
+  href: MSUserPolicy isIssuedToOwner.yml
+  name: isIssuedToOwner
+- uid: msipcthin2.msuserpolicy_issuedto_property_objc
+  href: MSUserPolicy issuedTo.yml
+  name: issuedTo
+- uid: msipcthin2.msuserpolicy_name_property_objc
+  href: MSUserPolicy policyName.yml
+  name: policyName
+- uid: msipcthin2.msuserpolicy_owner_property_objc
+  href: MSUserPolicy owner.yml
+  name: owner
+- uid: msipcthin2.msuserpolicy_policydescriptor_property_objc
+  href: MSUserPolicy policyDescriptor.yml
+  name: policyDescriptor
+- uid: msipcthin2.msuserpolicy_referrer_property_objc
+  href: MSUserPolicy referrer.yml
+  name: referrer
+- uid: msipcthin2.msuserpolicy_serializedpolicy_method_objc
+  href: MSUserPolicy serializedPolicy.yml
+  name: serializedPolicy
+- uid: msipcthin2.msuserpolicy_signedappdata_property_objc
+  href: MSUserPolicy signedAppData.yml
+  name: signedAppData
+- uid: msipcthin2.msuserpolicy_templatedescriptor_property_objc
+  href: MSUserPolicy templateDescriptor.yml
+  name: templateDescriptor
+- uid: msipcthin2.msuserpolicy_type_property_objc
+  href: MSUserPolicy type.yml
+  name: type
+- uid: msipcthin2.msuserpolicy_accesscheck_method_objc
+  href: MSUserPolicy accessCheck.yml
+  name: accessCheck
+- uid: msipcthin2.msuserpolicy_protectionpolicywithserializedpolicy_userid_authenticationcallback_options_completionblock_method_objc
+  href: MSUserPolicy userPolicyWithSerializedPolicy_userId_authenticationCallback_consentCallback options_completionBlock.yml
+  name: userPolicyWithSerializedPolicy
+- uid: msipcthin2.msuserpolicy_protectionpolicywithtemplatedescriptor_userid_authenticationcallback_options_completionblock_method_objc
+  href: MSUserPolicy userPolicyWithTemplateDescriptor_userId_authenticationCallback_options_completionBlock.yml
+  name: userPolicyWithTemplateDescriptor
+- uid: msipcthin2.msuserpolicy_protectionpolicywithpolicydescriptor_userid_authenticationcallback_options_completionblock_method_objc
+  href: MSUserPolicy userPolicyWithPolicyDescriptor_userId_authenticationCallback_options_completionBlock.yml
+  name: userPolicyWithPolicyDescriptor
+- uid: msipcthin2.msuserpolicy_interface_objc
+  href: MSUserPolicy.yml
+  name: MSUserPolicy
+- uid: msipcthin2.msuserpolicy_registerfordoctracking_userid_authenticationcallback_completionblock_method_objc
+  href: MSUserPolicy registerForDocTracking_userId_authenticationCallback_completionBlock.yml
+  name: MSUserPolicy registerForDocTracking:userId:authenticationCallback:completionBlock

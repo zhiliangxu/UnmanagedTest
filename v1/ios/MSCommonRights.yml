@@ -1,0 +1,78 @@
+items:
+- uid: msipcthin2.mscommonrights_interface_objc
+  id: MSCommonRights
+  parent: iOS
+  children:
+  - msipcthin2.mscommonrights_interface_objc.+(NSString) owner;
+  - msipcthin2.mscommonrights_interface_objc.+(NSString) view;
+  href: MSCommonRights.yml
+  langs:
+  - cplusplus
+  name: MSCommonRights
+  fullName: msipcthin2.mscommonrights_interface_objc
+  type: Class
+  assemblies: &o0
+  - iOS
+  namespace: iOS
+  summary: >+
+    Rights that are supported by all apps.
+
+
+
+
+
+
+
+  remarks: >+
+    For more information about the built-in rights and the usage restrictions associated with them  that apps should observe, see @msipcthin2.built-in_rights_usage_restriction_reference.
+
+
+
+  thread_safety: Members of this class are not guaranteed to be thread safe.
+  defined_in: MSRight.h
+  syntax:
+    content: '@interface MSCommonRights : NSObject'
+  inheritance: []
+- uid: msipcthin2.mscommonrights_interface_objc.+(NSString) owner;
+  id: +(NSString) owner;
+  parent: msipcthin2.mscommonrights_interface_objc
+  href: MSCommonRights.yml
+  langs:
+  - cplusplus
+  name: +(NSString) owner;
+  fullName: msipcthin2.mscommonrights_interface_objc.+(NSString) owner;
+  type: Property
+  assemblies: *o0
+  namespace: iOS
+  summary: >+
+    Specifies a right that represents content ownership. This right grants full control over the protected content.
+
+
+
+  syntax: {}
+- uid: msipcthin2.mscommonrights_interface_objc.+(NSString) view;
+  id: +(NSString) view;
+  parent: msipcthin2.mscommonrights_interface_objc
+  href: MSCommonRights.yml
+  langs:
+  - cplusplus
+  name: +(NSString) view;
+  fullName: msipcthin2.mscommonrights_interface_objc.+(NSString) view;
+  type: Property
+  assemblies: *o0
+  namespace: iOS
+  summary: >+
+    Specifies a right that allows viewing of protected content.
+
+
+
+  syntax: {}
+references:
+- uid: msipcthin2.built-in_rights_usage_restriction_reference
+  name: Built-in Rights Usage Restriction Reference
+- uid: msipcthin2.mscommonrights_interface_objc.+(NSString) owner;
+  href: MSCommonRights.yml
+  name: +(NSString) owner;
+- uid: msipcthin2.mscommonrights_interface_objc.+(NSString) view;
+  href: MSCommonRights.yml
+  name: +(NSString) view;

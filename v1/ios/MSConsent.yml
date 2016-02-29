@@ -1,0 +1,91 @@
+items:
+- uid: msipcthin2.msconscent_class_objc
+  id: MSConsent
+  parent: iOS
+  children:
+  - msipcthin2.msconscent_consentresult_property_objc
+  - msipcthin2.msconscent_type_property_objc
+  href: MSConsent.yml
+  langs:
+  - cplusplus
+  name: MSConsent
+  fullName: msipcthin2.msconscent_class_objc
+  type: Class
+  assemblies: &o0
+  - iOS
+  namespace: iOS
+  summary: >+
+    Contains the consent process type and result.
+
+
+
+
+
+
+
+  remarks: 
+  thread_safety: Members of this class are not guaranteed to be thread safe.
+  defined_in: MSConsent.h
+  syntax:
+    content: '@interface MSConsent : NSObject'
+  inheritance: []
+- uid: msipcthin2.msconscent_consentresult_property_objc
+  id: MSConsent consentResult
+  parent: msipcthin2.msconscent_class_objc
+  children: []
+  href: MSConsent.yml
+  langs:
+  - cplusplus
+  name: MSConsent consentResult
+  fullName: msipcthin2.msconscent_consentresult_property_objc
+  type: Property
+  assemblies: *o0
+  namespace: iOS
+  summary: >+
+    Gets the result of the consent as an instance of @msipcthin2.msconscentresult_class_objc.
+
+
+
+
+
+
+
+  remarks: 
+  syntax:
+    content: '@property (strong, readonly) MSConsentResult *consentResult;'
+    return:
+      id: '*consentResult*'
+      type: '@msipcthin2.msconscentresult_class_objc *'
+      description: 
+  inheritance: []
+- uid: msipcthin2.msconscent_type_property_objc
+  id: MSConsent type
+  parent: msipcthin2.msconscent_class_objc
+  children: []
+  href: MSConsent.yml
+  langs:
+  - cplusplus
+  name: MSConsent type
+  fullName: msipcthin2.msconscent_type_property_objc
+  type: Property
+  assemblies: *o0
+  namespace: iOS
+  summary: "Gets the type of consent. \r\n\r\nFor more information on the available types, see @msipcthin2.msconscenttype_enum_objc.\r\n\r\n"
+  remarks: 
+  syntax:
+    content: '@property (readonly) MSConsentType type;'
+    return:
+      id: '*type*'
+      type: '@msipcthin2.msconscenttype_enum_objc'
+      description: 
+  inheritance: []
+references:
+- uid: msipcthin2.msconscent_type_property_objc
+  href: MSConsent type.yml
+  name: type
+- uid: msipcthin2.msconscent_consentresult_property_objc
+  href: MSConsent consentResult.yml
+  name: consentResult
+- uid: msipcthin2.msconscentresult_class_objc
+  href: MSConsentResult.yml
+  name: MSConsentResult

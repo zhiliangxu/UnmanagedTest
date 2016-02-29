@@ -1,0 +1,105 @@
+items:
+- uid: msipcthin2.msauthenticationparameters_class_objc
+  id: MSAuthenticationParameters
+  parent: iOS
+  children:
+  - msipcthin2.msauthenticationparameters_class_objc.authority
+  - msipcthin2.msauthenticationparameters_class_objc.resource
+  - msipcthin2.msauthenticationparameters_class_objc.scope
+  - msipcthin2.msauthenticationparameters_class_objc.userId
+  href: MSAuthenticationParameters.yml
+  langs:
+  - cplusplus
+  name: MSAuthenticationParameters
+  fullName: msipcthin2.msauthenticationparameters_class_objc
+  type: Class
+  assemblies: &o0
+  - iOS
+  namespace: iOS
+  summary: >+
+    Properties used for the authentication process.
+
+
+
+    See @msipcthin2.msauthenticationcallback_protocol_objc for more information.
+
+
+
+  remarks: 
+  thread_safety: Members of this class are not guaranteed to be thread safe.
+  defined_in: MSAuthenticationParameters.h
+  syntax:
+    content: '@interface MSAuthenticationParameters : NSObject'
+  inheritance: []
+- uid: msipcthin2.msauthenticationparameters_class_objc.authority
+  id: authority
+  parent: msipcthin2.msauthenticationparameters_class_objc
+  href: MSAuthenticationParameters.yml
+  langs:
+  - cplusplus
+  name: authority
+  fullName: msipcthin2.msauthenticationparameters_class_objc.authority
+  type: Property
+  assemblies: *o0
+  namespace: iOS
+  summary: 
+  syntax:
+    content: '@property (strong, readonly) NSString *authority;'
+- uid: msipcthin2.msauthenticationparameters_class_objc.resource
+  id: resource
+  parent: msipcthin2.msauthenticationparameters_class_objc
+  href: MSAuthenticationParameters.yml
+  langs:
+  - cplusplus
+  name: resource
+  fullName: msipcthin2.msauthenticationparameters_class_objc.resource
+  type: Property
+  assemblies: *o0
+  namespace: iOS
+  summary: 
+  syntax:
+    content: '@property (strong, readonly) NSString *resource;'
+- uid: msipcthin2.msauthenticationparameters_class_objc.scope
+  id: scope
+  parent: msipcthin2.msauthenticationparameters_class_objc
+  href: MSAuthenticationParameters.yml
+  langs:
+  - cplusplus
+  name: scope
+  fullName: msipcthin2.msauthenticationparameters_class_objc.scope
+  type: Property
+  assemblies: *o0
+  namespace: iOS
+  summary: 
+  syntax:
+    content: '@property (strong, readonly) NSString *scope;'
+- uid: msipcthin2.msauthenticationparameters_class_objc.userId
+  id: userId
+  parent: msipcthin2.msauthenticationparameters_class_objc
+  href: MSAuthenticationParameters.yml
+  langs:
+  - cplusplus
+  name: userId
+  fullName: msipcthin2.msauthenticationparameters_class_objc.userId
+  type: Property
+  assemblies: *o0
+  namespace: iOS
+  summary: 
+  syntax:
+    content: '@property (strong, readonly) NSString *userId;'
+references:
+- uid: msipcthin2.msauthenticationcallback_protocol_objc
+  href: MSAuthenticationCallback.yml
+  name: MSAuthenticationCallback
+- uid: msipcthin2.msauthenticationparameters_class_objc.authority
+  href: MSAuthenticationParameters.yml
+  name: authority
+- uid: msipcthin2.msauthenticationparameters_class_objc.resource
+  href: MSAuthenticationParameters.yml
+  name: resource
+- uid: msipcthin2.msauthenticationparameters_class_objc.scope
+  href: MSAuthenticationParameters.yml
+  name: scope
+- uid: msipcthin2.msauthenticationparameters_class_objc.userId
+  href: MSAuthenticationParameters.yml
+  name: userId

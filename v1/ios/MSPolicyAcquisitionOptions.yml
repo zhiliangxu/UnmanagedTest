@@ -1,0 +1,73 @@
+items:
+- uid: msipcthin2.mspolicyacquisitionoptions_enum_objc
+  id: MSPolicyAcquisitionOptions
+  parent: iOS
+  children:
+  - msipcthin2.mspolicyacquisitionoptions_enum_objc.Default
+  - msipcthin2.mspolicyacquisitionoptions_enum_objc.OfflineOnly
+  href: MSPolicyAcquisitionOptions.yml
+  langs:
+  - cplusplus
+  name: MSPolicyAcquisitionOptions
+  fullName: msipcthin2.mspolicyacquisitionoptions_enum_objc
+  type: Enum
+  assemblies: &o0
+  - iOS
+  namespace: iOS
+  summary: >+
+    System operation control options.
+
+
+
+
+
+
+
+  remarks: 
+  defined_in: MSUserPolicy.h
+  syntax:
+    content: 'typedef enum MSPolicyAcquisitionOptions : NSUInteger {    Default = 0x0,    OfflineOnly = 0x1} MSPolicyAcquisitionOptions;'
+  inheritance: []
+- uid: msipcthin2.mspolicyacquisitionoptions_enum_objc.Default
+  id: Default
+  parent: msipcthin2.mspolicyacquisitionoptions_enum_objc
+  href: MSPolicyAcquisitionOptions.yml
+  langs:
+  - cplusplus
+  name: Default
+  fullName: msipcthin2.mspolicyacquisitionoptions_enum_objc.Default
+  type: Field
+  assemblies: *o0
+  namespace: iOS
+  summary: >+
+    When specified, the SDK will attempt to perform the operation silently, and without using the network. This is not guaranteed.
+
+
+
+  syntax:
+    content: Default = 0
+- uid: msipcthin2.mspolicyacquisitionoptions_enum_objc.OfflineOnly
+  id: OfflineOnly
+  parent: msipcthin2.mspolicyacquisitionoptions_enum_objc
+  href: MSPolicyAcquisitionOptions.yml
+  langs:
+  - cplusplus
+  name: OfflineOnly
+  fullName: msipcthin2.mspolicyacquisitionoptions_enum_objc.OfflineOnly
+  type: Field
+  assemblies: *o0
+  namespace: iOS
+  summary: >+
+    When specified, the SDK will not show any UI (e.g. an email app can use this for trying to show a protected email on preview pane)
+
+
+
+  syntax:
+    content: OfflineOnly = 1
+references:
+- uid: msipcthin2.mspolicyacquisitionoptions_enum_objc.Default
+  href: MSPolicyAcquisitionOptions.yml
+  name: Default
+- uid: msipcthin2.mspolicyacquisitionoptions_enum_objc.OfflineOnly
+  href: MSPolicyAcquisitionOptions.yml
+  name: OfflineOnly

@@ -1,0 +1,113 @@
+items:
+- uid: msipcthin2.msconscentresult_class_objc
+  id: MSConsentResult
+  parent: iOS
+  children:
+  - msipcthin2.msconscentresult_accepted_property_objc
+  - msipcthin2.msconscentresult_showagain_property_objc
+  - msipcthin2.msconscentresult_userid_property_objc
+  href: MSConsentResult.yml
+  langs:
+  - cplusplus
+  name: MSConsentResult
+  fullName: msipcthin2.msconscentresult_class_objc
+  type: Class
+  assemblies: &o0
+  - iOS
+  namespace: iOS
+  summary: >+
+    Defines the results of the consent process.
+
+
+
+
+
+
+
+  remarks: 
+  thread_safety: Members of this class are not guaranteed to be thread safe.
+  defined_in: MSConsent.h
+  syntax:
+    content: '@interface MSConsentResult : NSObject'
+  inheritance: []
+- uid: msipcthin2.msconscentresult_accepted_property_objc
+  id: MSConsentResult accepted
+  parent: msipcthin2.msconscentresult_class_objc
+  children: []
+  href: MSConsentResult.yml
+  langs:
+  - cplusplus
+  name: MSConsentResult accepted
+  fullName: msipcthin2.msconscentresult_accepted_property_objc
+  type: Property
+  assemblies: *o0
+  namespace: iOS
+  summary: "Gets the state of the user's acceptance. \r\n\r\n\r\n\r\n"
+  remarks: 
+  syntax:
+    content: '@property (assign) BOOL accepted;'
+    return:
+      id: '*accepted*'
+      type: '**BOOL**'
+      description: 
+  inheritance: []
+- uid: msipcthin2.msconscentresult_showagain_property_objc
+  id: MSConsentResult showAgain
+  parent: msipcthin2.msconscentresult_class_objc
+  children: []
+  href: MSConsentResult.yml
+  langs:
+  - cplusplus
+  name: MSConsentResult showAgain
+  fullName: msipcthin2.msconscentresult_showagain_property_objc
+  type: Property
+  assemblies: *o0
+  namespace: iOS
+  summary: >+
+    Gets the user's choice whether to show the consent dialog again or not.
+
+
+
+
+
+
+
+  remarks: 
+  syntax:
+    content: '@property (assign) BOOL showAgain;'
+    return:
+      id: '*showAgain*'
+      type: '**BOOL**'
+      description: 
+  inheritance: []
+- uid: msipcthin2.msconscentresult_userid_property_objc
+  id: MSConsentResult userId
+  parent: msipcthin2.msconscentresult_class_objc
+  children: []
+  href: MSConsentResult.yml
+  langs:
+  - cplusplus
+  name: MSConsentResult userId
+  fullName: msipcthin2.msconscentresult_userid_property_objc
+  type: Property
+  assemblies: *o0
+  namespace: iOS
+  summary: "Gets the *userId* of the consenting user. \r\n\r\n\r\n\r\n"
+  remarks: 
+  syntax:
+    content: '@property (strong) NSString *userId;'
+    return:
+      id: '*userId*'
+      type: '**NSString** *'
+      description: 
+  inheritance: []
+references:
+- uid: msipcthin2.msconscentresult_accepted_property_objc
+  href: MSConsentResult accepted.yml
+  name: accepted
+- uid: msipcthin2.msconscentresult_showagain_property_objc
+  href: MSConsentResult showAgain.yml
+  name: showAgain
+- uid: msipcthin2.msconscentresult_userid_property_objc
+  href: MSConsentResult userId.yml
+  name: userId

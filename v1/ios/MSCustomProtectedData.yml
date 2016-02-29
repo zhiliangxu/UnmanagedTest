@@ -1,0 +1,186 @@
+items:
+- uid: msipcthin2.mscustomprotecteddata_interface_objc
+  id: MSCustomProtectedData
+  parent: iOS
+  children:
+  - msipcthin2.mscustomprotecteddata_customprotecteddatawithpolicy_protecteddata_contentstartposition_contentsize_completionblock_method_objc
+  - msipcthin2.mscustomprotecteddata_getencryptedcontentlengthwithpolicy_protectionpolicy_contentlength
+  href: MSCustomProtectedData.yml
+  langs:
+  - cplusplus
+  name: MSCustomProtectedData
+  fullName: msipcthin2.mscustomprotecteddata_interface_objc
+  type: Class
+  assemblies: &o0
+  - iOS
+  namespace: iOS
+  summary: "Provides a  custom protected data object that can be used to read RMS-protected data.\r\n\r\nUse  @msipcthin2.mscustomprotecteddata_interface_objc when reading files that are protected using a custom protected file format rather than Microsoft Protected File format. When encrypting content for files that are protected using a custom protected file format, use @msipcthin2.msmutablecustomprotecteddata_interface_objc For more information, see **Remarks** section.\r\n\r\n\r\n**Important** RMS applications that use @msipcthin2.mscustomprotecteddata_interface_objc may be incompatible with SharePoint, Exchange, and other RMS applications.  For most applications, it is recommended that you use @msipcthin2.msprotecteddata_interface_objc instead.  \r\n\r\n\r\n\r\n"
+  remarks: >+
+    @msipcthin2.mscustomprotecteddata_interface_objc and its mutable subclass @msipcthin2.msmutablecustomprotecteddata_interface_objc provide data objects, object-oriented wrappers for byte buffers containing RMS-encrypted data.  These objects provide
+
+
+
+    * automatic decryption when data is read
+
+
+
+    * automatic encryption when data is written
+
+
+
+     These objects can be used wherever **NSData** and **NSMutableData** are required
+
+
+
+    @msipcthin2.mscustomprotecteddata_interface_objc and @msipcthin2.msmutablecustomprotecteddata_interface_objc are used to read and write data for files that are protected with a custom protected file format instead of the Microsoft Protected File format. To read and write files that are protected with the Microsoft Protected File format, use  @msipcthin2.msprotecteddata_interface_objc and @msipcthin2.msmutableprotecteddata_interface_objc.
+
+
+
+  thread_safety: Members of this class are not guaranteed to be thread safe.
+  defined_in: MSCustomProtectedData.h
+  syntax:
+    content: '@interface MSCustomProtectedData : MSProtectedData'
+  inheritance: []
+- uid: msipcthin2.mscustomprotecteddata_customprotecteddatawithpolicy_protecteddata_contentstartposition_contentsize_completionblock_method_objc
+  id: MSCustomProtectedData customProtectedDataWithPolicy:protectedData:contentStartPosition:contentSize:completionBlock
+  parent: msipcthin2.mscustomprotecteddata_interface_objc
+  children: []
+  href: MSCustomProtectedData.yml
+  langs:
+  - cplusplus
+  name: MSCustomProtectedData customProtectedDataWithPolicy:protectedData:contentStartPosition:contentSize:completionBlock
+  fullName: msipcthin2.mscustomprotecteddata_customprotecteddatawithpolicy_protecteddata_contentstartposition_contentsize_completionblock_method_objc
+  type: Method
+  assemblies: *o0
+  namespace: iOS
+  summary: >+
+    Asynchronously creates an @msipcthin2.mscustomprotecteddata_interface_objc object  that can be used to read the specified block of protected data.
+
+
+
+
+
+
+
+  remarks: >+
+    You specify a range (*contentStartPosition*, *contentSize*) where the encrypted content is located in the protected **NSData** (*protectedData*).
+
+
+
+    * If the existing content ends at the end of the backing **NSData**, you can specify **NSUIntegerMax** for *contentSize*.
+
+
+
+    * The *contentSize* parameter is needed only for the cases when there is  non-encrypted app-specific content after the encrypted content. This is because the framework needs to know where the encrypted content ends when performing decryption.
+
+
+
+    * The *contentSize* parameter is specified in terms of the encrypted content; for example, it does include the size of the CBC padding. You can use the @msipcthin2.mscustomprotecteddata_getencryptedcontentlengthwithpolicy_protectionpolicy_contentlength method to determine the size of the encrypted content from the size of the original, unencrypted content.
+
+
+
+    * If the range defined by the parameters *contentStartPosition* and *contentSize* is not empty (for example, *contentSize* != 0), it must address an entire segment of encrypted content; that is, it must start from block 0 and must have a final block in the CBC case or should be 16-byte aligned in the ECB case.
+
+
+
+
+
+
+
+  syntax:
+    content: + (void)customProtectedDataWithPolicy:(MSUserPolicy *)policy                        protectedData:(NSData *)protectedData                 contentStartPosition:(NSUInteger)contentStartPosition                          contentSize:(NSUInteger)contentSize                      completionBlock:(void(^)(MSCustomProtectedData *customProtectedData,NSError *error))completionBlock;
+    parameters:
+    - id: '*policy*'
+      type: '@msipcthin2.msuserpolicy_interface_objc *'
+      description: "Required. \r\n\r\n"
+    - id: '*protectedData*'
+      type: '**NSData** *'
+      description: >+
+        Required. The data to be read from.
+
+
+
+    - id: '*contentStartPosition*'
+      type: '**NSUInteger**'
+      description: >+
+        Required. Specifies theposition to begin reading in the *protectedData*.
+
+
+
+    - id: '*contentSize*'
+      type: '**NSUInteger**'
+      description: >+
+        Required. Specifies the size, in bytes, of the content to be read.
+
+
+
+    - id: '*completionBlock*'
+      type: 'void(^)(@msipcthin2.mscustomprotecteddata_interface_objc *customProtectedData, **NSError** *error)       '
+      description: >+
+        If the user cancels the operation, both the *customProtectedData* and *error* parameters will be **NIL**.
+
+
+
+  inheritance: []
+- uid: msipcthin2.mscustomprotecteddata_getencryptedcontentlengthwithpolicy_protectionpolicy_contentlength
+  id: MSCustomProtectedData getEncryptedContentLengthWithPolicy:policy:contentLength
+  parent: msipcthin2.mscustomprotecteddata_interface_objc
+  children: []
+  href: MSCustomProtectedData.yml
+  langs:
+  - cplusplus
+  name: MSCustomProtectedData getEncryptedContentLengthWithPolicy:policy:contentLength
+  fullName: msipcthin2.mscustomprotecteddata_getencryptedcontentlengthwithpolicy_protectionpolicy_contentlength
+  type: Method
+  assemblies: *o0
+  namespace: iOS
+  summary: >+
+    Returns the length of the encrypted content.
+
+
+
+
+
+
+
+  remarks: 
+  syntax:
+    content: + (NSUInteger)getEncryptedContentLengthWithPolicy:(MSUserPolicy *)policy                                     contentLength:(NSUInteger)contentLength;
+    parameters:
+    - id: '*policy*'
+      type: '@msipcthin2.msuserpolicy_interface_objc *'
+      description: >+
+        Required. Pointer to the user policy for which you want the content length.
+
+
+
+    - id: '*contentLength*'
+      type: '**NSUInteger**'
+      description: >+
+        Required. The length of the content.
+
+
+
+    return:
+      type: NSUInteger
+      description: The encrypted content length as an **NSUInteger**.
+  inheritance: []
+references:
+- uid: msipcthin2.mscustomprotecteddata_interface_objc
+  href: MSCustomProtectedData.yml
+  name: MSCustomProtectedData
+- uid: msipcthin2.msmutablecustomprotecteddata_interface_objc
+  href: MSMutableCustomProtectedData.yml
+  name: MSMutableCustomProtectedData
+- uid: msipcthin2.msprotecteddata_interface_objc
+  href: MSProtectedData.yml
+  name: MSProtectedData
+- uid: msipcthin2.mscustomprotecteddata_customprotecteddatawithpolicy_protecteddata_contentstartposition_contentsize_completionblock_method_objc
+  href: MSCustomProtectedData customProtectedDataWithPolicy_protectedData_contentStartPosition_contentSize_completionBlock.yml
+  name: customProtectedDataWithPolicy
+- uid: msipcthin2.mscustomprotecteddata_getencryptedcontentlengthwithpolicy_protectionpolicy_contentlength
+  href: MSCustomProtectedData getEncryptedContentLengthWithPolicy_policy_contentLength.yml
+  name: getEncryptedContentLengthWithPolicy
+- uid: msipcthin2.msmutableprotecteddata_interface_objc
+  href: MSMutableProtectedData.yml
+  name: MSMutableProtectedData

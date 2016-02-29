@@ -1,0 +1,73 @@
+items:
+- uid: msipcthin2.msprotectionpolicytype_enum_objc
+  id: MSUserPolicyType
+  parent: iOS
+  children:
+  - msipcthin2.msprotectionpolicytype_enum_objc.Custom
+  - msipcthin2.msprotectionpolicytype_enum_objc.TemplateBased
+  href: MSUserPolicyType.yml
+  langs:
+  - cplusplus
+  name: MSUserPolicyType
+  fullName: msipcthin2.msprotectionpolicytype_enum_objc
+  type: Enum
+  assemblies: &o0
+  - iOS
+  namespace: iOS
+  summary: >+
+    Protection policy type.
+
+
+
+
+
+
+
+  remarks: 
+  defined_in: MSUserPolicy.h
+  syntax:
+    content: typedef NS_ENUM(NSUInteger, MSUserPolicyType) {    TemplateBased = 0,    Custom = 1};
+  inheritance: []
+- uid: msipcthin2.msprotectionpolicytype_enum_objc.TemplateBased
+  id: TemplateBased
+  parent: msipcthin2.msprotectionpolicytype_enum_objc
+  href: MSUserPolicyType.yml
+  langs:
+  - cplusplus
+  name: TemplateBased
+  fullName: msipcthin2.msprotectionpolicytype_enum_objc.TemplateBased
+  type: Field
+  assemblies: *o0
+  namespace: iOS
+  summary: >+
+    Policy is based on a template
+
+
+
+  syntax:
+    content: TemplateBased = 0
+- uid: msipcthin2.msprotectionpolicytype_enum_objc.Custom
+  id: Custom
+  parent: msipcthin2.msprotectionpolicytype_enum_objc
+  href: MSUserPolicyType.yml
+  langs:
+  - cplusplus
+  name: Custom
+  fullName: msipcthin2.msprotectionpolicytype_enum_objc.Custom
+  type: Field
+  assemblies: *o0
+  namespace: iOS
+  summary: >+
+    Policy is custom
+
+
+
+  syntax:
+    content: Custom = 1
+references:
+- uid: msipcthin2.msprotectionpolicytype_enum_objc.TemplateBased
+  href: MSUserPolicyType.yml
+  name: TemplateBased
+- uid: msipcthin2.msprotectionpolicytype_enum_objc.Custom
+  href: MSUserPolicyType.yml
+  name: Custom

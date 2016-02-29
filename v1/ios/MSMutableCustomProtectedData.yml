@@ -1,0 +1,120 @@
+items:
+- uid: msipcthin2.msmutablecustomprotecteddata_interface_objc
+  id: MSMutableCustomProtectedData
+  parent: iOS
+  children:
+  - msipcthin2.msmutablecustomprotecteddata_customprotectorwithprotectionpolicy_backingdata_protectedcontentoffset_completionblock_method_objc
+  href: MSMutableCustomProtectedData.yml
+  langs:
+  - cplusplus
+  name: MSMutableCustomProtectedData
+  fullName: msipcthin2.msmutablecustomprotecteddata_interface_objc
+  type: Class
+  assemblies: &o0
+  - iOS
+  namespace: iOS
+  summary: "Provides a mutable custom protected data object that can be used to encrypt a block of RMS-protected data.\r\n\r\nUse  @msipcthin2.msmutablecustomprotecteddata_interface_objc when encrypting files that are protected using a custom protected file format rather than Microsoft Protected File format. When decrypting files that are protected using a custom protected file format, use @msipcthin2.mscustomprotecteddata_interface_objc.\r\n\r\n\r\n**Important** RMS applications that use @msipcthin2.msmutablecustomprotecteddata_interface_objc may be incompatible with SharePoint, Exchange, and other RMS applications.  For most applications, it is recommended that you use @msipcthin2.msmutableprotecteddata_interface_objc instead.  \r\n\r\n\r\n\r\n"
+  remarks: >+
+    @msipcthin2.msmutablecustomprotecteddata_interface_objc and its super-class @msipcthin2.mscustomprotecteddata_interface_objc provide data objects, object-oriented wrappers for byte buffers containing RMS-encrypted data.  These objects provide
+
+
+
+    * automatic decryption when data is read
+
+
+
+    * automatic encryption when data is written
+
+
+
+     These objects can be used wherever **NSData** and **NSMutableData** are required
+
+
+
+
+
+
+
+    The methods of the @msipcthin2.mscustomprotecteddata_interface_objc class that write data transparently encrypt the plaintext data and write the ciphertext to the backing **NSMutableData** object.
+
+
+
+    Data written using this class must be 16-byte aligned.
+
+
+
+    @msipcthin2.mscustomprotecteddata_interface_objc and @msipcthin2.msmutablecustomprotecteddata_interface_objc are used to read and write data for files that are protected with a custom protected file format instead of the Microsoft Protected File format. To read and write files that are protected with the Microsoft Protected File format, use  @msipcthin2.msprotecteddata_interface_objc and @msipcthin2.msmutableprotecteddata_interface_objc.
+
+
+
+  thread_safety: Members of this class are not guaranteed to be thread safe.
+  defined_in: MSMutableCustomProtectedData.h
+  syntax:
+    content: '@interface MSMutableCustomProtectedData : MSMutableProtectedData'
+  inheritance: []
+- uid: msipcthin2.msmutablecustomprotecteddata_customprotectorwithprotectionpolicy_backingdata_protectedcontentoffset_completionblock_method_objc
+  id: MSMutableCustomProtectedData customProtectorWithProtectionPolicy:backingData:protectedContentOffset:completionBlock
+  parent: msipcthin2.msmutablecustomprotecteddata_interface_objc
+  children: []
+  href: MSMutableCustomProtectedData.yml
+  langs:
+  - cplusplus
+  name: MSMutableCustomProtectedData customProtectorWithProtectionPolicy:backingData:protectedContentOffset:completionBlock
+  fullName: msipcthin2.msmutablecustomprotecteddata_customprotectorwithprotectionpolicy_backingdata_protectedcontentoffset_completionblock_method_objc
+  type: Method
+  assemblies: *o0
+  namespace: iOS
+  summary: "Asynchronously creates an @msipcthin2.msmutablecustomprotecteddata_interface_objc object that can be used to protect plaintext data  and write to the specified backing **NSMutableData** object.\r\n\r\n\r\n\r\n\r\n**Important** Microsoft Rights Management SDK 4.2  based applications that use @msipcthin2.msmutablecustomprotecteddata_interface_objc may be incompatible with SharePoint, Exchange, and other RMS-enabled applications.  For most applications, it is recommended that you use @msipcthin2.msmutableprotecteddata_interface_objc instead.  \r\n\r\n\r\n\r\n"
+  remarks: >+
+    If there is no existing content in the backing data (for example,  this is a new file), you should specify 0 for the * encryptedContentSize*.
+
+
+
+    When publishing content, apps are required to call @msipcthin2.msmutableprotecteddata_close__method_objc when they are done writing content to the @msipcthin2.msmutablecustomprotecteddata_interface_objc object. If @msipcthin2.msmutableprotecteddata_close__method_objc is not called the framework cannot guarantee that all the encrypted data is stored to the backing stream.
+
+
+
+  syntax:
+    content: + (void)customProtectorWithProtectionPolicy:(MSUserPolicy *)userPolicy                                backingData:(NSMutableData *)backingData                     protectedContentOffset:(NSUInteger)protectedContentOffset                            completionBlock:(void(^)(MSMutableCustomProtectedData *customProtectedData,                                                     NSError *error))completionBlock;
+    parameters:
+    - id: '*userPolicy*'
+      type: '@msipcthin2.msuserpolicy_interface_objc *'
+      description: >+
+        Required.
+
+
+
+    - id: '*backingData*'
+      type: '**NSMutableData** *'
+      description: >+
+        Required. The backing **NSMutableData** object that will be filled with the protected content.
+
+
+
+    - id: '*protectedContentOffset*'
+      type: '**NSUInteger**'
+      description: >+
+        Required. Specifies the position in the *backingData* at which the protected content should start.
+
+
+
+    - id: '*completionBlock*'
+      type: 'void(^)(@msipcthin2.msmutablecustomprotecteddata_interface_objc *customProtectedData, **NSError** *error)       '
+      description: "Required. Called with the following parameters when the method is completed:\r\n\r\n*customProtecedData* – protected data object, or NIL if the method fails.\r\n\r\n*error* – If there is an error protecting the data object, *error* points to an **NSError** object that describes the problem.\r\n\r\n\r\n\r\nIf the user cancels the operation, both the *customProtectedData* and *error* parameters will be **NIL**.\r\n\r\n"
+  inheritance: []
+references:
+- uid: msipcthin2.msmutablecustomprotecteddata_interface_objc
+  href: MSMutableCustomProtectedData.yml
+  name: MSMutableCustomProtectedData
+- uid: msipcthin2.mscustomprotecteddata_interface_objc
+  href: MSCustomProtectedData.yml
+  name: MSCustomProtectedData
+- uid: msipcthin2.msmutableprotecteddata_interface_objc
+  href: MSMutableProtectedData.yml
+  name: MSMutableProtectedData
+- uid: msipcthin2.msmutablecustomprotecteddata_customprotectorwithprotectionpolicy_backingdata_protectedcontentoffset_completionblock_method_objc
+  href: MSMutableCustomProtectedData customProtectorWithProtectionPolicy_backingData_protectedContentOffset_completionBlock.yml
+  name: customProtectorWithProtectionPolicy
+- uid: msipcthin2.msprotecteddata_interface_objc
+  href: MSProtectedData.yml
+  name: MSProtectedData

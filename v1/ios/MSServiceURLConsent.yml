@@ -1,0 +1,63 @@
+items:
+- uid: msipcthin2.msserviceurlconscent_class_objc
+  id: MSServiceURLConsent
+  parent: iOS
+  children:
+  - msipcthin2.msserviceurlconscent_urls_property_objc
+  href: MSServiceURLConsent.yml
+  langs:
+  - cplusplus
+  name: MSServiceURLConsent
+  fullName: msipcthin2.msserviceurlconscent_class_objc
+  type: Class
+  assemblies: &o0
+  - iOS
+  namespace: iOS
+  summary: >+
+    Defines the service URLs for the consent process.
+
+
+
+
+
+
+
+  remarks: 
+  thread_safety: Members of this class are not guaranteed to be thread safe.
+  defined_in: MSConsent.h
+  syntax:
+    content: '@interface MSServiceURLConsent : MSConsent'
+  inheritance: []
+- uid: msipcthin2.msserviceurlconscent_urls_property_objc
+  id: MSServiceURLConsent urls
+  parent: msipcthin2.msserviceurlconscent_class_objc
+  children: []
+  href: MSServiceURLConsent.yml
+  langs:
+  - cplusplus
+  name: MSServiceURLConsent urls
+  fullName: msipcthin2.msserviceurlconscent_urls_property_objc
+  type: Property
+  assemblies: *o0
+  namespace: iOS
+  summary: >+
+    Gets the consent service URLs.
+
+
+
+
+
+
+
+  remarks: 
+  syntax:
+    content: '@property (strong, readonly) NSArray */*NSURL*/urls;'
+    return:
+      id: '*urls*'
+      type: '**NSArray** *'
+      description: 
+  inheritance: []
+references:
+- uid: msipcthin2.msserviceurlconscent_urls_property_objc
+  href: MSServiceURLConsent urls.yml
+  name: urls

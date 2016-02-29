@@ -1,0 +1,59 @@
+items:
+- uid: msipcthin2.msasynccontrol_class
+  id: MSAsyncControl
+  parent: iOS
+  children:
+  - msipcthin2.msasynccontrol_cancel_method
+  href: MSAsyncControl.yml
+  langs:
+  - cplusplus
+  name: MSAsyncControl
+  fullName: msipcthin2.msasynccontrol_class
+  type: Class
+  assemblies: &o0
+  - iOS
+  namespace: iOS
+  summary: >+
+    This class provides one method to cancel asynchronous SDK operations.
+
+
+
+
+
+
+
+  remarks: 
+  thread_safety: Members of this class are not guaranteed to be thread safe.
+  defined_in: MSAsyncControl.h
+  syntax:
+    content: '@interface MSAsyncControl : NSObject'
+  inheritance: []
+- uid: msipcthin2.msasynccontrol_cancel_method
+  id: MSAsyncControl cancel
+  parent: msipcthin2.msasynccontrol_class
+  children: []
+  href: MSAsyncControl.yml
+  langs:
+  - cplusplus
+  name: MSAsyncControl cancel
+  fullName: msipcthin2.msasynccontrol_cancel_method
+  type: Method
+  assemblies: *o0
+  namespace: iOS
+  summary: >+
+    Use to cancel asynchronous SDK operations.
+
+
+
+
+
+
+
+  remarks: 
+  syntax:
+    content: '- (void)cancel;'
+  inheritance: []
+references:
+- uid: msipcthin2.msasynccontrol_cancel_method
+  href: MSAsyncControl cancel.yml
+  name: cancel

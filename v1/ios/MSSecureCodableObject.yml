@@ -1,0 +1,30 @@
+items:
+- uid: msipcthin2.mssecurecodableobject_class_objc
+  id: MSSecureCodableObject
+  parent: iOS
+  children: []
+  href: MSSecureCodableObject.yml
+  langs:
+  - cplusplus
+  name: MSSecureCodableObject
+  fullName: msipcthin2.mssecurecodableobject_class_objc
+  type: Class
+  assemblies:
+  - iOS
+  namespace: iOS
+  summary: >+
+    Used for encoding and decoding objects.
+
+
+
+
+
+
+
+  remarks: 
+  thread_safety: Members of this class are not guaranteed to be thread safe.
+  defined_in: MSSecureCodableObject.h
+  syntax:
+    content: '@interface MSSecureCodableObject : NSObject <NSSecureCoding>'
+  inheritance: []
+references: []
