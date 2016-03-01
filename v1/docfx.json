@@ -20,8 +20,7 @@
           "**/*.jpg"
         ],
         "exclude": [
-          "**/obj/**",
-          "v7/**"
+          "**/obj/**"
         ],
         "src": null,
         "dest": null
