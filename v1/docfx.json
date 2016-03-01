@@ -34,7 +34,7 @@
     "globalMetadata": {},
     "fileMetadata": {},
     "template": [
-      "doc.html"
+      "docs.html"
     ],
     "dest": "v1"
   }
