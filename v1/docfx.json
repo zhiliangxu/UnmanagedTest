@@ -3,14 +3,10 @@
     "content": [
       {
         "files": [
-          "**/*.yml"
-        ],
-        "dest": "v1"
-      },
-      {
-        "files": [
+          "**/*.yml",
           "**/*.md"
         ],
+        "dest": "v1",
         "exclude": [
           "**/obj/**"
         ]
