@@ -75,15 +75,13 @@ items:
 
 
   syntax:
-    content: + (void)customProtectorWithProtectionPolicy:(MSUserPolicy *)userPolicy /r/n backingData:(NSMutableData *)backingData                     protectedContentOffset:(NSUInteger)protectedContentOffset                            completionBlock:(void(^)(MSMutableCustomProtectedData *customProtectedData,                                                     NSError *error))completionBlock;
+    content: + (void)customProtectorWithProtectionPolicy:(MSUserPolicy *)userPolicy              backingData:(NSMutableData *)backingData                     protectedContentOffset:(NSUInteger)protectedContentOffset                            completionBlock:(void(^)(MSMutableCustomProtectedData *customProtectedData,                                                     NSError *error))completionBlock;
     parameters:
     - id: '*userPolicy*'
       type: '@msipcthin2.msuserpolicy_interface_objc *'
       description: >+
         Required.
-
-
-
+      
     - id: '*backingData*'
       type: '**NSMutableData** *'
       description: >+
