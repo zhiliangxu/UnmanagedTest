@@ -81,9 +81,7 @@ items:
       type: '@msipcthin2.msuserpolicy_interface_objc *'
       description: >+
         Required.
-
-
-
+        /r/n
     - id: '*backingData*'
       type: '**NSMutableData** *'
       description: >+
