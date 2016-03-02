@@ -1,0 +1,556 @@
+items:
+- uid: msipcthin2.customprotectedstream
+  id: CustomProtectedStream
+  parent: Microsoft.RightsManagement
+  children:
+  - msipcthin2.customprotectedstream_canread
+  - msipcthin2.customprotectedstream_canwrite
+  - msipcthin2.customprotectedstream_clonestream
+  - msipcthin2.customprotectedstream_createasync_cpp
+  - msipcthin2.customprotectedstream_flushasync
+  - msipcthin2.customprotectedstream_getencryptedcontentlength
+  - msipcthin2.customprotectedstream_getinputstreamat
+  - msipcthin2.customprotectedstream_getoutputstreamat
+  - msipcthin2.customprotectedstream_position
+  - msipcthin2.customprotectedstream_readasync
+  - msipcthin2.customprotectedstream_seek
+  - msipcthin2.customprotectedstream_size
+  - msipcthin2.customprotectedstream_writeasync
+  href: CustomProtectedStream.yml
+  langs:
+  - cplusplus
+  name: CustomProtectedStream
+  fullName: msipcthin2.customprotectedstream
+  type: Class
+  assemblies: &o0
+  - Microsoft.RightsManagement.winmd
+  namespace: Microsoft.RightsManagement
+  summary: >+
+    Used to access files that use a custom protection format.
+
+
+
+
+
+
+
+
+
+    **Important** RMS applications that use @msipcthin2.customprotectedstream may be incompatible with SharePoint, Exchange, and other RMS applications.  For most applications, it is recommended that you use @msipcthin2.protectedfilestream instead.
+
+
+
+
+
+
+
+  remarks: "@msipcthin2.customprotectedstream objects are used to open and create files that are protected with a custom format and to read and write protected content from and to such files. The @msipcthin2.customprotectedstream class implements the [Windows.Storage.Streams.IRandomAccessStream](https://msdn.microsoft.com/en-us/library/windows/apps/windows.storage.streams.irandomaccessstream.aspx) interface so that apps can read and write from and to a protected file   as they would by using standard Windows Runtime streams. When you create a @msipcthin2.customprotectedstream, you specify a backing stream, an object of [IRandomAccessStream](https://msdn.microsoft.com/en-us/library/windows/apps/windows.storage.streams.irandomaccessstream.aspx), where the actual protected content is or should be stored.  \r\n\r\nData written to streams created using this class must be 16-byte aligned.\r\n\r\n"
+  thread_safety: Members of this class are not guaranteed to be thread safe.
+  syntax:
+    content: 'public ref class CustomProtectedFileStream sealed : IRandomAccessStream'
+  inheritance:
+  - IRandomAccessStream
+- uid: msipcthin2.customprotectedstream_clonestream
+  id: CloneStream
+  parent: msipcthin2.customprotectedstream
+  children: []
+  href: CustomProtectedStream.yml
+  langs:
+  - cplusplus
+  name: CloneStream
+  fullName: msipcthin2.customprotectedstream_clonestream
+  type: Method
+  assemblies: *o0
+  namespace: Microsoft.RightsManagement
+  summary: >+
+    Creates  a new instance of @msipcthin2.customprotectedstream over the protected content.
+
+
+
+    Implements the [IRandomAccessStream.CloneStream](https://msdn.microsoft.com/en-us/library/windows/apps/windows.storage.streams.irandomaccessstream.clonestream.aspx) method.
+
+
+
+  remarks: 
+  syntax:
+    content: >-
+      public:
+
+      virtual IRandomAccessStream CloneStream()
+    parameters: []
+    return:
+      type: IRandomAccessStream
+      description: A @msipcthin2.customprotectedstream object that represents the new stream. The initial, internal position of the stream is 0 (zero). The internal position and lifetime of the new stream are independent from the position and lifetime of the cloned stream.
+  inheritance: []
+- uid: msipcthin2.customprotectedstream_createasync_cpp
+  id: CreateAsync
+  parent: msipcthin2.customprotectedstream
+  children: []
+  href: CustomProtectedStream.yml
+  langs:
+  - cplusplus
+  name: CreateAsync
+  fullName: msipcthin2.customprotectedstream_createasync_cpp
+  type: Method
+  assemblies: *o0
+  namespace: Microsoft.RightsManagement
+  summary: "Creates a @msipcthin2.customprotectedstream object based on the specified protection policy and a backing stream. \r\n\r\nThe @msipcthin2.customprotectedstream can be used for both encrypting and decrypting content. If the backing stream already contains encrypted content, you can use the stream reading functions to decrypt the content. You can also use stream writing functions to encrypt the content and write the encrypted content to the backing stream. \r\n\r\n\r\n**Warning** To avoid data loss and/or corruption, @msipcthin2.customprotectedstream_flushasync must be called if you modify the created stream or before object disposal.\r\n\r\n\r\n\r\n"
+  remarks: "You specify a range (*contentStartPosition*, *contentSize*) where the encrypted content is located in the backing stream.\r\n\r\n* If there is no existing content in the backing stream (for example, if this is a new file), specify *contentSize* as zero. \r\n\r\n* If the existing content ends at the end of the stream, you can specify ulong.MaxValue for *contentSize*.\r\n\r\n* The *contentSize* parameter is needed only for the cases when there is  non-encrypted app-specific content after the encrypted content. This is because the framework needs to know where the encrypted content ends when performing decryption.\r\n\r\n* The *contentSize* parameter is specified in terms of the encrypted content for example, it does include the size of the CBC padding. \r\n\r\n* If the range defined by the parameters *contentStartPosition* and *contentSize* is not empty (for example, *contentSize* != 0), it must address an entire segment of encrypted content; that is, it must start from block 0 and must have a final block in the CBC case or should be 16-byte aligned in the ECB case.\r\n\r\n\r\n\r\n\r\n\r\n\r\n**Warning** To avoid data loss and/or corruption, @msipcthin2.customprotectedstream_flushasync must be called if you modify the created stream or before object disposal.\r\n\r\n\r\n\r\n\r\n**Warning** This method must be called on a UI thread. Calling it on a worker thread may result in an unexpected behavior.\r\n\r\n\r\n\r\n"
+  syntax:
+    content: >-
+      public:
+
+      static IAsyncOperation(CustomProtectedStream) CreateAsync(
+      	UserPolicy policy,
+      	IRandomAccessStream stream,
+      	UInt64 contentStartPosition,
+      	UInt64 contentSize
+      )
+    parameters:
+    - id: policy
+      type: UserPolicy
+      description: The user policy to apply to protect the content.
+    - id: stream
+      type: IRandomAccessStream
+      description: The backing stream.
+    - id: contentStartPosition
+      type: UInt64
+      description: The start position of the stream.
+    - id: contentSize
+      type: UInt64
+      description: The size of the encrypted content.
+    return:
+      type: IAsyncOperation(CustomProtectedStream)
+      description: 'The asynchronous operation. Upon completion, **IAsyncOperation.GetResults** returns a @msipcthin2.customprotectedstream   object that  can be used to write content to the file.  '
+  inheritance: []
+- uid: msipcthin2.customprotectedstream_flushasync
+  id: FlushAsync
+  parent: msipcthin2.customprotectedstream
+  children: []
+  href: CustomProtectedStream.yml
+  langs:
+  - cplusplus
+  name: FlushAsync
+  fullName: msipcthin2.customprotectedstream_flushasync
+  type: Method
+  assemblies: *o0
+  namespace: Microsoft.RightsManagement
+  summary: "Flushes the data asynchronously to the backing file. \r\n\r\nImplements the [IOutputStream.FlushAsync](https://msdn.microsoft.com/en-us/library/windows/apps/windows.storage.streams.ioutputstream.flushasync.aspx) method.\r\n\r\n"
+  remarks: >+
+    To avoid data loss and/or corruption, @msipcthin2.customprotectedstream_flushasync must be called before object disposal.
+
+
+
+  syntax:
+    content: >-
+      public:
+
+      virtual IAsyncOperation<Boolean> FlushAsync()
+    parameters: []
+    return:
+      type: IAsyncOperation<Boolean>
+      description: 'The stream flush operation. null is returned  if an exception occurs. Upon completion, **IAsyncOperation.GetResults** returns **True** if the file has been successfully flushed; otherwise, false. '
+  inheritance: []
+- uid: msipcthin2.customprotectedstream_getencryptedcontentlength
+  id: GetEncryptedContentLength
+  parent: msipcthin2.customprotectedstream
+  children: []
+  href: CustomProtectedStream.yml
+  langs:
+  - cplusplus
+  name: GetEncryptedContentLength
+  fullName: msipcthin2.customprotectedstream_getencryptedcontentlength
+  type: Method
+  assemblies: *o0
+  namespace: Microsoft.RightsManagement
+  summary: >+
+    Calculates the length of the encrypted content from the length of the clear content.
+
+
+
+
+
+
+
+  remarks: 
+  syntax:
+    content: >-
+      public:
+
+      static UInt64 GetEncryptedContentLength(
+      	UserPolicy policy,
+      	UInt64 clearContentLength
+      )
+    parameters:
+    - id: policy
+      type: UserPolicy
+      description: 
+    - id: clearContentLength
+      type: UInt64
+      description: 
+    return:
+      type: UInt64
+      description: The content length.
+  inheritance: []
+- uid: msipcthin2.customprotectedstream_getinputstreamat
+  id: GetInputStreamAt
+  parent: msipcthin2.customprotectedstream
+  children: []
+  href: CustomProtectedStream.yml
+  langs:
+  - cplusplus
+  name: GetInputStreamAt
+  fullName: msipcthin2.customprotectedstream_getinputstreamat
+  type: Method
+  assemblies: *o0
+  namespace: Microsoft.RightsManagement
+  summary: >+
+    Returns an input stream at the specified position in the protected file .
+
+
+
+    Implements the [IRandomAccessStream.GetInputStreamAt](https://msdn.microsoft.com/en-us/library/windows/apps/windows.storage.streams.irandomaccessstream.getinputstreamat.aspx) method.
+
+
+
+  remarks: 
+  syntax:
+    content: >-
+      public:
+
+      virtual IInputStream GetInputStreamAt(
+      	UInt64 position
+      )
+    parameters:
+    - id: position
+      type: UInt64
+      description: The position at which to start reading the protected content in bytes.
+    return:
+      type: IInputStream
+      description: The input stream.
+  inheritance: []
+- uid: msipcthin2.customprotectedstream_getoutputstreamat
+  id: GetOutputStreamAt
+  parent: msipcthin2.customprotectedstream
+  children: []
+  href: CustomProtectedStream.yml
+  langs:
+  - cplusplus
+  name: GetOutputStreamAt
+  fullName: msipcthin2.customprotectedstream_getoutputstreamat
+  type: Method
+  assemblies: *o0
+  namespace: Microsoft.RightsManagement
+  summary: "Returns an output stream at the specified location in the protected file . \r\n\r\nImplements the [IRandomAccessStream.GetOutputStreamAt](https://msdn.microsoft.com/en-us/library/windows/apps/windows.storage.streams.irandomaccessstream.getoutputstreamat.aspx) method.\r\n\r\n"
+  remarks: >+
+    Data written to the stream must be 16-byte aligned.
+
+
+
+  syntax:
+    content: >-
+      public:
+
+      virtual IOutputStream GetOutputStreamAt(
+      	UInt64 position
+      )
+    parameters:
+    - id: position
+      type: UInt64
+      description: The position at which to start writing to the protected file  in bytes.
+    return:
+      type: IOutputStream
+      description: The output stream.
+  inheritance: []
+- uid: msipcthin2.customprotectedstream_readasync
+  id: ReadAsync
+  parent: msipcthin2.customprotectedstream
+  children: []
+  href: CustomProtectedStream.yml
+  langs:
+  - cplusplus
+  name: ReadAsync
+  fullName: msipcthin2.customprotectedstream_readasync
+  type: Method
+  assemblies: *o0
+  namespace: Microsoft.RightsManagement
+  summary: "Returns an asynchronous byte reader object. \r\n\r\nImplements the [IInputStream.ReadAsync](https://msdn.microsoft.com/en-us/library/windows/apps/windows.storage.streams.iinputstream.readasync.aspx) method.\r\n\r\n"
+  remarks: 
+  syntax:
+    content: >-
+      public:
+       IAsyncOperationWithProgress<IBuffer, UInt32> ReadAsync(
+      	IBuffer buffer,
+      	UInt32 count,
+      	InputStreamOptions options
+      )
+    parameters:
+    - id: buffer
+      type: IBuffer
+      description: 'The buffer into which the asynchronous read operation places the bytes that are read. '
+    - id: count
+      type: UInt32
+      description: The number of bytes to read that is less than or equal to the capacity of the buffer.
+    - id: options
+      type: InputStreamOptions
+      description: 'Specifies the type of the asynchronous read operation. '
+    return:
+      type: IAsyncOperationWithProgress<IBuffer, UInt32>
+      description: The asynchronous operation.
+  inheritance: []
+- uid: msipcthin2.customprotectedstream_seek
+  id: Seek
+  parent: msipcthin2.customprotectedstream
+  children: []
+  href: CustomProtectedStream.yml
+  langs:
+  - cplusplus
+  name: Seek
+  fullName: msipcthin2.customprotectedstream_seek
+  type: Method
+  assemblies: *o0
+  namespace: Microsoft.RightsManagement
+  summary: "Sets the current position to the specified number of bytes  from the start of the file. \r\n\r\nImplements the [IRandomAccessStream.Seek](https://msdn.microsoft.com/en-us/library/windows/apps/windows.storage.streams.irandomaccessstream.seek.aspx) method .\r\n\r\n"
+  remarks: 
+  syntax:
+    content: >-
+      public:
+
+      virtual Void Seek(
+      	UInt64 position
+      )
+    parameters:
+    - id: position
+      type: UInt64
+      description: 'The number of bytes from the start of the file at which to set the position. '
+    return:
+      type: Void
+      description: 
+  inheritance: []
+- uid: msipcthin2.customprotectedstream_writeasync
+  id: WriteAsync
+  parent: msipcthin2.customprotectedstream
+  children: []
+  href: CustomProtectedStream.yml
+  langs:
+  - cplusplus
+  name: WriteAsync
+  fullName: msipcthin2.customprotectedstream_writeasync
+  type: Method
+  assemblies: *o0
+  namespace: Microsoft.RightsManagement
+  summary: "Writes data asynchronously to the backing file.\r\n\r\n\r\n\r\nImplements the [IOutputStream.WriteAsync](https://msdn.microsoft.com/en-us/library/windows/apps/windows.storage.streams.ioutputstream.writeasync.aspx) method.  "
+  remarks: >+
+    Data written to the stream must be 16-byte aligned.
+
+
+
+
+
+
+
+
+
+    **Warning** To avoid data loss and/or corruption, @msipcthin2.customprotectedstream_flushasync must be called if you modify the created stream or before object disposal.
+
+
+
+
+
+
+
+  syntax:
+    content: >-
+      public:
+
+      virtual       IAsyncOperationWithProgress<uint32, uint32>      WriteAsync(
+      	IBuffer buffer
+      )
+    parameters:
+    - id: buffer
+      type: IBuffer
+      description: 'The buffer into which the asynchronous write operation writes. '
+    return:
+      type: '      IAsyncOperationWithProgress<uint32, uint32>     '
+      description: The byte writer operation.
+  inheritance: []
+- uid: msipcthin2.customprotectedstream_canread
+  id: CanRead
+  parent: msipcthin2.customprotectedstream
+  children: []
+  href: CustomProtectedStream.yml
+  langs:
+  - cplusplus
+  name: CanRead
+  fullName: msipcthin2.customprotectedstream_canread
+  type: Property
+  assemblies: *o0
+  namespace: Microsoft.RightsManagement
+  summary: "Gets a value that indicates whether the file can be read from. Implements the [IRandomAccessStream.CanRead](https://msdn.microsoft.com/en-us/library/windows/apps/windows.storage.streams.irandomaccessstream.canread.aspx) property. \r\n\r\n\r\n\r\n"
+  remarks: 
+  syntax:
+    content: >-
+      public:
+
+      virtual Boolean CanRead {
+      	Boolean get();
+      }
+    return:
+      type: Boolean
+      description: True if the file can be read from; otherwise false.
+  inheritance: []
+- uid: msipcthin2.customprotectedstream_canwrite
+  id: CanWrite
+  parent: msipcthin2.customprotectedstream
+  children: []
+  href: CustomProtectedStream.yml
+  langs:
+  - cplusplus
+  name: CanWrite
+  fullName: msipcthin2.customprotectedstream_canwrite
+  type: Property
+  assemblies: *o0
+  namespace: Microsoft.RightsManagement
+  summary: "Gets a value that indicates whether the file can be written to. \r\n\r\nImplements the [IRandomAccessStream.CanWrite](https://msdn.microsoft.com/en-us/library/windows/apps/windows.storage.streams.irandomaccessstream.canwrite.aspx) property.\r\n\r\n"
+  remarks: 
+  syntax:
+    content: >-
+      public:
+
+      virtual Boolean CanWrite {
+      	Boolean get();
+      }
+    return:
+      type: Boolean
+      description: True if the file can be written to; otherwise false.
+  inheritance: []
+- uid: msipcthin2.customprotectedstream_position
+  id: Position
+  parent: msipcthin2.customprotectedstream
+  children: []
+  href: CustomProtectedStream.yml
+  langs:
+  - cplusplus
+  name: Position
+  fullName: msipcthin2.customprotectedstream_position
+  type: Property
+  assemblies: *o0
+  namespace: Microsoft.RightsManagement
+  summary: >+
+    Gets the current file position in bytes.
+
+
+
+    Implements the [IRandomAccessStream.Position](https://msdn.microsoft.com/en-us/library/windows/apps/windows.storage.streams.irandomaccessstream.position.aspx) property.
+
+
+
+  remarks: 
+  syntax:
+    content: >-
+      public:
+
+      virtual UInt64 Position {
+      	UInt64 get();
+      }
+    return:
+      type: UInt64
+      description: The current file position in bytes.
+  inheritance: []
+- uid: msipcthin2.customprotectedstream_size
+  id: Size
+  parent: msipcthin2.customprotectedstream
+  children: []
+  href: CustomProtectedStream.yml
+  langs:
+  - cplusplus
+  name: Size
+  fullName: msipcthin2.customprotectedstream_size
+  type: Property
+  assemblies: *o0
+  namespace: Microsoft.RightsManagement
+  summary: >+
+    Gets or sets the size of the protected data in bytes. Implements the [IRandomAccessStream.Size](https://msdn.microsoft.com/en-us/library/windows/apps/windows.storage.streams.irandomaccessstream.size.aspx) property.
+
+
+
+
+
+
+
+  remarks: >+
+    To avoid data loss and/or corruption, @msipcthin2.customprotectedstream_flushasync must be called if you modify the created stream or before object disposal.
+
+
+
+
+
+
+
+  syntax:
+    content: >-
+      public:
+       UInt64 Size {
+      	UInt64 get();
+      	void set (UInt64 value);
+      }
+    return:
+      type: UInt64
+      description: The size of the protected data in bytes.
+  inheritance: []
+references:
+- uid: msipcthin2.customprotectedstream
+  href: CustomProtectedStream.yml
+  name: CustomProtectedStream
+- uid: msipcthin2.protectedfilestream
+  href: ProtectedFileStream.yml
+  name: ProtectedFileStream
+- uid: w_storage_streams.irandomaccessstream
+  name: IRandomAccessStream
+- uid: Windows.Storage.Streams.IRandomAccessStream
+  isExternal: true
+  href: https://msdn.microsoft.com/en-us/library/windows/apps/windows.storage.streams.irandomaccessstream.aspx
+  name: Windows.Storage.Streams.IRandomAccessStream
+- uid: IRandomAccessStream
+  isExternal: true
+  href: https://msdn.microsoft.com/en-us/library/windows/apps/windows.storage.streams.irandomaccessstream.aspx
+  name: IRandomAccessStream
+- uid: msipcthin2.customprotectedstream_clonestream
+  href: CloneStream.yml
+  name: CloneStream
+- uid: msipcthin2.customprotectedstream_createasync_cpp
+  href: CreateAsync.yml
+  name: CreateAsync
+- uid: msipcthin2.customprotectedstream_flushasync
+  href: FlushAsync.yml
+  name: FlushAsync
+- uid: msipcthin2.customprotectedstream_getencryptedcontentlength
+  href: GetEncryptedContentLength.yml
+  name: GetEncryptedContentLength
+- uid: msipcthin2.customprotectedstream_getinputstreamat
+  href: GetInputStreamAt.yml
+  name: GetInputStreamAt
+- uid: msipcthin2.customprotectedstream_getoutputstreamat
+  href: GetOutputStreamAt.yml
+  name: GetOutputStreamAt
+- uid: msipcthin2.customprotectedstream_readasync
+  href: ReadAsync.yml
+  name: ReadAsync
+- uid: msipcthin2.customprotectedstream_seek
+  href: Seek.yml
+  name: Seek
+- uid: msipcthin2.customprotectedstream_writeasync
+  href: WriteAsync.yml
+  name: WriteAsync
+- uid: msipcthin2.customprotectedstream_canread
+  href: CanRead.yml
+  name: CanRead
+- uid: msipcthin2.customprotectedstream_canwrite
+  href: CanWrite.yml
+  name: CanWrite
+- uid: msipcthin2.customprotectedstream_position
+  href: Position.yml
+  name: Position
+- uid: msipcthin2.customprotectedstream_size
+  href: Size.yml
+  name: Size

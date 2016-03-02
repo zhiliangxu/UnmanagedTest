@@ -1,0 +1,514 @@
+items:
+- uid: msipcthin2.licensemetadata_interface_java
+  id: LicenseMetadata
+  parent: com.microsoft.rightsmanagement
+  children:
+  - msipcthin2.licensemetadata_getcontentdatecreated_method_java
+  - msipcthin2.licensemetadata_getcontentdatemodified_method_java
+  - msipcthin2.licensemetadata_getcontentname_method_java
+  - msipcthin2.licensemetadata_getcontentpath_method_java
+  - msipcthin2.licensemetadata_getnotificationpreference_method_java
+  - msipcthin2.licensemetadata_getnotificationtype_method_java
+  - msipcthin2.licensemetadata_licensemetadata
+  - msipcthin2.licensemetadata_setcontentdatecreated_method_java
+  - msipcthin2.licensemetadata_setcontentdatemodified_method_java
+  - msipcthin2.licensemetadata_setcontentname_method_java
+  - msipcthin2.licensemetadata_setcontentpath_method_java
+  - msipcthin2.licensemetadata_setnotificationpreference_method_java
+  - msipcthin2.licensemetadata_setnotificationtype_method
+  href: LicenseMetadata.yml
+  langs:
+  - cplusplus
+  name: LicenseMetadata
+  fullName: msipcthin2.licensemetadata_interface_java
+  type: Interface
+  assemblies: &o0
+  - Android
+  namespace: com.microsoft.rightsmanagement
+  summary: >+
+    Information for the document tracking feature.
+
+
+
+    The required properties are contentName and notificationType which are set by the initializing method, @msipcthin2.licensemetadata_licensemetadata. The other properties are optional.
+
+
+
+    For more information, see @msipcthin2.how_to__use_document_tracking.
+
+
+
+  remarks: 
+  thread_safety: Members of this class are not guaranteed to be thread safe.
+  defined_in: LicenseMetadata.java
+  syntax:
+    content: public class LicenseMetadata implements Serializable
+  inheritance: []
+- uid: msipcthin2.licensemetadata_licensemetadata
+  id: LicenseMetadata LicenseMetadata
+  parent: msipcthin2.licensemetadata_interface_java
+  children: []
+  href: LicenseMetadata.yml
+  langs:
+  - cplusplus
+  name: LicenseMetadata LicenseMetadata
+  fullName: msipcthin2.licensemetadata_licensemetadata
+  type: Method
+  assemblies: *o0
+  namespace: com.microsoft.rightsmanagement
+  summary: >+
+    Creates a license metadata object for document tracking.
+
+
+
+    For more information, see @msipcthin2.how_to__use_document_tracking.
+
+
+
+  remarks: 
+  syntax:
+    content: public LicenseMetadata(String contentName, NotificationType notificationType)
+    parameters:
+    - id: '*contentName*'
+      type: '**String**'
+      description: >+
+        Required
+
+
+
+        Ex: "filename.txt"
+
+
+
+    - id: '*notificationType*'
+      type: '@msipcthin2.notificationtype_java'
+      description: >+
+        Required
+
+
+
+  inheritance: []
+- uid: msipcthin2.licensemetadata_getcontentname_method_java
+  id: LicenseMetadata getContentName
+  parent: msipcthin2.licensemetadata_interface_java
+  children: []
+  href: LicenseMetadata.yml
+  langs:
+  - cplusplus
+  name: LicenseMetadata getContentName
+  fullName: msipcthin2.licensemetadata_getcontentname_method_java
+  type: Method
+  assemblies: *o0
+  namespace: com.microsoft.rightsmanagement
+  summary: >+
+    Gets the file name of  the content to be tracked, not including the path.
+
+
+
+    For more information see @msipcthin2.licensemetadata_getcontentpath_method_java, @msipcthin2.licensemetadata_setcontentname_method_java and @msipcthin2.licensemetadata_setcontentpath_method_java.
+
+
+
+  remarks: 
+  syntax:
+    content: public String getContentName();
+    return:
+      type: String
+      description: A **String**.
+  inheritance: []
+- uid: msipcthin2.licensemetadata_getcontentpath_method_java
+  id: LicenseMetadata getContentPath
+  parent: msipcthin2.licensemetadata_interface_java
+  children: []
+  href: LicenseMetadata.yml
+  langs:
+  - cplusplus
+  name: LicenseMetadata getContentPath
+  fullName: msipcthin2.licensemetadata_getcontentpath_method_java
+  type: Method
+  assemblies: *o0
+  namespace: com.microsoft.rightsmanagement
+  summary: >+
+    Gets the path of  the content to be tracked. This property does not include the file name.
+
+
+
+    For more information see @msipcthin2.licensemetadata_getcontentname_method_java, @msipcthin2.licensemetadata_setcontentname_method_java and @msipcthin2.licensemetadata_setcontentpath_method_java.
+
+
+
+  remarks: 
+  syntax:
+    content: public String getContentPath();
+    return:
+      type: String
+      description: A **String**.
+  inheritance: []
+- uid: msipcthin2.licensemetadata_getcontentdatecreated_method_java
+  id: LicenseMetadata getContentDateCreated
+  parent: msipcthin2.licensemetadata_interface_java
+  children: []
+  href: LicenseMetadata.yml
+  langs:
+  - cplusplus
+  name: LicenseMetadata getContentDateCreated
+  fullName: msipcthin2.licensemetadata_getcontentdatecreated_method_java
+  type: Method
+  assemblies: *o0
+  namespace: com.microsoft.rightsmanagement
+  summary: >+
+    Gets the create date of the tracked document.
+
+
+
+
+
+
+
+  remarks: 
+  syntax:
+    content: public String getContentDateCreated();
+    return:
+      type: Date
+      description: A **Date**.
+  inheritance: []
+- uid: msipcthin2.licensemetadata_getcontentdatemodified_method_java
+  id: LicenseMetadata getContentDateModified
+  parent: msipcthin2.licensemetadata_interface_java
+  children: []
+  href: LicenseMetadata.yml
+  langs:
+  - cplusplus
+  name: LicenseMetadata getContentDateModified
+  fullName: msipcthin2.licensemetadata_getcontentdatemodified_method_java
+  type: Method
+  assemblies: *o0
+  namespace: com.microsoft.rightsmanagement
+  summary: >+
+    Gets the last modified date of the tracked document.
+
+
+
+
+
+
+
+  remarks: 
+  syntax:
+    content: public String getContentDateModified();
+    return:
+      type: Date
+      description: A **Date**.
+  inheritance: []
+- uid: msipcthin2.licensemetadata_getnotificationtype_method_java
+  id: LicenseMetadata getNotificationType
+  parent: msipcthin2.licensemetadata_interface_java
+  children: []
+  href: LicenseMetadata.yml
+  langs:
+  - cplusplus
+  name: LicenseMetadata getNotificationType
+  fullName: msipcthin2.licensemetadata_getnotificationtype_method_java
+  type: Method
+  assemblies: *o0
+  namespace: com.microsoft.rightsmanagement
+  summary: >+
+    Gets the notification type of the tracked document.
+
+
+
+
+
+
+
+  remarks: 
+  syntax:
+    content: public NotificationType getNotificationType();
+    return:
+      type: '@msipcthin2.notificationtype_java'
+      description: A @msipcthin2.notificationtype_java.
+  inheritance: []
+- uid: msipcthin2.licensemetadata_getnotificationpreference_method_java
+  id: LicenseMetadata getNotificationPreference
+  parent: msipcthin2.licensemetadata_interface_java
+  children: []
+  href: LicenseMetadata.yml
+  langs:
+  - cplusplus
+  name: LicenseMetadata getNotificationPreference
+  fullName: msipcthin2.licensemetadata_getnotificationpreference_method_java
+  type: Method
+  assemblies: *o0
+  namespace: com.microsoft.rightsmanagement
+  summary: >+
+    Gets the notification preference of the tracked document.
+
+
+
+
+
+
+
+  remarks: 
+  syntax:
+    content: public NotificationType getNotificationPreference();
+    return:
+      type: '@msipcthin2.notificationpreference'
+      description: A @msipcthin2.notificationpreference.
+  inheritance: []
+- uid: msipcthin2.licensemetadata_setcontentname_method_java
+  id: LicenseMetadata setContentName
+  parent: msipcthin2.licensemetadata_interface_java
+  children: []
+  href: LicenseMetadata.yml
+  langs:
+  - cplusplus
+  name: LicenseMetadata setContentName
+  fullName: msipcthin2.licensemetadata_setcontentname_method_java
+  type: Method
+  assemblies: *o0
+  namespace: com.microsoft.rightsmanagement
+  summary: >+
+    Sets the content file  name of  the document to be tracked, not including the path.
+
+
+
+    This property is required.
+
+
+
+    For more information see @msipcthin2.licensemetadata_getcontentname_method_java,  @msipcthin2.licensemetadata_getcontentpath_method_java and @msipcthin2.licensemetadata_setcontentpath_method_java.
+
+
+
+  remarks: 
+  syntax:
+    content: public void setContentName(String contentName);
+    parameters:
+    - id: '*contentName*'
+      type: '**String**'
+      description: >+
+        Required
+
+
+
+        Ex: "filename.txt"
+
+
+
+  inheritance: []
+- uid: msipcthin2.licensemetadata_setcontentpath_method_java
+  id: LicenseMetadata setContentPath
+  parent: msipcthin2.licensemetadata_interface_java
+  children: []
+  href: LicenseMetadata.yml
+  langs:
+  - cplusplus
+  name: LicenseMetadata setContentPath
+  fullName: msipcthin2.licensemetadata_setcontentpath_method_java
+  type: Method
+  assemblies: *o0
+  namespace: com.microsoft.rightsmanagement
+  summary: >+
+    Sets the content file  path of  the document to be tracked, not including the file name.
+
+
+
+    This property is optional.
+
+
+
+    For more information see @msipcthin2.licensemetadata_getcontentname_method_java,  @msipcthin2.licensemetadata_getcontentpath_method_java and @msipcthin2.licensemetadata_getcontentpath_method_java.
+
+
+
+  remarks: 
+  syntax:
+    content: public void setContentPath(String contentPath);
+    parameters:
+    - id: '*contentPath*'
+      type: '**String**'
+      description: >+
+        Optional
+
+
+
+        Ex: "C:\MyDocs\"
+
+
+
+        If this property is not set the system initializes it to an empty string.
+
+
+
+  inheritance: []
+- uid: msipcthin2.licensemetadata_setcontentdatecreated_method_java
+  id: LicenseMetadata setContentDateCreated
+  parent: msipcthin2.licensemetadata_interface_java
+  children: []
+  href: LicenseMetadata.yml
+  langs:
+  - cplusplus
+  name: LicenseMetadata setContentDateCreated
+  fullName: msipcthin2.licensemetadata_setcontentdatecreated_method_java
+  type: Method
+  assemblies: *o0
+  namespace: com.microsoft.rightsmanagement
+  summary: >+
+    Sets the creation date of  the document to be tracked.
+
+
+
+    This property is optional.
+
+
+
+  remarks: 
+  syntax:
+    content: public void setContentDateCreated(Date contentDateCreated)
+    parameters:
+    - id: '*contentDateCreated*'
+      type: '**Date**'
+      description: "Optional\r\n\r\nThis property defaults to the current date and time if property not set.\r\n\r\nThe format this property is governed by RFC3339.\r\n\r\nExample: “2015-08-20T15:17”.\r\n\r\n"
+  inheritance: []
+- uid: msipcthin2.licensemetadata_setcontentdatemodified_method_java
+  id: LicenseMetadata setContentDateModified
+  parent: msipcthin2.licensemetadata_interface_java
+  children: []
+  href: LicenseMetadata.yml
+  langs:
+  - cplusplus
+  name: LicenseMetadata setContentDateModified
+  fullName: msipcthin2.licensemetadata_setcontentdatemodified_method_java
+  type: Method
+  assemblies: *o0
+  namespace: com.microsoft.rightsmanagement
+  summary: >+
+    Sets the modification date of  the document to be tracked.
+
+
+
+    This property is optional.
+
+
+
+  remarks: 
+  syntax:
+    content: public void setContentDateModified(Date contentDateModified)
+    parameters:
+    - id: '*setContentDateModified*'
+      type: '**Date**'
+      description: "Optional\r\n\r\nThis property defaults to the current date and time if property not set.\r\n\r\nThe format this property is governed by RFC3339. \r\n\r\nExample: “2015-08-20T15:17”.\r\n\r\n"
+  inheritance: []
+- uid: msipcthin2.licensemetadata_setnotificationpreference_method_java
+  id: LicenseMetadata setNotificationPreference
+  parent: msipcthin2.licensemetadata_interface_java
+  children: []
+  href: LicenseMetadata.yml
+  langs:
+  - cplusplus
+  name: LicenseMetadata setNotificationPreference
+  fullName: msipcthin2.licensemetadata_setnotificationpreference_method_java
+  type: Method
+  assemblies: *o0
+  namespace: com.microsoft.rightsmanagement
+  summary: >+
+    Sets the notification preference of  the document to be tracked.
+
+
+
+    This property is optional.
+
+
+
+  remarks: 
+  syntax:
+    content: public void setNotificationPreference(NotificationPreference notificationPreference)
+    parameters:
+    - id: '*notificationPreference*'
+      type: '@msipcthin2.notificationpreference'
+      description: >+
+        Optional
+
+
+
+        If this property is not set, the system behaves as if its set to @msipcthin2.notificationpreference.
+
+
+
+  inheritance: []
+- uid: msipcthin2.licensemetadata_setnotificationtype_method
+  id: LicenseMetadata setNotificationType
+  parent: msipcthin2.licensemetadata_interface_java
+  children: []
+  href: LicenseMetadata.yml
+  langs:
+  - cplusplus
+  name: LicenseMetadata setNotificationType
+  fullName: msipcthin2.licensemetadata_setnotificationtype_method
+  type: Method
+  assemblies: *o0
+  namespace: com.microsoft.rightsmanagement
+  summary: >+
+    Sets the notification type of  the document to be tracked.
+
+
+
+    This property is required.
+
+
+
+  remarks: 
+  syntax:
+    content: public void setNotificationType(NotificationType notificationType)
+    parameters:
+    - id: '*notificationType*'
+      type: '@msipcthin2.notificationtype_java'
+      description: >+
+        Required
+
+
+
+  inheritance: []
+references:
+- uid: msipcthin2.licensemetadata_licensemetadata
+  href: LicenseMetadata LicenseMetadata.yml
+  name: LicenseMetadata
+- uid: msipcthin2.how_to__use_document_tracking
+  name: 'How to: Use document tracking'
+- uid: msipcthin2.licensemetadata_getcontentname_method_java
+  href: LicenseMetadata getContentName.yml
+  name: getContentName
+- uid: msipcthin2.licensemetadata_getcontentpath_method_java
+  href: LicenseMetadata getContentPath.yml
+  name: getContentPath
+- uid: msipcthin2.licensemetadata_getcontentdatecreated_method_java
+  href: LicenseMetadata getContentDateCreated.yml
+  name: getContentDateCreated
+- uid: msipcthin2.licensemetadata_getcontentdatemodified_method_java
+  href: LicenseMetadata getContentDateModified.yml
+  name: getContentDateModified
+- uid: msipcthin2.licensemetadata_getnotificationpreference_method_java
+  href: LicenseMetadata getNotificationPreference.yml
+  name: getNotificationPreference
+- uid: msipcthin2.licensemetadata_getnotificationtype_method_java
+  href: LicenseMetadata getNotificationType.yml
+  name: getNotificationType
+- uid: msipcthin2.licensemetadata_setcontentname_method_java
+  href: LicenseMetadata setContentName.yml
+  name: setContentName
+- uid: msipcthin2.licensemetadata_setcontentpath_method_java
+  href: LicenseMetadata setContentPath.yml
+  name: setContentPath
+- uid: msipcthin2.licensemetadata_setcontentdatecreated_method_java
+  href: LicenseMetadata setContentDateCreated.yml
+  name: setContentDateCreated
+- uid: msipcthin2.licensemetadata_setcontentdatemodified_method_java
+  href: LicenseMetadata setContentDateModified.yml
+  name: setContentDateModified
+- uid: msipcthin2.licensemetadata_setnotificationpreference_method_java
+  href: LicenseMetadata setNotificationPreference.yml
+  name: setNotificationPreference
+- uid: msipcthin2.licensemetadata_setnotificationtype_method
+  href: LicenseMetadata setNotificationType.yml
+  name: setNotificationType

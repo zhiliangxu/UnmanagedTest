@@ -1,0 +1,200 @@
+items:
+- uid: msipcthin2.customprotectedoutputstream_class_java
+  id: CustomProtectedOutputStream
+  parent: com.microsoft.rightsmanagement
+  children:
+  - msipcthin2.customprotectedoutputstream_create_method_java
+  - msipcthin2.customprotectedoutputstream_create_synchronous_method
+  - msipcthin2.customprotectedoutputstream_getencryptedcontentlength_method_java
+  - msipcthin2.customprotectedoutputstream_getuserpolicy_method_java
+  href: CustomProtectedOutputStream.yml
+  langs:
+  - cplusplus
+  name: CustomProtectedOutputStream
+  fullName: msipcthin2.customprotectedoutputstream_class_java
+  type: Class
+  assemblies: &o0
+  - Android
+  namespace: com.microsoft.rightsmanagement
+  summary: >+
+    Implements a custom protected output stream.
+
+
+
+
+
+
+
+  remarks: 
+  thread_safety: Members of this class are not guaranteed to be thread safe.
+  defined_in: CustomProtectedOutputStream.java
+  syntax:
+    content: public class CustomProtectedOutputStream extends OutputStream
+  inheritance: []
+- uid: msipcthin2.customprotectedoutputstream_create_method_java
+  id: CustomProtectedOutputStream.create
+  parent: msipcthin2.customprotectedoutputstream_class_java
+  children: []
+  href: CustomProtectedOutputStream.yml
+  langs:
+  - cplusplus
+  name: CustomProtectedOutputStream.create
+  fullName: msipcthin2.customprotectedoutputstream_create_method_java
+  type: Method
+  assemblies: *o0
+  namespace: com.microsoft.rightsmanagement
+  summary: "Creates an **OutputStream** for writing protected content.\r\n\r\n\r\n\r\nThis method is asynchronous as it may  require server client     communication. When publishing content the apps are required to call     CustomProtectedOutputStream.close after they are finished writing the content to the @msipcthin2.customprotectedoutputstream_class_java.     \r\n\r\nIf the flush() is not called we cannot guarantee that all the encrypted data is stored to the backing stream.\r\n\r\n"
+  remarks: 
+  syntax:
+    content: public static IAsyncControl create(OutputStream backingOutputStream,                                       UserPolicy userPolicy,                                       CreationCallback<CustomProtectedOutputStream> callback)            throws InvalidParameterException
+    parameters:
+    - id: '*backingOutputStream*'
+      type: '**OutputStream**'
+      description: 
+    - id: '*userPolicy*'
+      type: '@msipcthin2.userpolicy_class_java'
+      description: 
+    - id: '*callback*'
+      type: 'CreationCallback&lt;@msipcthin2.customprotectedoutputstream_class_java&gt;       '
+      description: 
+    return:
+      type: '@msipcthin2.iasynccontrol_interface'
+      description: '@msipcthin2.iasynccontrol_interface if an async operation is in progress else null is returned. '
+  inheritance: []
+- uid: msipcthin2.customprotectedoutputstream_create_synchronous_method
+  id: CustomProtectedOutputStream.create synchronous
+  parent: msipcthin2.customprotectedoutputstream_class_java
+  children: []
+  href: CustomProtectedOutputStream.yml
+  langs:
+  - cplusplus
+  name: CustomProtectedOutputStream.create synchronous
+  fullName: msipcthin2.customprotectedoutputstream_create_synchronous_method
+  type: Method
+  assemblies: *o0
+  namespace: com.microsoft.rightsmanagement
+  summary: >+
+    Synchronously creates an **OutputStream** for writing protected content.
+
+
+
+
+
+
+
+    This method is synchronous and it may  require server client     communication.
+
+
+
+    When publishing content your app is required to call     CustomProtectedOutputStream.close after it is finished writing the content to the @msipcthin2.customprotectedoutputstream_class_java.     If the flush() is not called we cannot guarantee that all the encrypted data is stored to the backing stream.
+
+
+
+  remarks: 
+  syntax:
+    content: public static CustomProtectedOutputStream create(                                       OutputStream backingOutputStream,                                       UserPolicy userPolicy,                                       Context applicationContext)                             throws ProtectionException
+    parameters:
+    - id: '*backingOutputStream*'
+      type: '**OutputStream**'
+      description: 
+    - id: '*userPolicy*'
+      type: '@msipcthin2.userpolicy_class_java'
+      description: >+
+        Policy needed to create the @msipcthin2.protectedfileoutputstream_class_java
+
+
+
+    - id: '*applicationContext*'
+      type: '**Context**'
+      description: 
+    return:
+      type: '@msipcthin2.customprotectedoutputstream_class_java'
+      description: '@msipcthin2.customprotectedoutputstream_class_java'
+  inheritance: []
+- uid: msipcthin2.customprotectedoutputstream_getuserpolicy_method_java
+  id: CustomProtectedOutputStream.getUserPolicy
+  parent: msipcthin2.customprotectedoutputstream_class_java
+  children: []
+  href: CustomProtectedOutputStream.yml
+  langs:
+  - cplusplus
+  name: CustomProtectedOutputStream.getUserPolicy
+  fullName: msipcthin2.customprotectedoutputstream_getuserpolicy_method_java
+  type: Method
+  assemblies: *o0
+  namespace: com.microsoft.rightsmanagement
+  summary: >+
+    Gets the user policy associated with the stream.
+
+
+
+
+
+
+
+  remarks: 
+  syntax:
+    content: public UserPolicy getUserPolicy()
+    return:
+      type: '@msipcthin2.userpolicy_class_java'
+      description: A @msipcthin2.userpolicy_class_java object that represents the policy.
+  inheritance: []
+- uid: msipcthin2.customprotectedoutputstream_getencryptedcontentlength_method_java
+  id: CustomProtectedOutputStream.getEncryptedContentLength
+  parent: msipcthin2.customprotectedoutputstream_class_java
+  children: []
+  href: CustomProtectedOutputStream.yml
+  langs:
+  - cplusplus
+  name: CustomProtectedOutputStream.getEncryptedContentLength
+  fullName: msipcthin2.customprotectedoutputstream_getencryptedcontentlength_method_java
+  type: Method
+  assemblies: *o0
+  namespace: com.microsoft.rightsmanagement
+  summary: >+
+    Gets the  calculated size of the encrypted content.
+
+
+
+
+
+
+
+  remarks: 
+  syntax:
+    content: static public long getEncryptedContentLength(long decryptedContentLength,                                         UserPolicy userPolicy) throws InvalidParameterException
+    parameters:
+    - id: '*decryptedContentLength*'
+      type: '**long**'
+      description: >+
+        Must be greater then 0 (zero).
+
+
+
+    - id: '*userPolicy*'
+      type: '@msipcthin2.userpolicy_class_java'
+      description: 
+    return:
+      type: long
+      description: A **long**
+  inheritance: []
+references:
+- uid: msipcthin2.customprotectedoutputstream_class_java
+  href: CustomProtectedOutputStream.yml
+  name: CustomProtectedOutputStream
+- uid: OutputStream
+  isExternal: true
+  href: http://developer.android.com/reference/java/io/OutputStream.html
+  name: OutputStream
+- uid: msipcthin2.customprotectedoutputstream_create_method_java
+  href: CustomProtectedOutputStream.create.yml
+  name: create
+- uid: msipcthin2.customprotectedoutputstream_getencryptedcontentlength_method_java
+  href: CustomProtectedOutputStream.getEncryptedContentLength.yml
+  name: getEncryptedContentLength
+- uid: msipcthin2.customprotectedoutputstream_getuserpolicy_method_java
+  href: CustomProtectedOutputStream.getUserPolicy.yml
+  name: getUserPolicy
+- uid: msipcthin2.customprotectedoutputstream_create_synchronous_method
+  href: CustomProtectedOutputStream.create synchronous.yml
+  name: CustomProtectedOutputStream.create synchronous

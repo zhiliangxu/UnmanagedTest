@@ -1,0 +1,163 @@
+items:
+- uid: msipcthin2.commonrights
+  id: CommonRights
+  parent: Microsoft.RightsManagement
+  children:
+  - msipcthin2.commonrights_all
+  - msipcthin2.commonrights_owner
+  - msipcthin2.commonrights_view
+  href: CommonRights.yml
+  langs:
+  - cplusplus
+  name: CommonRights
+  fullName: msipcthin2.commonrights
+  type: Class
+  assemblies: &o0
+  - Microsoft.RightsManagement.winmd
+  namespace: Microsoft.RightsManagement
+  summary: >+
+    Rights that are supported by all apps.
+
+
+
+
+
+
+
+  remarks: >+
+    For more information about the built-in rights and the usage restrictions associated with them  that apps should observe, see @msipcthin2.built-in_rights_usage_restriction_reference.
+
+
+
+  thread_safety: Members of this class are not guaranteed to be thread safe.
+  syntax:
+    content: 'public ref class CommonRights sealed : IInspectable'
+  inheritance:
+  - IInspectable
+- uid: msipcthin2.commonrights_all
+  id: All
+  parent: msipcthin2.commonrights
+  children: []
+  href: CommonRights.yml
+  langs:
+  - cplusplus
+  name: All
+  fullName: msipcthin2.commonrights_all
+  type: Property
+  assemblies: *o0
+  namespace: Microsoft.RightsManagement
+  summary: >+
+    Gets a set of all @msipcthin2.commonrights.
+
+
+
+
+
+
+
+  remarks: >+
+    For more information about the built-in rights and the usage restrictions associated with them  that apps should observe, see @msipcthin2.built-in_rights_usage_restriction_reference.
+
+
+
+  syntax:
+    content: >-
+      public:
+
+      static IIterable<String^> All {
+      	IIterable<String^> get();
+      }
+    return:
+      type: IIterable<String^>
+      description: A collection of all CommonRights.
+  inheritance: []
+- uid: msipcthin2.commonrights_owner
+  id: Owner
+  parent: msipcthin2.commonrights
+  children: []
+  href: CommonRights.yml
+  langs:
+  - cplusplus
+  name: Owner
+  fullName: msipcthin2.commonrights_owner
+  type: Property
+  assemblies: *o0
+  namespace: Microsoft.RightsManagement
+  summary: >+
+    Gets a right that represents content ownership.
+
+
+
+    This right grants full control over the protected content.
+
+
+
+  remarks: >+
+    For more information about the built-in rights and the usage restrictions associated with them  that apps should observe, see @msipcthin2.built-in_rights_usage_restriction_reference.
+
+
+
+  syntax:
+    content: >-
+      public:
+
+      static     String^ Owner {
+      	    String^ get();
+      }
+    return:
+      type: '    String^'
+      description: The owner right.
+  inheritance: []
+- uid: msipcthin2.commonrights_view
+  id: View
+  parent: msipcthin2.commonrights
+  children: []
+  href: CommonRights.yml
+  langs:
+  - cplusplus
+  name: View
+  fullName: msipcthin2.commonrights_view
+  type: Property
+  assemblies: *o0
+  namespace: Microsoft.RightsManagement
+  summary: >+
+    Gets a right that allows viewing of protected content.
+
+
+
+
+
+
+
+  remarks: >+
+    For more information about the built-in rights and the usage restrictions associated with them  that apps should observe, see @msipcthin2.built-in_rights_usage_restriction_reference.
+
+
+
+  syntax:
+    content: >-
+      public:
+
+      static     String^ View {
+      	    String^ get();
+      }
+    return:
+      type: '    String^'
+      description: The view right.
+  inheritance: []
+references:
+- uid: IInspectable
+  isExternal: true
+  href: https://msdn.microsoft.com/en-us/library/windows/apps/br205821
+  name: IInspectable
+- uid: msipcthin2.built-in_rights_usage_restriction_reference
+  name: Built-in Rights Usage Restriction Reference
+- uid: msipcthin2.commonrights_all
+  href: All.yml
+  name: All
+- uid: msipcthin2.commonrights_owner
+  href: Owner.yml
+  name: Owner
+- uid: msipcthin2.commonrights_view
+  href: View.yml
+  name: View

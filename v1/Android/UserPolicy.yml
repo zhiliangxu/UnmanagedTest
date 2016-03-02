@@ -1,0 +1,1138 @@
+items:
+- uid: msipcthin2.userpolicy_class_java
+  id: UserPolicy
+  parent: com.microsoft.rightsmanagement
+  children:
+  - msipcthin2.userpolicy_accesscheck_method_java
+  - msipcthin2.userpolicy_acquire_method_java
+  - msipcthin2.userpolicy_acquire_synchronous_method_java
+  - msipcthin2.userpolicy_create_policydescriptor_______synchronous_method_java
+  - msipcthin2.userpolicy_create_PolicyDescriptor_method_java
+  - msipcthin2.userpolicy_create_templatedescriptor_______synchronous_method_java
+  - msipcthin2.userpolicy_create_TemplateDescriptor_method_java
+  - msipcthin2.userpolicy_doesusedeprecatedalgorithm_method_java
+  - msipcthin2.userpolicy_getcontentid_method_java
+  - msipcthin2.userpolicy_getcontentvaliduntil_method_java
+  - msipcthin2.userpolicy_getdescription_method_java
+  - msipcthin2.userpolicy_getencryptedappdata_method_java
+  - msipcthin2.userpolicy_getissuedto_method_java
+  - msipcthin2.userpolicy_getname_method_java
+  - msipcthin2.userpolicy_getowner_method_java
+  - msipcthin2.userpolicy_getpolicydescriptor_method_java
+  - msipcthin2.userpolicy_getreferrer_method_java
+  - msipcthin2.userpolicy_getserializedcontentpolicy_method_java
+  - msipcthin2.userpolicy_getsignedappdata_method_java
+  - msipcthin2.userpolicy_gettemplatedescriptor_method_java
+  - msipcthin2.userpolicy_gettype_method_java
+  - msipcthin2.userpolicy_isallowedauditedextract_method_java
+  - msipcthin2.userpolicy_isissuedtoowner_method_java
+  - msipcthin2.userpolicy_isprotected_method_java
+  - msipcthin2.userpolicy_registerfordoctracking_boolean__sting__authenticationcallback__creationcallback__java
+  - msipcthin2.userpolicy_registerfordoctracking_synchronous_method_java
+  href: UserPolicy.yml
+  langs:
+  - cplusplus
+  name: UserPolicy
+  fullName: msipcthin2.userpolicy_class_java
+  type: Class
+  assemblies: &o0
+  - Android
+  namespace: com.microsoft.rightsmanagement
+  summary: >+
+    Represents a user policy
+
+
+
+
+
+
+
+  remarks: 
+  thread_safety: Members of this class are not guaranteed to be thread safe.
+  defined_in: UserPolicy.java
+  syntax:
+    content: public class UserPolicy implements Serializable
+  inheritance: []
+- uid: msipcthin2.userpolicy_accesscheck_method_java
+  id: UserPolicy.accessCheck
+  parent: msipcthin2.userpolicy_class_java
+  children: []
+  href: UserPolicy.yml
+  langs:
+  - cplusplus
+  name: UserPolicy.accessCheck
+  fullName: msipcthin2.userpolicy_accesscheck_method_java
+  type: Method
+  assemblies: *o0
+  namespace: com.microsoft.rightsmanagement
+  summary: >+
+    Does the user policy have the given right.
+
+
+
+
+
+
+
+  remarks: 
+  syntax:
+    content: public boolean accessCheck(String right)
+    parameters:
+    - id: '*right*'
+      type: '**String**'
+      description: 
+    return:
+      type: Boolean
+      description: A **Boolean** indicating whether or not the checked right is granted.
+  inheritance: []
+- uid: msipcthin2.userpolicy_acquire_method_java
+  id: UserPolicy.acquire(byte[], String, AuthenticationRequestCallback, int,  CreationCallback<UserPolicy>)
+  parent: msipcthin2.userpolicy_class_java
+  children: []
+  href: UserPolicy.yml
+  langs:
+  - cplusplus
+  name: UserPolicy.acquire(byte[], String, AuthenticationRequestCallback, int,  CreationCallback<UserPolicy>)
+  fullName: msipcthin2.userpolicy_acquire_method_java
+  type: Method
+  assemblies: *o0
+  namespace: com.microsoft.rightsmanagement
+  summary: >+
+    Acquire a @msipcthin2.userpolicy_class_java object based on a serialized content policy.
+
+
+
+
+
+
+
+  remarks: 
+  syntax:
+    content: public static IAsyncControl acquire(byte[] serializedContentPolicy,                                    String userId,                                    AuthenticationRequestCallback authenticationCallback,                                    ConsentCallback consentCallback,                                    int policyAcquisitionFlags,                                    CreationCallback<UserPolicy> callback) throws InvalidParameterException
+    parameters:
+    - id: '*serializedContentPolicy*'
+      type: '**byte**[]'
+      description: >+
+        A serialized content policy
+
+
+
+    - id: '*userId*'
+      type: '**String**'
+      description: "Optional. \r\n\r\nA     *userId* is used for caching a user policy for offline usage. For multiple user scenarios, caller must supply a *userId*. \r\n\r\nIf userId is null, then the user policy is cached without *userId* and is retrievable with null *userId* as     well. A null *userId* also retrieves any matching offline user policy cached without *userId* or any *userId*\r\n\r\n"
+    - id: '*authenticationCallback*'
+      type: '@msipcthin2.authenticationrequestcallback_interface_java'
+      description: 
+    - id: '*consentCallback*'
+      type: '@msipcthin2.conscentcallback_interface_java'
+      description: 
+    - id: '*policyAcquisitionFlags*'
+      type: '**int**'
+      description: >+
+        For more information, see @msipcthin2.policyacquisitionflags_class_java
+
+
+
+    - id: '*callback*'
+      type: 'CreationCallback&lt;@msipcthin2.userpolicy_class_java&gt;&gt;       '
+      description: >+
+        Completion callback
+
+
+
+    return:
+      type: '@msipcthin2.iasynccontrol_interface'
+      description: An@msipcthin2.iasynccontrol_interface object.
+  inheritance: []
+- uid: msipcthin2.userpolicy_acquire_synchronous_method_java
+  id: UserPolicy.acquire synchronous
+  parent: msipcthin2.userpolicy_class_java
+  children: []
+  href: UserPolicy.yml
+  langs:
+  - cplusplus
+  name: UserPolicy.acquire synchronous
+  fullName: msipcthin2.userpolicy_acquire_synchronous_method_java
+  type: Method
+  assemblies: *o0
+  namespace: com.microsoft.rightsmanagement
+  summary: >+
+    Asynchronously acquires a @msipcthin2.userpolicy_class_java object based on a serialized content policy.
+
+
+
+    The I/O call is made on the calling thread.
+
+
+
+  remarks: 
+  syntax:
+    content: public static UserPolicy acquire(                                     final byte[] serializedContentPolicy,                                     final String userId,                                     final AuthenticationRequestCallback authenticationCallback,                                     final ConsentCallback consentCallback,                                     final int policyAcquisitionFlags,                                     final Context applicationContext)                                throws ProtectionException
+    parameters:
+    - id: '*serializedContentPolicy*'
+      type: '**byte**[]'
+      description: >+
+        A serialized content policy
+
+
+
+    - id: '*userId*'
+      type: '**String**'
+      description: >+
+        Optional.
+
+
+
+        A     *userId* is used for caching a user policy for offline usage. For multiple user scenarios, caller must supply a *userId*.
+
+
+
+        If *userId* is null, then the user policy is cached without *userId* and is retrievable with null *userId* as     well. A null *userId* also retrieves any matching offline user policy cached without *userId* or any *userId*.
+
+
+
+    - id: '*authenticationCallback*'
+      type: '@msipcthin2.authenticationrequestcallback_interface_java'
+      description: 
+    - id: '*consentCallback*'
+      type: '@msipcthin2.conscentcallback_interface_java'
+      description: 
+    - id: '*policyAcquisitionFlags*'
+      type: '**int**'
+      description: >+
+        For more information, see @msipcthin2.policyacquisitionflags_class_java
+
+
+
+    - id: '*applicationContext*'
+      type: '**Context**'
+      description: 
+    return:
+      type: '@msipcthin2.userpolicy_class_java'
+      description: '@msipcthin2.userpolicy_class_java'
+  inheritance: []
+- uid: msipcthin2.userpolicy_create_PolicyDescriptor_method_java
+  id: UserPolicy.create(PolicyDescriptor, String, int, CreationCallback<UserPolicy>)
+  parent: msipcthin2.userpolicy_class_java
+  children: []
+  href: UserPolicy.yml
+  langs:
+  - cplusplus
+  name: UserPolicy.create(PolicyDescriptor, String, int, CreationCallback<UserPolicy>)
+  fullName: msipcthin2.userpolicy_create_PolicyDescriptor_method_java
+  type: Method
+  assemblies: *o0
+  namespace: com.microsoft.rightsmanagement
+  summary: >+
+    Creates a new @msipcthin2.userpolicy_class_java object from a policy descriptor.
+
+
+
+
+
+
+
+  remarks: 
+  syntax:
+    content: public static IAsyncControl create(PolicyDescriptor policyDescriptor,                                       String userId,                                       AuthenticationRequestCallback authenticationContext,                                       int userPolicyCreationFlags,                                       CreationCallback<UserPolicy> callback) throws InvalidParameterException
+    parameters:
+    - id: '*policyDescriptor*'
+      type: '@msipcthin2.policydescriptor_interface_java'
+      description: 
+    - id: '*userId*'
+      type: '**String**'
+      description: >+
+        A unique user identifier such as an email address.
+
+
+
+        This *userId* is used to discover the RMS service instance (either ADRMS server or Azure RMS) that     the user's organization is using. *userId* is used for caching user policy as well for offline usage.
+
+
+
+    - id: '*authenticationContext*'
+      type: '@msipcthin2.authenticationrequestcallback_interface_java'
+      description: 
+    - id: '*userPolicyCreationFlags*'
+      type: '**int**'
+      description: >+
+        For more information, see @msipcthin2.userpolicycreationflags_class_java).
+
+
+
+    - id: '*callback*'
+      type: 'CreationCallback&lt;@msipcthin2.userpolicy_class_java&gt;&gt;       '
+      description: >+
+        Completion callback
+
+
+
+    return:
+      type: '@msipcthin2.iasynccontrol_interface'
+      description: A @msipcthin2.iasynccontrol_interface
+  inheritance: []
+- uid: msipcthin2.userpolicy_create_policydescriptor_______synchronous_method_java
+  id: UserPolicy.create(PolicyDescriptor, ...) synchronous
+  parent: msipcthin2.userpolicy_class_java
+  children: []
+  href: UserPolicy.yml
+  langs:
+  - cplusplus
+  name: UserPolicy.create(PolicyDescriptor, ...) synchronous
+  fullName: msipcthin2.userpolicy_create_policydescriptor_______synchronous_method_java
+  type: Method
+  assemblies: *o0
+  namespace: com.microsoft.rightsmanagement
+  summary: >+
+    Asynchronously creates a new @msipcthin2.userpolicy_class_java object from a policy descriptor.
+
+
+
+
+
+
+
+  remarks: 
+  syntax:
+    content: public static UserPolicy create(                                     PolicyDescriptor policyDescriptor,                                     String userId,                                     AuthenticationRequestCallback authenticationContext,                                     int userPolicyCreationFlags,                                     final Context applicationContext)                               throws ProtectionException
+    parameters:
+    - id: '*policyDescriptor*'
+      type: '@msipcthin2.policydescriptor_interface_java'
+      description: 
+    - id: '*userId*'
+      type: '**String**'
+      description: >+
+        A unique user identifier such as an email address.
+
+
+
+        This *userId* is used to discover the RMS service instance (either ADRMS server or Azure RMS) that     the user's organization is using. *userId* is used for caching user policy as well for offline usage.
+
+
+
+    - id: '*authenticationContext*'
+      type: '@msipcthin2.authenticationrequestcallback_interface_java'
+      description: 
+    - id: '*userPolicyCreationFlags*'
+      type: '**int**'
+      description: >+
+        For more information, see @msipcthin2.userpolicycreationflags_class_java).
+
+
+
+    - id: '*applicationContext*'
+      type: '**Context**'
+      description: 
+    return:
+      type: '@msipcthin2.userpolicy_class_java'
+      description: '@msipcthin2.userpolicy_class_java'
+  inheritance: []
+- uid: msipcthin2.userpolicy_create_TemplateDescriptor_method_java
+  id: UserPolicy.create(TemplateDescriptor, String, AuthenticationRequestCallback, int,  Map<String, String>,LicenseMetadata, CreationCallback<UserPolicy>)
+  parent: msipcthin2.userpolicy_class_java
+  children: []
+  href: UserPolicy.yml
+  langs:
+  - cplusplus
+  name: UserPolicy.create(TemplateDescriptor, String, AuthenticationRequestCallback, int,  Map<String, String>,LicenseMetadata, CreationCallback<UserPolicy>)
+  fullName: msipcthin2.userpolicy_create_TemplateDescriptor_method_java
+  type: Method
+  assemblies: *o0
+  namespace: com.microsoft.rightsmanagement
+  summary: >+
+    Creates a new @msipcthin2.userpolicy_class_java object from a template descriptor.
+
+
+
+
+
+
+
+  remarks: 
+  syntax:
+    content: public static IAsyncControl create(TemplateDescriptor templateDescriptor,                                   String userId,                                   AuthenticationRequestCallback authenticationContext,                                   int userPolicyCreationFlags,                                   Map<String,String> signedAppData,                                   LicenseMetadata licenseMetadata,                                   CreationCallback<UserPolicy> callback)  throws InvalidParameterException
+    parameters:
+    - id: '*templateDescriptor*'
+      type: '@msipcthin2.templatedescriptor_class_java'
+      description: 
+    - id: '*userId*'
+      type: '**String**'
+      description: >+
+        A unique user identifier such as an email address.
+
+
+
+        This *userId* is used to discover the RMS service instance (either ADRMS server or Azure RMS) that     the user's organization is using. *userId* is used for caching user policy as well for offline usage.
+
+
+
+
+
+
+
+    - id: '*authenticationContext*'
+      type: '@msipcthin2.authenticationrequestcallback_interface_java'
+      description: 
+    - id: '*userPolicyCreationFlags*'
+      type: '**int**'
+      description: >+
+        For more information, see @msipcthin2.userpolicycreationflags_class_java)
+
+
+
+    - id: '*signedAppData*'
+      type: '**Map<String,String>**'
+      description: 
+    - id: '*licenseMetaData*'
+      type: '@msipcthin2.licensemetadata_interface_java'
+      description: >+
+        If you want to enable document tracking, it must be initialized before creating the @msipcthin2.userpolicy_class_java with the @msipcthin2.templatedescriptor_class_java object.
+
+
+
+        For more information, see @msipcthin2.how_to__use_document_tracking.
+
+
+
+    - id: '*callback*'
+      type: 'CreationCallback&lt;@msipcthin2.userpolicy_class_java&gt;&gt;       '
+      description: 
+    return:
+      type: '@msipcthin2.iasynccontrol_interface'
+      description: A @msipcthin2.iasynccontrol_interface
+  inheritance: []
+- uid: msipcthin2.userpolicy_create_templatedescriptor_______synchronous_method_java
+  id: UserPolicy.create(TemplateDescriptor, ...) synchronous
+  parent: msipcthin2.userpolicy_class_java
+  children: []
+  href: UserPolicy.yml
+  langs:
+  - cplusplus
+  name: UserPolicy.create(TemplateDescriptor, ...) synchronous
+  fullName: msipcthin2.userpolicy_create_templatedescriptor_______synchronous_method_java
+  type: Method
+  assemblies: *o0
+  namespace: com.microsoft.rightsmanagement
+  summary: >+
+    Synchronously creates a new @msipcthin2.userpolicy_class_java object from a template descriptor.
+
+
+
+
+
+
+
+  remarks: 
+  syntax:
+    content: public static UserPolicy create(                                     TemplateDescriptor templateDescriptor,                                     String userId,                                     AuthenticationRequestCallback authenticationContext,                                     int userPolicyCreationFlags,                                     Map<String,String> signedAppData,                                     LicenseMetadata licenseMetadata,                                     final Context applicationContext)                               throws ProtectionException
+    parameters:
+    - id: '*templateDescriptor*'
+      type: '@msipcthin2.templatedescriptor_class_java'
+      description: 
+    - id: '*userId*'
+      type: '**String**'
+      description: >+
+        A unique user identifier such as an email address.
+
+
+
+        This *userId* is used to discover the RMS service instance (either ADRMS server or Azure RMS) that     the user's organization is using. *userId* is used for caching user policy as well for offline usage.
+
+
+
+
+
+
+
+    - id: '*authenticationContext*'
+      type: '@msipcthin2.authenticationrequestcallback_interface_java'
+      description: 
+    - id: '*userPolicyCreationFlags*'
+      type: '**int**'
+      description: >+
+        For more information, see @msipcthin2.userpolicycreationflags_class_java)
+
+
+
+    - id: '*signedAppData*'
+      type: '**Map<String,String>**'
+      description: 
+    - id: '*licenseMetaData*'
+      type: '@msipcthin2.licensemetadata_interface_java'
+      description: >+
+        If you want to enable document tracking, it must be initialized before creating the @msipcthin2.userpolicy_class_java with the @msipcthin2.templatedescriptor_class_java object.
+
+
+
+        For more information, see @msipcthin2.how_to__use_document_tracking.
+
+
+
+    - id: '*applicationContext*'
+      type: '**Context**'
+      description: 
+    return:
+      type: '@msipcthin2.userpolicy_class_java'
+      description: '@msipcthin2.userpolicy_class_java'
+  inheritance: []
+- uid: msipcthin2.userpolicy_doesusedeprecatedalgorithm_method_java
+  id: UserPolicy.doesUseDeprecatedAlgorithm
+  parent: msipcthin2.userpolicy_class_java
+  children: []
+  href: UserPolicy.yml
+  langs:
+  - cplusplus
+  name: UserPolicy.doesUseDeprecatedAlgorithm
+  fullName: msipcthin2.userpolicy_doesusedeprecatedalgorithm_method_java
+  type: Method
+  assemblies: *o0
+  namespace: com.microsoft.rightsmanagement
+  summary: >+
+    Does the policy uses @msipcthin2.terms.
+
+
+
+
+
+
+
+  remarks: 
+  syntax:
+    content: public boolean doesUseDeprecatedAlgorithm()
+    return:
+      type: Boolean
+      description: A **Boolean**
+  inheritance: []
+- uid: msipcthin2.userpolicy_getcontentid_method_java
+  id: UserPolicy.getContentId
+  parent: msipcthin2.userpolicy_class_java
+  children: []
+  href: UserPolicy.yml
+  langs:
+  - cplusplus
+  name: UserPolicy.getContentId
+  fullName: msipcthin2.userpolicy_getcontentid_method_java
+  type: Method
+  assemblies: *o0
+  namespace: com.microsoft.rightsmanagement
+  summary: >+
+    Gets the content ID.
+
+
+
+
+
+
+
+  remarks: 
+  syntax:
+    content: public String getContentId()
+    return:
+      type: String
+      description: A **String** containing the content ID.
+  inheritance: []
+- uid: msipcthin2.userpolicy_getcontentvaliduntil_method_java
+  id: UserPolicy.getContentValidUntil
+  parent: msipcthin2.userpolicy_class_java
+  children: []
+  href: UserPolicy.yml
+  langs:
+  - cplusplus
+  name: UserPolicy.getContentValidUntil
+  fullName: msipcthin2.userpolicy_getcontentvaliduntil_method_java
+  type: Method
+  assemblies: *o0
+  namespace: com.microsoft.rightsmanagement
+  summary: >+
+    Gets the date the content is valid until.
+
+
+
+
+
+
+
+  remarks: 
+  syntax:
+    content: public Date getContentValidUntil() throws ProtectionException
+    return:
+      type: Date
+      description: The **Date** until which the content is valid.
+  inheritance: []
+- uid: msipcthin2.userpolicy_getdescription_method_java
+  id: UserPolicy.getDescription
+  parent: msipcthin2.userpolicy_class_java
+  children: []
+  href: UserPolicy.yml
+  langs:
+  - cplusplus
+  name: UserPolicy.getDescription
+  fullName: msipcthin2.userpolicy_getdescription_method_java
+  type: Method
+  assemblies: *o0
+  namespace: com.microsoft.rightsmanagement
+  summary: >+
+    Gets the user policy description.
+
+
+
+
+
+
+
+  remarks: 
+  syntax:
+    content: public String getDescription()
+    return:
+      type: String
+      description: A **String** containing the user policy description.
+  inheritance: []
+- uid: msipcthin2.userpolicy_getencryptedappdata_method_java
+  id: UserPolicy.getEncryptedAppData
+  parent: msipcthin2.userpolicy_class_java
+  children: []
+  href: UserPolicy.yml
+  langs:
+  - cplusplus
+  name: UserPolicy.getEncryptedAppData
+  fullName: msipcthin2.userpolicy_getencryptedappdata_method_java
+  type: Method
+  assemblies: *o0
+  namespace: com.microsoft.rightsmanagement
+  summary: >+
+    Gets a copy of the encrypted application data.
+
+
+
+
+
+
+
+  remarks: 
+  syntax:
+    content: public Map<String, String> getEncryptedAppData()
+    return:
+      type: Map<String, String>
+      description: A **Map<String, String>** containing a copy of the encrypted application data.
+  inheritance: []
+- uid: msipcthin2.userpolicy_getissuedto_method_java
+  id: UserPolicy.getIssuedTo
+  parent: msipcthin2.userpolicy_class_java
+  children: []
+  href: UserPolicy.yml
+  langs:
+  - cplusplus
+  name: UserPolicy.getIssuedTo
+  fullName: msipcthin2.userpolicy_getissuedto_method_java
+  type: Method
+  assemblies: *o0
+  namespace: com.microsoft.rightsmanagement
+  summary: >+
+    Gets the user to whom the policy was originally issued.
+
+
+
+
+
+
+
+  remarks: 
+  syntax:
+    content: public String getIssuedTo()
+    return:
+      type: String
+      description: A **String** containing a unique user id (ex. email address).
+  inheritance: []
+- uid: msipcthin2.userpolicy_getname_method_java
+  id: UserPolicy.getName
+  parent: msipcthin2.userpolicy_class_java
+  children: []
+  href: UserPolicy.yml
+  langs:
+  - cplusplus
+  name: UserPolicy.getName
+  fullName: msipcthin2.userpolicy_getname_method_java
+  type: Method
+  assemblies: *o0
+  namespace: com.microsoft.rightsmanagement
+  summary: >+
+    Gets the name of the user policy.
+
+
+
+
+
+
+
+  remarks: 
+  syntax:
+    content: public String getName()
+    return:
+      type: String
+      description: A **String** containing the user policy name.
+  inheritance: []
+- uid: msipcthin2.userpolicy_getowner_method_java
+  id: UserPolicy.getOwner
+  parent: msipcthin2.userpolicy_class_java
+  children: []
+  href: UserPolicy.yml
+  langs:
+  - cplusplus
+  name: UserPolicy.getOwner
+  fullName: msipcthin2.userpolicy_getowner_method_java
+  type: Method
+  assemblies: *o0
+  namespace: com.microsoft.rightsmanagement
+  summary: >+
+    Gets the owner of the user policy.
+
+
+
+
+
+
+
+  remarks: 
+  syntax:
+    content: public String getOwner()
+    return:
+      type: String
+      description: A **String** containing the user policy's owner.
+  inheritance: []
+- uid: msipcthin2.userpolicy_getpolicydescriptor_method_java
+  id: UserPolicy.getPolicyDescriptor
+  parent: msipcthin2.userpolicy_class_java
+  children: []
+  href: UserPolicy.yml
+  langs:
+  - cplusplus
+  name: UserPolicy.getPolicyDescriptor
+  fullName: msipcthin2.userpolicy_getpolicydescriptor_method_java
+  type: Method
+  assemblies: *o0
+  namespace: com.microsoft.rightsmanagement
+  summary: >+
+    Gets the user policy descriptor.
+
+
+
+
+
+
+
+  remarks: 
+  syntax:
+    content: public PolicyDescriptor getPolicyDescriptor()
+    return:
+      type: '@msipcthin2.policydescriptor_interface_java'
+      description: A @msipcthin2.policydescriptor_interface_java
+  inheritance: []
+- uid: msipcthin2.userpolicy_getreferrer_method_java
+  id: UserPolicy.getReferrer
+  parent: msipcthin2.userpolicy_class_java
+  children: []
+  href: UserPolicy.yml
+  langs:
+  - cplusplus
+  name: UserPolicy.getReferrer
+  fullName: msipcthin2.userpolicy_getreferrer_method_java
+  type: Method
+  assemblies: *o0
+  namespace: com.microsoft.rightsmanagement
+  summary: >+
+    Gets the referrer information.
+
+
+
+    A URI which should be contacted when requesting more access than     currently granted.
+
+
+
+  remarks: 
+  syntax:
+    content: public Uri getReferrer()
+    return:
+      type: Uri
+      description: A **Uri** containing a URI.
+  inheritance: []
+- uid: msipcthin2.userpolicy_getserializedcontentpolicy_method_java
+  id: UserPolicy.getSerializedContentPolicy
+  parent: msipcthin2.userpolicy_class_java
+  children: []
+  href: UserPolicy.yml
+  langs:
+  - cplusplus
+  name: UserPolicy.getSerializedContentPolicy
+  fullName: msipcthin2.userpolicy_getserializedcontentpolicy_method_java
+  type: Method
+  assemblies: *o0
+  namespace: com.microsoft.rightsmanagement
+  summary: >+
+    Gets the serialized content policy.
+
+
+
+
+
+
+
+  remarks: 
+  syntax:
+    content: public byte[] getSerializedContentPolicy()
+    return:
+      type: byte[]
+      description: A **byte[]**
+  inheritance: []
+- uid: msipcthin2.userpolicy_getsignedappdata_method_java
+  id: UserPolicy.getSignedAppData
+  parent: msipcthin2.userpolicy_class_java
+  children: []
+  href: UserPolicy.yml
+  langs:
+  - cplusplus
+  name: UserPolicy.getSignedAppData
+  fullName: msipcthin2.userpolicy_getsignedappdata_method_java
+  type: Method
+  assemblies: *o0
+  namespace: com.microsoft.rightsmanagement
+  summary: >+
+    Gets a copy of the signed application data.
+
+
+
+
+
+
+
+  remarks: 
+  syntax:
+    content: public Map<String, String> getSignedAppData()
+    return:
+      type: Map<String, String>
+      description: A **Map<String, String>** containing a copy of the signed application data.
+  inheritance: []
+- uid: msipcthin2.userpolicy_gettemplatedescriptor_method_java
+  id: UserPolicy.getTemplateDescriptor
+  parent: msipcthin2.userpolicy_class_java
+  children: []
+  href: UserPolicy.yml
+  langs:
+  - cplusplus
+  name: UserPolicy.getTemplateDescriptor
+  fullName: msipcthin2.userpolicy_gettemplatedescriptor_method_java
+  type: Method
+  assemblies: *o0
+  namespace: com.microsoft.rightsmanagement
+  summary: >+
+    Gets the template descriptor.
+
+
+
+
+
+
+
+  remarks: 
+  syntax:
+    content: public TemplateDescriptor getTemplateDescriptor()
+    return:
+      type: '@msipcthin2.templatedescriptor_class_java'
+      description: A @msipcthin2.templatedescriptor_class_java
+  inheritance: []
+- uid: msipcthin2.userpolicy_gettype_method_java
+  id: UserPolicy.getType
+  parent: msipcthin2.userpolicy_class_java
+  children: []
+  href: UserPolicy.yml
+  langs:
+  - cplusplus
+  name: UserPolicy.getType
+  fullName: msipcthin2.userpolicy_gettype_method_java
+  type: Method
+  assemblies: *o0
+  namespace: com.microsoft.rightsmanagement
+  summary: >+
+    Gets the type of user policy.
+
+
+
+
+
+
+
+  remarks: 
+  syntax:
+    content: public UserPolicyType getType()
+    return:
+      type: '@msipcthin2.userpolicytype_enum_java'
+      description: A @msipcthin2.userpolicytype_enum_java
+  inheritance: []
+- uid: msipcthin2.userpolicy_isallowedauditedextract_method_java
+  id: UserPolicy.isAllowedAuditedExtract
+  parent: msipcthin2.userpolicy_class_java
+  children: []
+  href: UserPolicy.yml
+  langs:
+  - cplusplus
+  name: UserPolicy.isAllowedAuditedExtract
+  fullName: msipcthin2.userpolicy_isallowedauditedextract_method_java
+  type: Method
+  assemblies: *o0
+  namespace: com.microsoft.rightsmanagement
+  summary: >+
+    Checks if is the user can execute an audited extract of the policy.
+
+
+
+
+
+
+
+  remarks: 
+  syntax:
+    content: public boolean isAllowedAuditedExtract()
+    return:
+      type: Boolean
+      description: A **Boolean**
+  inheritance: []
+- uid: msipcthin2.userpolicy_isissuedtoowner_method_java
+  id: UserPolicy.isIssuedToOwner
+  parent: msipcthin2.userpolicy_class_java
+  children: []
+  href: UserPolicy.yml
+  langs:
+  - cplusplus
+  name: UserPolicy.isIssuedToOwner
+  fullName: msipcthin2.userpolicy_isissuedtoowner_method_java
+  type: Method
+  assemblies: *o0
+  namespace: com.microsoft.rightsmanagement
+  summary: >+
+    Checks if the current user is the same as the original policy owner.
+
+
+
+
+
+
+
+  remarks: 
+  syntax:
+    content: public boolean isIssuedToOwner()
+    return:
+      type: Boolean
+      description: A **Boolean**
+  inheritance: []
+- uid: msipcthin2.userpolicy_isprotected_method_java
+  id: UserPolicy.isProtected
+  parent: msipcthin2.userpolicy_class_java
+  children: []
+  href: UserPolicy.yml
+  langs:
+  - cplusplus
+  name: UserPolicy.isProtected
+  fullName: msipcthin2.userpolicy_isprotected_method_java
+  type: Method
+  assemblies: *o0
+  namespace: com.microsoft.rightsmanagement
+  summary: >+
+    Checks if the user policy is a protected user policy.
+
+
+
+
+
+
+
+  remarks: 
+  syntax:
+    content: public boolean isProtected()
+    return:
+      type: Boolean
+      description: A **Boolean**
+  inheritance: []
+- uid: msipcthin2.userpolicy_registerfordoctracking_boolean__sting__authenticationcallback__creationcallback__java
+  id: UserPolicy.registerForDocTracking(boolean, Sting, AuthenticationCallback, CreationCallback)
+  parent: msipcthin2.userpolicy_class_java
+  children: []
+  href: UserPolicy.yml
+  langs:
+  - cplusplus
+  name: UserPolicy.registerForDocTracking(boolean, Sting, AuthenticationCallback, CreationCallback)
+  fullName: msipcthin2.userpolicy_registerfordoctracking_boolean__sting__authenticationcallback__creationcallback__java
+  type: Method
+  assemblies: *o0
+  namespace: com.microsoft.rightsmanagement
+  summary: >+
+    Registers this user policy with the document tracking service.
+
+
+
+
+
+
+
+  remarks: 
+  syntax:
+    content: Public static IAsyncControl RegisterForDocTracking(                         boolean sendRegistrationNotificationMail,                         String userId,                                                     AuthenticationRequestCallback authenticationContext,                         CreationCallBack<Boolean> callback) throws InvalidParameterException
+    parameters:
+    - id: '*sendRegistrationNotificationMail*'
+      type: '**boolean**'
+      description: >+
+        True or False
+
+
+
+    - id: '*userId*'
+      type: '**String**'
+      description: >+
+        The email address of the user to be notified of document tracking events.
+
+
+
+    - id: '*authenticationContext*'
+      type: '@msipcthin2.authenticationrequestcallback_interface_java'
+      description: 
+    - id: '*callback*'
+      type: CreationCallback&lt;**boolean**&gt;
+      description: 
+    return:
+      type: '@msipcthin2.iasynccontrol_interface'
+      description: A @msipcthin2.iasynccontrol_interface
+  inheritance: []
+- uid: msipcthin2.userpolicy_registerfordoctracking_synchronous_method_java
+  id: UserPolicy.registerForDocTracking synchronous
+  parent: msipcthin2.userpolicy_class_java
+  children: []
+  href: UserPolicy.yml
+  langs:
+  - cplusplus
+  name: UserPolicy.registerForDocTracking synchronous
+  fullName: msipcthin2.userpolicy_registerfordoctracking_synchronous_method_java
+  type: Method
+  assemblies: *o0
+  namespace: com.microsoft.rightsmanagement
+  summary: >+
+    Asynchronously registers this user policy with the document tracking service.
+
+
+
+
+
+
+
+  remarks: 
+  syntax:
+    content: public boolean registerForDocTracking(                                      boolean sendRegistrationNotificationMail,                                      String userId,                                      AuthenticationRequestCallback authenticationContext,                                      final Context applicationContext)                               throws ProtectionException
+    parameters:
+    - id: '*sendRegistrationNotificationMail*'
+      type: '**boolean**'
+      description: >+
+        True or False
+
+
+
+    - id: '*userId*'
+      type: '**String**'
+      description: >+
+        The email address of the user to be notified of document tracking events.
+
+
+
+    - id: '*authenticationContext*'
+      type: '@msipcthin2.authenticationrequestcallback_interface_java'
+      description: 
+    - id: '*applicationContext*'
+      type: '**Context**'
+      description: 
+    return:
+      type: boolean
+      description: '**boolean**'
+  inheritance: []
+references:
+- uid: msipcthin2.userpolicy_accesscheck_method_java
+  href: UserPolicy.accessCheck.yml
+  name: accessCheck
+- uid: msipcthin2.userpolicy_acquire_method_java
+  href: UserPolicy.acquire(byte[], String, AuthenticationRequestCallback, int,  CreationCallback_UserPolicy_).yml
+  name: acquire
+- uid: msipcthin2.userpolicy_class_java
+  href: UserPolicy.yml
+  name: UserPolicy
+- uid: msipcthin2.userpolicy_create_PolicyDescriptor_method_java
+  href: UserPolicy.create(PolicyDescriptor, String, int, CreationCallback_UserPolicy_).yml
+  name: create(PolicyDescriptor)
+- uid: msipcthin2.userpolicy_create_TemplateDescriptor_method_java
+  href: UserPolicy.create(TemplateDescriptor, String, AuthenticationRequestCallback, int,  Map_String, String_,LicenseMetadata, CreationCallback_UserPolicy_).yml
+  name: create(TemplateDescriptor)
+- uid: msipcthin2.userpolicy_doesusedeprecatedalgorithm_method_java
+  href: UserPolicy.doesUseDeprecatedAlgorithm.yml
+  name: doesUseDeprecatedAlgorithm
+- uid: msipcthin2.terms
+  name: deprecated algorithms
+- uid: msipcthin2.userpolicy_getcontentid_method_java
+  href: UserPolicy.getContentId.yml
+  name: getContentId
+- uid: msipcthin2.userpolicy_getcontentvaliduntil_method_java
+  href: UserPolicy.getContentValidUntil.yml
+  name: getContentValidUntil
+- uid: msipcthin2.userpolicy_getdescription_method_java
+  href: UserPolicy.getDescription.yml
+  name: getDescription
+- uid: msipcthin2.userpolicy_getencryptedappdata_method_java
+  href: UserPolicy.getEncryptedAppData.yml
+  name: getEncryptedAppData
+- uid: msipcthin2.userpolicy_getissuedto_method_java
+  href: UserPolicy.getIssuedTo.yml
+  name: getIssuedTo
+- uid: msipcthin2.userpolicy_getname_method_java
+  href: UserPolicy.getName.yml
+  name: getName
+- uid: msipcthin2.userpolicy_getowner_method_java
+  href: UserPolicy.getOwner.yml
+  name: getOwner
+- uid: msipcthin2.userpolicy_getpolicydescriptor_method_java
+  href: UserPolicy.getPolicyDescriptor.yml
+  name: getPolicyDescriptor
+- uid: msipcthin2.userpolicy_getreferrer_method_java
+  href: UserPolicy.getReferrer.yml
+  name: getReferrer
+- uid: msipcthin2.userpolicy_getserializedcontentpolicy_method_java
+  href: UserPolicy.getSerializedContentPolicy.yml
+  name: getSerializedContentPolicy
+- uid: msipcthin2.userpolicy_getsignedappdata_method_java
+  href: UserPolicy.getSignedAppData.yml
+  name: getSignedAppData
+- uid: msipcthin2.userpolicy_gettemplatedescriptor_method_java
+  href: UserPolicy.getTemplateDescriptor.yml
+  name: getTemplateDescriptor
+- uid: msipcthin2.userpolicy_gettype_method_java
+  href: UserPolicy.getType.yml
+  name: getType
+- uid: msipcthin2.userpolicy_isallowedauditedextract_method_java
+  href: UserPolicy.isAllowedAuditedExtract.yml
+  name: isAllowedAuditedExtract
+- uid: msipcthin2.userpolicy_isissuedtoowner_method_java
+  href: UserPolicy.isIssuedToOwner.yml
+  name: isIssuedToOwner
+- uid: msipcthin2.userpolicy_isprotected_method_java
+  href: UserPolicy.isProtected.yml
+  name: isProtected
+- uid: msipcthin2.userpolicycreationflags_class_java
+  href: UserPolicyCreationFlags.yml
+  name: UserPolicyCreationFlags
+- uid: msipcthin2.userpolicy_acquire_synchronous_method_java
+  href: UserPolicy.acquire synchronous.yml
+  name: UserPolicy.acquire synchronous
+- uid: msipcthin2.userpolicy_create_policydescriptor_______synchronous_method_java
+  href: UserPolicy.create(PolicyDescriptor, ...) synchronous.yml
+  name: UserPolicy.create(PolicyDescriptor, ...) synchronous
+- uid: msipcthin2.userpolicy_create_templatedescriptor_______synchronous_method_java
+  href: UserPolicy.create(TemplateDescriptor, ...) synchronous.yml
+  name: UserPolicy.create(TemplateDescriptor, ...) synchronous
+- uid: msipcthin2.userpolicy_registerfordoctracking_boolean__sting__authenticationcallback__creationcallback__java
+  href: UserPolicy.registerForDocTracking(boolean, Sting, AuthenticationCallback, CreationCallback).yml
+  name: UserPolicy.registerForDocTracking(boolean, Sting, AuthenticationCallback, CreationCallback)
+- uid: msipcthin2.userpolicy_registerfordoctracking_synchronous_method_java
+  href: UserPolicy.registerForDocTracking synchronous.yml
+  name: UserPolicy.registerForDocTracking synchronous

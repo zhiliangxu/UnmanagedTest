@@ -1,0 +1,178 @@
+items:
+- uid: msipcthin2.consentresult
+  id: ConsentResult
+  parent: Microsoft.RightsManagement
+  children:
+  - msipcthin2.consentresult_accepted
+  - msipcthin2.consentresult_consentresult
+  - msipcthin2.consentresult_showagain
+  - msipcthin2.consentresult_userid
+  href: ConsentResult.yml
+  langs:
+  - cplusplus
+  name: ConsentResult
+  fullName: msipcthin2.consentresult
+  type: Class
+  assemblies: &o0
+  - Microsoft.RightsManagement.winmd
+  namespace: Microsoft.RightsManagement
+  summary: "Used for managing the user's consent information.\r\n\r\n\r\n\r\nIn operation, users can accept the consent or reject it. Users can also choose to show the consent again or not. You can save a user’s decision about  whether to see the consent prompt again by using the @msipcthin2.consentresult_showagain property. \r\n\r\n"
+  remarks: 
+  syntax:
+    content: 'public ref class ConsentResult sealed : IInspectable'
+  inheritance:
+  - IInspectable
+- uid: msipcthin2.consentresult_consentresult
+  id: ConsentResult
+  parent: msipcthin2.consentresult
+  children: []
+  href: ConsentResult.yml
+  langs:
+  - cplusplus
+  name: ConsentResult
+  fullName: msipcthin2.consentresult_consentresult
+  type: Constructor
+  assemblies: *o0
+  namespace: Microsoft.RightsManagement
+  summary: >+
+    Creates and initializes an instance of a @msipcthin2.consentresult_ object.
+
+
+
+
+
+
+
+  remarks: 
+  syntax:
+    content: >-
+      public:
+        ConsentResult(
+      	bool accepted,
+      	bool showAgain,
+      	String^ userId
+      )
+    parameters:
+    - id: accepted
+      type: bool
+      description: True or false; the user accepted
+    - id: showAgain
+      type: bool
+      description: True or false; the consent prompt should be shown to the user again
+    - id: userId
+      type: String^
+      description: The Id of the user; usually represented as an email address
+  inheritance: []
+- uid: msipcthin2.consentresult_accepted
+  id: Accepted
+  parent: msipcthin2.consentresult
+  children: []
+  href: ConsentResult.yml
+  langs:
+  - cplusplus
+  name: Accepted
+  fullName: msipcthin2.consentresult_accepted
+  type: Property
+  assemblies: *o0
+  namespace: Microsoft.RightsManagement
+  summary: >+
+    Gets the @msipcthin2.consentresult_accepted flag indicating the user has  consented or not.
+
+
+
+
+
+
+
+  remarks: 
+  syntax:
+    content: >-
+      public:
+       bool Accepted {
+      	bool get();
+      }
+    return:
+      type: bool
+      description: The property is either True or False.
+  inheritance: []
+- uid: msipcthin2.consentresult_showagain
+  id: ShowAgain
+  parent: msipcthin2.consentresult
+  children: []
+  href: ConsentResult.yml
+  langs:
+  - cplusplus
+  name: ShowAgain
+  fullName: msipcthin2.consentresult_showagain
+  type: Property
+  assemblies: *o0
+  namespace: Microsoft.RightsManagement
+  summary: >+
+    Gets the @msipcthin2.consentresult_showagain flag indicating whether the user consent prompt should be shown again or not.
+
+
+
+
+
+
+
+  remarks: 
+  syntax:
+    content: >-
+      public:
+       bool ShowAgain {
+      	bool get();
+      }
+    return:
+      type: bool
+      description: The property is either True or False.
+  inheritance: []
+- uid: msipcthin2.consentresult_userid
+  id: UserId
+  parent: msipcthin2.consentresult
+  children: []
+  href: ConsentResult.yml
+  langs:
+  - cplusplus
+  name: UserId
+  fullName: msipcthin2.consentresult_userid
+  type: Property
+  assemblies: *o0
+  namespace: Microsoft.RightsManagement
+  summary: >+
+    Gets the email ID of the user giving consent.
+
+
+
+
+
+
+
+  remarks: 
+  syntax:
+    content: >-
+      public:
+       String^ UserId {
+      	String^ get();
+      }
+    return:
+      type: String^
+      description: Email ID of the user giving consent.
+  inheritance: []
+references:
+- uid: msipcthin2.consentresult_showagain
+  href: ShowAgain.yml
+  name: ShowAgain
+- uid: IInspectable
+  isExternal: true
+  href: https://msdn.microsoft.com/en-us/library/windows/apps/br205821
+  name: IInspectable
+- uid: msipcthin2.consentresult_consentresult
+  href: ConsentResult.yml
+  name: ConsentResult
+- uid: msipcthin2.consentresult_accepted
+  href: Accepted.yml
+  name: Accepted
+- uid: msipcthin2.consentresult_userid
+  href: UserId.yml
+  name: UserId

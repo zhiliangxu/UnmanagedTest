@@ -1,0 +1,155 @@
+items:
+- uid: msipcthin2.failedauthenticationexception_class_java
+  id: FailedAuthenticationException
+  parent: com.microsoft.rightsmanagement.exceptions
+  children:
+  - msipcthin2.failedauthenticationexception_getwwwauthenticateheader_method
+  - msipcthin2.failedauthenticationexception_string__constructor_java
+  - msipcthin2.failedauthenticationexception_string__protectionexception__constructor_java
+  href: FailedAuthenticationException.yml
+  langs:
+  - cplusplus
+  name: FailedAuthenticationException
+  fullName: msipcthin2.failedauthenticationexception_class_java
+  type: Class
+  assemblies: &o0
+  - Android
+  namespace: com.microsoft.rightsmanagement.exceptions
+  summary: >+
+    Signals that authentication failure has occurred. Extends the @msipcthin2.protectionexception_class_java class.
+
+
+
+
+
+
+
+  remarks: >+
+    For more information, see  the SDK documentation for the @msipcthin2.protectionexception_class_java class.
+
+
+
+
+
+
+
+  thread_safety: Members of this class are not guaranteed to be thread safe.
+  defined_in: FailedAuthenticationException.java
+  syntax:
+    content: public class FailedAuthenticationException extends ProtectionException
+  inheritance: []
+- uid: msipcthin2.failedauthenticationexception_string__constructor_java
+  id: FailedAuthenticationException(String)
+  parent: msipcthin2.failedauthenticationexception_class_java
+  children: []
+  href: FailedAuthenticationException.yml
+  langs:
+  - cplusplus
+  name: FailedAuthenticationException(String)
+  fullName: msipcthin2.failedauthenticationexception_string__constructor_java
+  type: Constructor
+  assemblies: *o0
+  namespace: com.microsoft.rightsmanagement.exceptions
+  summary: >+
+    Constructs a new private authentication exception, @msipcthin2.failedauthenticationexception_class_java class with a default message and tag.
+
+
+
+
+
+
+
+  remarks: 
+  syntax:
+    content: public FailedAuthenticationException(String challenge)
+    parameters:
+    - id: '*challenge*'
+      type: '**String**'
+      description: 
+    return:
+      type: '@msipcthin2.failedauthenticationexception_class_java'
+      description: '@msipcthin2.failedauthenticationexception_class_java'
+  inheritance: []
+- uid: msipcthin2.failedauthenticationexception_string__protectionexception__constructor_java
+  id: FailedAuthenticationException(String, ProtectionException)
+  parent: msipcthin2.failedauthenticationexception_class_java
+  children: []
+  href: FailedAuthenticationException.yml
+  langs:
+  - cplusplus
+  name: FailedAuthenticationException(String, ProtectionException)
+  fullName: msipcthin2.failedauthenticationexception_string__protectionexception__constructor_java
+  type: Constructor
+  assemblies: *o0
+  namespace: com.microsoft.rightsmanagement.exceptions
+  summary: >+
+    Constructs a new private authentication exception, @msipcthin2.failedauthenticationexception_class_java class with a default message and tag.
+
+
+
+
+
+
+
+  remarks: 
+  syntax:
+    content: public FailedAuthenticationException(String challenge,                              ProtectionException e)
+    parameters:
+    - id: '*challenge*'
+      type: '**String**'
+      description: 
+    - id: '*e*'
+      type: '@msipcthin2.protectionexception_class_java'
+      description: >+
+        The previous exception that this exception wraps.
+
+
+
+    return:
+      type: '@msipcthin2.failedauthenticationexception_class_java'
+      description: '@msipcthin2.failedauthenticationexception_class_java'
+  inheritance: []
+- uid: msipcthin2.failedauthenticationexception_getwwwauthenticateheader_method
+  id: FailedAuthenticationException.getWWWAuthenticateHeader
+  parent: msipcthin2.failedauthenticationexception_class_java
+  children: []
+  href: FailedAuthenticationException.yml
+  langs:
+  - cplusplus
+  name: FailedAuthenticationException.getWWWAuthenticateHeader
+  fullName: msipcthin2.failedauthenticationexception_getwwwauthenticateheader_method
+  type: Method
+  assemblies: *o0
+  namespace: com.microsoft.rightsmanagement.exceptions
+  summary: >+
+    Gets the WWW Authentication Header.
+
+
+
+
+
+
+
+  remarks: 
+  syntax:
+    content: public String getWWWAuthenticateHeader()
+    return:
+      type: String
+      description: A **String**    containing the WWW challenge.
+  inheritance: []
+references:
+- uid: msipcthin2.protectionexception_class_java
+  href: ProtectionException.yml
+  name: ProtectionException
+- uid: msipcthin2.failedauthenticationexception_string__constructor_java
+  href: FailedAuthenticationException(String).yml
+  name: FailedAuthenticationException(String)
+- uid: msipcthin2.failedauthenticationexception_class_java
+  href: FailedAuthenticationException.yml
+  name: FailedAuthenticationException
+- uid: msipcthin2.failedauthenticationexception_string__protectionexception__constructor_java
+  href: FailedAuthenticationException(String, ProtectionException).yml
+  name: FailedAuthenticationException(String, ProtectionException)
+- uid: msipcthin2.failedauthenticationexception_getwwwauthenticateheader_method
+  href: FailedAuthenticationException.getWWWAuthenticateHeader.yml
+  name: getWWWAuthenticateHeader

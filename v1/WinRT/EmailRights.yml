@@ -1,0 +1,286 @@
+items:
+- uid: msipcthin2.emailrights
+  id: EmailRights
+  parent: Microsoft.RightsManagement
+  children:
+  - msipcthin2.emailrights_all
+  - msipcthin2.emailrights_extract
+  - msipcthin2.emailrights_forward
+  - msipcthin2.emailrights_print
+  - msipcthin2.emailrights_reply
+  - msipcthin2.emailrights_replyall
+  href: EmailRights.yml
+  langs:
+  - cplusplus
+  name: EmailRights
+  fullName: msipcthin2.emailrights
+  type: Class
+  assemblies: &o0
+  - Microsoft.RightsManagement.winmd
+  namespace: Microsoft.RightsManagement
+  summary: >+
+    Rights that apply to emails.
+
+
+
+
+
+
+
+  remarks: >+
+    For more information about the built-in rights and the usage restrictions associated with them  that apps should observe, see @msipcthin2.built-in_rights_usage_restriction_reference.
+
+
+
+  thread_safety: Members of this class are not guaranteed to be thread safe.
+  syntax:
+    content: 'public ref class EmailRights sealed : IInspectable'
+  inheritance:
+  - IInspectable
+- uid: msipcthin2.emailrights_all
+  id: All
+  parent: msipcthin2.emailrights
+  children: []
+  href: EmailRights.yml
+  langs:
+  - cplusplus
+  name: All
+  fullName: msipcthin2.emailrights_all
+  type: Property
+  assemblies: *o0
+  namespace: Microsoft.RightsManagement
+  summary: >+
+    Gets a list of all the rights that apply to emails.
+
+
+
+
+
+
+
+  remarks: >+
+    For more information about the built-in rights and the usage restrictions associated with them  that apps should observe, see @msipcthin2.built-in_rights_usage_restriction_reference.
+
+
+
+  syntax:
+    content: >-
+      public:
+
+      static     IIterable<String^>^ All {
+      	    IIterable<String^>^ get();
+      }
+    return:
+      type: '    IIterable<String^>^'
+      description: A list of all rights for  emails.
+  inheritance: []
+- uid: msipcthin2.emailrights_extract
+  id: Extract
+  parent: msipcthin2.emailrights
+  children: []
+  href: EmailRights.yml
+  langs:
+  - cplusplus
+  name: Extract
+  fullName: msipcthin2.emailrights_extract
+  type: Property
+  assemblies: *o0
+  namespace: Microsoft.RightsManagement
+  summary: >+
+    Gets a right that allows content to be extracted from a protected email and placed in an unprotected, or a different protected, format. Same value as @msipcthin2.editabledocumentrights_extract.
+
+
+
+
+
+
+
+  remarks: >+
+    For more information about the built-in rights and the usage restrictions associated with them  that apps should observe, see @msipcthin2.built-in_rights_usage_restriction_reference.
+
+
+
+  syntax:
+    content: >-
+      public:
+
+      static     String^ Extract {
+      	    String^ get();
+      }
+    return:
+      type: '    String^'
+      description: The extract right.
+  inheritance: []
+- uid: msipcthin2.emailrights_forward
+  id: Forward
+  parent: msipcthin2.emailrights
+  children: []
+  href: EmailRights.yml
+  langs:
+  - cplusplus
+  name: Forward
+  fullName: msipcthin2.emailrights_forward
+  type: Property
+  assemblies: *o0
+  namespace: Microsoft.RightsManagement
+  summary: >+
+    Gets a right that allows a  protected email message to be forwarded.
+
+
+
+
+
+
+
+  remarks: >+
+    For more information about the built-in rights and the usage restrictions associated with them  that apps should observe, see @msipcthin2.built-in_rights_usage_restriction_reference.
+
+
+
+  syntax:
+    content: >-
+      public:
+
+      static         String^ Forward {
+      	        String^ get();
+      }
+    return:
+      type: '        String^'
+      description: The forward right.
+  inheritance: []
+- uid: msipcthin2.emailrights_print
+  id: Print
+  parent: msipcthin2.emailrights
+  children: []
+  href: EmailRights.yml
+  langs:
+  - cplusplus
+  name: Print
+  fullName: msipcthin2.emailrights_print
+  type: Property
+  assemblies: *o0
+  namespace: Microsoft.RightsManagement
+  summary: >+
+    Gets a right that allows protected email content to be printed.Same value as @msipcthin2.editabledocumentrights_print.
+
+
+
+
+
+
+
+  remarks: >+
+    For more information about the built-in rights and the usage restrictions associated with them  that apps should observe, see @msipcthin2.built-in_rights_usage_restriction_reference.
+
+
+
+  syntax:
+    content: >-
+      public:
+
+      static         String^ Print {
+      	        String^ get();
+      }
+    return:
+      type: '        String^'
+      description: The print right.
+  inheritance: []
+- uid: msipcthin2.emailrights_reply
+  id: Reply
+  parent: msipcthin2.emailrights
+  children: []
+  href: EmailRights.yml
+  langs:
+  - cplusplus
+  name: Reply
+  fullName: msipcthin2.emailrights_reply
+  type: Property
+  assemblies: *o0
+  namespace: Microsoft.RightsManagement
+  summary: >+
+    Gets a right that allows a protected email message to be replied to with a message that includes a copy of the protected content.
+
+
+
+
+
+
+
+  remarks: >+
+    For more information about the built-in rights and the usage restrictions associated with them  that apps should observe, see @msipcthin2.built-in_rights_usage_restriction_reference.
+
+
+
+  syntax:
+    content: >-
+      public:
+
+      static         String^ Reply {
+      	        String^ get();
+      }
+    return:
+      type: '        String^'
+      description: The reply right.
+  inheritance: []
+- uid: msipcthin2.emailrights_replyall
+  id: ReplyAll
+  parent: msipcthin2.emailrights
+  children: []
+  href: EmailRights.yml
+  langs:
+  - cplusplus
+  name: ReplyAll
+  fullName: msipcthin2.emailrights_replyall
+  type: Property
+  assemblies: *o0
+  namespace: Microsoft.RightsManagement
+  summary: >+
+    Gets a right that allows reply-all to a protected email message with a message that includes a copy of the protected content.
+
+
+
+
+
+
+
+  remarks: >+
+    For more information about the built-in rights and the usage restrictions associated with them  that apps should observe, see @msipcthin2.built-in_rights_usage_restriction_reference.
+
+
+
+  syntax:
+    content: >-
+      public:
+
+      static         String^ ReplyAll {
+      	        String^ get();
+      }
+    return:
+      type: '        String^'
+      description: The reply-all right.
+  inheritance: []
+references:
+- uid: IInspectable
+  isExternal: true
+  href: https://msdn.microsoft.com/en-us/library/windows/apps/br205821
+  name: IInspectable
+- uid: msipcthin2.built-in_rights_usage_restriction_reference
+  name: Built-in Rights Usage Restriction Reference
+- uid: msipcthin2.emailrights_all
+  href: All.yml
+  name: All
+- uid: msipcthin2.emailrights_extract
+  href: Extract.yml
+  name: Extract
+- uid: msipcthin2.emailrights_forward
+  href: Forward.yml
+  name: Forward
+- uid: msipcthin2.emailrights_print
+  href: Print.yml
+  name: Print
+- uid: msipcthin2.emailrights_reply
+  href: Reply.yml
+  name: Reply
+- uid: msipcthin2.emailrights_replyall
+  href: ReplyAll.yml
+  name: ReplyAll

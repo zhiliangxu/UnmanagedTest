@@ -1,0 +1,67 @@
+items:
+- uid: msipcthin2.policyacquisitionoptions
+  id: PolicyAcquisitionOptions
+  parent: Microsoft.RightsManagement
+  children:
+  - msipcthin2.policyacquisitionoptions.None
+  - msipcthin2.policyacquisitionoptions.OfflineOnly
+  href: PolicyAcquisitionOptions.yml
+  langs:
+  - cplusplus
+  name: PolicyAcquisitionOptions
+  fullName: msipcthin2.policyacquisitionoptions
+  type: Enum
+  assemblies: &o0
+  - Microsoft.RightsManagement.winmd
+  namespace: Microsoft.RightsManagement
+  summary: >+
+    Specifies the expected mode for an operation
+
+
+
+    meaning, whether the framework can show  UI or connect to a network when performing an operation.
+
+
+
+  remarks: 
+  thread_safety: Members of this class are not guaranteed to be thread safe.
+  syntax:
+    content: public enum class PolicyAcquisitionOptions
+  inheritance: []
+- uid: msipcthin2.policyacquisitionoptions.None
+  id: None
+  parent: msipcthin2.policyacquisitionoptions
+  href: PolicyAcquisitionOptions.yml
+  langs:
+  - cplusplus
+  name: None
+  fullName: msipcthin2.policyacquisitionoptions.None
+  type: Field
+  assemblies: *o0
+  namespace: Microsoft.RightsManagement
+  summary: 'The framework will try to perform the operation silently and offline, but will show a UI and connect to a network if necessary. '
+  syntax:
+    content: None = 0
+- uid: msipcthin2.policyacquisitionoptions.OfflineOnly
+  id: OfflineOnly
+  parent: msipcthin2.policyacquisitionoptions
+  href: PolicyAcquisitionOptions.yml
+  langs:
+  - cplusplus
+  name: OfflineOnly
+  fullName: msipcthin2.policyacquisitionoptions.OfflineOnly
+  type: Field
+  assemblies: *o0
+  namespace: Microsoft.RightsManagement
+  summary: "The framework will try to perform the operation without connecting to a network. If it needs to connect to a network, the operation will fail. For example, an app can choose not to open a document on the device when it is not connected to a WiFi network unless it can be opened offline.”"
+  syntax:
+    content: OfflineOnly = 1
+references:
+- uid: T:System.UInt32
+  name: UInt32
+- uid: msipcthin2.policyacquisitionoptions.None
+  href: PolicyAcquisitionOptions.yml
+  name: None
+- uid: msipcthin2.policyacquisitionoptions.OfflineOnly
+  href: PolicyAcquisitionOptions.yml
+  name: OfflineOnly

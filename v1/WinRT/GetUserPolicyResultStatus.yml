@@ -1,0 +1,82 @@
+items:
+- uid: msipcthin2.getuserpolicyresultstatus
+  id: GetUserPolicyResultStatus
+  parent: Microsoft.RightsManagement
+  children:
+  - msipcthin2.getuserpolicyresultstatus.Expired
+  - msipcthin2.getuserpolicyresultstatus.NoRights
+  - msipcthin2.getuserpolicyresultstatus.Success
+  href: GetUserPolicyResultStatus.yml
+  langs:
+  - cplusplus
+  name: GetUserPolicyResultStatus
+  fullName: msipcthin2.getuserpolicyresultstatus
+  type: Enum
+  assemblies: &o0
+  - Microsoft.RightsManagement.winmd
+  namespace: Microsoft.RightsManagement
+  summary: >+
+    Provides constants for the result of the try at content consumption.
+
+
+
+
+
+
+
+  remarks: 
+  syntax:
+    content: public enum class GetUserPolicyResultStatus
+  inheritance: []
+- uid: msipcthin2.getuserpolicyresultstatus.Success
+  id: Success
+  parent: msipcthin2.getuserpolicyresultstatus
+  href: GetUserPolicyResultStatus.yml
+  langs:
+  - cplusplus
+  name: Success
+  fullName: msipcthin2.getuserpolicyresultstatus.Success
+  type: Field
+  assemblies: *o0
+  namespace: Microsoft.RightsManagement
+  summary: The operation worked.
+  syntax:
+    content: Success = 0
+- uid: msipcthin2.getuserpolicyresultstatus.NoRights
+  id: NoRights
+  parent: msipcthin2.getuserpolicyresultstatus
+  href: GetUserPolicyResultStatus.yml
+  langs:
+  - cplusplus
+  name: NoRights
+  fullName: msipcthin2.getuserpolicyresultstatus.NoRights
+  type: Field
+  assemblies: *o0
+  namespace: Microsoft.RightsManagement
+  summary: The user does not have sufficient rights to access the content.
+  syntax:
+    content: NoRights = 1
+- uid: msipcthin2.getuserpolicyresultstatus.Expired
+  id: Expired
+  parent: msipcthin2.getuserpolicyresultstatus
+  href: GetUserPolicyResultStatus.yml
+  langs:
+  - cplusplus
+  name: Expired
+  fullName: msipcthin2.getuserpolicyresultstatus.Expired
+  type: Field
+  assemblies: *o0
+  namespace: Microsoft.RightsManagement
+  summary: The user's access is expired.
+  syntax:
+    content: Expired = 2
+references:
+- uid: msipcthin2.getuserpolicyresultstatus.Success
+  href: GetUserPolicyResultStatus.yml
+  name: Success
+- uid: msipcthin2.getuserpolicyresultstatus.NoRights
+  href: GetUserPolicyResultStatus.yml
+  name: NoRights
+- uid: msipcthin2.getuserpolicyresultstatus.Expired
+  href: GetUserPolicyResultStatus.yml
+  name: Expired

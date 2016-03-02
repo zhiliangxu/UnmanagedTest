@@ -1,0 +1,110 @@
+items:
+- uid: msipcthin2.offlinecachelifetimeconstants
+  id: OfflineCacheLifetimeConstants
+  parent: Microsoft.RightsManagement
+  children:
+  - msipcthin2.offlinecachelifetimeconstants_cacheneverexpires
+  - msipcthin2.offlinecachelifetimeconstants_nocache
+  href: OfflineCacheLifetimeConstants.yml
+  langs:
+  - cplusplus
+  name: OfflineCacheLifetimeConstants
+  fullName: msipcthin2.offlinecachelifetimeconstants
+  type: Class
+  assemblies: &o0
+  - Microsoft.RightsManagement.winmd
+  namespace: Microsoft.RightsManagement
+  summary: >+
+    Provides constants for the  @msipcthin2.policydescriptor_offlinecachelifetimeindays property.
+
+
+
+
+
+
+
+  remarks: 
+  syntax:
+    content: 'public ref class OfflineCacheLifetimeConstants sealed : IInspectable'
+  inheritance:
+  - IInspectable
+- uid: msipcthin2.offlinecachelifetimeconstants_cacheneverexpires
+  id: CacheNeverExpires
+  parent: msipcthin2.offlinecachelifetimeconstants
+  children: []
+  href: OfflineCacheLifetimeConstants.yml
+  langs:
+  - cplusplus
+  name: CacheNeverExpires
+  fullName: msipcthin2.offlinecachelifetimeconstants_cacheneverexpires
+  type: Property
+  assemblies: *o0
+  namespace: Microsoft.RightsManagement
+  summary: >+
+    The offline cache for the content shouldn't expire.
+
+
+
+
+
+
+
+  remarks: 
+  syntax:
+    content: >-
+      public:
+
+      static int CacheNeverExpires {
+      	int get();
+      }
+    return:
+      type: int
+      description: The offline cache for the content shouldn't expire.
+  inheritance: []
+- uid: msipcthin2.offlinecachelifetimeconstants_nocache
+  id: NoCache
+  parent: msipcthin2.offlinecachelifetimeconstants
+  children: []
+  href: OfflineCacheLifetimeConstants.yml
+  langs:
+  - cplusplus
+  name: NoCache
+  fullName: msipcthin2.offlinecachelifetimeconstants_nocache
+  type: Property
+  assemblies: *o0
+  namespace: Microsoft.RightsManagement
+  summary: >+
+    Indicates whether the content should not be accessed offline.
+
+
+
+
+
+
+
+  remarks: 
+  syntax:
+    content: >-
+      public:
+
+      static int NoCache {
+      	int get();
+      }
+    return:
+      type: int
+      description: 
+  inheritance: []
+references:
+- uid: msipcthin2.policydescriptor_offlinecachelifetimeindays
+  href: OfflineCacheLifetimeInDays.yml
+  name: PolicyDescriptor.OfflineCacheLifetimeInDays
+- uid: IInspectable
+  isExternal: true
+  href: https://msdn.microsoft.com/en-us/library/windows/apps/br205821
+  name: IInspectable
+- uid: msipcthin2.offlinecachelifetimeconstants_cacheneverexpires
+  href: CacheNeverExpires.yml
+  name: CacheNeverExpires
+- uid: msipcthin2.offlinecachelifetimeconstants_nocache
+  href: NoCache.yml
+  name: NoCache

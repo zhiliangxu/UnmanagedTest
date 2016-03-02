@@ -1,0 +1,116 @@
+items:
+- uid: msipcthin2.devicerejectedexception_class_java
+  id: DeviceRejectedException
+  parent: com.microsoft.rightsmanagement.exceptions
+  children:
+  - msipcthin2.devicerejectedexception_constructor_java
+  - msipcthin2.devicerejectedexception_throwable__constructor_java
+  href: DeviceRejectedException.yml
+  langs:
+  - cplusplus
+  name: DeviceRejectedException
+  fullName: msipcthin2.devicerejectedexception_class_java
+  type: Class
+  assemblies: &o0
+  - Android
+  namespace: com.microsoft.rightsmanagement.exceptions
+  summary: >+
+    Signals a device exception from the server has occurred. Extends the @msipcthin2.protectionexception_class_java class.
+
+
+
+
+
+
+
+  remarks: >+
+    The @msipcthin2.devicerejectedexception_class_java class extends the @msipcthin2.protectionexception_class_java class. For more information, see  the SDK documentation for the @msipcthin2.protectionexception_class_java class.
+
+
+
+
+
+
+
+  thread_safety: Members of this class are not guaranteed to be thread safe.
+  defined_in: DeviceRejectedException.java
+  syntax:
+    content: public class DeviceRejectedException extends ProtectionException
+  inheritance: []
+- uid: msipcthin2.devicerejectedexception_constructor_java
+  id: DeviceRejectedException
+  parent: msipcthin2.devicerejectedexception_class_java
+  children: []
+  href: DeviceRejectedException.yml
+  langs:
+  - cplusplus
+  name: DeviceRejectedException
+  fullName: msipcthin2.devicerejectedexception_constructor_java
+  type: Method
+  assemblies: *o0
+  namespace: com.microsoft.rightsmanagement.exceptions
+  summary: >+
+    Initializes a new instance of the @msipcthin2.devicerejectedexception_class_java class with a default message and tag.
+
+
+
+
+
+
+
+  remarks: 
+  syntax:
+    content: public DeviceRejectedException()
+    return:
+      type: '@msipcthin2.devicerejectedexception_class_java'
+      description: '@msipcthin2.devicerejectedexception_class_java'
+  inheritance: []
+- uid: msipcthin2.devicerejectedexception_throwable__constructor_java
+  id: DeviceRejectedException(Throwable)
+  parent: msipcthin2.devicerejectedexception_class_java
+  children: []
+  href: DeviceRejectedException.yml
+  langs:
+  - cplusplus
+  name: DeviceRejectedException(Throwable)
+  fullName: msipcthin2.devicerejectedexception_throwable__constructor_java
+  type: Method
+  assemblies: *o0
+  namespace: com.microsoft.rightsmanagement.exceptions
+  summary: >+
+    Initializes a new instance of the @msipcthin2.devicerejectedexception_class_java class with a default message and tag and the specified inner exception.
+
+
+
+
+
+
+
+  remarks: 
+  syntax:
+    content: public DeviceRejectedException(Throwable e)
+    parameters:
+    - id: '*e*'
+      type: '**Throwable**'
+      description: >+
+        The inner exception.
+
+
+
+    return:
+      type: '@msipcthin2.devicerejectedexception_class_java'
+      description: '@msipcthin2.devicerejectedexception_class_java'
+  inheritance: []
+references:
+- uid: msipcthin2.protectionexception_class_java
+  href: ProtectionException.yml
+  name: ProtectionException
+- uid: msipcthin2.devicerejectedexception_constructor_java
+  href: DeviceRejectedException.yml
+  name: DeviceRejectedException
+- uid: msipcthin2.devicerejectedexception_class_java
+  href: DeviceRejectedException.yml
+  name: DeviceRejectedException
+- uid: msipcthin2.devicerejectedexception_throwable__constructor_java
+  href: DeviceRejectedException(Throwable).yml
+  name: DeviceRejectedException(Throwable)

@@ -1,0 +1,827 @@
+items:
+- uid: msipcthin2.userpolicy
+  id: UserPolicy
+  parent: Microsoft.RightsManagement
+  children:
+  - msipcthin2.userpolicy_accesscheck
+  - msipcthin2.userpolicy_acquireasync
+  - msipcthin2.userpolicy_contentid
+  - msipcthin2.userpolicy_contentvaliduntil
+  - msipcthin2.userpolicy_createasync
+  - msipcthin2.userpolicy_createfromtemplatedescriptorasync
+  - msipcthin2.userpolicy_description
+  - msipcthin2.userpolicy_doesusedeprecatedalgorithms
+  - msipcthin2.userpolicy_encryptedappdata
+  - msipcthin2.userpolicy_isauditedextractallowed
+  - msipcthin2.userpolicy_isissuedtoowner
+  - msipcthin2.userpolicy_issuedto
+  - msipcthin2.userpolicy_name
+  - msipcthin2.userpolicy_owner
+  - msipcthin2.userpolicy_policydescriptor
+  - msipcthin2.userpolicy_serializedpolicy
+  - msipcthin2.userpolicy_signedappdata
+  - msipcthin2.userpolicy_templatedescriptor
+  - msipcthin2.userpolicy_type
+  href: UserPolicy.yml
+  langs:
+  - cplusplus
+  name: UserPolicy
+  fullName: msipcthin2.userpolicy
+  type: Class
+  assemblies: &o0
+  - Microsoft.RightsManagement.winmd
+  namespace: Microsoft.RightsManagement
+  summary: >+
+    Represents the policy associated with protected content.
+
+
+
+
+
+
+
+  remarks: "A @msipcthin2.userpolicy object defines the policy that is associated with the protected content. It can be used to examine the rights of the current user as well as  to protect or unprotect content. \r\n\r\n"
+  thread_safety: Members of this class are not guaranteed to be thread safe.
+  syntax:
+    content: 'public ref class UserPolicy sealed : IInspectable'
+  inheritance:
+  - IInspectable
+- uid: msipcthin2.userpolicy_accesscheck
+  id: AccessCheck
+  parent: msipcthin2.userpolicy
+  children: []
+  href: UserPolicy.yml
+  langs:
+  - cplusplus
+  name: AccessCheck
+  fullName: msipcthin2.userpolicy_accesscheck
+  type: Method
+  assemblies: *o0
+  namespace: Microsoft.RightsManagement
+  summary: >+
+    Returns a value that indicates whether the current user has the specified right.
+
+
+
+
+
+
+
+  remarks: 
+  syntax:
+    content: >-
+      public:
+       Boolean AccessCheck(
+      	String^ right
+      )
+    parameters:
+    - id: right
+      type: String^
+      description: The right to check.
+    return:
+      type: Boolean
+      description: >+
+        **True** if the current user has the right; otherwise false.
+
+
+
+        When called on behalf of the content owner, returns **True** for any right that is specified.
+
+
+
+  inheritance: []
+- uid: msipcthin2.userpolicy_acquireasync
+  id: AcquireAsync
+  parent: msipcthin2.userpolicy
+  children: []
+  href: UserPolicy.yml
+  langs:
+  - cplusplus
+  name: AcquireAsync
+  fullName: msipcthin2.userpolicy_acquireasync
+  type: Method
+  assemblies: *o0
+  namespace: Microsoft.RightsManagement
+  summary: >+
+    Acquire a policy.
+
+
+
+
+
+
+
+  remarks: 
+  syntax:
+    content: >-
+      public:
+
+      static IAsyncOperation<GetUserPolicyResult> AcquireAsync(
+      	IBuffer serializedPolicy,
+      	String userId,
+      	IAuthenticationCallback authenticationCallback,
+      	IConsentCallback consentCallback,
+      	PolicyAcquisitionOptions options
+      )
+    parameters:
+    - id: serializedPolicy
+      type: IBuffer
+      description: the PL to be consumed
+    - id: userId
+      type: String
+      description: >+
+        The email address of the user that is trying to consume the protected content.
+
+
+
+        This email address will be used to determine which policy object to use from the offline cache.
+
+
+
+        If a policy object for this user is not found in the offline cache then this API will go online (if allowed)        to get the policy object.
+
+
+
+        If null is passed, the first policy object found in the offline cache will be used. And again if there is no        policy object found for this content in the offline cache, this API will go online to get the policy object.
+
+
+
+        This parameter is also used as a hint for        @msipcthin2.authenticationparameters_userid for user        authentication, i.e., it will be passed to the        @msipcthin2.iauthenticationcallback_gettokenasync        in the        @msipcthin2.authenticationparameters structure.
+
+
+
+    - id: authenticationCallback
+      type: IAuthenticationCallback
+      description: Authentication callback to be used for authentication process.
+    - id: consentCallback
+      type: IConsentCallback
+      description: Consent callback user for user consent process
+    - id: options
+      type: PolicyAcquisitionOptions
+      description: offline flag
+    return:
+      type: IAsyncOperation<GetUserPolicyResult>
+      description: The asynchronous operation. Upon completion, [IAsyncOperation](https://msdn.microsoft.com/en-us/library/windows/apps/br206598.aspx).GetResults returns a  @msipcthin2.getuserpolicyresult       object.
+  inheritance: []
+- uid: msipcthin2.userpolicy_createasync
+  id: CreateAsync
+  parent: msipcthin2.userpolicy
+  children: []
+  href: UserPolicy.yml
+  langs:
+  - cplusplus
+  name: CreateAsync
+  fullName: msipcthin2.userpolicy_createasync
+  type: Method
+  assemblies: *o0
+  namespace: Microsoft.RightsManagement
+  summary: >+
+    Create a custom protection policy.
+
+
+
+
+
+
+
+  remarks: 
+  syntax:
+    content: >-
+      public:
+
+      static UserPolicy CreateAsync(
+      	PolicyDescriptor policyDescriptor,
+      	String userId,
+      	IAuthenticationCallback authenticationCallback,
+      	UserPolicyCreationOptions options
+      )
+    parameters:
+    - id: policyDescriptor
+      type: PolicyDescriptor
+      description: a @msipcthin2.policydescriptor_class_win object which defines the policy.
+    - id: userId
+      type: String
+      description: "The email address of the user that is protecting the content. \r\n\r\nThis email address will be used to discover the RMS service instance     (either ADRMS server or Azure RMS) that the user's organization is using.                      This parameter is also used as a hint for userId for user authentication, i.e., it will be passed to the @msipcthin2.iauthenticationcallback_gettokenasync()                           in the @msipcthin2.authenticationparameters structure.\r\n\r\n"
+    - id: authenticationCallback
+      type: IAuthenticationCallback
+      description: Authentication callback to be used for authentication.
+    - id: options
+      type: UserPolicyCreationOptions
+      description: Options for creating protection policy object. For more information, see @msipcthin2.userpolicycreationoptions.
+    return:
+      type: UserPolicy
+      description: A @msipcthin2.userpolicy object.
+  inheritance: []
+- uid: msipcthin2.userpolicy_createfromtemplatedescriptorasync
+  id: CreateFromTemplateDescriptorAsync
+  parent: msipcthin2.userpolicy
+  children: []
+  href: UserPolicy.yml
+  langs:
+  - cplusplus
+  name: CreateFromTemplateDescriptorAsync
+  fullName: msipcthin2.userpolicy_createfromtemplatedescriptorasync
+  type: Method
+  assemblies: *o0
+  namespace: Microsoft.RightsManagement
+  summary: >+
+    Publishing using templates
+
+
+
+
+
+
+
+  remarks: 
+  syntax:
+    content: >-
+      public:
+
+      static IAsyncOperation<UserPolicy> CreateFromTemplateDescriptorAsync(
+      	TemplateDescriptor templateDescriptor,
+      	String userId,
+      	IAuthenticationCallback authenticationCallback,
+      	UserPolicyCreationOptions options,
+      	IMapView<String^, String^>^ 												signedAppData
+      )
+    parameters:
+    - id: templateDescriptor
+      type: TemplateDescriptor
+      description: The template from which the policy is being created.
+    - id: userId
+      type: String
+      description: >+
+        The email address of the user that is protecting the content.
+
+
+
+        This email address will be used to discover the RMS service instance either ADRMS server or Azure RMS) that        the user's organization is using.
+
+
+
+        This parameter is also used as a hint for userId for user authentication, i.e., it will be passed to the        @msipcthin2.iauthenticationcallback_gettokenasync        in the @msipcthin2.authenticationparameters        structure.
+
+
+
+    - id: authenticationCallback
+      type: IAuthenticationCallback
+      description: Authentication callback to be used for auth
+    - id: options
+      type: UserPolicyCreationOptions
+      description: Options for creating protection policy object. For more information, see       @msipcthin2.userpolicycreationoptions.
+    - id: 												signedAppData
+      type: IMapView<String^, String^>^
+      description: Singed App data to be stored with this template
+    return:
+      type: IAsyncOperation<UserPolicy>
+      description: A @msipcthin2.userpolicy object.
+  inheritance: []
+- uid: msipcthin2.userpolicy_contentid
+  id: ContentId
+  parent: msipcthin2.userpolicy
+  children: []
+  href: UserPolicy.yml
+  langs:
+  - cplusplus
+  name: ContentId
+  fullName: msipcthin2.userpolicy_contentid
+  type: Property
+  assemblies: *o0
+  namespace: Microsoft.RightsManagement
+  summary: >+
+    Gets the unique content ID associated with the protected document.
+
+
+
+
+
+
+
+  remarks: >+
+    For detailed information on this property and the others of the @msipcthin2.userpolicy class, see the New Features for September 2013 section of the @msipcthin2.release_notes topic.
+
+
+
+  syntax:
+    content: >-
+      public:
+       String ContentId {
+      	String get();
+      }
+    return:
+      type: String
+      description: A string  containing the unique ID of the document.
+  inheritance: []
+- uid: msipcthin2.userpolicy_contentvaliduntil
+  id: ContentValidUntil
+  parent: msipcthin2.userpolicy
+  children: []
+  href: UserPolicy.yml
+  langs:
+  - cplusplus
+  name: ContentValidUntil
+  fullName: msipcthin2.userpolicy_contentvaliduntil
+  type: Property
+  assemblies: *o0
+  namespace: Microsoft.RightsManagement
+  summary: >+
+    The date the content is valid until.
+
+
+
+
+
+
+
+  remarks: 
+  syntax:
+    content: >-
+      public:
+       DateTime ContentValidUntil {
+      	DateTime get();
+      }
+    return:
+      type: DateTime
+      description: Validity time
+  inheritance: []
+- uid: msipcthin2.userpolicy_description
+  id: Description
+  parent: msipcthin2.userpolicy
+  children: []
+  href: UserPolicy.yml
+  langs:
+  - cplusplus
+  name: Description
+  fullName: msipcthin2.userpolicy_description
+  type: Property
+  assemblies: *o0
+  namespace: Microsoft.RightsManagement
+  summary: >+
+    Gets the policy description.
+
+
+
+
+
+
+
+  remarks: 
+  syntax:
+    content: >-
+      public:
+       String Description {
+      	String get();
+      }
+    return:
+      type: String
+  inheritance: []
+- uid: msipcthin2.userpolicy_doesusedeprecatedalgorithms
+  id: DoesUseDeprecatedAlgorithms
+  parent: msipcthin2.userpolicy
+  children: []
+  href: UserPolicy.yml
+  langs:
+  - cplusplus
+  name: DoesUseDeprecatedAlgorithms
+  fullName: msipcthin2.userpolicy_doesusedeprecatedalgorithms
+  type: Property
+  assemblies: *o0
+  namespace: Microsoft.RightsManagement
+  summary: >+
+    Gets the @msipcthin2.terms flag.
+
+
+
+
+
+
+
+  remarks: 
+  syntax:
+    content: >-
+      public:
+       Bool DoesUseDeprecatedAlgorithms {
+      	Bool get();
+      }
+    return:
+      type: Bool
+      description: Deprecated algorithms flag
+  inheritance: []
+- uid: msipcthin2.userpolicy_encryptedappdata
+  id: EncryptedAppData
+  parent: msipcthin2.userpolicy
+  children: []
+  href: UserPolicy.yml
+  langs:
+  - cplusplus
+  name: EncryptedAppData
+  fullName: msipcthin2.userpolicy_encryptedappdata
+  type: Property
+  assemblies: *o0
+  namespace: Microsoft.RightsManagement
+  summary: >+
+    Gets the app specific data
+
+
+
+
+
+
+
+  remarks: 
+  syntax:
+    content: >-
+      public:
+       IMapView<String^,String^>^ EncryptedAppData {
+      	IMapView<String^,String^>^ get();
+      }
+    return:
+      type: IMapView<String^,String^>^
+      description: App specific data accessed via IMapView.
+  inheritance: []
+- uid: msipcthin2.userpolicy_isauditedextractallowed
+  id: IsAuditedExtractAllowed
+  parent: msipcthin2.userpolicy
+  children: []
+  href: UserPolicy.yml
+  langs:
+  - cplusplus
+  name: IsAuditedExtractAllowed
+  fullName: msipcthin2.userpolicy_isauditedextractallowed
+  type: Property
+  assemblies: *o0
+  namespace: Microsoft.RightsManagement
+  summary: >+
+    Gets property for allowance of audited extraction.
+
+
+
+
+
+
+
+  remarks: 
+  syntax:
+    content: >-
+      public:
+       Bool IsAuditedExtractAllowed {
+      	Bool get();
+      }
+    return:
+      type: Bool
+      description: Indicates if audited extract is allowed.
+  inheritance: []
+- uid: msipcthin2.userpolicy_issuedto
+  id: IssuedTo
+  parent: msipcthin2.userpolicy
+  children: []
+  href: UserPolicy.yml
+  langs:
+  - cplusplus
+  name: IssuedTo
+  fullName: msipcthin2.userpolicy_issuedto
+  type: Property
+  assemblies: *o0
+  namespace: Microsoft.RightsManagement
+  summary: >+
+    Gets the user associated with the protection policy.
+
+
+
+
+
+
+
+  remarks: 
+  syntax:
+    content: >-
+      public:
+       String IssuedTo {
+      	String get();
+      }
+    return:
+      type: String
+      description: The user associated with the protection policy
+  inheritance: []
+- uid: msipcthin2.userpolicy_isissuedtoowner
+  id: IsIssuedToOwner
+  parent: msipcthin2.userpolicy
+  children: []
+  href: UserPolicy.yml
+  langs:
+  - cplusplus
+  name: IsIssuedToOwner
+  fullName: msipcthin2.userpolicy_isissuedtoowner
+  type: Property
+  assemblies: *o0
+  namespace: Microsoft.RightsManagement
+  summary: >+
+    Gets the flag indicating if the current user the is the content owner.
+
+
+
+
+
+
+
+  remarks: 
+  syntax:
+    content: >-
+      public:
+       Bool IsIssuedToOwner {
+      	Bool get();
+      }
+    return:
+      type: Bool
+      description: Flag indicating if the current user the is the content owner.
+  inheritance: []
+- uid: msipcthin2.userpolicy_name
+  id: Name
+  parent: msipcthin2.userpolicy
+  children: []
+  href: UserPolicy.yml
+  langs:
+  - cplusplus
+  name: Name
+  fullName: msipcthin2.userpolicy_name
+  type: Property
+  assemblies: *o0
+  namespace: Microsoft.RightsManagement
+  summary: >+
+    Gets the name of the policy.
+
+
+
+
+
+
+
+  remarks: 
+  syntax:
+    content: >-
+      public:
+       String Name {
+      	String get();
+      }
+    return:
+      type: String
+      description: The name the policy
+  inheritance: []
+- uid: msipcthin2.userpolicy_owner
+  id: Owner
+  parent: msipcthin2.userpolicy
+  children: []
+  href: UserPolicy.yml
+  langs:
+  - cplusplus
+  name: Owner
+  fullName: msipcthin2.userpolicy_owner
+  type: Property
+  assemblies: *o0
+  namespace: Microsoft.RightsManagement
+  summary: >+
+    Gets the email address of the content owner.
+
+
+
+
+
+
+
+  remarks: 
+  syntax:
+    content: >-
+      public:
+       String Owner {
+      	String get();
+      }
+    return:
+      type: String
+      description: The email address of the content owner.
+  inheritance: []
+- uid: msipcthin2.userpolicy_policydescriptor
+  id: PolicyDescriptor
+  parent: msipcthin2.userpolicy
+  children: []
+  href: UserPolicy.yml
+  langs:
+  - cplusplus
+  name: PolicyDescriptor
+  fullName: msipcthin2.userpolicy_policydescriptor
+  type: Property
+  assemblies: *o0
+  namespace: Microsoft.RightsManagement
+  summary: >+
+    Gets the policy descriptor.
+
+
+
+
+
+
+
+    This property will be null for template based policies.
+
+
+
+
+
+
+
+  remarks: 
+  syntax:
+    content: >-
+      public:
+       PolicyDescriptor PolicyDescriptor {
+      	PolicyDescriptor get();
+      }
+    return:
+      type: PolicyDescriptor
+      description: The policy descriptor.ApiNamespace()::PolicyDescriptor
+  inheritance: []
+- uid: msipcthin2.userpolicy_serializedpolicy
+  id: SerializedPolicy
+  parent: msipcthin2.userpolicy
+  children: []
+  href: UserPolicy.yml
+  langs:
+  - cplusplus
+  name: SerializedPolicy
+  fullName: msipcthin2.userpolicy_serializedpolicy
+  type: Property
+  assemblies: *o0
+  namespace: Microsoft.RightsManagement
+  summary: >+
+    Gets the serialized policy.
+
+
+
+
+
+
+
+  remarks: 
+  syntax:
+    content: >-
+      public:
+       IBuffer SerializedPolicy {
+      	IBuffer get();
+      }
+    return:
+      type: IBuffer
+      description: The serialized policy.
+  inheritance: []
+- uid: msipcthin2.userpolicy_signedappdata
+  id: SignedAppData
+  parent: msipcthin2.userpolicy
+  children: []
+  href: UserPolicy.yml
+  langs:
+  - cplusplus
+  name: SignedAppData
+  fullName: msipcthin2.userpolicy_signedappdata
+  type: Property
+  assemblies: *o0
+  namespace: Microsoft.RightsManagement
+  summary: >+
+    Gets app specific data.
+
+
+
+
+
+
+
+  remarks: 
+  syntax:
+    content: >-
+      public:
+       IMapView<String^, String^>^ SignedAppData {
+      	IMapView<String^, String^>^ get();
+      }
+    return:
+      type: IMapView<String^, String^>^
+      description: Signed app data accessed via IMapView.
+  inheritance: []
+- uid: msipcthin2.userpolicy_templatedescriptor
+  id: TemplateDescriptor
+  parent: msipcthin2.userpolicy
+  children: []
+  href: UserPolicy.yml
+  langs:
+  - cplusplus
+  name: TemplateDescriptor
+  fullName: msipcthin2.userpolicy_templatedescriptor
+  type: Property
+  assemblies: *o0
+  namespace: Microsoft.RightsManagement
+  summary: "Gets the template used to publish the content. \r\n\r\n\r\n\r\nThis property will be null for custom (adhoc) policies.\r\n\r\n\r\n\r\n"
+  remarks: 
+  syntax:
+    content: >-
+      public:
+       TemplateDescriptor TemplateDescriptor {
+      	TemplateDescriptor get();
+      }
+    return:
+      type: TemplateDescriptor
+      description: The template used to  publish (encrypt) the content.
+  inheritance: []
+- uid: msipcthin2.userpolicy_type
+  id: Type
+  parent: msipcthin2.userpolicy
+  children: []
+  href: UserPolicy.yml
+  langs:
+  - cplusplus
+  name: Type
+  fullName: msipcthin2.userpolicy_type
+  type: Property
+  assemblies: *o0
+  namespace: Microsoft.RightsManagement
+  summary: >+
+    Gets the policy type; template based or custom.
+
+
+
+
+
+
+
+  remarks: 
+  syntax:
+    content: >-
+      public:
+       UserPolicyType Type {
+      	UserPolicyType get();
+      }
+    return:
+      type: UserPolicyType
+      description: The policy type.
+  inheritance: []
+references:
+- uid: IInspectable
+  isExternal: true
+  href: https://msdn.microsoft.com/en-us/library/windows/apps/br205821
+  name: IInspectable
+- uid: msipcthin2.userpolicy
+  href: UserPolicy.yml
+  name: UserPolicy
+- uid: msipcthin2.userpolicy_accesscheck
+  href: AccessCheck.yml
+  name: AccessCheck
+- uid: msipcthin2.userpolicy_acquireasync
+  href: AcquireAsync.yml
+  name: AcquireAsync
+- uid: msipcthin2.userpolicy_createasync
+  href: CreateAsync.yml
+  name: CreateAsync
+- uid: msipcthin2.userpolicy_createfromtemplatedescriptorasync
+  href: CreateFromTemplateDescriptorAsync.yml
+  name: CreateFromTemplateDescriptorAsync
+- uid: msipcthin2.userpolicy_contentid
+  href: ContentId.yml
+  name: ContentId
+- uid: msipcthin2.userpolicy_contentvaliduntil
+  href: ContentValidUntil.yml
+  name: ContentValidUntil
+- uid: msipcthin2.userpolicy_description
+  href: Description.yml
+  name: Description
+- uid: msipcthin2.userpolicy_doesusedeprecatedalgorithms
+  href: DoesUseDeprecatedAlgorithms.yml
+  name: DoesUseDeprecatedAlgorithms
+- uid: msipcthin2.userpolicy_encryptedappdata
+  href: EncryptedAppData.yml
+  name: EncryptedAppData
+- uid: msipcthin2.userpolicy_isauditedextractallowed
+  href: IsAuditedExtractAllowed.yml
+  name: IsAuditedExtractAllowed
+- uid: msipcthin2.userpolicy_issuedto
+  href: IssuedTo.yml
+  name: IssuedTo
+- uid: msipcthin2.userpolicy_isissuedtoowner
+  href: IsIssuedToOwner.yml
+  name: IsIssuedToOwner
+- uid: msipcthin2.userpolicy_name
+  href: Name.yml
+  name: Name
+- uid: msipcthin2.userpolicy_owner
+  href: Owner.yml
+  name: Owner
+- uid: msipcthin2.userpolicy_policydescriptor
+  href: PolicyDescriptor.yml
+  name: PolicyDescriptor
+- uid: msipcthin2.userpolicy_serializedpolicy
+  href: SerializedPolicy.yml
+  name: SerializedPolicy
+- uid: msipcthin2.userpolicy_signedappdata
+  href: SignedAppData.yml
+  name: SignedAppData
+- uid: msipcthin2.userpolicy_templatedescriptor
+  href: TemplateDescriptor.yml
+  name: TemplateDescriptor
+- uid: msipcthin2.userpolicy_type
+  href: Type.yml
+  name: Type

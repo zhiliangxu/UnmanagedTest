@@ -1,0 +1,137 @@
+items:
+- uid: msipcthin2.userroles_class_java
+  id: UserRoles
+  parent: com.microsoft.rightsmanagement
+  children:
+  - msipcthin2.userroles_getroles_method_java
+  - msipcthin2.userroles_getusers_method_java
+  - msipcthin2.userroles_userroles_method_java
+  href: UserRoles.yml
+  langs:
+  - cplusplus
+  name: UserRoles
+  fullName: msipcthin2.userroles_class_java
+  type: Class
+  assemblies: &o0
+  - Android
+  namespace: com.microsoft.rightsmanagement
+  summary: >+
+    Maps collections of users to a collection of roles.
+
+
+
+  remarks: 
+  thread_safety: Members of this class are not guaranteed to be thread safe.
+  defined_in: UserRights.java
+  syntax:
+    content: public final class UserRoless implements Serializable
+  inheritance: []
+- uid: msipcthin2.userroles_userroles_method_java
+  id: UserRoles UserRoles
+  parent: msipcthin2.userroles_class_java
+  children: []
+  href: UserRoles.yml
+  langs:
+  - cplusplus
+  name: UserRoles UserRoles
+  fullName: msipcthin2.userroles_userroles_method_java
+  type: Method
+  assemblies: *o0
+  namespace: com.microsoft.rightsmanagement
+  summary: >+
+    Instantiates a new @msipcthin2.userroles_class_java object.
+
+
+
+
+
+
+
+  remarks: 
+  syntax:
+    content: public UserRoles(Collection<String> users,                                      Collection<String> roles)
+    parameters:
+    - id: '*users*'
+      type: '**Collection<String>**'
+      description: >+
+        Set of users to whom the roles are assigned.
+
+
+
+    - id: '*roles*'
+      type: '**Collection<String>**'
+      description: >+
+        Use the role types defined in  @msipcthin2.roles_class_java.													
+
+
+
+  inheritance: []
+- uid: msipcthin2.userroles_getusers_method_java
+  id: UserRoles getUsers
+  parent: msipcthin2.userroles_class_java
+  children: []
+  href: UserRoles.yml
+  langs:
+  - cplusplus
+  name: UserRoles getUsers
+  fullName: msipcthin2.userroles_getusers_method_java
+  type: Method
+  assemblies: *o0
+  namespace: com.microsoft.rightsmanagement
+  summary: >+
+    Gets the set of users.
+
+
+
+
+
+
+
+  remarks: 
+  syntax:
+    content: public Collection<String> getUsers()
+    return:
+      type: Collection
+      description: A **Collection** containing a list of users.
+  inheritance: []
+- uid: msipcthin2.userroles_getroles_method_java
+  id: UserRoles getRoles
+  parent: msipcthin2.userroles_class_java
+  children: []
+  href: UserRoles.yml
+  langs:
+  - cplusplus
+  name: UserRoles getRoles
+  fullName: msipcthin2.userroles_getroles_method_java
+  type: Method
+  assemblies: *o0
+  namespace: com.microsoft.rightsmanagement
+  summary: >+
+    Gets the set of roles.
+
+
+
+
+
+
+
+  remarks: 
+  syntax:
+    content: public Collection<String> getRoles()
+    return:
+      type: Collection
+      description: A **Collection** containing a list of roles.
+  inheritance: []
+references:
+- uid: msipcthin2.userroles_userroles_method_java
+  href: UserRoles UserRoles.yml
+  name: UserRoles
+- uid: msipcthin2.userroles_class_java
+  href: UserRoles.yml
+  name: UserRoles
+- uid: msipcthin2.userroles_getroles_method_java
+  href: UserRoles getRoles.yml
+  name: getRoles
+- uid: msipcthin2.userroles_getusers_method_java
+  href: UserRoles getUsers.yml
+  name: getUsers

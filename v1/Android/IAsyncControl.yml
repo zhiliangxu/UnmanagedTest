@@ -1,0 +1,63 @@
+items:
+- uid: msipcthin2.iasynccontrol_interface
+  id: IAsyncControl
+  parent: com.microsoft.rightsmanagement
+  children:
+  - msipcthin2.iasynccontrol_cancel_method
+  href: IAsyncControl.yml
+  langs:
+  - cplusplus
+  name: IAsyncControl
+  fullName: msipcthin2.iasynccontrol_interface
+  type: Interface
+  assemblies: &o0
+  - Android
+  namespace: com.microsoft.rightsmanagement
+  summary: >+
+    Provides a cancel method for some asynchronous operations.
+
+
+
+
+
+
+
+  remarks: 
+  thread_safety: Members of this class are not guaranteed to be thread safe.
+  defined_in: IAsyncControl.java
+  syntax:
+    content: public interface IAsyncControl
+  inheritance: []
+- uid: msipcthin2.iasynccontrol_cancel_method
+  id: IAsyncControl.cancel
+  parent: msipcthin2.iasynccontrol_interface
+  children: []
+  href: IAsyncControl.yml
+  langs:
+  - cplusplus
+  name: IAsyncControl.cancel
+  fullName: msipcthin2.iasynccontrol_cancel_method
+  type: Method
+  assemblies: *o0
+  namespace: com.microsoft.rightsmanagement
+  summary: >+
+    Cancels the associated asynchronous task running.
+
+
+
+     At any time, many tasks can be concurrently  running. For each async task there is a corresponding  @msipcthin2.iasynccontrol_interface object that can be used to cancel it.
+
+
+
+  remarks: >+
+    Invoking this  method multiple times does not change the effect.
+
+
+
+  syntax:
+    content: public void cancel()
+  inheritance: []
+references:
+- uid: msipcthin2.iasynccontrol_cancel_method
+  href: IAsyncControl.cancel.yml
+  name: cancel

@@ -1,0 +1,77 @@
+items:
+- uid: msipcthin2.iauthenticationcallback
+  id: IAuthenticationCallback
+  parent: Microsoft.RightsManagement
+  children:
+  - msipcthin2.iauthenticationcallback_gettokenasync
+  href: IAuthenticationCallback.yml
+  langs:
+  - cplusplus
+  name: IAuthenticationCallback
+  fullName: msipcthin2.iauthenticationcallback
+  type: Interface
+  assemblies: &o0
+  - Microsoft.RightsManagement.winmd
+  namespace: Microsoft.RightsManagement
+  summary: >+
+    Interface for getting access token.
+
+
+
+    Apps should implement this interface and pass it to the     APIs that do authenticated REST calls.
+
+
+
+  remarks: 
+  syntax:
+    content: 'public interface IAuthenticationCallback : IInspectable'
+  inheritance:
+  - IInspectable
+- uid: msipcthin2.iauthenticationcallback_gettokenasync
+  id: GetTokenAsync
+  parent: msipcthin2.iauthenticationcallback
+  children: []
+  href: IAuthenticationCallback.yml
+  langs:
+  - cplusplus
+  name: GetTokenAsync
+  fullName: msipcthin2.iauthenticationcallback_gettokenasync
+  type: Method
+  assemblies: *o0
+  namespace: Microsoft.RightsManagement
+  summary: >+
+    Apps must implement this method to authenticate and return an access token.
+
+
+
+
+
+
+
+  remarks: >+
+    This method is modeled after the .NET method     [AuthenticationContext.AcquireToken](https://msdn.microsoft.com/en-us/library/dn528706.aspx).
+
+
+
+  syntax:
+    content: >-
+      public:
+       IAsyncOperation<String^>^ GetTokenAsync(
+      	AuthenticationParameters authenticationParameters
+      )
+    parameters:
+    - id: authenticationParameters
+      type: AuthenticationParameters
+      description: Information required to authenticate
+    return:
+      type: IAsyncOperation<String^>^
+      description: 'The asynchronous operation. Upon completion, [IAsyncOperation](https://msdn.microsoft.com/en-us/library/windows/apps/br206598.aspx).GetResults returns an access token.  '
+  inheritance: []
+references:
+- uid: IInspectable
+  isExternal: true
+  href: https://msdn.microsoft.com/en-us/library/windows/apps/br205821
+  name: IInspectable
+- uid: msipcthin2.iauthenticationcallback_gettokenasync
+  href: GetTokenAsync.yml
+  name: GetTokenAsync

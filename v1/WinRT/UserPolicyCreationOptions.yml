@@ -1,0 +1,87 @@
+items:
+- uid: msipcthin2.userpolicycreationoptions
+  id: UserPolicyCreationOptions
+  parent: Microsoft.RightsManagement
+  children:
+  - msipcthin2.userpolicycreationoptions.AllowAuditedExtraction
+  - msipcthin2.userpolicycreationoptions.None
+  - msipcthin2.userpolicycreationoptions.PreferDeprecatedAlgorithms
+  href: UserPolicyCreationOptions.yml
+  langs:
+  - cplusplus
+  name: UserPolicyCreationOptions
+  fullName: msipcthin2.userpolicycreationoptions
+  type: Enum
+  assemblies: &o0
+  - Microsoft.RightsManagement.winmd
+  namespace: Microsoft.RightsManagement
+  summary: >+
+    Used to set flags when creating @msipcthin2.userpolicy objects.
+
+
+
+
+
+
+
+  remarks: 
+  syntax:
+    content: public enum class UserPolicyCreationOptions
+  inheritance: []
+- uid: msipcthin2.userpolicycreationoptions.None
+  id: None
+  parent: msipcthin2.userpolicycreationoptions
+  href: UserPolicyCreationOptions.yml
+  langs:
+  - cplusplus
+  name: None
+  fullName: msipcthin2.userpolicycreationoptions.None
+  type: Field
+  assemblies: *o0
+  namespace: Microsoft.RightsManagement
+  summary: 
+  syntax:
+    content: None = 0x0
+- uid: msipcthin2.userpolicycreationoptions.AllowAuditedExtraction
+  id: AllowAuditedExtraction
+  parent: msipcthin2.userpolicycreationoptions
+  href: UserPolicyCreationOptions.yml
+  langs:
+  - cplusplus
+  name: AllowAuditedExtraction
+  fullName: msipcthin2.userpolicycreationoptions.AllowAuditedExtraction
+  type: Field
+  assemblies: *o0
+  namespace: Microsoft.RightsManagement
+  summary: Specifies whether the content can be opened in a non-RMS aware app or not.
+  syntax:
+    content: AllowAuditedExtraction = 0x1
+- uid: msipcthin2.userpolicycreationoptions.PreferDeprecatedAlgorithms
+  id: PreferDeprecatedAlgorithms
+  parent: msipcthin2.userpolicycreationoptions
+  href: UserPolicyCreationOptions.yml
+  langs:
+  - cplusplus
+  name: PreferDeprecatedAlgorithms
+  fullName: msipcthin2.userpolicycreationoptions.PreferDeprecatedAlgorithms
+  type: Field
+  assemblies: *o0
+  namespace: Microsoft.RightsManagement
+  summary: Specifies whether the @msipcthin2.terms (ECB) is preferred or not.
+  syntax:
+    content: PreferDeprecatedAlgorithms = 0x2
+references:
+- uid: msipcthin2.userpolicy
+  href: UserPolicy.yml
+  name: UserPolicy
+- uid: msipcthin2.terms
+  name: deprecated algorithms
+- uid: msipcthin2.userpolicycreationoptions.None
+  href: UserPolicyCreationOptions.yml
+  name: None
+- uid: msipcthin2.userpolicycreationoptions.AllowAuditedExtraction
+  href: UserPolicyCreationOptions.yml
+  name: AllowAuditedExtraction
+- uid: msipcthin2.userpolicycreationoptions.PreferDeprecatedAlgorithms
+  href: UserPolicyCreationOptions.yml
+  name: PreferDeprecatedAlgorithms

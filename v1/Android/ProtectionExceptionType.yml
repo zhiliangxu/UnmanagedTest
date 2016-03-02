@@ -1,0 +1,318 @@
+items:
+- uid: msipcthin2.protectionexceptiontype_enum_java
+  id: ProtectionExceptionType
+  parent: com.microsoft.rightsmanagement.exceptions
+  children:
+  - msipcthin2.protectionexceptiontype_enum_java.CommunicationException
+  - msipcthin2.protectionexceptiontype_enum_java.DeviceRejectedException
+  - msipcthin2.protectionexceptiontype_enum_java.FailedAuthenticationException
+  - msipcthin2.protectionexceptiontype_enum_java.GeneralException
+  - msipcthin2.protectionexceptiontype_enum_java.InvalidCertificateException
+  - msipcthin2.protectionexceptiontype_enum_java.InvalidDnsLookupResultException
+  - msipcthin2.protectionexceptiontype_enum_java.InvalidParameterException
+  - msipcthin2.protectionexceptiontype_enum_java.InvalidPLException
+  - msipcthin2.protectionexceptiontype_enum_java.NoConsumptionRightsException
+  - msipcthin2.protectionexceptiontype_enum_java.NoPublishingRightsException
+  - msipcthin2.protectionexceptiontype_enum_java.OfflineOnlyRequiresInternetException
+  - msipcthin2.protectionexceptiontype_enum_java.OnPremServersNotSupportedException
+  - msipcthin2.protectionexceptiontype_enum_java.ServiceNotAvailableException
+  - msipcthin2.protectionexceptiontype_enum_java.ServiceNotEnabledException
+  - msipcthin2.protectionexceptiontype_enum_java.UnsupportedSDKVersionException
+  - msipcthin2.protectionexceptiontype_enum_java.UserRightsExpiredException
+  href: ProtectionExceptionType.yml
+  langs:
+  - cplusplus
+  name: ProtectionExceptionType
+  fullName: msipcthin2.protectionexceptiontype_enum_java
+  type: Enum
+  assemblies: &o0
+  - Android
+  namespace: com.microsoft.rightsmanagement.exceptions
+  summary: >+
+    Maps the numeric error codes in the SDK to the relevant exception type,  enabling the developer to check and handle the error code accordingly.
+
+
+
+
+
+
+
+  remarks: 
+  thread_safety: Members of this class are not guaranteed to be thread safe.
+  defined_in: ProtectionExceptionType.java
+  syntax:
+    content: public enum ProtectionExceptionType
+  inheritance: []
+- uid: msipcthin2.protectionexceptiontype_enum_java.DeviceRejectedException
+  id: DeviceRejectedException
+  parent: msipcthin2.protectionexceptiontype_enum_java
+  href: ProtectionExceptionType.yml
+  langs:
+  - cplusplus
+  name: DeviceRejectedException
+  fullName: msipcthin2.protectionexceptiontype_enum_java.DeviceRejectedException
+  type: Field
+  assemblies: *o0
+  namespace: com.microsoft.rightsmanagement.exceptions
+  summary: 
+  syntax:
+    content: DeviceRejectedException = SDK_ERROR_DEVICE_REJECTED
+- uid: msipcthin2.protectionexceptiontype_enum_java.GeneralException
+  id: GeneralException
+  parent: msipcthin2.protectionexceptiontype_enum_java
+  href: ProtectionExceptionType.yml
+  langs:
+  - cplusplus
+  name: GeneralException
+  fullName: msipcthin2.protectionexceptiontype_enum_java.GeneralException
+  type: Field
+  assemblies: *o0
+  namespace: com.microsoft.rightsmanagement.exceptions
+  summary: 
+  syntax:
+    content: GeneralException = SDK_ERROR_GENERAL
+- uid: msipcthin2.protectionexceptiontype_enum_java.CommunicationException
+  id: CommunicationException
+  parent: msipcthin2.protectionexceptiontype_enum_java
+  href: ProtectionExceptionType.yml
+  langs:
+  - cplusplus
+  name: CommunicationException
+  fullName: msipcthin2.protectionexceptiontype_enum_java.CommunicationException
+  type: Field
+  assemblies: *o0
+  namespace: com.microsoft.rightsmanagement.exceptions
+  summary: 
+  syntax:
+    content: CommunicationException = SDK_ERROR_COMMUNICATION
+- uid: msipcthin2.protectionexceptiontype_enum_java.NoConsumptionRightsException
+  id: NoConsumptionRightsException
+  parent: msipcthin2.protectionexceptiontype_enum_java
+  href: ProtectionExceptionType.yml
+  langs:
+  - cplusplus
+  name: NoConsumptionRightsException
+  fullName: msipcthin2.protectionexceptiontype_enum_java.NoConsumptionRightsException
+  type: Field
+  assemblies: *o0
+  namespace: com.microsoft.rightsmanagement.exceptions
+  summary: 
+  syntax:
+    content: NoConsumptionRightsException = SDK_ERROR_NO_CONSUMPTION_RIGHTS
+- uid: msipcthin2.protectionexceptiontype_enum_java.InvalidParameterException
+  id: InvalidParameterException
+  parent: msipcthin2.protectionexceptiontype_enum_java
+  href: ProtectionExceptionType.yml
+  langs:
+  - cplusplus
+  name: InvalidParameterException
+  fullName: msipcthin2.protectionexceptiontype_enum_java.InvalidParameterException
+  type: Field
+  assemblies: *o0
+  namespace: com.microsoft.rightsmanagement.exceptions
+  summary: 
+  syntax:
+    content: InvalidParameterException = SDK_ERROR_INVALID_PARAMETER
+- uid: msipcthin2.protectionexceptiontype_enum_java.UnsupportedSDKVersionException
+  id: UnsupportedSDKVersionException
+  parent: msipcthin2.protectionexceptiontype_enum_java
+  href: ProtectionExceptionType.yml
+  langs:
+  - cplusplus
+  name: UnsupportedSDKVersionException
+  fullName: msipcthin2.protectionexceptiontype_enum_java.UnsupportedSDKVersionException
+  type: Field
+  assemblies: *o0
+  namespace: com.microsoft.rightsmanagement.exceptions
+  summary: 
+  syntax:
+    content: UnsupportedSDKVersionException = SDK_ERROR_UNSUPPORTED_SDK_VERSION
+- uid: msipcthin2.protectionexceptiontype_enum_java.ServiceNotAvailableException
+  id: ServiceNotAvailableException
+  parent: msipcthin2.protectionexceptiontype_enum_java
+  href: ProtectionExceptionType.yml
+  langs:
+  - cplusplus
+  name: ServiceNotAvailableException
+  fullName: msipcthin2.protectionexceptiontype_enum_java.ServiceNotAvailableException
+  type: Field
+  assemblies: *o0
+  namespace: com.microsoft.rightsmanagement.exceptions
+  summary: 
+  syntax:
+    content: ServiceNotAvailableException = SDK_ERROR_SERVICE_NOT_AVAILABLE
+- uid: msipcthin2.protectionexceptiontype_enum_java.InvalidPLException
+  id: InvalidPLException
+  parent: msipcthin2.protectionexceptiontype_enum_java
+  href: ProtectionExceptionType.yml
+  langs:
+  - cplusplus
+  name: InvalidPLException
+  fullName: msipcthin2.protectionexceptiontype_enum_java.InvalidPLException
+  type: Field
+  assemblies: *o0
+  namespace: com.microsoft.rightsmanagement.exceptions
+  summary: 
+  syntax:
+    content: InvalidPLException = SDK_ERROR_INVALID_PL
+- uid: msipcthin2.protectionexceptiontype_enum_java.UserRightsExpiredException
+  id: UserRightsExpiredException
+  parent: msipcthin2.protectionexceptiontype_enum_java
+  href: ProtectionExceptionType.yml
+  langs:
+  - cplusplus
+  name: UserRightsExpiredException
+  fullName: msipcthin2.protectionexceptiontype_enum_java.UserRightsExpiredException
+  type: Field
+  assemblies: *o0
+  namespace: com.microsoft.rightsmanagement.exceptions
+  summary: 
+  syntax:
+    content: UserRightsExpiredException = SDK_ERROR_USER_RIGHTS_EXPIRED
+- uid: msipcthin2.protectionexceptiontype_enum_java.OnPremServersNotSupportedException
+  id: OnPremServersNotSupportedException
+  parent: msipcthin2.protectionexceptiontype_enum_java
+  href: ProtectionExceptionType.yml
+  langs:
+  - cplusplus
+  name: OnPremServersNotSupportedException
+  fullName: msipcthin2.protectionexceptiontype_enum_java.OnPremServersNotSupportedException
+  type: Field
+  assemblies: *o0
+  namespace: com.microsoft.rightsmanagement.exceptions
+  summary: 
+  syntax:
+    content: OnPremServersNotSupportedException = SDK_ERROR_ON_PREM_SERVER_NOT_SUPPPORTED
+- uid: msipcthin2.protectionexceptiontype_enum_java.NoPublishingRightsException
+  id: NoPublishingRightsException
+  parent: msipcthin2.protectionexceptiontype_enum_java
+  href: ProtectionExceptionType.yml
+  langs:
+  - cplusplus
+  name: NoPublishingRightsException
+  fullName: msipcthin2.protectionexceptiontype_enum_java.NoPublishingRightsException
+  type: Field
+  assemblies: *o0
+  namespace: com.microsoft.rightsmanagement.exceptions
+  summary: 
+  syntax:
+    content: NoPublishingRightsException = SDK_ERROR_NO_PUBLISHING_RIGHT
+- uid: msipcthin2.protectionexceptiontype_enum_java.ServiceNotEnabledException
+  id: ServiceNotEnabledException
+  parent: msipcthin2.protectionexceptiontype_enum_java
+  href: ProtectionExceptionType.yml
+  langs:
+  - cplusplus
+  name: ServiceNotEnabledException
+  fullName: msipcthin2.protectionexceptiontype_enum_java.ServiceNotEnabledException
+  type: Field
+  assemblies: *o0
+  namespace: com.microsoft.rightsmanagement.exceptions
+  summary: 
+  syntax:
+    content: ServiceNotEnabledException = SDK_ERROR_REST_SERVICE_NOT_ENABLED
+- uid: msipcthin2.protectionexceptiontype_enum_java.FailedAuthenticationException
+  id: FailedAuthenticationException
+  parent: msipcthin2.protectionexceptiontype_enum_java
+  href: ProtectionExceptionType.yml
+  langs:
+  - cplusplus
+  name: FailedAuthenticationException
+  fullName: msipcthin2.protectionexceptiontype_enum_java.FailedAuthenticationException
+  type: Field
+  assemblies: *o0
+  namespace: com.microsoft.rightsmanagement.exceptions
+  summary: 
+  syntax:
+    content: FailedAuthenticationException = SDK_AUTH_ERROR
+- uid: msipcthin2.protectionexceptiontype_enum_java.InvalidDnsLookupResultException
+  id: InvalidDnsLookupResultException
+  parent: msipcthin2.protectionexceptiontype_enum_java
+  href: ProtectionExceptionType.yml
+  langs:
+  - cplusplus
+  name: InvalidDnsLookupResultException
+  fullName: msipcthin2.protectionexceptiontype_enum_java.InvalidDnsLookupResultException
+  type: Field
+  assemblies: *o0
+  namespace: com.microsoft.rightsmanagement.exceptions
+  summary: 
+  syntax:
+    content: InvalidDnsLookupResultException = SDK_ERROR_INVALID_PARAMETER
+- uid: msipcthin2.protectionexceptiontype_enum_java.OfflineOnlyRequiresInternetException
+  id: OfflineOnlyRequiresInternetException
+  parent: msipcthin2.protectionexceptiontype_enum_java
+  href: ProtectionExceptionType.yml
+  langs:
+  - cplusplus
+  name: OfflineOnlyRequiresInternetException
+  fullName: msipcthin2.protectionexceptiontype_enum_java.OfflineOnlyRequiresInternetException
+  type: Field
+  assemblies: *o0
+  namespace: com.microsoft.rightsmanagement.exceptions
+  summary: 
+  syntax:
+    content: OfflineOnlyRequiresInternetException = SDK_ERROR_OFFLINE_ONLY_REQUIRE_INTERNET
+- uid: msipcthin2.protectionexceptiontype_enum_java.InvalidCertificateException
+  id: InvalidCertificateException
+  parent: msipcthin2.protectionexceptiontype_enum_java
+  href: ProtectionExceptionType.yml
+  langs:
+  - cplusplus
+  name: InvalidCertificateException
+  fullName: msipcthin2.protectionexceptiontype_enum_java.InvalidCertificateException
+  type: Field
+  assemblies: *o0
+  namespace: com.microsoft.rightsmanagement.exceptions
+  summary: 
+  syntax:
+    content: InvalidCertificateException = SDK_ERROR_INVALID_CERTIFICATE
+references:
+- uid: msipcthin2.protectionexceptiontype_enum_java.DeviceRejectedException
+  href: ProtectionExceptionType.yml
+  name: DeviceRejectedException
+- uid: msipcthin2.protectionexceptiontype_enum_java.GeneralException
+  href: ProtectionExceptionType.yml
+  name: GeneralException
+- uid: msipcthin2.protectionexceptiontype_enum_java.CommunicationException
+  href: ProtectionExceptionType.yml
+  name: CommunicationException
+- uid: msipcthin2.protectionexceptiontype_enum_java.NoConsumptionRightsException
+  href: ProtectionExceptionType.yml
+  name: NoConsumptionRightsException
+- uid: msipcthin2.protectionexceptiontype_enum_java.InvalidParameterException
+  href: ProtectionExceptionType.yml
+  name: InvalidParameterException
+- uid: msipcthin2.protectionexceptiontype_enum_java.UnsupportedSDKVersionException
+  href: ProtectionExceptionType.yml
+  name: UnsupportedSDKVersionException
+- uid: msipcthin2.protectionexceptiontype_enum_java.ServiceNotAvailableException
+  href: ProtectionExceptionType.yml
+  name: ServiceNotAvailableException
+- uid: msipcthin2.protectionexceptiontype_enum_java.InvalidPLException
+  href: ProtectionExceptionType.yml
+  name: InvalidPLException
+- uid: msipcthin2.protectionexceptiontype_enum_java.UserRightsExpiredException
+  href: ProtectionExceptionType.yml
+  name: UserRightsExpiredException
+- uid: msipcthin2.protectionexceptiontype_enum_java.OnPremServersNotSupportedException
+  href: ProtectionExceptionType.yml
+  name: OnPremServersNotSupportedException
+- uid: msipcthin2.protectionexceptiontype_enum_java.NoPublishingRightsException
+  href: ProtectionExceptionType.yml
+  name: NoPublishingRightsException
+- uid: msipcthin2.protectionexceptiontype_enum_java.ServiceNotEnabledException
+  href: ProtectionExceptionType.yml
+  name: ServiceNotEnabledException
+- uid: msipcthin2.protectionexceptiontype_enum_java.FailedAuthenticationException
+  href: ProtectionExceptionType.yml
+  name: FailedAuthenticationException
+- uid: msipcthin2.protectionexceptiontype_enum_java.InvalidDnsLookupResultException
+  href: ProtectionExceptionType.yml
+  name: InvalidDnsLookupResultException
+- uid: msipcthin2.protectionexceptiontype_enum_java.OfflineOnlyRequiresInternetException
+  href: ProtectionExceptionType.yml
+  name: OfflineOnlyRequiresInternetException
+- uid: msipcthin2.protectionexceptiontype_enum_java.InvalidCertificateException
+  href: ProtectionExceptionType.yml
+  name: InvalidCertificateException

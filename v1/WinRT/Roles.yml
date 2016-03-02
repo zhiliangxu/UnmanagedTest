@@ -1,0 +1,169 @@
+items:
+- uid: msipcthin2.roles
+  id: Roles
+  parent: Microsoft.RightsManagement
+  children:
+  - msipcthin2.roles_author
+  - msipcthin2.roles_coowner
+  - msipcthin2.roles_reviewer
+  - msipcthin2.roles_viewer
+  href: Roles.yml
+  langs:
+  - cplusplus
+  name: Roles
+  fullName: msipcthin2.roles
+  type: Class
+  assemblies: &o0
+  - Microsoft.RightsManagement.winmd
+  namespace: Microsoft.RightsManagement
+  summary: >+
+    Implementation of roles for protecting documents.
+
+
+
+
+
+
+
+  remarks: 
+  syntax:
+    content: 'public ref class Roles : IInspectable'
+  inheritance:
+  - IInspectable
+- uid: msipcthin2.roles_viewer
+  id: Viewer
+  parent: msipcthin2.roles
+  children: []
+  href: Roles.yml
+  langs:
+  - cplusplus
+  name: Viewer
+  fullName: msipcthin2.roles_viewer
+  type: Property
+  assemblies: *o0
+  namespace: Microsoft.RightsManagement
+  summary: >+
+    User will only be able to view the document.
+
+
+
+    They cannot edit, copy, or print it.
+
+
+
+  remarks: 
+  syntax:
+    content: >-
+      public:
+       String Viewer {
+      	String get();
+      }
+    return:
+      type: String
+      description: Role is VIEWER.
+  inheritance: []
+- uid: msipcthin2.roles_reviewer
+  id: Reviewer
+  parent: msipcthin2.roles
+  children: []
+  href: Roles.yml
+  langs:
+  - cplusplus
+  name: Reviewer
+  fullName: msipcthin2.roles_reviewer
+  type: Property
+  assemblies: *o0
+  namespace: Microsoft.RightsManagement
+  summary: "User will be able to view and edit the document, \r\n\r\nbut not copy or print it.\r\n\r\n"
+  remarks: 
+  syntax:
+    content: >-
+      public:
+       String Reviewer {
+      	String get();
+      }
+    return:
+      type: String
+      description: Role is REVIEWER.
+  inheritance: []
+- uid: msipcthin2.roles_author
+  id: Author
+  parent: msipcthin2.roles
+  children: []
+  href: Roles.yml
+  langs:
+  - cplusplus
+  name: Author
+  fullName: msipcthin2.roles_author
+  type: Property
+  assemblies: *o0
+  namespace: Microsoft.RightsManagement
+  summary: >+
+    User will be able to view, edit, copy, and print the document.
+
+
+
+
+
+
+
+  remarks: 
+  syntax:
+    content: >-
+      public:
+       String Author {
+      	String get();
+      }
+    return:
+      type: String
+      description: Role is AUTHOR.
+  inheritance: []
+- uid: msipcthin2.roles_coowner
+  id: CoOwner
+  parent: msipcthin2.roles
+  children: []
+  href: Roles.yml
+  langs:
+  - cplusplus
+  name: CoOwner
+  fullName: msipcthin2.roles_coowner
+  type: Property
+  assemblies: *o0
+  namespace: Microsoft.RightsManagement
+  summary: >+
+    User will have all permissions; view, edit, copy and print.
+
+
+
+    Same permissions as AUTHOR.
+
+
+
+  remarks: 
+  syntax:
+    content: >-
+      public:
+       String CoOwner {
+      	String get();
+      }
+    return:
+      type: String
+      description: Role is COOWNER.
+  inheritance: []
+references:
+- uid: IInspectable
+  isExternal: true
+  href: https://msdn.microsoft.com/en-us/library/windows/apps/br205821
+  name: IInspectable
+- uid: msipcthin2.roles_viewer
+  href: Viewer.yml
+  name: Viewer
+- uid: msipcthin2.roles_reviewer
+  href: Reviewer.yml
+  name: Reviewer
+- uid: msipcthin2.roles_author
+  href: Author.yml
+  name: Author
+- uid: msipcthin2.roles_coowner
+  href: CoOwner.yml
+  name: CoOwner

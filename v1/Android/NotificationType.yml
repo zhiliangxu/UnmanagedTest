@@ -1,0 +1,95 @@
+items:
+- uid: msipcthin2.notificationtype_java
+  id: NotificationType
+  parent: com.microsoft.rightsmanagement
+  children:
+  - msipcthin2.notificationtype_java.    NOTIFICATION_DENY_ONLY
+  - msipcthin2.notificationtype_java.    NOTIFICATION_DISABLED
+  - msipcthin2.notificationtype_java.    NOTIFICATION_ENABLED
+  href: NotificationType.yml
+  langs:
+  - cplusplus
+  name: NotificationType
+  fullName: msipcthin2.notificationtype_java
+  type: Enum
+  assemblies: &o0
+  - Android
+  namespace: com.microsoft.rightsmanagement
+  summary: >+
+    Type of user notification.
+
+
+
+
+
+
+
+  remarks: 
+  defined_in: NotificationType.java
+  syntax:
+    content: public enum  NotificationType{  NOTIFICATION_ENABLED,  NOTIFICATION_DISABLED,  NOTIFICATION_DENY_ONLY}
+  inheritance: []
+- uid: msipcthin2.notificationtype_java.    NOTIFICATION_ENABLED
+  id: '    NOTIFICATION_ENABLED'
+  parent: msipcthin2.notificationtype_java
+  href: NotificationType.yml
+  langs:
+  - cplusplus
+  name: '    NOTIFICATION_ENABLED'
+  fullName: msipcthin2.notificationtype_java.    NOTIFICATION_ENABLED
+  type: Field
+  assemblies: *o0
+  namespace: com.microsoft.rightsmanagement
+  summary: >+
+    BRP082015-Notes?
+
+
+
+  syntax:
+    content: '    NOTIFICATION_ENABLED = 0'
+- uid: msipcthin2.notificationtype_java.    NOTIFICATION_DISABLED
+  id: '    NOTIFICATION_DISABLED'
+  parent: msipcthin2.notificationtype_java
+  href: NotificationType.yml
+  langs:
+  - cplusplus
+  name: '    NOTIFICATION_DISABLED'
+  fullName: msipcthin2.notificationtype_java.    NOTIFICATION_DISABLED
+  type: Field
+  assemblies: *o0
+  namespace: com.microsoft.rightsmanagement
+  summary: >+
+    BRP082015-Notes?
+
+
+
+  syntax:
+    content: '    NOTIFICATION_DISABLED = 1'
+- uid: msipcthin2.notificationtype_java.    NOTIFICATION_DENY_ONLY
+  id: '    NOTIFICATION_DENY_ONLY'
+  parent: msipcthin2.notificationtype_java
+  href: NotificationType.yml
+  langs:
+  - cplusplus
+  name: '    NOTIFICATION_DENY_ONLY'
+  fullName: msipcthin2.notificationtype_java.    NOTIFICATION_DENY_ONLY
+  type: Field
+  assemblies: *o0
+  namespace: com.microsoft.rightsmanagement
+  summary: >+
+    BRP082015-Notes?
+
+
+
+  syntax:
+    content: '    NOTIFICATION_DENY_ONLY = 2'
+references:
+- uid: msipcthin2.notificationtype_java.    NOTIFICATION_ENABLED
+  href: NotificationType.yml
+  name: '    NOTIFICATION_ENABLED'
+- uid: msipcthin2.notificationtype_java.    NOTIFICATION_DISABLED
+  href: NotificationType.yml
+  name: '    NOTIFICATION_DISABLED'
+- uid: msipcthin2.notificationtype_java.    NOTIFICATION_DENY_ONLY
+  href: NotificationType.yml
+  name: '    NOTIFICATION_DENY_ONLY'

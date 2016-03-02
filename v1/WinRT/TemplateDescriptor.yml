@@ -1,0 +1,198 @@
+items:
+- uid: msipcthin2.templatedescriptor
+  id: TemplateDescriptor
+  parent: Microsoft.RightsManagement
+  children:
+  - msipcthin2.templatedescriptor_description
+  - msipcthin2.templatedescriptor_gettemplatelistasync
+  - msipcthin2.templatedescriptor_name
+  - msipcthin2.templatedescriptor_templateid
+  href: TemplateDescriptor.yml
+  langs:
+  - cplusplus
+  name: TemplateDescriptor
+  fullName: msipcthin2.templatedescriptor
+  type: Class
+  assemblies: &o0
+  - Microsoft.RightsManagement.winmd
+  namespace: Microsoft.RightsManagement
+  summary: >+
+    Template information
+
+
+
+
+
+
+
+  remarks: 
+  syntax:
+    content: 'public ref class TemplateDescriptor sealed : IInspectable'
+  inheritance:
+  - IInspectable
+- uid: msipcthin2.templatedescriptor_gettemplatelistasync
+  id: GetTemplateListAsync
+  parent: msipcthin2.templatedescriptor
+  children: []
+  href: TemplateDescriptor.yml
+  langs:
+  - cplusplus
+  name: GetTemplateListAsync
+  fullName: msipcthin2.templatedescriptor_gettemplatelistasync
+  type: Method
+  assemblies: *o0
+  namespace: Microsoft.RightsManagement
+  summary: >+
+    Get the templates.
+
+
+
+
+
+
+
+  remarks: 
+  syntax:
+    content: >-
+      public:
+
+      static IAsyncOperation<IIterable<TemplateDescriptor>> GetTemplateListAsync(
+      	String userId,
+      	IAuthenticationCallback authenticationCallback
+      )
+    parameters:
+    - id: userId
+      type: String
+      description: >+
+        The email address of the user for whom the templates are being retrieved.
+
+
+
+        This email address will be used to discover the RMS service instance (either ADRMS server or Azure RMS) that        the user's organization is using.
+
+
+
+        This parameter is also used as a hint for        @msipcthin2.authenticationparameters_userid for user        authentication, i.e., it will be passed to the        @msipcthin2.iauthenticationcallback_gettokenasync        in the @msipcthin2.authenticationparameters        structure.
+
+
+
+    - id: authenticationCallback
+      type: IAuthenticationCallback
+      description: An authentication callback to be used for authentication process.
+    return:
+      type: IAsyncOperation<IIterable<TemplateDescriptor>>
+      description: A list of templates as a collection of       @msipcthin2.templatedescriptor_class_cpp       objects.
+  inheritance: []
+- uid: msipcthin2.templatedescriptor_description
+  id: Description
+  parent: msipcthin2.templatedescriptor
+  children: []
+  href: TemplateDescriptor.yml
+  langs:
+  - cplusplus
+  name: Description
+  fullName: msipcthin2.templatedescriptor_description
+  type: Property
+  assemblies: *o0
+  namespace: Microsoft.RightsManagement
+  summary: >+
+    Gets the description for the policy template on the @msipcthin2.templatedescriptor_class_cpp.
+
+
+
+
+
+
+
+  remarks: 
+  syntax:
+    content: >-
+      public:
+       String Description {
+      	String get();
+      }
+    return:
+      type: String
+      description: The description of the policy template.
+  inheritance: []
+- uid: msipcthin2.templatedescriptor_name
+  id: Name
+  parent: msipcthin2.templatedescriptor
+  children: []
+  href: TemplateDescriptor.yml
+  langs:
+  - cplusplus
+  name: Name
+  fullName: msipcthin2.templatedescriptor_name
+  type: Property
+  assemblies: *o0
+  namespace: Microsoft.RightsManagement
+  summary: >+
+    Gets the name of the policy template.
+
+
+
+
+
+
+
+  remarks: 
+  syntax:
+    content: >-
+      public:
+       String Name {
+      	String get();
+      }
+    return:
+      type: String
+      description: Policy template name.
+  inheritance: []
+- uid: msipcthin2.templatedescriptor_templateid
+  id: TemplateId
+  parent: msipcthin2.templatedescriptor
+  children: []
+  href: TemplateDescriptor.yml
+  langs:
+  - cplusplus
+  name: TemplateId
+  fullName: msipcthin2.templatedescriptor_templateid
+  type: Property
+  assemblies: *o0
+  namespace: Microsoft.RightsManagement
+  summary: >+
+    Gets the policy template ID.
+
+
+
+
+
+
+
+  remarks: 
+  syntax:
+    content: >-
+      public:
+       String TemplateId {
+      	String get();
+      }
+    return:
+      type: String
+      description: The template ID.
+  inheritance: []
+references:
+- uid: IInspectable
+  isExternal: true
+  href: https://msdn.microsoft.com/en-us/library/windows/apps/br205821
+  name: IInspectable
+- uid: msipcthin2.templatedescriptor_gettemplatelistasync
+  href: GetTemplateListAsync.yml
+  name: GetTemplateListAsync
+- uid: msipcthin2.templatedescriptor_description
+  href: Description.yml
+  name: Description
+- uid: msipcthin2.templatedescriptor_name
+  href: Name.yml
+  name: Name
+- uid: msipcthin2.templatedescriptor_templateid
+  href: TemplateId.yml
+  name: TemplateId

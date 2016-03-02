@@ -1,0 +1,118 @@
+items:
+- uid: msipcthin2.customerexperienceoptions
+  id: CustomerExperienceOptions
+  parent: Microsoft.RightsManagement
+  children:
+  - msipcthin2.customerexperienceoptions.LoggingEnabledAlways
+  - msipcthin2.customerexperienceoptions.LoggingEnabledNever
+  - msipcthin2.customerexperienceoptions.LoggingEnabledNotNow
+  - msipcthin2.customerexperienceoptions.LoggingEnabledNow
+  - msipcthin2.customerexperienceoptions.LoggingEnabledUnknown
+  href: CustomerExperienceOptions.yml
+  langs:
+  - cplusplus
+  name: CustomerExperienceOptions
+  fullName: msipcthin2.customerexperienceoptions
+  type: Enum
+  assemblies: &o0
+  - Microsoft.RightsManagement.winmd
+  namespace: Microsoft.RightsManagement
+  summary: >+
+    Used to specify a logging option.
+
+
+
+
+
+
+
+  remarks: 
+  syntax:
+    content: public enum class CustomerExperienceOptions
+  inheritance: []
+- uid: msipcthin2.customerexperienceoptions.LoggingEnabledUnknown
+  id: LoggingEnabledUnknown
+  parent: msipcthin2.customerexperienceoptions
+  href: CustomerExperienceOptions.yml
+  langs:
+  - cplusplus
+  name: LoggingEnabledUnknown
+  fullName: msipcthin2.customerexperienceoptions.LoggingEnabledUnknown
+  type: Field
+  assemblies: *o0
+  namespace: Microsoft.RightsManagement
+  summary: logging status is unknown
+  syntax:
+    content: LoggingEnabledUnknown = UploadLoggingConsent::LOGGING_ENABLED_UNKNOWN
+- uid: msipcthin2.customerexperienceoptions.LoggingEnabledNever
+  id: LoggingEnabledNever
+  parent: msipcthin2.customerexperienceoptions
+  href: CustomerExperienceOptions.yml
+  langs:
+  - cplusplus
+  name: LoggingEnabledNever
+  fullName: msipcthin2.customerexperienceoptions.LoggingEnabledNever
+  type: Field
+  assemblies: *o0
+  namespace: Microsoft.RightsManagement
+  summary: 'logging is disabled permanently '
+  syntax:
+    content: LoggingEnabledNever = UploadLoggingConsent::LOGGING_ENABLED_NEVER
+- uid: msipcthin2.customerexperienceoptions.LoggingEnabledNotNow
+  id: LoggingEnabledNotNow
+  parent: msipcthin2.customerexperienceoptions
+  href: CustomerExperienceOptions.yml
+  langs:
+  - cplusplus
+  name: LoggingEnabledNotNow
+  fullName: msipcthin2.customerexperienceoptions.LoggingEnabledNotNow
+  type: Field
+  assemblies: *o0
+  namespace: Microsoft.RightsManagement
+  summary: logging is disabled temporarily
+  syntax:
+    content: LoggingEnabledNotNow = UploadLoggingConsent::LOGGING_ENABLED_NOT_NOW
+- uid: msipcthin2.customerexperienceoptions.LoggingEnabledNow
+  id: LoggingEnabledNow
+  parent: msipcthin2.customerexperienceoptions
+  href: CustomerExperienceOptions.yml
+  langs:
+  - cplusplus
+  name: LoggingEnabledNow
+  fullName: msipcthin2.customerexperienceoptions.LoggingEnabledNow
+  type: Field
+  assemblies: *o0
+  namespace: Microsoft.RightsManagement
+  summary: logging is enabled temporarily
+  syntax:
+    content: LoggingEnabledNow = UploadLoggingConsent::LOGGING_ENABLED_NOW
+- uid: msipcthin2.customerexperienceoptions.LoggingEnabledAlways
+  id: LoggingEnabledAlways
+  parent: msipcthin2.customerexperienceoptions
+  href: CustomerExperienceOptions.yml
+  langs:
+  - cplusplus
+  name: LoggingEnabledAlways
+  fullName: msipcthin2.customerexperienceoptions.LoggingEnabledAlways
+  type: Field
+  assemblies: *o0
+  namespace: Microsoft.RightsManagement
+  summary: logging is enabled permanently
+  syntax:
+    content: LoggingEnabledAlways = UploadLoggingConsent::LOGGING_ENABLED_ALWAYS
+references:
+- uid: msipcthin2.customerexperienceoptions.LoggingEnabledUnknown
+  href: CustomerExperienceOptions.yml
+  name: LoggingEnabledUnknown
+- uid: msipcthin2.customerexperienceoptions.LoggingEnabledNever
+  href: CustomerExperienceOptions.yml
+  name: LoggingEnabledNever
+- uid: msipcthin2.customerexperienceoptions.LoggingEnabledNotNow
+  href: CustomerExperienceOptions.yml
+  name: LoggingEnabledNotNow
+- uid: msipcthin2.customerexperienceoptions.LoggingEnabledNow
+  href: CustomerExperienceOptions.yml
+  name: LoggingEnabledNow
+- uid: msipcthin2.customerexperienceoptions.LoggingEnabledAlways
+  href: CustomerExperienceOptions.yml
+  name: LoggingEnabledAlways

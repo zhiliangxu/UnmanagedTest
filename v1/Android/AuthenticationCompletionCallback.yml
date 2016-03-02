@@ -1,0 +1,125 @@
+items:
+- uid: msipcthin2.authenticationcompletioncallback_interface_java
+  id: AuthenticationCompletionCallback
+  parent: com.microsoft.rightsmanagement
+  children:
+  - msipcthin2.authenticationcompletioncallback_oncancel_method_java
+  - msipcthin2.authenticationcompletioncallback_onfailure_method_java
+  - msipcthin2.authenticationcompletioncallback_onsuccess_method_java
+  href: AuthenticationCompletionCallback.yml
+  langs:
+  - cplusplus
+  name: AuthenticationCompletionCallback
+  fullName: msipcthin2.authenticationcompletioncallback_interface_java
+  type: Interface
+  assemblies: &o0
+  - Android
+  namespace: com.microsoft.rightsmanagement
+  summary: >+
+    An interface provided the SDK used to return an access token to the SDK from the application using it.
+
+
+
+    We recommend that you use the [Azure AD Authentication Library](https://msdn.microsoft.com/en-us/library/jj573266.aspx) and other authentication libraries can be used.
+
+
+
+  remarks: 
+  thread_safety: Members of this class are not guaranteed to be thread safe.
+  defined_in: AuthenticationCompletionCallback.java
+  syntax:
+    content: public interface AuthenticationCompletionCallback
+  inheritance: []
+- uid: msipcthin2.authenticationcompletioncallback_oncancel_method_java
+  id: AuthenticationCompletionCallback onCancel
+  parent: msipcthin2.authenticationcompletioncallback_interface_java
+  children: []
+  href: AuthenticationCompletionCallback.yml
+  langs:
+  - cplusplus
+  name: AuthenticationCompletionCallback onCancel
+  fullName: msipcthin2.authenticationcompletioncallback_oncancel_method_java
+  type: Method
+  assemblies: *o0
+  namespace: com.microsoft.rightsmanagement
+  summary: >+
+    Called if authentication was canceled.
+
+
+
+
+
+
+
+  remarks: 
+  syntax:
+    content: public void onCancel();
+  inheritance: []
+- uid: msipcthin2.authenticationcompletioncallback_onfailure_method_java
+  id: AuthenticationCompletionCallback onFailure
+  parent: msipcthin2.authenticationcompletioncallback_interface_java
+  children: []
+  href: AuthenticationCompletionCallback.yml
+  langs:
+  - cplusplus
+  name: AuthenticationCompletionCallback onFailure
+  fullName: msipcthin2.authenticationcompletioncallback_onfailure_method_java
+  type: Method
+  assemblies: *o0
+  namespace: com.microsoft.rightsmanagement
+  summary: >+
+    Called if authentication has failed.
+
+
+
+
+
+
+
+  remarks: 
+  syntax:
+    content: public void onFailure();
+  inheritance: []
+- uid: msipcthin2.authenticationcompletioncallback_onsuccess_method_java
+  id: AuthenticationCompletionCallback onSuccess
+  parent: msipcthin2.authenticationcompletioncallback_interface_java
+  children: []
+  href: AuthenticationCompletionCallback.yml
+  langs:
+  - cplusplus
+  name: AuthenticationCompletionCallback onSuccess
+  fullName: msipcthin2.authenticationcompletioncallback_onsuccess_method_java
+  type: Method
+  assemblies: *o0
+  namespace: com.microsoft.rightsmanagement
+  summary: >+
+    Callback to asynchronously pass the access token.
+
+
+
+
+
+
+
+  remarks: 
+  syntax:
+    content: public void onSuccess(String accessToken);
+    parameters:
+    - id: '*token*'
+      type: '**String**'
+      description: 
+  inheritance: []
+references:
+- uid: Azure AD Authentication Library
+  isExternal: true
+  href: https://msdn.microsoft.com/en-us/library/jj573266.aspx
+  name: Azure AD Authentication Library
+- uid: msipcthin2.authenticationcompletioncallback_oncancel_method_java
+  href: AuthenticationCompletionCallback onCancel.yml
+  name: onCancel
+- uid: msipcthin2.authenticationcompletioncallback_onfailure_method_java
+  href: AuthenticationCompletionCallback onFailure.yml
+  name: onFailure
+- uid: msipcthin2.authenticationcompletioncallback_onsuccess_method_java
+  href: AuthenticationCompletionCallback onSuccess.yml
+  name: onSuccess

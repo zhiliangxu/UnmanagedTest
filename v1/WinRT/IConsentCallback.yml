@@ -1,0 +1,65 @@
+items:
+- uid: msipcthin2.iconsentcallback
+  id: IConsentCallback
+  parent: Microsoft.RightsManagement
+  children:
+  - msipcthin2.iconsent_iasyncoperation
+  href: IConsentCallback.yml
+  langs:
+  - cplusplus
+  name: IConsentCallback
+  fullName: msipcthin2.iconsentcallback
+  type: Interface
+  assemblies: &o0
+  - Microsoft.RightsManagement.winmd
+  namespace: Microsoft.RightsManagement
+  summary: "Interface for displaying consents. \r\n\r\nYou provide the code for this callback to determine when and which consent notifications to display to the user. \r\n\r\n"
+  remarks: 
+  syntax:
+    content: 'public interface IConsentCallback : IInspectable'
+  inheritance:
+  - IInspectable
+- uid: msipcthin2.iconsent_iasyncoperation
+  id: ConsentAsync
+  parent: msipcthin2.iconsentcallback
+  children: []
+  href: IConsentCallback.yml
+  langs:
+  - cplusplus
+  name: ConsentAsync
+  fullName: msipcthin2.iconsent_iasyncoperation
+  type: Method
+  assemblies: *o0
+  namespace: Microsoft.RightsManagement
+  summary: >+
+    You, the app developer, will implement this method to prompt the user for their consent.
+
+
+
+    This method then returns a collection of     @msipcthin2.iconsent objects are used for managing the user     consent process.
+
+
+
+  remarks: 
+  syntax:
+    content: >-
+      public:
+       IAsyncOperation<IIterable<IConsent^>^ ConsentAsync(
+      	IIterable<IConsent^> consents
+      )
+    parameters:
+    - id: consents
+      type: IIterable<IConsent^>
+      description: Collection of @msipcthin2.iconsent objects
+    return:
+      type: IAsyncOperation<IIterable<IConsent^>^
+      description: The asynchronous operation. Upon completion,       [IAsyncOperation](https://msdn.microsoft.com/en-us/library/windows/apps/br206598.aspx).GetResults       returns a collection via       [IIterable](https://msdn.microsoft.com/en-us/library/br205825(v=vs.85).aspx)       of @msipcthin2.iconsent objects.
+  inheritance: []
+references:
+- uid: IInspectable
+  isExternal: true
+  href: https://msdn.microsoft.com/en-us/library/windows/apps/br205821
+  name: IInspectable
+- uid: msipcthin2.iconsent_iasyncoperation
+  href: ConsentAsync.yml
+  name: ConsentAsync

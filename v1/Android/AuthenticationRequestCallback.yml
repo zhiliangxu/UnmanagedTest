@@ -1,0 +1,86 @@
+items:
+- uid: msipcthin2.authenticationrequestcallback_interface_java
+  id: AuthenticationRequestCallback
+  parent: com.microsoft.rightsmanagement
+  children:
+  - msipcthin2.authenticationrequestcallback_gettoken_method_java
+  href: AuthenticationRequestCallback.yml
+  langs:
+  - cplusplus
+  name: AuthenticationRequestCallback
+  fullName: msipcthin2.authenticationrequestcallback_interface_java
+  type: Interface
+  assemblies: &o0
+  - Android
+  namespace: com.microsoft.rightsmanagement
+  summary: >+
+    @msipcthin2.authenticationrequestcallback_interface_java interface definition.
+
+
+
+    This interface is implemented by you and used by the SDK to retrieve an access token.
+
+
+
+    We recommend that you use the [Azure AD Authentication Library (ADAL)](https://msdn.microsoft.com/en-us/library/jj573266.aspx). However, other authentication libraries that support OAuth 2.0 can be used as well.  For more information, see the *Prerequisites* section in the @msipcthin2.android_sdk topic under @msipcthin2.get_started.
+
+
+
+  remarks: 
+  thread_safety: Members of this class are not guaranteed to be thread safe.
+  defined_in: AuthenticationRequestCallback.java
+  syntax:
+    content: public interface AuthenticationRequestCallback
+  inheritance: []
+- uid: msipcthin2.authenticationrequestcallback_gettoken_method_java
+  id: AuthenticationRequestCallback.getToken
+  parent: msipcthin2.authenticationrequestcallback_interface_java
+  children: []
+  href: AuthenticationRequestCallback.yml
+  langs:
+  - cplusplus
+  name: AuthenticationRequestCallback.getToken
+  fullName: msipcthin2.authenticationrequestcallback_gettoken_method_java
+  type: Method
+  assemblies: *o0
+  namespace: com.microsoft.rightsmanagement
+  summary: "Gets the token.\r\n\r\n This method is invoked by the SDK whenever an authentication is required to complete an operation. The app developer will be given the authentication parameters that can be used to acquire the access token via a separate authentication library. \r\n\r\nWe recommend that you use the [Azure AD Authentication Library (ADAL)](https://msdn.microsoft.com/en-us/library/jj573266.aspx). However, other authentication libraries that support OAuth 2.0 can be used as well.  For more information, see the *Prerequisites* section in the @msipcthin2.android_sdk topic under @msipcthin2.get_started.\r\n\r\n"
+  remarks: 
+  syntax:
+    content: public void getToken(Map<String, String> authenticationParameters,                         AuthenticationCompletionCallback authenticationCompletionCallback);
+    parameters:
+    - id: '*authenticationParameters*'
+      type: '**Map**&lt;**String**, **String**&gt;'
+      description: "the authentication parameters as key value pairs.\r\n\r\n\n{\n  (\"oauth2.authority\", \"https://login.windows.net/common/oauth2/token\"), \n  (\"oauth2.resource\", \"api.aadrm.com\"),\n  (\"oauth2.scope\" : \"the scope\"), \n  (\"userId\" : \"the user Id\")\n}\r\n\r\n"
+    - id: '*authenticationCompletionCallback*'
+      type: '@msipcthin2.authenticationcompletioncallback_interface_java'
+      description: >+
+        the completion block to put the async result
+
+
+
+  inheritance: []
+references:
+- uid: msipcthin2.authenticationrequestcallback_interface_java
+  href: AuthenticationRequestCallback.yml
+  name: AuthenticationRequestCallback
+- uid: Azure AD Authentication Library (ADAL)
+  isExternal: true
+  href: https://msdn.microsoft.com/en-us/library/jj573266.aspx
+  name: Azure AD Authentication Library (ADAL)
+- uid: msipcthin2.android_sdk
+  name: Android Apps
+- uid: msipcthin2.get_started
+  name: Get started
+- uid: msipcthin2.authenticationrequestcallback_gettoken_method_java
+  href: AuthenticationRequestCallback.getToken.yml
+  name: getToken
+- uid: msipcthin2.android
+  name: Android API Reference
+- uid: msipcthin2.creationcallback_t__interface_java
+  href: CreationCallback_T_.yml
+  name: CreationCallback<T>
+- uid: Azure AD Authentication Library
+  isExternal: true
+  href: https://msdn.microsoft.com/en-us/library/jj573266.aspx
+  name: Azure AD Authentication Library

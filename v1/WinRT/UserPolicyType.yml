@@ -1,0 +1,64 @@
+items:
+- uid: msipcthin2.userpolicytype
+  id: UserPolicyType
+  parent: Microsoft.RightsManagement
+  children:
+  - msipcthin2.userpolicytype.Custom
+  - msipcthin2.userpolicytype.TemplateBased
+  href: UserPolicyType.yml
+  langs:
+  - cplusplus
+  name: UserPolicyType
+  fullName: msipcthin2.userpolicytype
+  type: Enum
+  assemblies: &o0
+  - Microsoft.RightsManagement.winmd
+  namespace: Microsoft.RightsManagement
+  summary: >+
+    User policy type; template based or custom.
+
+
+
+
+
+
+
+  remarks: 
+  syntax:
+    content: public enum class UserPolicyType
+  inheritance: []
+- uid: msipcthin2.userpolicytype.TemplateBased
+  id: TemplateBased
+  parent: msipcthin2.userpolicytype
+  href: UserPolicyType.yml
+  langs:
+  - cplusplus
+  name: TemplateBased
+  fullName: msipcthin2.userpolicytype.TemplateBased
+  type: Field
+  assemblies: *o0
+  namespace: Microsoft.RightsManagement
+  summary: A template based policy.
+  syntax:
+    content: TemplateBased = 0
+- uid: msipcthin2.userpolicytype.Custom
+  id: Custom
+  parent: msipcthin2.userpolicytype
+  href: UserPolicyType.yml
+  langs:
+  - cplusplus
+  name: Custom
+  fullName: msipcthin2.userpolicytype.Custom
+  type: Field
+  assemblies: *o0
+  namespace: Microsoft.RightsManagement
+  summary: A custom or ad hoc policy.
+  syntax:
+    content: Custom = 1
+references:
+- uid: msipcthin2.userpolicytype.TemplateBased
+  href: UserPolicyType.yml
+  name: TemplateBased
+- uid: msipcthin2.userpolicytype.Custom
+  href: UserPolicyType.yml
+  name: Custom

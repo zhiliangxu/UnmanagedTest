@@ -1,0 +1,446 @@
+items:
+- uid: msipcthin2.policydescriptor
+  id: PolicyDescriptor
+  parent: Microsoft.RightsManagement
+  children:
+  - msipcthin2.policydescriptor_contentvaliduntil
+  - msipcthin2.policydescriptor_description
+  - msipcthin2.policydescriptor_name
+  - msipcthin2.policydescriptor_offlinecachelifetimeindays
+  - msipcthin2.policydescriptor_policydescriptor_userrightslist
+  - msipcthin2.policydescriptor_policydescriptor_userroleslist
+  - msipcthin2.policydescriptor_referrer
+  - msipcthin2.policydescriptor_userrightslist
+  - msipcthin2.userroles_encryptedappdata
+  - msipcthin2.userroles_signedappdata
+  - msipcthin2.userroles_userroleslist
+  href: PolicyDescriptor.yml
+  langs:
+  - cplusplus
+  name: PolicyDescriptor
+  fullName: msipcthin2.policydescriptor
+  type: Class
+  assemblies: &o0
+  - Microsoft.RightsManagement.winmd
+  namespace: Microsoft.RightsManagement
+  summary: >+
+    Information required for custom protection.
+
+
+
+
+
+
+
+  remarks: 
+  syntax:
+    content: 'public ref class PolicyDescriptor sealed : IInspectable'
+  inheritance:
+  - IInspectable
+- uid: msipcthin2.policydescriptor_policydescriptor_userrightslist
+  id: PolicyDescriptor(userRightsList)
+  parent: msipcthin2.policydescriptor
+  children: []
+  href: PolicyDescriptor.yml
+  langs:
+  - cplusplus
+  name: PolicyDescriptor(userRightsList)
+  fullName: msipcthin2.policydescriptor_policydescriptor_userrightslist
+  type: Constructor
+  assemblies: *o0
+  namespace: Microsoft.RightsManagement
+  summary: >+
+    Constructor for 	 @msipcthin2.policydescriptor_class_win which initializes the object with a list of user rights.
+
+
+
+
+
+
+
+  remarks: 
+  syntax:
+    content: >-
+      public:
+        PolicyDescriptor(userRightsList)(
+      	IIterable<UserRights> userRightsList
+      )
+    parameters:
+    - id: userRightsList
+      type: IIterable<UserRights>
+      description: A collection of user rights.
+  inheritance: []
+- uid: msipcthin2.policydescriptor_policydescriptor_userroleslist
+  id: PolicyDescriptor(userRolesList)
+  parent: msipcthin2.policydescriptor
+  children: []
+  href: PolicyDescriptor.yml
+  langs:
+  - cplusplus
+  name: PolicyDescriptor(userRolesList)
+  fullName: msipcthin2.policydescriptor_policydescriptor_userroleslist
+  type: Constructor
+  assemblies: *o0
+  namespace: Microsoft.RightsManagement
+  summary: >+
+    Constructor for 	 @msipcthin2.policydescriptor_class_win which initializes the object with a list of user roles.
+
+
+
+
+
+
+
+  remarks: 
+  syntax:
+    content: >-
+      public:
+        PolicyDescriptor(userRolesList)(
+      	IIterable<UserRoles> userRolesList
+      )
+    parameters:
+    - id: userRolesList
+      type: IIterable<UserRoles>
+      description: A collection of user roles.
+  inheritance: []
+- uid: msipcthin2.policydescriptor_contentvaliduntil
+  id: ContentValidUntil
+  parent: msipcthin2.policydescriptor
+  children: []
+  href: PolicyDescriptor.yml
+  langs:
+  - cplusplus
+  name: ContentValidUntil
+  fullName: msipcthin2.policydescriptor_contentvaliduntil
+  type: Property
+  assemblies: *o0
+  namespace: Microsoft.RightsManagement
+  summary: >+
+    Gets or sets the date that the content is valid until.
+
+
+
+
+
+
+
+  remarks: 
+  syntax:
+    content: >-
+      public:
+       DateTime ContentValidUntil {
+      	DateTime get();
+      	void set (DateTime value);
+      }
+    return:
+      type: DateTime
+      description: ' The date that the content is valid until.'
+  inheritance: []
+- uid: msipcthin2.policydescriptor_description
+  id: Description
+  parent: msipcthin2.policydescriptor
+  children: []
+  href: PolicyDescriptor.yml
+  langs:
+  - cplusplus
+  name: Description
+  fullName: msipcthin2.policydescriptor_description
+  type: Property
+  assemblies: *o0
+  namespace: Microsoft.RightsManagement
+  summary: >+
+    Gets or sets the description of the @msipcthin2.policydescriptor_class_win.
+
+
+
+
+
+
+
+  remarks: 
+  syntax:
+    content: >-
+      public:
+       String Description {
+      	String get();
+      	void set (String value);
+      }
+    return:
+      type: String
+      description: The description of the PolicyDescriptor.
+  inheritance: []
+- uid: msipcthin2.userroles_encryptedappdata
+  id: EncryptedAppData
+  parent: msipcthin2.policydescriptor
+  children: []
+  href: PolicyDescriptor.yml
+  langs:
+  - cplusplus
+  name: EncryptedAppData
+  fullName: msipcthin2.userroles_encryptedappdata
+  type: Property
+  assemblies: *o0
+  namespace: Microsoft.RightsManagement
+  summary: >+
+    Gets or sets the encrypted app data.
+
+
+
+
+
+
+
+  remarks: 
+  syntax:
+    content: >-
+      public:
+       IMapView<String^, String^>^ EncryptedAppData {
+      	IMapView<String^, String^>^ get();
+      	void set (IMapView<String^, String^>^ value);
+      }
+    return:
+      type: IMapView<String^, String^>^
+      description: Encrypted app data accessed via IMapView.
+  inheritance: []
+- uid: msipcthin2.policydescriptor_name
+  id: Name
+  parent: msipcthin2.policydescriptor
+  children: []
+  href: PolicyDescriptor.yml
+  langs:
+  - cplusplus
+  name: Name
+  fullName: msipcthin2.policydescriptor_name
+  type: Property
+  assemblies: *o0
+  namespace: Microsoft.RightsManagement
+  summary: >+
+    Gets or sets the name of the @msipcthin2.policydescriptor_class_win.
+
+
+
+
+
+
+
+  remarks: 
+  syntax:
+    content: >-
+      public:
+       String Name {
+      	String get();
+      	void set (String value);
+      }
+    return:
+      type: String
+      description: The name of the PolicyDescriptor.
+  inheritance: []
+- uid: msipcthin2.policydescriptor_offlinecachelifetimeindays
+  id: OfflineCacheLifetimeInDays
+  parent: msipcthin2.policydescriptor
+  children: []
+  href: PolicyDescriptor.yml
+  langs:
+  - cplusplus
+  name: OfflineCacheLifetimeInDays
+  fullName: msipcthin2.policydescriptor_offlinecachelifetimeindays
+  type: Property
+  assemblies: *o0
+  namespace: Microsoft.RightsManagement
+  summary: >+
+    Gets or sets the time a user policy can be cached offline (in days).
+
+
+
+    You can use constants from the @msipcthin2.offlinecachelifetimeconstants object.
+
+
+
+  remarks: 
+  syntax:
+    content: >-
+      public:
+       int OfflineCacheLifetimeInDays {
+      	int get();
+      	void set (int value);
+      }
+    return:
+      type: int
+      description: The time a user policy can be cached offline (in days).
+  inheritance: []
+- uid: msipcthin2.policydescriptor_referrer
+  id: Referrer
+  parent: msipcthin2.policydescriptor
+  children: []
+  href: PolicyDescriptor.yml
+  langs:
+  - cplusplus
+  name: Referrer
+  fullName: msipcthin2.policydescriptor_referrer
+  type: Property
+  assemblies: *o0
+  namespace: Microsoft.RightsManagement
+  summary: >+
+    Gets or sets the referral URI of the @msipcthin2.policydescriptor_class_win.
+
+
+
+
+
+
+
+  remarks: 
+  syntax:
+    content: >-
+      public:
+       Uri Referrer {
+      	Uri get();
+      	void set (Uri value);
+      }
+    return:
+      type: Uri
+      description: The referral URI of the PolicyDescriptor.
+  inheritance: []
+- uid: msipcthin2.userroles_signedappdata
+  id: SignedAppData
+  parent: msipcthin2.policydescriptor
+  children: []
+  href: PolicyDescriptor.yml
+  langs:
+  - cplusplus
+  name: SignedAppData
+  fullName: msipcthin2.userroles_signedappdata
+  type: Property
+  assemblies: *o0
+  namespace: Microsoft.RightsManagement
+  summary: >+
+    Gets or sets the signed app data.
+
+
+
+
+
+
+
+  remarks: 
+  syntax:
+    content: >-
+      public:
+       IMapView<String^, String^>^ SignedAppData {
+      	IMapView<String^, String^>^ get();
+      	void set (IMapView<String^, String^>^ value);
+      }
+    return:
+      type: IMapView<String^, String^>^
+      description: Signed app data
+  inheritance: []
+- uid: msipcthin2.policydescriptor_userrightslist
+  id: UserRightsList
+  parent: msipcthin2.policydescriptor
+  children: []
+  href: PolicyDescriptor.yml
+  langs:
+  - cplusplus
+  name: UserRightsList
+  fullName: msipcthin2.policydescriptor_userrightslist
+  type: Property
+  assemblies: *o0
+  namespace: Microsoft.RightsManagement
+  summary: >+
+    Gets the @msipcthin2.policydescriptor_userrightslist for the @msipcthin2.policydescriptor_class_win.
+
+
+
+
+
+
+
+    The value of the @msipcthin2.policydescriptor_userrightslist property will be null if the current user does not have access to the user rights information, meaning they do not have the [OWNER](https://msdn.microsoft.com/en-us/library/cc542546(v=vs.85).aspx) right, the  [VIEWRIGHTSDATA](https://msdn.microsoft.com/en-us/library/cc542546(v=vs.85).aspx) right or the [EDITRIGHTSDATA](https://msdn.microsoft.com/en-us/library/cc542546(v=vs.85).aspx) right.
+
+
+
+    For more information on these rights, see [Understanding XrML Rights](https://msdn.microsoft.com/en-us/library/cc542546(v=vs.85).aspx).
+
+
+
+  remarks: 
+  syntax:
+    content: >-
+      public:
+       IIterable<UserRights> UserRightsList {
+      	IIterable<UserRights> get();
+      }
+    return:
+      type: IIterable<UserRights>
+      description: The UserRightsList for the PolicyDescriptor.
+  inheritance: []
+- uid: msipcthin2.userroles_userroleslist
+  id: UserRolesList
+  parent: msipcthin2.policydescriptor
+  children: []
+  href: PolicyDescriptor.yml
+  langs:
+  - cplusplus
+  name: UserRolesList
+  fullName: msipcthin2.userroles_userroleslist
+  type: Property
+  assemblies: *o0
+  namespace: Microsoft.RightsManagement
+  summary: >+
+    Gets the user's roles list.
+
+
+
+
+
+
+
+  remarks: 
+  syntax:
+    content: >-
+      public:
+       IIterable<UserRoles> UserRolesList {
+      	IIterable<UserRoles> get();
+      }
+    return:
+      type: IIterable<UserRoles>
+      description: The user's roles list.
+  inheritance: []
+references:
+- uid: IInspectable
+  isExternal: true
+  href: https://msdn.microsoft.com/en-us/library/windows/apps/br205821
+  name: IInspectable
+- uid: msipcthin2.policydescriptor_policydescriptor_userrightslist
+  href: PolicyDescriptor(userRightsList).yml
+  name: PolicyDescriptor(userRightsList)
+- uid: msipcthin2.policydescriptor_policydescriptor_userroleslist
+  href: PolicyDescriptor(userRolesList).yml
+  name: PolicyDescriptor(userRolesList)
+- uid: msipcthin2.policydescriptor_contentvaliduntil
+  href: ContentValidUntil.yml
+  name: ContentValidUntil
+- uid: msipcthin2.policydescriptor_description
+  href: Description.yml
+  name: Description
+- uid: msipcthin2.userroles_encryptedappdata
+  href: EncryptedAppData.yml
+  name: EncryptedAppData
+- uid: msipcthin2.policydescriptor_name
+  href: Name.yml
+  name: Name
+- uid: msipcthin2.policydescriptor_offlinecachelifetimeindays
+  href: OfflineCacheLifetimeInDays.yml
+  name: OfflineCacheLifetimeInDays
+- uid: msipcthin2.policydescriptor_referrer
+  href: Referrer.yml
+  name: Referrer
+- uid: msipcthin2.userroles_signedappdata
+  href: SignedAppData.yml
+  name: SignedAppData
+- uid: msipcthin2.policydescriptor_userrightslist
+  href: UserRightsList.yml
+  name: UserRightsList
+- uid: msipcthin2.userroles_userroleslist
+  href: UserRolesList.yml
+  name: UserRolesList

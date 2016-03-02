@@ -1,0 +1,214 @@
+items:
+- uid: msipcthin2.iconsent
+  id: IConsent
+  parent: Microsoft.RightsManagement
+  children:
+  - msipcthin2.iconsent_domain
+  - msipcthin2.iconsent_result
+  - msipcthin2.iconsent_type
+  - msipcthin2.iconsent_urls
+  - msipcthin2.iconsent_user
+  href: IConsent.yml
+  langs:
+  - cplusplus
+  name: IConsent
+  fullName: msipcthin2.iconsent
+  type: Interface
+  assemblies: &o0
+  - Microsoft.RightsManagement.winmd
+  namespace: Microsoft.RightsManagement
+  summary: >+
+    Used to manage types of user consent.
+
+
+
+
+
+
+
+  remarks: 
+  syntax:
+    content: 'public interface IConsent : IInspectable'
+  inheritance:
+  - IInspectable
+- uid: msipcthin2.iconsent_domain
+  id: Domain
+  parent: msipcthin2.iconsent
+  children: []
+  href: IConsent.yml
+  langs:
+  - cplusplus
+  name: Domain
+  fullName: msipcthin2.iconsent_domain
+  type: Property
+  assemblies: *o0
+  namespace: Microsoft.RightsManagement
+  summary: >+
+    Gets the domain information.
+
+
+
+
+
+
+
+  remarks: 
+  syntax:
+    content: >-
+      public:
+       String Domain {
+      	String get();
+      }
+    return:
+      type: String
+      description: Domain information.
+  inheritance: []
+- uid: msipcthin2.iconsent_result
+  id: Result
+  parent: msipcthin2.iconsent
+  children: []
+  href: IConsent.yml
+  langs:
+  - cplusplus
+  name: Result
+  fullName: msipcthin2.iconsent_result
+  type: Property
+  assemblies: *o0
+  namespace: Microsoft.RightsManagement
+  summary: >+
+    Gets or sets the consent result.
+
+
+
+
+
+
+
+  remarks: 
+  syntax:
+    content: >-
+      public:
+       ConsentResult^ Result {
+      	ConsentResult^ get();
+      	void set (ConsentResult^ value);
+      }
+    return:
+      type: ConsentResult^
+      description: The consent result.
+  inheritance: []
+- uid: msipcthin2.iconsent_type
+  id: Type
+  parent: msipcthin2.iconsent
+  children: []
+  href: IConsent.yml
+  langs:
+  - cplusplus
+  name: Type
+  fullName: msipcthin2.iconsent_type
+  type: Property
+  assemblies: *o0
+  namespace: Microsoft.RightsManagement
+  summary: >+
+    Gets the type of consent.
+
+
+
+
+
+
+
+  remarks: 
+  syntax:
+    content: >-
+      public:
+       ConsentType Type {
+      	ConsentType get();
+      }
+    return:
+      type: ConsentType
+      description: Type of consent.
+  inheritance: []
+- uid: msipcthin2.iconsent_urls
+  id: Urls
+  parent: msipcthin2.iconsent
+  children: []
+  href: IConsent.yml
+  langs:
+  - cplusplus
+  name: Urls
+  fullName: msipcthin2.iconsent_urls
+  type: Property
+  assemblies: *o0
+  namespace: Microsoft.RightsManagement
+  summary: >+
+    Gets the list of URLs that need to provide consent.
+
+
+
+
+
+
+
+  remarks: 
+  syntax:
+    content: >-
+      public:
+       IVector<Uri^>^  Urls {
+      	IVector<Uri^>^  get();
+      }
+    return:
+      type: 'IVector<Uri^>^ '
+      description: List of URLs that need to provide consent.
+  inheritance: []
+- uid: msipcthin2.iconsent_user
+  id: User
+  parent: msipcthin2.iconsent
+  children: []
+  href: IConsent.yml
+  langs:
+  - cplusplus
+  name: User
+  fullName: msipcthin2.iconsent_user
+  type: Property
+  assemblies: *o0
+  namespace: Microsoft.RightsManagement
+  summary: >+
+    Gets the user ID.
+
+
+
+
+
+
+
+  remarks: 
+  syntax:
+    content: >-
+      public:
+       String User {
+      	String get();
+      }
+    return:
+      type: String
+      description: ID, usually the email address of the user.
+  inheritance: []
+references:
+- uid: IInspectable
+  isExternal: true
+  href: https://msdn.microsoft.com/en-us/library/windows/apps/br205821
+  name: IInspectable
+- uid: msipcthin2.iconsent_domain
+  href: Domain.yml
+  name: Domain
+- uid: msipcthin2.iconsent_result
+  href: Result.yml
+  name: Result
+- uid: msipcthin2.iconsent_type
+  href: Type.yml
+  name: Type
+- uid: msipcthin2.iconsent_urls
+  href: Urls.yml
+  name: Urls
+- uid: msipcthin2.iconsent_user
+  href: User.yml
+  name: User

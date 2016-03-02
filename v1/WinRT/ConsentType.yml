@@ -1,0 +1,64 @@
+items:
+- uid: msipcthin2.consenttype
+  id: ConsentType
+  parent: Microsoft.RightsManagement
+  children:
+  - msipcthin2.consenttype.DocumentTrackingConsent
+  - msipcthin2.consenttype.ServiceUrlConsent
+  href: ConsentType.yml
+  langs:
+  - cplusplus
+  name: ConsentType
+  fullName: msipcthin2.consenttype
+  type: Enum
+  assemblies: &o0
+  - Microsoft.RightsManagement.winmd
+  namespace: Microsoft.RightsManagement
+  summary: >+
+    Supported types of consent.
+
+
+
+
+
+
+
+  remarks: 
+  syntax:
+    content: public enum class ConsentType
+  inheritance: []
+- uid: msipcthin2.consenttype.DocumentTrackingConsent
+  id: DocumentTrackingConsent
+  parent: msipcthin2.consenttype
+  href: ConsentType.yml
+  langs:
+  - cplusplus
+  name: DocumentTrackingConsent
+  fullName: msipcthin2.consenttype.DocumentTrackingConsent
+  type: Field
+  assemblies: *o0
+  namespace: Microsoft.RightsManagement
+  summary: User consent for document tracking
+  syntax:
+    content: DocumentTrackingConsent = 0
+- uid: msipcthin2.consenttype.ServiceUrlConsent
+  id: ServiceUrlConsent
+  parent: msipcthin2.consenttype
+  href: ConsentType.yml
+  langs:
+  - cplusplus
+  name: ServiceUrlConsent
+  fullName: msipcthin2.consenttype.ServiceUrlConsent
+  type: Field
+  assemblies: *o0
+  namespace: Microsoft.RightsManagement
+  summary: User consent  for contacting a service URL
+  syntax:
+    content: ServiceUrlConsent = 1
+references:
+- uid: msipcthin2.consenttype.DocumentTrackingConsent
+  href: ConsentType.yml
+  name: DocumentTrackingConsent
+- uid: msipcthin2.consenttype.ServiceUrlConsent
+  href: ConsentType.yml
+  name: ServiceUrlConsent

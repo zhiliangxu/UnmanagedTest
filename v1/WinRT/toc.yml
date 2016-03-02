@@ -1,0 +1,82 @@
+- uid: Microsoft.RightsManagement
+  name: Microsoft.RightsManagement
+  href: Microsoft.RightsManagement.yml
+  items:
+  - uid: msipcthin2.authenticationparameters
+    name: AuthenticationParameters
+    href: AuthenticationParameters.yml
+  - uid: msipcthin2.commonrights
+    name: CommonRights
+    href: CommonRights.yml
+  - uid: msipcthin2.consentresult
+    name: ConsentResult
+    href: ConsentResult.yml
+  - uid: msipcthin2.consenttype
+    name: ConsentType
+    href: ConsentType.yml
+  - uid: msipcthin2.customerexperienceoptions
+    name: CustomerExperienceOptions
+    href: CustomerExperienceOptions.yml
+  - uid: msipcthin2.customprotectedstream
+    name: CustomProtectedStream
+    href: CustomProtectedStream.yml
+  - uid: msipcthin2.editabledocumentrights
+    name: EditableDocumentRights
+    href: EditableDocumentRights.yml
+  - uid: msipcthin2.emailrights
+    name: EmailRights
+    href: EmailRights.yml
+  - uid: msipcthin2.errorinfomation
+    name: ErrorInfomation
+    href: ErrorInfomation.yml
+  - uid: msipcthin2.getprotectedfilestreamresult
+    name: GetProtectedFileStreamResult
+    href: GetProtectedFileStreamResult.yml
+  - uid: msipcthin2.getuserpolicyresult
+    name: GetUserPolicyResult
+    href: GetUserPolicyResult.yml
+  - uid: msipcthin2.getuserpolicyresultstatus
+    name: GetUserPolicyResultStatus
+    href: GetUserPolicyResultStatus.yml
+  - uid: msipcthin2.iauthenticationcallback
+    name: IAuthenticationCallback
+    href: IAuthenticationCallback.yml
+  - uid: msipcthin2.iconsent
+    name: IConsent
+    href: IConsent.yml
+  - uid: msipcthin2.iconsentcallback
+    name: IConsentCallback
+    href: IConsentCallback.yml
+  - uid: msipcthin2.offlinecachelifetimeconstants
+    name: OfflineCacheLifetimeConstants
+    href: OfflineCacheLifetimeConstants.yml
+  - uid: msipcthin2.policyacquisitionoptions
+    name: PolicyAcquisitionOptions
+    href: PolicyAcquisitionOptions.yml
+  - uid: msipcthin2.policydescriptor
+    name: PolicyDescriptor
+    href: PolicyDescriptor.yml
+  - uid: msipcthin2.protectedfilestream
+    name: ProtectedFileStream
+    href: ProtectedFileStream.yml
+  - uid: msipcthin2.roles
+    name: Roles
+    href: Roles.yml
+  - uid: msipcthin2.templatedescriptor
+    name: TemplateDescriptor
+    href: TemplateDescriptor.yml
+  - uid: msipcthin2.userpolicy
+    name: UserPolicy
+    href: UserPolicy.yml
+  - uid: msipcthin2.userpolicycreationoptions
+    name: UserPolicyCreationOptions
+    href: UserPolicyCreationOptions.yml
+  - uid: msipcthin2.userpolicytype
+    name: UserPolicyType
+    href: UserPolicyType.yml
+  - uid: msipcthin2.userrights
+    name: UserRights
+    href: UserRights.yml
+  - uid: msipcthin2.userroles
+    name: UserRoles
+    href: UserRoles.yml

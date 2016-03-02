@@ -1,0 +1,295 @@
+items:
+- uid: msipcthin2.protectedbuffer_class
+  id: ProtectedBuffer
+  parent: com.microsoft.rightsmanagement
+  children:
+  - msipcthin2.protectedbuffer_create_method_java
+  - msipcthin2.protectedbuffer_decryptalignedblocks_method_java
+  - msipcthin2.protectedbuffer_encryptalignedblocks_method_java
+  - msipcthin2.protectedbuffer_getblocksize_method_java
+  - msipcthin2.protectedbuffer_getoutputbuffersize_method_java
+  href: ProtectedBuffer.yml
+  langs:
+  - cplusplus
+  name: ProtectedBuffer
+  fullName: msipcthin2.protectedbuffer_class
+  type: Class
+  assemblies: &o0
+  - Android
+  namespace: com.microsoft.rightsmanagement
+  summary: "Used to process a protected buffer \r\n\r\n\r\n\r\n"
+  remarks: 
+  thread_safety: Members of this class are not guaranteed to be thread safe.
+  defined_in: ProtectedBuffer.java
+  syntax:
+    content: public class ProtectedBuffer
+  inheritance: []
+- uid: msipcthin2.protectedbuffer_create_method_java
+  id: ProtectedBuffer.create
+  parent: msipcthin2.protectedbuffer_class
+  children: []
+  href: ProtectedBuffer.yml
+  langs:
+  - cplusplus
+  name: ProtectedBuffer.create
+  fullName: msipcthin2.protectedbuffer_create_method_java
+  type: Method
+  assemblies: *o0
+  namespace: com.microsoft.rightsmanagement
+  summary: >+
+    Creates a @msipcthin2.protectedbuffer_class object based on a @msipcthin2.userpolicy_class_java.
+
+
+
+
+
+
+
+  remarks: 
+  syntax:
+    content: static public ProtectedBuffer create(UserPolicy userPolicy)
+    parameters:
+    - id: '*userPolicy*'
+      type: '@msipcthin2.userpolicy_class_java'
+      description: 
+    return:
+      type: '@msipcthin2.protectedbuffer_class'
+      description: '@msipcthin2.protectedbuffer_class'
+  inheritance: []
+- uid: msipcthin2.protectedbuffer_getblocksize_method_java
+  id: ProtectedBuffer.getBlockSize
+  parent: msipcthin2.protectedbuffer_class
+  children: []
+  href: ProtectedBuffer.yml
+  langs:
+  - cplusplus
+  name: ProtectedBuffer.getBlockSize
+  fullName: msipcthin2.protectedbuffer_getblocksize_method_java
+  type: Method
+  assemblies: *o0
+  namespace: com.microsoft.rightsmanagement
+  summary: >+
+    Gets the minimum block size that decryption and encryption calls should use.
+
+
+
+
+
+
+
+
+
+
+
+  remarks: 
+  syntax:
+    content: public int getBlockSize()
+    return:
+      type: int
+      description: '**int**'
+  inheritance: []
+- uid: msipcthin2.protectedbuffer_getoutputbuffersize_method_java
+  id: ProtectedBuffer.getOutputBufferSize
+  parent: msipcthin2.protectedbuffer_class
+  children: []
+  href: ProtectedBuffer.yml
+  langs:
+  - cplusplus
+  name: ProtectedBuffer.getOutputBufferSize
+  fullName: msipcthin2.protectedbuffer_getoutputbuffersize_method_java
+  type: Method
+  assemblies: *o0
+  namespace: com.microsoft.rightsmanagement
+  summary: >+
+    Gets the required minimum output buffer size, in bytes, for the operation.
+
+
+
+
+
+
+
+  remarks: 
+  syntax:
+    content: public int getOutputBufferSize(                                  int startingBlockNumber,                                   ByteBuffer inputBuffer,                                   boolean isEncrypt,                                   boolean isFinal)                               throws ProtectionException
+    parameters:
+    - id: '*startingBlockNumber*'
+      type: '**int**'
+      description: >+
+        The first block
+
+
+
+    - id: '*inputBuffer*'
+      type: '**ByteBuffer**'
+      description: >+
+        Encrypted data [position, limit]
+
+
+
+    - id: '*isEncrypt*'
+      type: '**boolean**'
+      description: >+
+        Set to **true** if the buffer is going to be used for encryption.
+
+
+
+        Set to **false** if the buffer is going to be used for decryption.
+
+
+
+    - id: '*isFinal*'
+      type: '**boolean**'
+      description: >+
+        Set to **true** for processing the final chunk of data.
+
+
+
+    return:
+      type: int
+      description: An      **int**, indicating the output buffer size in bytes.
+  inheritance: []
+- uid: msipcthin2.protectedbuffer_decryptalignedblocks_method_java
+  id: ProtectedBuffer.decryptAlignedBlocks
+  parent: msipcthin2.protectedbuffer_class
+  children: []
+  href: ProtectedBuffer.yml
+  langs:
+  - cplusplus
+  name: ProtectedBuffer.decryptAlignedBlocks
+  fullName: msipcthin2.protectedbuffer_decryptalignedblocks_method_java
+  type: Method
+  assemblies: *o0
+  namespace: com.microsoft.rightsmanagement
+  summary: >+
+    Decrypts aligned blocks of data.
+
+
+
+    Use @msipcthin2.protectedbuffer_getblocksize_method_java to retrieve the minimum block size. Valid data will be written to the *outputBuffer* from the position up to the limit index.
+
+
+
+    If this method does not receive aligned blocks an exception will be thrown.
+
+
+
+  remarks: 
+  syntax:
+    content: public int decryptAlignedBlocks(                                  int startingBlockNumber,                                   ByteBuffer inputBuffer,                                   ByteBuffer outputBuffer,                                   boolean isFinal)                               throws ProtectionException
+    parameters:
+    - id: '*startingBlockNumber*'
+      type: '**int**'
+      description: >+
+        The first block
+
+
+
+    - id: '*inputBuffer*'
+      type: '**ByteBuffer**'
+      description: >+
+        Encrypted data [position, limit]
+
+
+
+    - id: '*outputBuffer*'
+      type: '**ByteBuffer**'
+      description: >+
+        Buffer required for decryption
+
+
+
+    - id: '*isFinal*'
+      type: '**boolean**'
+      description: >+
+        Set to **true** for processing the final chunk of data.
+
+
+
+    return:
+      type: int
+      description: An **int** indicating the number of bytes actually written.
+  inheritance: []
+- uid: msipcthin2.protectedbuffer_encryptalignedblocks_method_java
+  id: ProtectedBuffer.encryptAlignedBlocks
+  parent: msipcthin2.protectedbuffer_class
+  children: []
+  href: ProtectedBuffer.yml
+  langs:
+  - cplusplus
+  name: ProtectedBuffer.encryptAlignedBlocks
+  fullName: msipcthin2.protectedbuffer_encryptalignedblocks_method_java
+  type: Method
+  assemblies: *o0
+  namespace: com.microsoft.rightsmanagement
+  summary: >+
+    Encrypts aligned blocks of data.
+
+
+
+    Use @msipcthin2.protectedbuffer_getblocksize_method_java to retrieve the minimum block size. Valid data will be written to the *outputBuffer* from the position up to the limit index.
+
+
+
+    If this method does not receive aligned blocks an exception will be thrown.
+
+
+
+  remarks: 
+  syntax:
+    content: public int encryptAlignedBlocks(                                  int startingBlockNumber,                                   ByteBuffer inputBuffer,                                   ByteBuffer outputBuffer,                                   boolean isFinal)                               throws ProtectionException
+    parameters:
+    - id: '*startingBlockNumber*'
+      type: '**int**'
+      description: >+
+        The first block
+
+
+
+    - id: '*inputBuffer*'
+      type: '**ByteBuffer**'
+      description: >+
+        Unencrypted data [position, limit]
+
+
+
+    - id: '*outputBuffer*'
+      type: '**ByteBuffer**'
+      description: >+
+        Buffer required for decryption
+
+
+
+    - id: '*isFinal*'
+      type: '**boolean**'
+      description: >+
+        Set to **true** for processing the final chunk of data.
+
+
+
+    return:
+      type: int
+      description: An **int** indicating the number of bytes actually written.
+  inheritance: []
+references:
+- uid: msipcthin2.protectedbuffer_create_method_java
+  href: ProtectedBuffer.create.yml
+  name: create
+- uid: msipcthin2.protectedbuffer_class
+  href: ProtectedBuffer.yml
+  name: ProtectedBuffer
+- uid: msipcthin2.userpolicy_class_java
+  href: UserPolicy.yml
+  name: UserPolicy
+- uid: msipcthin2.protectedbuffer_getblocksize_method_java
+  href: ProtectedBuffer.getBlockSize.yml
+  name: getBlockSize
+- uid: msipcthin2.protectedbuffer_getoutputbuffersize_method_java
+  href: ProtectedBuffer.getOutputBufferSize.yml
+  name: getOutputBufferSize
+- uid: msipcthin2.protectedbuffer_decryptalignedblocks_method_java
+  href: ProtectedBuffer.decryptAlignedBlocks.yml
+  name: decryptAlignedBlocks
+- uid: msipcthin2.protectedbuffer_encryptalignedblocks_method_java
+  href: ProtectedBuffer.encryptAlignedBlocks.yml
+  name: encryptAlignedBlocks

@@ -1,0 +1,144 @@
+items:
+- uid: msipcthin2.getprotectedfilestreamresult
+  id: GetProtectedFileStreamResult
+  parent: Microsoft.RightsManagement
+  children:
+  - msipcthin2.getprotectedfilestreamresult_referrer
+  - msipcthin2.getprotectedfilestreamresult_status
+  - msipcthin2.getprotectedfilestreamresult_stream
+  href: GetProtectedFileStreamResult.yml
+  langs:
+  - cplusplus
+  name: GetProtectedFileStreamResult
+  fullName: msipcthin2.getprotectedfilestreamresult
+  type: Class
+  assemblies: &o0
+  - Microsoft.RightsManagement.winmd
+  namespace: Microsoft.RightsManagement
+  summary: >+
+    The result of the @msipcthin2.protectedfilestream_acquireasync operation.
+
+
+
+
+
+
+
+  remarks: 
+  syntax:
+    content: 'public ref class GetProtectedFileStreamResult sealed : IInspectable'
+  inheritance:
+  - IInspectable
+- uid: msipcthin2.getprotectedfilestreamresult_status
+  id: Status
+  parent: msipcthin2.getprotectedfilestreamresult
+  children: []
+  href: GetProtectedFileStreamResult.yml
+  langs:
+  - cplusplus
+  name: Status
+  fullName: msipcthin2.getprotectedfilestreamresult_status
+  type: Property
+  assemblies: *o0
+  namespace: Microsoft.RightsManagement
+  summary: >+
+    Gets the return code.
+
+
+
+
+
+
+
+  remarks: 
+  syntax:
+    content: >-
+      public:
+       GetUserPolicyResultStatus Status {
+      	GetUserPolicyResultStatus get();
+      }
+    return:
+      type: GetUserPolicyResultStatus
+      description: The return code.
+  inheritance: []
+- uid: msipcthin2.getprotectedfilestreamresult_referrer
+  id: Referrer
+  parent: msipcthin2.getprotectedfilestreamresult
+  children: []
+  href: GetProtectedFileStreamResult.yml
+  langs:
+  - cplusplus
+  name: Referrer
+  fullName: msipcthin2.getprotectedfilestreamresult_referrer
+  type: Property
+  assemblies: *o0
+  namespace: Microsoft.RightsManagement
+  summary: >+
+    Gets the referral info.
+
+
+
+
+
+
+
+  remarks: 
+  syntax:
+    content: >-
+      public:
+       Uri Referrer {
+      	Uri get();
+      }
+    return:
+      type: Uri
+      description: Referral info.
+  inheritance: []
+- uid: msipcthin2.getprotectedfilestreamresult_stream
+  id: Stream
+  parent: msipcthin2.getprotectedfilestreamresult
+  children: []
+  href: GetProtectedFileStreamResult.yml
+  langs:
+  - cplusplus
+  name: Stream
+  fullName: msipcthin2.getprotectedfilestreamresult_stream
+  type: Property
+  assemblies: *o0
+  namespace: Microsoft.RightsManagement
+  summary: >+
+    Gets the protected file stream if the call succeeded.
+
+
+
+
+
+
+
+  remarks: 
+  syntax:
+    content: >-
+      public:
+       ProtectedFileStream Stream {
+      	ProtectedFileStream get();
+      }
+    return:
+      type: ProtectedFileStream
+      description: The protected file stream.
+  inheritance: []
+references:
+- uid: msipcthin2.protectedfilestream_acquireasync
+  href: AcquireAsync.yml
+  name: ProtectedFileStream::AcquireAsync
+- uid: IInspectable
+  isExternal: true
+  href: https://msdn.microsoft.com/en-us/library/windows/apps/br205821
+  name: IInspectable
+- uid: msipcthin2.getprotectedfilestreamresult_status
+  href: Status.yml
+  name: Status
+- uid: msipcthin2.getprotectedfilestreamresult_referrer
+  href: Referrer.yml
+  name: Referrer
+- uid: msipcthin2.getprotectedfilestreamresult_stream
+  href: Stream.yml
+  name: Stream

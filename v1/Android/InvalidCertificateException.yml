@@ -1,0 +1,116 @@
+items:
+- uid: msipcthin2.invalidcertificateexception_class
+  id: InvalidCertificateException
+  parent: com.microsoft.rightsmanagement.exceptions
+  children:
+  - msipcthin2.invalidcertificateexception_constructor_java
+  - msipcthin2.invalidcertificateexception_throwable__constructor_java
+  href: InvalidCertificateException.yml
+  langs:
+  - cplusplus
+  name: InvalidCertificateException
+  fullName: msipcthin2.invalidcertificateexception_class
+  type: Class
+  assemblies: &o0
+  - Android
+  namespace: com.microsoft.rightsmanagement.exceptions
+  summary: >+
+    Thrown when the SDK has received an invalid certificate. Extends the @msipcthin2.protectionexception_class_java class.
+
+
+
+
+
+
+
+  remarks: >+
+    For more information, see  the SDK documentation for the @msipcthin2.protectionexception_class_java class.
+
+
+
+
+
+
+
+  thread_safety: Members of this class are not guaranteed to be thread safe.
+  defined_in: InvalidCertificateException.java
+  syntax:
+    content: public class InvalidCertificateException extends ProtectionException
+  inheritance: []
+- uid: msipcthin2.invalidcertificateexception_constructor_java
+  id: InvalidCertificateException
+  parent: msipcthin2.invalidcertificateexception_class
+  children: []
+  href: InvalidCertificateException.yml
+  langs:
+  - cplusplus
+  name: InvalidCertificateException
+  fullName: msipcthin2.invalidcertificateexception_constructor_java
+  type: Constructor
+  assemblies: *o0
+  namespace: com.microsoft.rightsmanagement.exceptions
+  summary: >+
+    Initializes a new instance of the @msipcthin2.invalidcertificateexception_class class with a default message and tag.
+
+
+
+
+
+
+
+  remarks: 
+  syntax:
+    content: public InvalidCertificateException()
+    return:
+      type: '@msipcthin2.invalidcertificateexception_class'
+      description: '@msipcthin2.invalidcertificateexception_class'
+  inheritance: []
+- uid: msipcthin2.invalidcertificateexception_throwable__constructor_java
+  id: InvalidCertificateException(Throwable)
+  parent: msipcthin2.invalidcertificateexception_class
+  children: []
+  href: InvalidCertificateException.yml
+  langs:
+  - cplusplus
+  name: InvalidCertificateException(Throwable)
+  fullName: msipcthin2.invalidcertificateexception_throwable__constructor_java
+  type: Constructor
+  assemblies: *o0
+  namespace: com.microsoft.rightsmanagement.exceptions
+  summary: >+
+    Initializes a new instance of the @msipcthin2.invalidcertificateexception_class class with a default message and tag and the specified inner exception.
+
+
+
+
+
+
+
+  remarks: 
+  syntax:
+    content: public InvalidCertificateException(Throwable e)
+    parameters:
+    - id: '*e*'
+      type: '**Throwable**'
+      description: >+
+        The inner exception.
+
+
+
+    return:
+      type: '@msipcthin2.invalidcertificateexception_class'
+      description: '@msipcthin2.invalidcertificateexception_class'
+  inheritance: []
+references:
+- uid: msipcthin2.protectionexception_class_java
+  href: ProtectionException.yml
+  name: ProtectionException
+- uid: msipcthin2.invalidcertificateexception_constructor_java
+  href: InvalidCertificateException.yml
+  name: InvalidCertificateException
+- uid: msipcthin2.invalidcertificateexception_class
+  href: InvalidCertificateException.yml
+  name: InvalidCertificateException
+- uid: msipcthin2.invalidcertificateexception_throwable__constructor_java
+  href: InvalidCertificateException(Throwable).yml
+  name: InvalidCertificateException(Throwable)

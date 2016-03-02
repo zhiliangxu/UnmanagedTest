@@ -1,0 +1,193 @@
+items:
+- uid: msipcthin2.authenticationparameters
+  id: AuthenticationParameters
+  parent: Microsoft.RightsManagement
+  children:
+  - msipcthin2.authenticationparameters_authority
+  - msipcthin2.authenticationparameters_resource
+  - msipcthin2.authenticationparameters_scope
+  - msipcthin2.authenticationparameters_userid
+  href: AuthenticationParameters.yml
+  langs:
+  - cplusplus
+  name: AuthenticationParameters
+  fullName: msipcthin2.authenticationparameters
+  type: Class
+  assemblies: &o0
+  - Microsoft.RightsManagement.winmd
+  namespace: Microsoft.RightsManagement
+  summary: >+
+    Authentication info to be used to get an access token.
+
+
+
+
+
+
+
+  remarks: 
+  syntax:
+    content: 'public ref class AuthenticationParameters sealed : IInspectable'
+  inheritance:
+  - IInspectable
+- uid: msipcthin2.authenticationparameters_authority
+  id: Authority
+  parent: msipcthin2.authenticationparameters
+  children: []
+  href: AuthenticationParameters.yml
+  langs:
+  - cplusplus
+  name: Authority
+  fullName: msipcthin2.authenticationparameters_authority
+  type: Property
+  assemblies: *o0
+  namespace: Microsoft.RightsManagement
+  summary: >+
+    Gets authority with which the request is being made.
+
+
+
+
+
+
+
+  remarks: >+
+    An example **authority** string would be,  https://login.windows.net/common/oauth2/token
+
+
+
+
+
+
+
+  syntax:
+    content: >-
+      public:
+       String Authority {
+      	String get();
+      }
+    return:
+      type: String
+      description: Authority with which the request is being made
+  inheritance: []
+- uid: msipcthin2.authenticationparameters_resource
+  id: Resource
+  parent: msipcthin2.authenticationparameters
+  children: []
+  href: AuthenticationParameters.yml
+  langs:
+  - cplusplus
+  name: Resource
+  fullName: msipcthin2.authenticationparameters_resource
+  type: Property
+  assemblies: *o0
+  namespace: Microsoft.RightsManagement
+  summary: >+
+    Gets resource being requested.
+
+
+
+
+
+
+
+  remarks: >+
+    An example **resource** string would be, api.aadrm.com
+
+
+
+  syntax:
+    content: >-
+      public:
+       String Resource {
+      	String get();
+      }
+    return:
+      type: String
+      description: Resource being requested
+  inheritance: []
+- uid: msipcthin2.authenticationparameters_scope
+  id: Scope
+  parent: msipcthin2.authenticationparameters
+  children: []
+  href: AuthenticationParameters.yml
+  langs:
+  - cplusplus
+  name: Scope
+  fullName: msipcthin2.authenticationparameters_scope
+  type: Property
+  assemblies: *o0
+  namespace: Microsoft.RightsManagement
+  summary: >+
+    Gets the scope of the authentication request.
+
+
+
+
+
+
+
+  remarks: 
+  syntax:
+    content: >-
+      public:
+       String Scope {
+      	String get();
+      }
+    return:
+      type: String
+      description: Scope of the authentication request
+  inheritance: []
+- uid: msipcthin2.authenticationparameters_userid
+  id: UserId
+  parent: msipcthin2.authenticationparameters
+  children: []
+  href: AuthenticationParameters.yml
+  langs:
+  - cplusplus
+  name: UserId
+  fullName: msipcthin2.authenticationparameters_userid
+  type: Property
+  assemblies: *o0
+  namespace: Microsoft.RightsManagement
+  summary: >+
+    Gets unique user ID of the requestor.
+
+
+
+
+
+
+
+  remarks: >+
+    An example **userId** string would be, user@domain.com
+
+
+
+  syntax:
+    content: >-
+      public:
+       String UserId {
+      	String get();
+      }
+    return:
+      type: String
+      description: Unique user ID of the requestor.
+  inheritance: []
+references:
+- uid: IInspectable
+  isExternal: true
+  href: https://msdn.microsoft.com/en-us/library/windows/apps/br205821
+  name: IInspectable
+- uid: msipcthin2.authenticationparameters_authority
+  href: Authority.yml
+  name: Authority
+- uid: msipcthin2.authenticationparameters_resource
+  href: Resource.yml
+  name: Resource
+- uid: msipcthin2.authenticationparameters_scope
+  href: Scope.yml
+  name: Scope
+- uid: msipcthin2.authenticationparameters_userid
+  href: UserId.yml
+  name: UserId

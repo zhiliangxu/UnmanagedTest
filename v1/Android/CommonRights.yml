@@ -1,0 +1,90 @@
+items:
+- uid: msipcthin2.commonrights_class_java
+  id: CommonRights
+  parent: com.microsoft.rightsmanagement
+  children:
+  - msipcthin2.commonrights_class_java.ALL
+  - msipcthin2.commonrights_class_java.Owner
+  - msipcthin2.commonrights_class_java.View
+  href: CommonRights.yml
+  langs:
+  - cplusplus
+  name: CommonRights
+  fullName: msipcthin2.commonrights_class_java
+  type: Class
+  assemblies: &o0
+  - Android
+  namespace: com.microsoft.rightsmanagement
+  summary: >+
+    Rights that are supported by all applications.
+
+
+
+
+
+
+
+  remarks: >+
+    For more information about the built-in rights and the usage restrictions associated with them  that apps should observe, see @msipcthin2.built-in_rights_usage_restriction_reference.
+
+
+
+  thread_safety: Members of this class are not guaranteed to be thread safe.
+  defined_in: CommonRights.java
+  syntax:
+    content: public final class CommonRights
+  inheritance: []
+- uid: msipcthin2.commonrights_class_java.Owner
+  id: Owner
+  parent: msipcthin2.commonrights_class_java
+  href: CommonRights.yml
+  langs:
+  - cplusplus
+  name: Owner
+  fullName: msipcthin2.commonrights_class_java.Owner
+  type: Property
+  assemblies: *o0
+  namespace: com.microsoft.rightsmanagement
+  summary: Specifies a right that represents content ownership. This right grants full control over the protected content.
+  syntax:
+    content: public final static String Owner = "OWNER";
+- uid: msipcthin2.commonrights_class_java.View
+  id: View
+  parent: msipcthin2.commonrights_class_java
+  href: CommonRights.yml
+  langs:
+  - cplusplus
+  name: View
+  fullName: msipcthin2.commonrights_class_java.View
+  type: Property
+  assemblies: *o0
+  namespace: com.microsoft.rightsmanagement
+  summary: Specifies a right that allows viewing of protected content.
+  syntax:
+    content: public final static String View = "VIEW";
+- uid: msipcthin2.commonrights_class_java.ALL
+  id: ALL
+  parent: msipcthin2.commonrights_class_java
+  href: CommonRights.yml
+  langs:
+  - cplusplus
+  name: ALL
+  fullName: msipcthin2.commonrights_class_java.ALL
+  type: Property
+  assemblies: *o0
+  namespace: com.microsoft.rightsmanagement
+  summary: Specifies all the rights (Owner and View)
+  syntax:
+    content: public final static Collection&lt;String&gt; ALL = Collections.unmodifiableCollection(Arrays.asList(Owner, View));
+references:
+- uid: msipcthin2.built-in_rights_usage_restriction_reference
+  name: Built-in Rights Usage Restriction Reference
+- uid: msipcthin2.commonrights_class_java.Owner
+  href: CommonRights.yml
+  name: Owner
+- uid: msipcthin2.commonrights_class_java.View
+  href: CommonRights.yml
+  name: View
+- uid: msipcthin2.commonrights_class_java.ALL
+  href: CommonRights.yml
+  name: ALL

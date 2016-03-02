@@ -1,0 +1,127 @@
+items:
+- uid: msipcthin2.consent_class_java
+  id: Consent
+  parent: com.microsoft.rightsmanagement
+  children:
+  - msipcthin2.consent_getconsentresult_method
+  - msipcthin2.consent_getconsenttype_method
+  - msipcthin2.consent_setconsentresult_method_java
+  href: Consent.yml
+  langs:
+  - cplusplus
+  name: Consent
+  fullName: msipcthin2.consent_class_java
+  type: Class
+  assemblies: &o0
+  - Android
+  namespace: com.microsoft.rightsmanagement
+  summary: >+
+    Base class for types of user consents.
+
+
+
+
+
+
+
+  remarks: 
+  thread_safety: Members of this class are not guaranteed to be thread safe.
+  defined_in: Consent.java
+  syntax:
+    content: public class Consent implements Serializable
+  inheritance: []
+- uid: msipcthin2.consent_getconsenttype_method
+  id: Consent getConsentType
+  parent: msipcthin2.consent_class_java
+  children: []
+  href: Consent.yml
+  langs:
+  - cplusplus
+  name: Consent getConsentType
+  fullName: msipcthin2.consent_getconsenttype_method
+  type: Method
+  assemblies: *o0
+  namespace: com.microsoft.rightsmanagement
+  summary: >+
+    Gets the type of consent.
+
+
+
+
+
+
+
+  remarks: 
+  syntax:
+    content: public ConsentType getConsentType()
+    return:
+      type: '@msipcthin2.consenttype_enum'
+      description: A @msipcthin2.consenttype_enum
+  inheritance: []
+- uid: msipcthin2.consent_getconsentresult_method
+  id: Consent getConsentResult
+  parent: msipcthin2.consent_class_java
+  children: []
+  href: Consent.yml
+  langs:
+  - cplusplus
+  name: Consent getConsentResult
+  fullName: msipcthin2.consent_getconsentresult_method
+  type: Method
+  assemblies: *o0
+  namespace: com.microsoft.rightsmanagement
+  summary: >+
+    Gets the @msipcthin2.consentresult_interface_java.
+
+
+
+
+
+
+
+  remarks: 
+  syntax:
+    content: public ConsentResult getConsentResult()
+    return:
+      type: '@msipcthin2.consentresult_interface_java'
+      description: A @msipcthin2.consentresult_interface_java
+  inheritance: []
+- uid: msipcthin2.consent_setconsentresult_method_java
+  id: Consent setConsentResult
+  parent: msipcthin2.consent_class_java
+  children: []
+  href: Consent.yml
+  langs:
+  - cplusplus
+  name: Consent setConsentResult
+  fullName: msipcthin2.consent_setconsentresult_method_java
+  type: Method
+  assemblies: *o0
+  namespace: com.microsoft.rightsmanagement
+  summary: >+
+    Sets the @msipcthin2.consentresult_interface_java.
+
+
+
+
+
+
+
+  remarks: 
+  syntax:
+    content: public void setConsentResult(ConsentResult consentResult)
+    parameters:
+    - id: '*consentResult*'
+      type: '@msipcthin2.consentresult_interface_java'
+      description: 
+  inheritance: []
+references:
+- uid: msipcthin2.consent_getconsenttype_method
+  href: Consent getConsentType.yml
+  name: getConsentType
+- uid: msipcthin2.consent_getconsentresult_method
+  href: Consent getConsentResult.yml
+  name: getConsentResult
+- uid: msipcthin2.consent_setconsentresult_method_java
+  href: Consent setConsentResult.yml
+  name: setConsentResult

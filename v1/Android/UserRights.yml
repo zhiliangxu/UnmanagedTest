@@ -1,0 +1,137 @@
+items:
+- uid: msipcthin2.userrights_class_java
+  id: UserRights
+  parent: com.microsoft.rightsmanagement
+  children:
+  - msipcthin2.userrights_getrights_method_java
+  - msipcthin2.userrights_getusers_method_java
+  - msipcthin2.userrights_userrights_method_java
+  href: UserRights.yml
+  langs:
+  - cplusplus
+  name: UserRights
+  fullName: msipcthin2.userrights_class_java
+  type: Class
+  assemblies: &o0
+  - Android
+  namespace: com.microsoft.rightsmanagement
+  summary: >+
+    Maps collections of users to a collection of rights.
+
+
+
+  remarks: 
+  thread_safety: Members of this class are not guaranteed to be thread safe.
+  defined_in: UserRights.java
+  syntax:
+    content: public final class UserRights implements Serializable
+  inheritance: []
+- uid: msipcthin2.userrights_userrights_method_java
+  id: UserRights.UserRights
+  parent: msipcthin2.userrights_class_java
+  children: []
+  href: UserRights.yml
+  langs:
+  - cplusplus
+  name: UserRights.UserRights
+  fullName: msipcthin2.userrights_userrights_method_java
+  type: Method
+  assemblies: *o0
+  namespace: com.microsoft.rightsmanagement
+  summary: >+
+    Instantiates a new @msipcthin2.userrights_class_java object.
+
+
+
+
+
+
+
+  remarks: 
+  syntax:
+    content: public UserRights(Collection<String> users,                                      Collection<String> rights)
+    parameters:
+    - id: '*users*'
+      type: '**Collection<String>**'
+      description: >+
+        The set of users to whom the rights are granted.
+
+
+
+    - id: '*rights*'
+      type: '**Collection<String>**'
+      description: >+
+        For more information on managing user rights, see @msipcthin2.built-in_rights_usage_restriction_reference as well as @msipcthin2.commonrights_class_java, @msipcthin2.editabledocumentrights_class_java and @msipcthin2.emailrights_class_java.
+
+
+
+  inheritance: []
+- uid: msipcthin2.userrights_getrights_method_java
+  id: UserRights.getRights
+  parent: msipcthin2.userrights_class_java
+  children: []
+  href: UserRights.yml
+  langs:
+  - cplusplus
+  name: UserRights.getRights
+  fullName: msipcthin2.userrights_getrights_method_java
+  type: Method
+  assemblies: *o0
+  namespace: com.microsoft.rightsmanagement
+  summary: >+
+    Gets the set of rights.
+
+
+
+
+
+
+
+  remarks: 
+  syntax:
+    content: public Collection<String> getRights()
+    return:
+      type: Collection
+      description: A **Collection** containing a list of rights.
+  inheritance: []
+- uid: msipcthin2.userrights_getusers_method_java
+  id: UserRights.getUsers
+  parent: msipcthin2.userrights_class_java
+  children: []
+  href: UserRights.yml
+  langs:
+  - cplusplus
+  name: UserRights.getUsers
+  fullName: msipcthin2.userrights_getusers_method_java
+  type: Method
+  assemblies: *o0
+  namespace: com.microsoft.rightsmanagement
+  summary: >+
+    Gets the set of users.
+
+
+
+
+
+
+
+  remarks: 
+  syntax:
+    content: public Collection<String> getUsers()
+    return:
+      type: Collection
+      description: A **Collection** containing a list of users.
+  inheritance: []
+references:
+- uid: msipcthin2.userrights_class_java
+  href: UserRights.yml
+  name: UserRights
+- uid: msipcthin2.userrights_getrights_method_java
+  href: UserRights.getRights.yml
+  name: getRights
+- uid: msipcthin2.userrights_getusers_method_java
+  href: UserRights.getUsers.yml
+  name: getUsers
+- uid: msipcthin2.userrights_userrights_method_java
+  href: UserRights.UserRights.yml
+  name: UserRights.UserRights

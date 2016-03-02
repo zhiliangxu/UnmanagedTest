@@ -1,0 +1,77 @@
+items:
+- uid: msipcthin2.notificationpreference
+  id: NotificationPreference
+  parent: com.microsoft.rightsmanagement
+  children:
+  - msipcthin2.notificationpreference.    NOTIFICATION_PREF_DEFAULT
+  - msipcthin2.notificationpreference.NOTIFICATION_PREF_DIGEST
+  href: NotificationPreference.yml
+  langs:
+  - cplusplus
+  name: NotificationPreference
+  fullName: msipcthin2.notificationpreference
+  type: Enum
+  assemblies: &o0
+  - Android
+  namespace: com.microsoft.rightsmanagement
+  summary: >+
+    Type of user notification preference.
+
+
+
+
+
+
+
+  remarks: 
+  defined_in: NotificationPreference.java
+  syntax:
+    content: Public enum NotificationPreference{  NOTIFICATION_PREF_DEFAULT,  NOTIFICATION_PREF_DIGEST}
+  inheritance: []
+- uid: msipcthin2.notificationpreference.    NOTIFICATION_PREF_DEFAULT
+  id: '    NOTIFICATION_PREF_DEFAULT'
+  parent: msipcthin2.notificationpreference
+  href: NotificationPreference.yml
+  langs:
+  - cplusplus
+  name: '    NOTIFICATION_PREF_DEFAULT'
+  fullName: msipcthin2.notificationpreference.    NOTIFICATION_PREF_DEFAULT
+  type: Field
+  assemblies: *o0
+  namespace: com.microsoft.rightsmanagement
+  summary: >+
+    Email notifications sent per access.
+
+
+
+  syntax:
+    content: '    NOTIFICATION_PREF_DEFAULT = 0'
+- uid: msipcthin2.notificationpreference.NOTIFICATION_PREF_DIGEST
+  id: NOTIFICATION_PREF_DIGEST
+  parent: msipcthin2.notificationpreference
+  href: NotificationPreference.yml
+  langs:
+  - cplusplus
+  name: NOTIFICATION_PREF_DIGEST
+  fullName: msipcthin2.notificationpreference.NOTIFICATION_PREF_DIGEST
+  type: Field
+  assemblies: *o0
+  namespace: com.microsoft.rightsmanagement
+  summary: >+
+    Digest mode is a server side enabled feature which is not yet available.
+
+
+
+
+
+
+
+  syntax:
+    content: NOTIFICATION_PREF_DIGEST = 1
+references:
+- uid: msipcthin2.notificationpreference.    NOTIFICATION_PREF_DEFAULT
+  href: NotificationPreference.yml
+  name: '    NOTIFICATION_PREF_DEFAULT'
+- uid: msipcthin2.notificationpreference.NOTIFICATION_PREF_DIGEST
+  href: NotificationPreference.yml
+  name: NOTIFICATION_PREF_DIGEST

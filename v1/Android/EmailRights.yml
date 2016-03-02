@@ -1,0 +1,147 @@
+items:
+- uid: msipcthin2.emailrights_class_java
+  id: EmailRights
+  parent: com.microsoft.rightsmanagement
+  children:
+  - msipcthin2.emailrights_class_java.ALL
+  - msipcthin2.emailrights_class_java.Extract
+  - msipcthin2.emailrights_class_java.Forward
+  - msipcthin2.emailrights_class_java.Print
+  - msipcthin2.emailrights_class_java.Reply
+  - msipcthin2.emailrights_class_java.ReplyAll
+  href: EmailRights.yml
+  langs:
+  - cplusplus
+  name: EmailRights
+  fullName: msipcthin2.emailrights_class_java
+  type: Class
+  assemblies: &o0
+  - Android
+  namespace: com.microsoft.rightsmanagement
+  summary: >+
+    Rights that apply to emails.
+
+
+
+
+
+
+
+  remarks: >+
+    For more information about the built-in rights and the usage restrictions associated with them  that apps should observe, see @msipcthin2.built-in_rights_usage_restriction_reference.
+
+
+
+  thread_safety: Members of this class are not guaranteed to be thread safe.
+  defined_in: EmailRights.java
+  syntax:
+    content: public final class EmailRights
+  inheritance: []
+- uid: msipcthin2.emailrights_class_java.ALL
+  id: ALL
+  parent: msipcthin2.emailrights_class_java
+  href: EmailRights.yml
+  langs:
+  - cplusplus
+  name: ALL
+  fullName: msipcthin2.emailrights_class_java.ALL
+  type: Property
+  assemblies: *o0
+  namespace: com.microsoft.rightsmanagement
+  summary: Specifies a list of all the rights that apply to emails; Reply, Reply All, Forward, Extract and Print.
+  syntax:
+    content: public final static Collection&lt;String&gt; ALL = Collections.unmodifiableCollection(Arrays.asList(CommonRights.View,            CommonRights.Owner, Reply, ReplyAll, Forward, Extract, Print));
+- uid: msipcthin2.emailrights_class_java.Extract
+  id: Extract
+  parent: msipcthin2.emailrights_class_java
+  href: EmailRights.yml
+  langs:
+  - cplusplus
+  name: Extract
+  fullName: msipcthin2.emailrights_class_java.Extract
+  type: Property
+  assemblies: *o0
+  namespace: com.microsoft.rightsmanagement
+  summary: Specifies a right that allows content to be extracted from a protected email and placed in an unprotected, or a different protected, format. Same value as @msipcthin2.editabledocumentrights_class_java.
+  syntax:
+    content: public final static String Extract = EditableDocumentRights.Extract;
+- uid: msipcthin2.emailrights_class_java.Forward
+  id: Forward
+  parent: msipcthin2.emailrights_class_java
+  href: EmailRights.yml
+  langs:
+  - cplusplus
+  name: Forward
+  fullName: msipcthin2.emailrights_class_java.Forward
+  type: Property
+  assemblies: *o0
+  namespace: com.microsoft.rightsmanagement
+  summary: Specifies a right that allows a  protected email message to be forwarded.
+  syntax:
+    content: public final static String Forward = "FORWARD";
+- uid: msipcthin2.emailrights_class_java.Print
+  id: Print
+  parent: msipcthin2.emailrights_class_java
+  href: EmailRights.yml
+  langs:
+  - cplusplus
+  name: Print
+  fullName: msipcthin2.emailrights_class_java.Print
+  type: Property
+  assemblies: *o0
+  namespace: com.microsoft.rightsmanagement
+  summary: Specifies a right that allows protected email content to be printed.Same value as @msipcthin2.editabledocumentrights_class_java.
+  syntax:
+    content: public final static String Print = EditableDocumentRights.Print;
+- uid: msipcthin2.emailrights_class_java.Reply
+  id: Reply
+  parent: msipcthin2.emailrights_class_java
+  href: EmailRights.yml
+  langs:
+  - cplusplus
+  name: Reply
+  fullName: msipcthin2.emailrights_class_java.Reply
+  type: Property
+  assemblies: *o0
+  namespace: com.microsoft.rightsmanagement
+  summary: Specifies a right that allows a protected email message to be replied to with a message that includes a copy of the protected content.
+  syntax:
+    content: public final static String Reply = "REPLY";
+- uid: msipcthin2.emailrights_class_java.ReplyAll
+  id: ReplyAll
+  parent: msipcthin2.emailrights_class_java
+  href: EmailRights.yml
+  langs:
+  - cplusplus
+  name: ReplyAll
+  fullName: msipcthin2.emailrights_class_java.ReplyAll
+  type: Property
+  assemblies: *o0
+  namespace: com.microsoft.rightsmanagement
+  summary: Specifies a right that allows reply-all to a protected email message with a message that includes a copy of the protected content.
+  syntax:
+    content: public final static String ReplyAll = "REPLYALL";
+references:
+- uid: msipcthin2.editabledocumentrights_class_java
+  href: EditableDocumentRights.yml
+  name: EditableDocumentRights.Extract
+- uid: msipcthin2.built-in_rights_usage_restriction_reference
+  name: Built-in Rights Usage Restriction Reference
+- uid: msipcthin2.emailrights_class_java.ALL
+  href: EmailRights.yml
+  name: ALL
+- uid: msipcthin2.emailrights_class_java.Extract
+  href: EmailRights.yml
+  name: Extract
+- uid: msipcthin2.emailrights_class_java.Forward
+  href: EmailRights.yml
+  name: Forward
+- uid: msipcthin2.emailrights_class_java.Print
+  href: EmailRights.yml
+  name: Print
+- uid: msipcthin2.emailrights_class_java.Reply
+  href: EmailRights.yml
+  name: Reply
+- uid: msipcthin2.emailrights_class_java.ReplyAll
+  href: EmailRights.yml
+  name: ReplyAll

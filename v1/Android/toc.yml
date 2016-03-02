@@ -1,0 +1,149 @@
+- uid: com.microsoft.rightsmanagement
+  name: com.microsoft.rightsmanagement
+  href: com.microsoft.rightsmanagement.yml
+  items:
+  - uid: msipcthin2.authenticationcompletioncallback_interface_java
+    name: AuthenticationCompletionCallback
+    href: AuthenticationCompletionCallback.yml
+  - uid: msipcthin2.authenticationrequestcallback_interface_java
+    name: AuthenticationRequestCallback
+    href: AuthenticationRequestCallback.yml
+  - uid: msipcthin2.commonrights_class_java
+    name: CommonRights
+    href: CommonRights.yml
+  - uid: msipcthin2.consent_class_java
+    name: Consent
+    href: Consent.yml
+  - uid: msipcthin2.consentcallback_interface_java
+    name: ConsentCallback
+    href: ConsentCallback.yml
+  - uid: msipcthin2.consentcompletioncallback_interface
+    name: ConsentCompletionCallback
+    href: ConsentCompletionCallback.yml
+  - uid: msipcthin2.consentresult_interface_java
+    name: ConsentResult
+    href: ConsentResult.yml
+  - uid: msipcthin2.consenttype_enum
+    name: ConsentType
+    href: ConsentType.yml
+  - uid: msipcthin2.creationcallback_t__interface_java
+    name: CreationCallback<T>
+    href: CreationCallback_T_.yml
+  - uid: msipcthin2.customprotectedinputstream_class_java
+    name: CustomProtectedInputStream
+    href: CustomProtectedInputStream.yml
+  - uid: msipcthin2.customprotectedoutputstream_class_java
+    name: CustomProtectedOutputStream
+    href: CustomProtectedOutputStream.yml
+  - uid: msipcthin2.editabledocumentrights_class_java
+    name: EditableDocumentRights
+    href: EditableDocumentRights.yml
+  - uid: msipcthin2.emailrights_class_java
+    name: EmailRights
+    href: EmailRights.yml
+  - uid: msipcthin2.iasynccontrol_interface
+    name: IAsyncControl
+    href: IAsyncControl.yml
+  - uid: msipcthin2.licensemetadata_interface_java
+    name: LicenseMetadata
+    href: LicenseMetadata.yml
+  - uid: msipcthin2.notificationpreference
+    name: NotificationPreference
+    href: NotificationPreference.yml
+  - uid: msipcthin2.notificationtype_java
+    name: NotificationType
+    href: NotificationType.yml
+  - uid: msipcthin2.policyacquisitionflags_class_java
+    name: PolicyAcquisitionFlags
+    href: PolicyAcquisitionFlags.yml
+  - uid: msipcthin2.policydescriptor_interface_java
+    name: PolicyDescriptor
+    href: PolicyDescriptor.yml
+  - uid: msipcthin2.protectedbuffer_class
+    name: ProtectedBuffer
+    href: ProtectedBuffer.yml
+  - uid: msipcthin2.protectedfileinputstream_class_java
+    name: ProtectedFileInputStream
+    href: ProtectedFileInputStream.yml
+  - uid: msipcthin2.protectedfileoutputstream_class_java
+    name: ProtectedFileOutputStream
+    href: ProtectedFileOutputStream.yml
+  - uid: msipcthin2.roles_class_java
+    name: Roles
+    href: Roles.yml
+  - uid: msipcthin2.templatedescriptor_class_java
+    name: TemplateDescriptor
+    href: TemplateDescriptor.yml
+  - uid: msipcthin2.userpolicy_class_java
+    name: UserPolicy
+    href: UserPolicy.yml
+  - uid: msipcthin2.userpolicycreationflags_class_java
+    name: UserPolicyCreationFlags
+    href: UserPolicyCreationFlags.yml
+  - uid: msipcthin2.userpolicytype_enum_java
+    name: UserPolicyType
+    href: UserPolicyType.yml
+  - uid: msipcthin2.userrights_class_java
+    name: UserRights
+    href: UserRights.yml
+  - uid: msipcthin2.userroles_class_java
+    name: UserRoles
+    href: UserRoles.yml
+- uid: com.microsoft.rightsmanagement.exceptions
+  name: com.microsoft.rightsmanagement.exceptions
+  href: com.microsoft.rightsmanagement.exceptions.yml
+  items:
+  - uid: msipcthin2.communicationexception_class_java
+    name: CommunicationException
+    href: CommunicationException.yml
+  - uid: msipcthin2.devicerejectedexception_class_java
+    name: DeviceRejectedException
+    href: DeviceRejectedException.yml
+  - uid: msipcthin2.dnslookupexception_class_java
+    name: DnsLookupException
+    href: DnsLookupException.yml
+  - uid: msipcthin2.failedauthenticationexception_class_java
+    name: FailedAuthenticationException
+    href: FailedAuthenticationException.yml
+  - uid: msipcthin2.generalexception_class_java
+    name: GeneralException
+    href: GeneralException.yml
+  - uid: msipcthin2.invalidcertificateexception_class
+    name: InvalidCertificateException
+    href: InvalidCertificateException.yml
+  - uid: msipcthin2.invalidparameterexception_class_java
+    name: InvalidParameterException
+    href: InvalidParameterException.yml
+  - uid: msipcthin2.invalidplexception_class_java
+    name: InvalidPLException
+    href: InvalidPLException.yml
+  - uid: msipcthin2.noconsumptionrightsexception_class_java
+    name: NoConsumptionRightsException
+    href: NoConsumptionRightsException.yml
+  - uid: msipcthin2.nopublishingrightsexception_class_java
+    name: NoPublishingRightsException
+    href: NoPublishingRightsException.yml
+  - uid: msipcthin2.offlineonlyrequiresinternetexception_class_java
+    name: OfflineOnlyRequiresInternetException
+    href: OfflineOnlyRequiresInternetException.yml
+  - uid: msipcthin2.onpremserversnotsupportedexception_class_java
+    name: OnPremServersNotSupportedException
+    href: OnPremServersNotSupportedException.yml
+  - uid: msipcthin2.protectionexception_class_java
+    name: ProtectionException
+    href: ProtectionException.yml
+  - uid: msipcthin2.protectionexceptiontype_enum_java
+    name: ProtectionExceptionType
+    href: ProtectionExceptionType.yml
+  - uid: msipcthin2.restservicenotenabledexception_class_java
+    name: RestServiceNotEnabledException
+    href: RestServiceNotEnabledException.yml
+  - uid: msipcthin2.servicenotavailableexception_class_java
+    name: ServiceNotAvailableException
+    href: ServiceNotAvailableException.yml
+  - uid: msipcthin2.unsupportedsdkversionexception_class_java
+    name: UnsupportedSDKVersionException
+    href: UnsupportedSDKVersionException.yml
+  - uid: msipcthin2.userrightsexpiredexception_class_java
+    name: UserRightsExpiredException
+    href: UserRightsExpiredException.yml

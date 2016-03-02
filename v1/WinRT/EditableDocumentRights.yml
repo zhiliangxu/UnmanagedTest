@@ -1,0 +1,286 @@
+items:
+- uid: msipcthin2.editabledocumentrights
+  id: EditableDocumentRights
+  parent: Microsoft.RightsManagement
+  children:
+  - msipcthin2.editabledocumentrights__comment
+  - msipcthin2.editabledocumentrights_all
+  - msipcthin2.editabledocumentrights_edit
+  - msipcthin2.editabledocumentrights_export
+  - msipcthin2.editabledocumentrights_extract
+  - msipcthin2.editabledocumentrights_print
+  href: EditableDocumentRights.yml
+  langs:
+  - cplusplus
+  name: EditableDocumentRights
+  fullName: msipcthin2.editabledocumentrights
+  type: Class
+  assemblies: &o0
+  - Microsoft.RightsManagement.winmd
+  namespace: Microsoft.RightsManagement
+  summary: >+
+    Rights that apply to editable documents.
+
+
+
+
+
+
+
+  remarks: >+
+    For more information about the built-in rights and the usage restrictions associated with them  that apps should observe, see @msipcthin2.built-in_rights_usage_restriction_reference.
+
+
+
+  thread_safety: Members of this class are not guaranteed to be thread safe.
+  syntax:
+    content: 'public ref class EditableDocumentRights : IInspectable'
+  inheritance:
+  - IInspectable
+- uid: msipcthin2.editabledocumentrights_all
+  id: All
+  parent: msipcthin2.editabledocumentrights
+  children: []
+  href: EditableDocumentRights.yml
+  langs:
+  - cplusplus
+  name: All
+  fullName: msipcthin2.editabledocumentrights_all
+  type: Property
+  assemblies: *o0
+  namespace: Microsoft.RightsManagement
+  summary: >+
+    Gets a collection of all the rights that apply to editable documents.
+
+
+
+
+
+
+
+  remarks: >+
+    For more information about the built-in rights and the usage restrictions associated with them  that apps should observe, see @msipcthin2.built-in_rights_usage_restriction_reference.
+
+
+
+  syntax:
+    content: >-
+      public:
+
+      static     IIterable<String^>^ All {
+      	    IIterable<String^>^ get();
+      }
+    return:
+      type: '    IIterable<String^>^'
+      description: The collection rights that apply to editable documents.
+  inheritance: []
+- uid: msipcthin2.editabledocumentrights__comment
+  id: Comment
+  parent: msipcthin2.editabledocumentrights
+  children: []
+  href: EditableDocumentRights.yml
+  langs:
+  - cplusplus
+  name: Comment
+  fullName: msipcthin2.editabledocumentrights__comment
+  type: Property
+  assemblies: *o0
+  namespace: Microsoft.RightsManagement
+  summary: >+
+    Gets a right that allows the protected content to be commented on and saved to the same protected format.
+
+
+
+
+
+
+
+  remarks: >+
+    For more information about the built-in rights and the usage restrictions associated with them  that apps should observe, see @msipcthin2.built-in_rights_usage_restriction_reference.
+
+
+
+  syntax:
+    content: >-
+      public:
+
+      static String^ Comment {
+      	String^ get();
+      }
+    return:
+      type: String^
+      description: The comment right.
+  inheritance: []
+- uid: msipcthin2.editabledocumentrights_edit
+  id: Edit
+  parent: msipcthin2.editabledocumentrights
+  children: []
+  href: EditableDocumentRights.yml
+  langs:
+  - cplusplus
+  name: Edit
+  fullName: msipcthin2.editabledocumentrights_edit
+  type: Property
+  assemblies: *o0
+  namespace: Microsoft.RightsManagement
+  summary: >+
+    Gets a right that allows the protected content to be edited and saved to the same protected format.
+
+
+
+
+
+
+
+  remarks: >+
+    For more information about the built-in rights and the usage restrictions associated with them  that apps should observe, see @msipcthin2.built-in_rights_usage_restriction_reference.
+
+
+
+  syntax:
+    content: >-
+      public:
+
+      static     String^ Edit {
+      	    String^ get();
+      }
+    return:
+      type: '    String^'
+      description: The edit right.
+  inheritance: []
+- uid: msipcthin2.editabledocumentrights_export
+  id: Export
+  parent: msipcthin2.editabledocumentrights
+  children: []
+  href: EditableDocumentRights.yml
+  langs:
+  - cplusplus
+  name: Export
+  fullName: msipcthin2.editabledocumentrights_export
+  type: Property
+  assemblies: *o0
+  namespace: Microsoft.RightsManagement
+  summary: >+
+    Gets a right that allows content to be extracted from a protected format and placed in a different AD RMS-protected format.
+
+
+
+
+
+
+
+  remarks: >+
+    For more information about the built-in rights and the usage restrictions associated with them  that apps should observe, see @msipcthin2.built-in_rights_usage_restriction_reference.
+
+
+
+  syntax:
+    content: >-
+      public:
+
+      static     String^ Export {
+      	    String^ get();
+      }
+    return:
+      type: '    String^'
+      description: The export right.
+  inheritance: []
+- uid: msipcthin2.editabledocumentrights_extract
+  id: Extract
+  parent: msipcthin2.editabledocumentrights
+  children: []
+  href: EditableDocumentRights.yml
+  langs:
+  - cplusplus
+  name: Extract
+  fullName: msipcthin2.editabledocumentrights_extract
+  type: Property
+  assemblies: *o0
+  namespace: Microsoft.RightsManagement
+  summary: >+
+    Gets a right that allows content to be extracted from a protected format and placed in an unprotected, or a different protected,  format. Same value as @msipcthin2.emailrights_extract.
+
+
+
+
+
+
+
+  remarks: >+
+    For more information about the built-in rights and the usage restrictions associated with them  that apps should observe, see @msipcthin2.built-in_rights_usage_restriction_reference.
+
+
+
+  syntax:
+    content: >-
+      public:
+
+      static     String^ Extract {
+      	    String^ get();
+      }
+    return:
+      type: '    String^'
+      description: The extract right.
+  inheritance: []
+- uid: msipcthin2.editabledocumentrights_print
+  id: Print
+  parent: msipcthin2.editabledocumentrights
+  children: []
+  href: EditableDocumentRights.yml
+  langs:
+  - cplusplus
+  name: Print
+  fullName: msipcthin2.editabledocumentrights_print
+  type: Property
+  assemblies: *o0
+  namespace: Microsoft.RightsManagement
+  summary: >+
+    Gets a right that allows protected content to be printed.Same value as @msipcthin2.emailrights_print.
+
+
+
+
+
+
+
+  remarks: >+
+    For more information about the built-in rights and the usage restrictions associated with them  that apps should observe, see @msipcthin2.built-in_rights_usage_restriction_reference.
+
+
+
+  syntax:
+    content: >-
+      public:
+
+      static     String^ Print {
+      	    String^ get();
+      }
+    return:
+      type: '    String^'
+      description: The print right.
+  inheritance: []
+references:
+- uid: IInspectable
+  isExternal: true
+  href: https://msdn.microsoft.com/en-us/library/windows/apps/br205821
+  name: IInspectable
+- uid: msipcthin2.built-in_rights_usage_restriction_reference
+  name: Built-in Rights Usage Restriction Reference
+- uid: msipcthin2.editabledocumentrights_all
+  href: All.yml
+  name: All
+- uid: msipcthin2.editabledocumentrights__comment
+  href: Comment.yml
+  name: Comment
+- uid: msipcthin2.editabledocumentrights_edit
+  href: Edit.yml
+  name: Edit
+- uid: msipcthin2.editabledocumentrights_export
+  href: Export.yml
+  name: Export
+- uid: msipcthin2.editabledocumentrights_extract
+  href: Extract.yml
+  name: Extract
+- uid: msipcthin2.editabledocumentrights_print
+  href: Print.yml
+  name: Print

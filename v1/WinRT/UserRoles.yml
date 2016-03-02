@@ -1,0 +1,146 @@
+items:
+- uid: msipcthin2.userroles
+  id: UserRoles
+  parent: Microsoft.RightsManagement
+  children:
+  - msipcthin2.userroles_roles
+  - msipcthin2.userroles_userroles
+  - msipcthin2.userroles_users
+  href: UserRoles.yml
+  langs:
+  - cplusplus
+  name: UserRoles
+  fullName: msipcthin2.userroles
+  type: Class
+  assemblies: &o0
+  - Microsoft.RightsManagement.winmd
+  namespace: Microsoft.RightsManagement
+  summary: >+
+    Provides for the mapping of roles and users.
+
+
+
+
+
+
+
+  remarks: 
+  syntax:
+    content: 'public ref class UserRoles : IInspectable'
+  inheritance:
+  - IInspectable
+- uid: msipcthin2.userroles_userroles
+  id: UserRoles
+  parent: msipcthin2.userroles
+  children: []
+  href: UserRoles.yml
+  langs:
+  - cplusplus
+  name: UserRoles
+  fullName: msipcthin2.userroles_userroles
+  type: Constructor
+  assemblies: *o0
+  namespace: Microsoft.RightsManagement
+  summary: >+
+    Constructor for @msipcthin2.userroles object.
+
+
+
+
+
+
+
+  remarks: 
+  syntax:
+    content: >-
+      public:
+        UserRoles(
+      	        IIterable<String^>^ users,
+      	        IIterable<String^>^ roles
+      )
+    parameters:
+    - id: users
+      type: '        IIterable<String^>^'
+      description: Users
+    - id: roles
+      type: '        IIterable<String^>^'
+      description: Roles
+  inheritance: []
+- uid: msipcthin2.userroles_roles
+  id: Roles
+  parent: msipcthin2.userroles
+  children: []
+  href: UserRoles.yml
+  langs:
+  - cplusplus
+  name: Roles
+  fullName: msipcthin2.userroles_roles
+  type: Property
+  assemblies: *o0
+  namespace: Microsoft.RightsManagement
+  summary: >+
+    Roles of the users.
+
+
+
+
+
+
+
+  remarks: 
+  syntax:
+    content: >-
+      public:
+           IIterable<String^>^ Roles {
+      	    IIterable<String^>^ get();
+      }
+    return:
+      type: '    IIterable<String^>^'
+      description: Roles of the users.
+  inheritance: []
+- uid: msipcthin2.userroles_users
+  id: Users
+  parent: msipcthin2.userroles
+  children: []
+  href: UserRoles.yml
+  langs:
+  - cplusplus
+  name: Users
+  fullName: msipcthin2.userroles_users
+  type: Property
+  assemblies: *o0
+  namespace: Microsoft.RightsManagement
+  summary: >+
+    Users to whom the rights are granted.
+
+
+
+
+
+
+
+  remarks: 
+  syntax:
+    content: >-
+      public:
+               IIterable<String^>^ Users {
+      	        IIterable<String^>^ get();
+      }
+    return:
+      type: '        IIterable<String^>^'
+      description: Users to whom roles are granted.
+  inheritance: []
+references:
+- uid: IInspectable
+  isExternal: true
+  href: https://msdn.microsoft.com/en-us/library/windows/apps/br205821
+  name: IInspectable
+- uid: msipcthin2.userroles_userroles
+  href: UserRoles.yml
+  name: UserRoles
+- uid: msipcthin2.userroles_roles
+  href: Roles.yml
+  name: Roles
+- uid: msipcthin2.userroles_users
+  href: Users.yml
+  name: Users

@@ -1,0 +1,133 @@
+items:
+- uid: msipcthin2.getuserpolicyresult
+  id: GetUserPolicyResult
+  parent: Microsoft.RightsManagement
+  children:
+  - msipcthin2.getuserpolicyresult_policy
+  - msipcthin2.getuserpolicyresult_referrer
+  - msipcthin2.getuserpolicyresult_status
+  href: GetUserPolicyResult.yml
+  langs:
+  - cplusplus
+  name: GetUserPolicyResult
+  fullName: msipcthin2.getuserpolicyresult
+  type: Class
+  assemblies: &o0
+  - Microsoft.RightsManagement.winmd
+  namespace: Microsoft.RightsManagement
+  summary: "Provides access for the referrer.\r\n\r\nThis class implements a workaround for Microsoft Rights Management SDK 4.2  for Windows RT and Windows Phone by creating a structure for getting the referrer. \r\n\r\nOn other supported operating systems, *UserPolicy.AcquireAsync()* directly returns a *UserPolicy* and returns the referrer via acustom \"no rights\" exception or whatever error handling mechanism is used for the platform (ex. NSError in iOS/OS X).   \r\n\r\n"
+  remarks: 
+  syntax:
+    content: 'public ref class GetUserPolicyResult sealed : IInspectable'
+  inheritance:
+  - IInspectable
+- uid: msipcthin2.getuserpolicyresult_status
+  id: Status
+  parent: msipcthin2.getuserpolicyresult
+  children: []
+  href: GetUserPolicyResult.yml
+  langs:
+  - cplusplus
+  name: Status
+  fullName: msipcthin2.getuserpolicyresult_status
+  type: Property
+  assemblies: *o0
+  namespace: Microsoft.RightsManagement
+  summary: >+
+    The return code
+
+
+
+
+
+
+
+  remarks: 
+  syntax:
+    content: >-
+      public:
+       GetUserPolicyResultStatus Status {
+      	GetUserPolicyResultStatus get();
+      }
+    return:
+      type: GetUserPolicyResultStatus
+      description: The return code
+  inheritance: []
+- uid: msipcthin2.getuserpolicyresult_referrer
+  id: Referrer
+  parent: msipcthin2.getuserpolicyresult
+  children: []
+  href: GetUserPolicyResult.yml
+  langs:
+  - cplusplus
+  name: Referrer
+  fullName: msipcthin2.getuserpolicyresult_referrer
+  type: Property
+  assemblies: *o0
+  namespace: Microsoft.RightsManagement
+  summary: >+
+    Referral info.
+
+
+
+
+
+
+
+  remarks: 
+  syntax:
+    content: >-
+      public:
+       Uri Referrer {
+      	Uri get();
+      }
+    return:
+      type: Uri
+      description: Referral info.
+  inheritance: []
+- uid: msipcthin2.getuserpolicyresult_policy
+  id: Policy
+  parent: msipcthin2.getuserpolicyresult
+  children: []
+  href: GetUserPolicyResult.yml
+  langs:
+  - cplusplus
+  name: Policy
+  fullName: msipcthin2.getuserpolicyresult_policy
+  type: Property
+  assemblies: *o0
+  namespace: Microsoft.RightsManagement
+  summary: >+
+    The protection policy if the call succeeded.
+
+
+
+
+
+
+
+  remarks: 
+  syntax:
+    content: >-
+      public:
+       UserPolicy Policy {
+      	UserPolicy get();
+      }
+    return:
+      type: UserPolicy
+      description: The protection policy if the call succeeded.
+  inheritance: []
+references:
+- uid: IInspectable
+  isExternal: true
+  href: https://msdn.microsoft.com/en-us/library/windows/apps/br205821
+  name: IInspectable
+- uid: msipcthin2.getuserpolicyresult_status
+  href: Status.yml
+  name: Status
+- uid: msipcthin2.getuserpolicyresult_referrer
+  href: Referrer.yml
+  name: Referrer
+- uid: msipcthin2.getuserpolicyresult_policy
+  href: Policy.yml
+  name: Policy

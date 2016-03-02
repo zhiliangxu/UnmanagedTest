@@ -1,0 +1,138 @@
+items:
+- uid: msipcthin2.userrights
+  id: UserRights
+  parent: Microsoft.RightsManagement
+  children:
+  - msipcthin2.userrights_rights
+  - msipcthin2.userrights_userrights
+  - msipcthin2.userrights_users
+  href: UserRights.yml
+  langs:
+  - cplusplus
+  name: UserRights
+  fullName: msipcthin2.userrights
+  type: Class
+  assemblies: &o0
+  - Microsoft.RightsManagement.winmd
+  namespace: Microsoft.RightsManagement
+  summary: >+
+    Supplies properties for users and their granted rights.
+
+
+
+
+
+
+
+  remarks: 
+  syntax:
+    content: 'public ref class UserRights : IInspectable'
+  inheritance:
+  - IInspectable
+- uid: msipcthin2.userrights_userrights
+  id: UserRights
+  parent: msipcthin2.userrights
+  children: []
+  href: UserRights.yml
+  langs:
+  - cplusplus
+  name: UserRights
+  fullName: msipcthin2.userrights_userrights
+  type: Constructor
+  assemblies: *o0
+  namespace: Microsoft.RightsManagement
+  summary: >+
+    Creates a @msipcthin2.userrights     object.
+
+
+
+
+
+
+
+  remarks: 
+  syntax:
+    content: >-
+      public:
+        UserRights(
+      	IIterable<String^>^ users,
+      	IIterable<String^>^ rights
+      )
+    parameters:
+    - id: users
+      type: IIterable<String^>^
+      description: The users to whom the rights are granted.
+    - id: rights
+      type: IIterable<String^>^
+      description: The rights that are granted.
+  inheritance: []
+- uid: msipcthin2.userrights_rights
+  id: Rights
+  parent: msipcthin2.userrights
+  children: []
+  href: UserRights.yml
+  langs:
+  - cplusplus
+  name: Rights
+  fullName: msipcthin2.userrights_rights
+  type: Property
+  assemblies: *o0
+  namespace: Microsoft.RightsManagement
+  summary: >+
+    The granted rights.
+
+
+
+
+
+
+
+  remarks: 
+  syntax:
+    content: >-
+      public:
+       IIterable<String^>^ Rights {
+      	IIterable<String^>^ get();
+      }
+    return:
+      type: IIterable<String^>^
+      description: The granted rights.
+  inheritance: []
+- uid: msipcthin2.userrights_users
+  id: Users
+  parent: msipcthin2.userrights
+  children: []
+  href: UserRights.yml
+  langs:
+  - cplusplus
+  name: Users
+  fullName: msipcthin2.userrights_users
+  type: Property
+  assemblies: *o0
+  namespace: Microsoft.RightsManagement
+  summary: "The users to whom the rights are granted\r\n\r\n.   \r\n\r\n"
+  remarks: 
+  syntax:
+    content: >-
+      public:
+       IIterable<String^>^ Users {
+      	IIterable<String^>^ get();
+      }
+    return:
+      type: IIterable<String^>^
+      description: The users to whom the rights are granted
+  inheritance: []
+references:
+- uid: IInspectable
+  isExternal: true
+  href: https://msdn.microsoft.com/en-us/library/windows/apps/br205821
+  name: IInspectable
+- uid: msipcthin2.userrights_userrights
+  href: UserRights.yml
+  name: UserRights
+- uid: msipcthin2.userrights_rights
+  href: Rights.yml
+  name: Rights
+- uid: msipcthin2.userrights_users
+  href: Users.yml
+  name: Users

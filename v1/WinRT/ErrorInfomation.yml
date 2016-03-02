@@ -1,0 +1,385 @@
+items:
+- uid: msipcthin2.errorinfomation
+  id: ErrorInfomation
+  parent: Microsoft.RightsManagement
+  children:
+  - msipcthin2.errorinfomation_authentication_failed
+  - msipcthin2.errorinfomation_device_rejected
+  - msipcthin2.errorinfomation_hresult
+  - msipcthin2.errorinfomation_invalid_pl
+  - msipcthin2.errorinfomation_needs_online
+  - msipcthin2.errorinfomation_rest_service_disabled
+  - msipcthin2.errorinfomation_right_not_granted
+  - msipcthin2.errorinfomation_server_error
+  - msipcthin2.errorinfomation_service_not_available_error
+  - msipcthin2.errorinfomation_user_not_consented
+  href: ErrorInfomation.yml
+  langs:
+  - cplusplus
+  name: ErrorInfomation
+  fullName: msipcthin2.errorinfomation
+  type: Class
+  assemblies: &o0
+  - Microsoft.RightsManagement.winmd
+  namespace: Microsoft.RightsManagement
+  summary: >+
+    Enables access to error information.
+
+
+
+
+
+
+
+  remarks: 
+  syntax:
+    content: 'public ref class ErrorInfomation sealed : IInspectable'
+  inheritance:
+  - IInspectable
+- uid: msipcthin2.errorinfomation_authentication_failed
+  id: AUTHENTICATION_FAILED
+  parent: msipcthin2.errorinfomation
+  children: []
+  href: ErrorInfomation.yml
+  langs:
+  - cplusplus
+  name: AUTHENTICATION_FAILED
+  fullName: msipcthin2.errorinfomation_authentication_failed
+  type: Property
+  assemblies: *o0
+  namespace: Microsoft.RightsManagement
+  summary: >+
+    The authentication failed
+
+
+
+    and could possibly be caused by one of the following.
+
+
+
+    * Authentication error (HTTP error 401) returned by an Internet request
+
+
+
+    * The current user does not have valid domain credentials in a silent user activation attempt
+
+
+
+    * The certification server, in silent user activation, is not in the local intranet or     trusted sites zone
+
+
+
+
+
+
+
+  remarks: 
+  syntax:
+    content: >-
+      public:
+
+      static ErrorInfomation AUTHENTICATION_FAILED {
+      	ErrorInfomation get();
+      }
+    return:
+      type: ErrorInfomation
+  inheritance: []
+- uid: msipcthin2.errorinfomation_device_rejected
+  id: DEVICE_REJECTED
+  parent: msipcthin2.errorinfomation
+  children: []
+  href: ErrorInfomation.yml
+  langs:
+  - cplusplus
+  name: DEVICE_REJECTED
+  fullName: msipcthin2.errorinfomation_device_rejected
+  type: Property
+  assemblies: *o0
+  namespace: Microsoft.RightsManagement
+  summary: >+
+    This device is disabled by the tenant admin.
+
+
+
+
+
+
+
+  remarks: 
+  syntax:
+    content: >-
+      public:
+
+      static ErrorInfomation DEVICE_REJECTED {
+      	ErrorInfomation get();
+      }
+    return:
+      type: ErrorInfomation
+  inheritance: []
+- uid: msipcthin2.errorinfomation_hresult
+  id: HResult
+  parent: msipcthin2.errorinfomation
+  children: []
+  href: ErrorInfomation.yml
+  langs:
+  - cplusplus
+  name: HResult
+  fullName: msipcthin2.errorinfomation_hresult
+  type: Property
+  assemblies: *o0
+  namespace: Microsoft.RightsManagement
+  summary: >+
+    Retrieves the @msipcthin2.errorinfomation_hresult for the exception.
+
+
+
+
+
+
+
+  remarks: 
+  syntax:
+    content: >-
+      public:
+       int HResult {
+      	int get();
+      }
+    return:
+      type: int
+  inheritance: []
+- uid: msipcthin2.errorinfomation_invalid_pl
+  id: INVALID_PL
+  parent: msipcthin2.errorinfomation
+  children: []
+  href: ErrorInfomation.yml
+  langs:
+  - cplusplus
+  name: INVALID_PL
+  fullName: msipcthin2.errorinfomation_invalid_pl
+  type: Property
+  assemblies: *o0
+  namespace: Microsoft.RightsManagement
+  summary: >+
+    Invalid PL was passed to the Active Directory Rights Management client.
+
+
+
+
+
+
+
+  remarks: 
+  syntax:
+    content: >-
+      public:
+
+      static TBD INVALID_PL {
+      	TBD get();
+      }
+    return:
+      type: TBD
+  inheritance: []
+- uid: msipcthin2.errorinfomation_needs_online
+  id: NEEDS_ONLINE
+  parent: msipcthin2.errorinfomation
+  children: []
+  href: ErrorInfomation.yml
+  langs:
+  - cplusplus
+  name: NEEDS_ONLINE
+  fullName: msipcthin2.errorinfomation_needs_online
+  type: Property
+  assemblies: *o0
+  namespace: Microsoft.RightsManagement
+  summary: >+
+    The Active Directory Rights Management Services client needs network access to complete the operation,    but the application requested offline mode.
+
+
+
+
+
+
+
+  remarks: 
+  syntax:
+    content: >-
+      public:
+
+      static ErrorInfomation NEEDS_ONLINE {
+      	ErrorInfomation get();
+      }
+    return:
+      type: ErrorInfomation
+  inheritance: []
+- uid: msipcthin2.errorinfomation_rest_service_disabled
+  id: REST_SERVICE_DISABLED
+  parent: msipcthin2.errorinfomation
+  children: []
+  href: ErrorInfomation.yml
+  langs:
+  - cplusplus
+  name: REST_SERVICE_DISABLED
+  fullName: msipcthin2.errorinfomation_rest_service_disabled
+  type: Property
+  assemblies: *o0
+  namespace: Microsoft.RightsManagement
+  summary: >+
+    The REST service is disabled for this tenant.
+
+
+
+
+
+
+
+  remarks: 
+  syntax:
+    content: >-
+      public:
+
+      static ErrorInfomation REST_SERVICE_DISABLED {
+      	ErrorInfomation get();
+      }
+    return:
+      type: ErrorInfomation
+  inheritance: []
+- uid: msipcthin2.errorinfomation_right_not_granted
+  id: RIGHT_NOT_GRANTED
+  parent: msipcthin2.errorinfomation
+  children: []
+  href: ErrorInfomation.yml
+  langs:
+  - cplusplus
+  name: RIGHT_NOT_GRANTED
+  fullName: msipcthin2.errorinfomation_right_not_granted
+  type: Property
+  assemblies: *o0
+  namespace: Microsoft.RightsManagement
+  summary: "You have not been granted the rights necessary to complete the specified operation.    \r\n\r\nContact the content owner for additional rights.\r\n\r\n"
+  remarks: 
+  syntax:
+    content: >-
+      public:
+
+      static ErrorInfomation RIGHT_NOT_GRANTED {
+      	ErrorInfomation get();
+      }
+    return:
+      type: ErrorInfomation
+  inheritance: []
+- uid: msipcthin2.errorinfomation_server_error
+  id: SERVER_ERROR
+  parent: msipcthin2.errorinfomation
+  children: []
+  href: ErrorInfomation.yml
+  langs:
+  - cplusplus
+  name: SERVER_ERROR
+  fullName: msipcthin2.errorinfomation_server_error
+  type: Property
+  assemblies: *o0
+  namespace: Microsoft.RightsManagement
+  summary: "An error occurred while trying to contact the Active Directory Rights Management Services server.    \r\n\r\nTry again later or contact your administrator.\r\n\r\n"
+  remarks: 
+  syntax:
+    content: >-
+      public:
+
+      static TBD SERVER_ERROR {
+      	TBD get();
+      }
+    return:
+      type: TBD
+      description: TBD
+  inheritance: []
+- uid: msipcthin2.errorinfomation_service_not_available_error
+  id: SERVICE_NOT_AVAILABLE_ERROR
+  parent: msipcthin2.errorinfomation
+  children: []
+  href: ErrorInfomation.yml
+  langs:
+  - cplusplus
+  name: SERVICE_NOT_AVAILABLE_ERROR
+  fullName: msipcthin2.errorinfomation_service_not_available_error
+  type: Property
+  assemblies: *o0
+  namespace: Microsoft.RightsManagement
+  summary: "HTTP status 404 returned when contacting Active Directory Rights Management Services server. \r\n\r\nClient was able to communicate with server, but the server could not find requested resource.\r\n\r\n"
+  remarks: 
+  syntax:
+    content: >-
+      public:
+
+      static ErrorInfomation SERVICE_NOT_AVAILABLE_ERROR {
+      	ErrorInfomation get();
+      }
+    return:
+      type: ErrorInfomation
+  inheritance: []
+- uid: msipcthin2.errorinfomation_user_not_consented
+  id: USER_NOT_CONSENTED
+  parent: msipcthin2.errorinfomation
+  children: []
+  href: ErrorInfomation.yml
+  langs:
+  - cplusplus
+  name: USER_NOT_CONSENTED
+  fullName: msipcthin2.errorinfomation_user_not_consented
+  type: Property
+  assemblies: *o0
+  namespace: Microsoft.RightsManagement
+  summary: >+
+    The user has not given consent.
+
+
+
+
+
+
+
+  remarks: 
+  syntax:
+    content: >-
+      public:
+
+      static ErrorInfomation USER_NOT_CONSENTED {
+      	ErrorInfomation get();
+      }
+    return:
+      type: ErrorInfomation
+  inheritance: []
+references:
+- uid: IInspectable
+  isExternal: true
+  href: https://msdn.microsoft.com/en-us/library/windows/apps/br205821
+  name: IInspectable
+- uid: msipcthin2.errorinfomation_authentication_failed
+  href: AUTHENTICATION_FAILED.yml
+  name: AUTHENTICATION_FAILED
+- uid: msipcthin2.errorinfomation_device_rejected
+  href: DEVICE_REJECTED.yml
+  name: DEVICE_REJECTED
+- uid: msipcthin2.errorinfomation_hresult
+  href: HResult.yml
+  name: HResult
+- uid: msipcthin2.errorinfomation_invalid_pl
+  href: INVALID_PL.yml
+  name: INVALID_PL
+- uid: msipcthin2.errorinfomation_needs_online
+  href: NEEDS_ONLINE.yml
+  name: NEEDS_ONLINE
+- uid: msipcthin2.errorinfomation_rest_service_disabled
+  href: REST_SERVICE_DISABLED.yml
+  name: REST_SERVICE_DISABLED
+- uid: msipcthin2.errorinfomation_right_not_granted
+  href: RIGHT_NOT_GRANTED.yml
+  name: RIGHT_NOT_GRANTED
+- uid: msipcthin2.errorinfomation_server_error
+  href: SERVER_ERROR.yml
+  name: SERVER_ERROR
+- uid: msipcthin2.errorinfomation_service_not_available_error
+  href: SERVICE_NOT_AVAILABLE_ERROR.yml
+  name: SERVICE_NOT_AVAILABLE_ERROR
+- uid: msipcthin2.errorinfomation_user_not_consented
+  href: USER_NOT_CONSENTED.yml
+  name: USER_NOT_CONSENTED

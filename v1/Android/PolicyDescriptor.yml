@@ -1,0 +1,677 @@
+items:
+- uid: msipcthin2.policydescriptor_interface_java
+  id: PolicyDescriptor
+  parent: com.microsoft.rightsmanagement
+  children:
+  - msipcthin2.policydescriptor_createpolicydescriptorfromuserrights_method_java
+  - msipcthin2.policydescriptor_createpolicydescriptorfromuserroles_method_java
+  - msipcthin2.policydescriptor_getcontentvaliduntil_method_java
+  - msipcthin2.policydescriptor_getdescription_method_java
+  - msipcthin2.policydescriptor_getencryptedappdata_method_java
+  - msipcthin2.policydescriptor_getlicensemetadata_java
+  - msipcthin2.policydescriptor_getlicensevaliditytimeintervalindays_method_java
+  - msipcthin2.policydescriptor_getname_method_java
+  - msipcthin2.policydescriptor_getreferrer_method_java
+  - msipcthin2.policydescriptor_getsignedappdata_method
+  - msipcthin2.policydescriptor_getuserrightslist_method_java
+  - msipcthin2.policydescriptor_getuserroleslist_method_java
+  - msipcthin2.policydescriptor_setcontentvaliduntil_method_java
+  - msipcthin2.policydescriptor_setdescription_method_java
+  - msipcthin2.policydescriptor_setencryptedappdata_method_java
+  - msipcthin2.policydescriptor_setlicensemetadata_java
+  - msipcthin2.policydescriptor_setlicensevaliditytimeintervalindays_method_java
+  - msipcthin2.policydescriptor_setname_method_java
+  - msipcthin2.policydescriptor_setreferrer_method_java
+  - msipcthin2.policydescriptor_setsignedappdata_method_java
+  href: PolicyDescriptor.yml
+  langs:
+  - cplusplus
+  name: PolicyDescriptor
+  fullName: msipcthin2.policydescriptor_interface_java
+  type: Class
+  assemblies: &o0
+  - Android
+  namespace: com.microsoft.rightsmanagement
+  summary: >+
+    Information associated with a user's custom policy.
+
+
+
+
+
+
+
+  remarks: 
+  thread_safety: Members of this class are not guaranteed to be thread safe.
+  defined_in: PolicyDescriptor.java
+  syntax:
+    content: public class PolicyDescriptor implements Serializable
+  inheritance: []
+- uid: msipcthin2.policydescriptor_createpolicydescriptorfromuserrights_method_java
+  id: PolicyDescriptor createPolicyDescriptorFromUserRights
+  parent: msipcthin2.policydescriptor_interface_java
+  children: []
+  href: PolicyDescriptor.yml
+  langs:
+  - cplusplus
+  name: PolicyDescriptor createPolicyDescriptorFromUserRights
+  fullName: msipcthin2.policydescriptor_createpolicydescriptorfromuserrights_method_java
+  type: Method
+  assemblies: *o0
+  namespace: com.microsoft.rightsmanagement
+  summary: >+
+    Creates a new policy descriptor using a user rights list.
+
+
+
+
+
+
+
+  remarks: 
+  syntax:
+    content: public static PolicyDescriptor createPolicyDescriptorFromUserRights(Collection<UserRights> userRightsList)
+    parameters:
+    - id: '*userRightsList*'
+      type: '**Collection**&lt;@msipcthin2.userrights_class_java&gt;       '
+      description: 
+    return:
+      type: '@msipcthin2.policydescriptor_interface_java'
+      description: A @msipcthin2.policydescriptor_interface_java object   initialized with passed in user rights list.
+  inheritance: []
+- uid: msipcthin2.policydescriptor_createpolicydescriptorfromuserroles_method_java
+  id: PolicyDescriptor createPolicyDescriptorFromUserRoles
+  parent: msipcthin2.policydescriptor_interface_java
+  children: []
+  href: PolicyDescriptor.yml
+  langs:
+  - cplusplus
+  name: PolicyDescriptor createPolicyDescriptorFromUserRoles
+  fullName: msipcthin2.policydescriptor_createpolicydescriptorfromuserroles_method_java
+  type: Method
+  assemblies: *o0
+  namespace: com.microsoft.rightsmanagement
+  summary: >+
+    Creates a new policy descriptor using a user roles list.
+
+
+
+
+
+
+
+  remarks: 
+  syntax:
+    content: public static PolicyDescriptor createPolicyDescriptorFromUserRoles(Collection<UserRoles> userRolesList)
+    parameters:
+    - id: '*userRolesList*'
+      type: '**Collection**&lt;UserRoles&gt;       '
+      description: 
+    return:
+      type: '@msipcthin2.policydescriptor_interface_java'
+      description: A @msipcthin2.policydescriptor_interface_java object   initialized with passed in user roles list.
+  inheritance: []
+- uid: msipcthin2.policydescriptor_getcontentvaliduntil_method_java
+  id: PolicyDescriptor.getContentValidUntil
+  parent: msipcthin2.policydescriptor_interface_java
+  children: []
+  href: PolicyDescriptor.yml
+  langs:
+  - cplusplus
+  name: PolicyDescriptor.getContentValidUntil
+  fullName: msipcthin2.policydescriptor_getcontentvaliduntil_method_java
+  type: Method
+  assemblies: *o0
+  namespace: com.microsoft.rightsmanagement
+  summary: >+
+    Gets the date that the content is valid until.
+
+
+
+
+
+
+
+  remarks: 
+  syntax:
+    content: public Date getContentValidUntil()
+    return:
+      type: Date
+      description: A **Date**.
+  inheritance: []
+- uid: msipcthin2.policydescriptor_getdescription_method_java
+  id: PolicyDescriptor.getDescription
+  parent: msipcthin2.policydescriptor_interface_java
+  children: []
+  href: PolicyDescriptor.yml
+  langs:
+  - cplusplus
+  name: PolicyDescriptor.getDescription
+  fullName: msipcthin2.policydescriptor_getdescription_method_java
+  type: Method
+  assemblies: *o0
+  namespace: com.microsoft.rightsmanagement
+  summary: "Gets the policy description. \r\n\r\n\r\n\r\n"
+  remarks: 
+  syntax:
+    content: public String getDescription()
+    return:
+      type: String
+      description: A  **String**.
+  inheritance: []
+- uid: msipcthin2.policydescriptor_getencryptedappdata_method_java
+  id: PolicyDescriptor getEncryptedAppData
+  parent: msipcthin2.policydescriptor_interface_java
+  children: []
+  href: PolicyDescriptor.yml
+  langs:
+  - cplusplus
+  name: PolicyDescriptor getEncryptedAppData
+  fullName: msipcthin2.policydescriptor_getencryptedappdata_method_java
+  type: Method
+  assemblies: *o0
+  namespace: com.microsoft.rightsmanagement
+  summary: >+
+    Gets the encrypted application data.
+
+
+
+
+
+
+
+  remarks: 
+  syntax:
+    content: public Map<String, String> getEncryptedAppData()
+    return:
+      type: Map<String, String>
+      description: A  **Map<String, String>** containing the encrypted application data.
+  inheritance: []
+- uid: msipcthin2.policydescriptor_getlicensemetadata_java
+  id: PolicyDescriptor getLicenseMetadata
+  parent: msipcthin2.policydescriptor_interface_java
+  children: []
+  href: PolicyDescriptor.yml
+  langs:
+  - cplusplus
+  name: PolicyDescriptor getLicenseMetadata
+  fullName: msipcthin2.policydescriptor_getlicensemetadata_java
+  type: Method
+  assemblies: *o0
+  namespace: com.microsoft.rightsmanagement
+  summary: >+
+    Gets the license metadata used for document tracking.
+
+
+
+    For more information, see @msipcthin2.how_to__use_document_tracking.
+
+
+
+  remarks: 
+  syntax:
+    content: public LicenseMetaData getLicenseMetaData()
+    return:
+      type: '@msipcthin2.licensemetadata_interface_java'
+      description: A  @msipcthin2.licensemetadata_interface_java object.
+  inheritance: []
+- uid: msipcthin2.policydescriptor_getname_method_java
+  id: PolicyDescriptor.getName
+  parent: msipcthin2.policydescriptor_interface_java
+  children: []
+  href: PolicyDescriptor.yml
+  langs:
+  - cplusplus
+  name: PolicyDescriptor.getName
+  fullName: msipcthin2.policydescriptor_getname_method_java
+  type: Method
+  assemblies: *o0
+  namespace: com.microsoft.rightsmanagement
+  summary: >+
+    Gets the policy name.
+
+
+
+
+
+
+
+  remarks: 
+  syntax:
+    content: public String getName()
+    return:
+      type: String
+      description: A  **String**.
+  inheritance: []
+- uid: msipcthin2.policydescriptor_getlicensevaliditytimeintervalindays_method_java
+  id: PolicyDescriptor.getOfflineCacheLifetimeInDays
+  parent: msipcthin2.policydescriptor_interface_java
+  children: []
+  href: PolicyDescriptor.yml
+  langs:
+  - cplusplus
+  name: PolicyDescriptor.getOfflineCacheLifetimeInDays
+  fullName: msipcthin2.policydescriptor_getlicensevaliditytimeintervalindays_method_java
+  type: Method
+  assemblies: *o0
+  namespace: com.microsoft.rightsmanagement
+  summary: >+
+    Gets the time a user policy can be cached offline.
+
+
+
+
+
+
+
+  remarks: 
+  syntax:
+    content: public int getOfflineCacheLifetimeInDays()
+    return:
+      type: int
+      description: An  **int** containing the time, in days, a user policy can be cached offline.
+  inheritance: []
+- uid: msipcthin2.policydescriptor_getreferrer_method_java
+  id: PolicyDescriptor.getReferrer
+  parent: msipcthin2.policydescriptor_interface_java
+  children: []
+  href: PolicyDescriptor.yml
+  langs:
+  - cplusplus
+  name: PolicyDescriptor.getReferrer
+  fullName: msipcthin2.policydescriptor_getreferrer_method_java
+  type: Method
+  assemblies: *o0
+  namespace: com.microsoft.rightsmanagement
+  summary: >+
+    Gets the optional referrer.
+
+
+
+    This contains a URI which should be contacted when requesting more access than     is currently granted.
+
+
+
+  remarks: 
+  syntax:
+    content: public Uri getReferrer()
+    return:
+      type: Uri
+      description: A  **Uri** containing the URI of the referrer.
+  inheritance: []
+- uid: msipcthin2.policydescriptor_getsignedappdata_method
+  id: PolicyDescriptor getSignedAppData
+  parent: msipcthin2.policydescriptor_interface_java
+  children: []
+  href: PolicyDescriptor.yml
+  langs:
+  - cplusplus
+  name: PolicyDescriptor getSignedAppData
+  fullName: msipcthin2.policydescriptor_getsignedappdata_method
+  type: Method
+  assemblies: *o0
+  namespace: com.microsoft.rightsmanagement
+  summary: >+
+    Gets the signed application data.
+
+
+
+
+
+
+
+  remarks: 
+  syntax:
+    content: public Map<String, String> getSigneddAppData()
+    return:
+      type: Map<String, String>
+      description: A  **Map<String, String>** containing the signed application data.
+  inheritance: []
+- uid: msipcthin2.policydescriptor_getuserrightslist_method_java
+  id: PolicyDescriptor.getUserRightsList
+  parent: msipcthin2.policydescriptor_interface_java
+  children: []
+  href: PolicyDescriptor.yml
+  langs:
+  - cplusplus
+  name: PolicyDescriptor.getUserRightsList
+  fullName: msipcthin2.policydescriptor_getuserrightslist_method_java
+  type: Method
+  assemblies: *o0
+  namespace: com.microsoft.rightsmanagement
+  summary: >+
+    Gets the user to rights list.
+
+
+
+
+
+
+
+  remarks: 
+  syntax:
+    content: public Collection<UserRights> getUserRightsList()
+    return:
+      type: Collection
+      description: A **Collection** of @msipcthin2.userrights_class_java objects.
+  inheritance: []
+- uid: msipcthin2.policydescriptor_getuserroleslist_method_java
+  id: PolicyDescriptor getUserRolesList
+  parent: msipcthin2.policydescriptor_interface_java
+  children: []
+  href: PolicyDescriptor.yml
+  langs:
+  - cplusplus
+  name: PolicyDescriptor getUserRolesList
+  fullName: msipcthin2.policydescriptor_getuserroleslist_method_java
+  type: Method
+  assemblies: *o0
+  namespace: com.microsoft.rightsmanagement
+  summary: >+
+    Gets the user's roles list.
+
+
+
+
+
+
+
+  remarks: 
+  syntax:
+    content: public Collection<UserRoles> getUserRolesList()
+    return:
+      type: Collection
+      description: A  **Collection** of @msipcthin2.userroles_class_java
+  inheritance: []
+- uid: msipcthin2.policydescriptor_setcontentvaliduntil_method_java
+  id: PolicyDescriptor.setContentValidUntil
+  parent: msipcthin2.policydescriptor_interface_java
+  children: []
+  href: PolicyDescriptor.yml
+  langs:
+  - cplusplus
+  name: PolicyDescriptor.setContentValidUntil
+  fullName: msipcthin2.policydescriptor_setcontentvaliduntil_method_java
+  type: Method
+  assemblies: *o0
+  namespace: com.microsoft.rightsmanagement
+  summary: >+
+    Sets the date that the content is valid until.
+
+
+
+
+
+
+
+  remarks: 
+  syntax:
+    content: public void setContentValidUntil(Date contentValidUntil)
+    parameters:
+    - id: '*contentValidUntil*'
+      type: '**Date**'
+      description: 
+  inheritance: []
+- uid: msipcthin2.policydescriptor_setdescription_method_java
+  id: PolicyDescriptor.setDescription
+  parent: msipcthin2.policydescriptor_interface_java
+  children: []
+  href: PolicyDescriptor.yml
+  langs:
+  - cplusplus
+  name: PolicyDescriptor.setDescription
+  fullName: msipcthin2.policydescriptor_setdescription_method_java
+  type: Method
+  assemblies: *o0
+  namespace: com.microsoft.rightsmanagement
+  summary: "Sets the policy description. \r\n\r\n\r\n\r\n"
+  remarks: 
+  syntax:
+    content: public void setDescription(String description)
+    parameters:
+    - id: '*description*'
+      type: '**String**'
+      description: 
+  inheritance: []
+- uid: msipcthin2.policydescriptor_setencryptedappdata_method_java
+  id: PolicyDescriptor setEncryptedAppData
+  parent: msipcthin2.policydescriptor_interface_java
+  children: []
+  href: PolicyDescriptor.yml
+  langs:
+  - cplusplus
+  name: PolicyDescriptor setEncryptedAppData
+  fullName: msipcthin2.policydescriptor_setencryptedappdata_method_java
+  type: Method
+  assemblies: *o0
+  namespace: com.microsoft.rightsmanagement
+  summary: >+
+    Sets the encrypted app data.
+
+
+
+
+
+
+
+  remarks: 
+  syntax:
+    content: public void setEncryptedAppData(Map<String, String> encryptedAppData)
+    parameters:
+    - id: '*encryptedAppData*'
+      type: '**Map<String, String>**'
+      description: 
+  inheritance: []
+- uid: msipcthin2.policydescriptor_setlicensemetadata_java
+  id: PolicyDescriptor setLicenseMetadata
+  parent: msipcthin2.policydescriptor_interface_java
+  children: []
+  href: PolicyDescriptor.yml
+  langs:
+  - cplusplus
+  name: PolicyDescriptor setLicenseMetadata
+  fullName: msipcthin2.policydescriptor_setlicensemetadata_java
+  type: Method
+  assemblies: *o0
+  namespace: com.microsoft.rightsmanagement
+  summary: >+
+    Sets the license metadata used for document tracking.
+
+
+
+    For more information, see @msipcthin2.how_to__use_document_tracking.
+
+
+
+  remarks: 
+  syntax:
+    content: public void setLicenseMetaData(LicenseMetaData licenseMetaData)
+    parameters:
+    - id: '*licenseMetaData*'
+      type: '@msipcthin2.licensemetadata_interface_java'
+      description: 
+  inheritance: []
+- uid: msipcthin2.policydescriptor_setname_method_java
+  id: PolicyDescriptor.setName
+  parent: msipcthin2.policydescriptor_interface_java
+  children: []
+  href: PolicyDescriptor.yml
+  langs:
+  - cplusplus
+  name: PolicyDescriptor.setName
+  fullName: msipcthin2.policydescriptor_setname_method_java
+  type: Method
+  assemblies: *o0
+  namespace: com.microsoft.rightsmanagement
+  summary: >+
+    Sets the name of the policy.
+
+
+
+
+
+
+
+  remarks: 
+  syntax:
+    content: public void setName(String name)
+    parameters:
+    - id: '*name*'
+      type: '**String**'
+      description: 
+  inheritance: []
+- uid: msipcthin2.policydescriptor_setlicensevaliditytimeintervalindays_method_java
+  id: PolicyDescriptor.setOfflineCacheLifetimeInDays
+  parent: msipcthin2.policydescriptor_interface_java
+  children: []
+  href: PolicyDescriptor.yml
+  langs:
+  - cplusplus
+  name: PolicyDescriptor.setOfflineCacheLifetimeInDays
+  fullName: msipcthin2.policydescriptor_setlicensevaliditytimeintervalindays_method_java
+  type: Method
+  assemblies: *o0
+  namespace: com.microsoft.rightsmanagement
+  summary: >+
+    Sets the time a user policy can be cached offline.
+
+
+
+
+
+
+
+  remarks: 
+  syntax:
+    content: public void setOfflineCacheLifetimeInDays(int offlineCacheLifetimeInDays)
+    parameters:
+    - id: '*offlineCacheLifetimeInDays*'
+      type: '**int**'
+      description: >+
+        A new offline cache time, expressed in days.
+
+
+
+  inheritance: []
+- uid: msipcthin2.policydescriptor_setsignedappdata_method_java
+  id: PolicyDescriptor setSignedAppData
+  parent: msipcthin2.policydescriptor_interface_java
+  children: []
+  href: PolicyDescriptor.yml
+  langs:
+  - cplusplus
+  name: PolicyDescriptor setSignedAppData
+  fullName: msipcthin2.policydescriptor_setsignedappdata_method_java
+  type: Method
+  assemblies: *o0
+  namespace: com.microsoft.rightsmanagement
+  summary: >+
+    Sets the signed app data.
+
+
+
+
+
+
+
+  remarks: 
+  syntax:
+    content: public void setSignedAppData(Map<String, String> signedAppData)
+    parameters:
+    - id: '*signedAppData*'
+      type: '**Map<String, String>**'
+      description: 
+  inheritance: []
+- uid: msipcthin2.policydescriptor_setreferrer_method_java
+  id: PolicyDescriptor setReferrer
+  parent: msipcthin2.policydescriptor_interface_java
+  children: []
+  href: PolicyDescriptor.yml
+  langs:
+  - cplusplus
+  name: PolicyDescriptor setReferrer
+  fullName: msipcthin2.policydescriptor_setreferrer_method_java
+  type: Method
+  assemblies: *o0
+  namespace: com.microsoft.rightsmanagement
+  summary: >+
+    Sets the referrer.
+
+
+
+    Contains a URI which should be contacted when requesting more access than currently granted.
+
+
+
+  remarks: 
+  syntax:
+    content: public void setReferrer(String referrer)
+    parameters:
+    - id: '*referrer*'
+      type: '**String**'
+      description: 
+  inheritance: []
+references:
+- uid: msipcthin2.policydescriptor_createpolicydescriptorfromuserrights_method_java
+  href: PolicyDescriptor createPolicyDescriptorFromUserRights.yml
+  name: createPolicyDescriptorFromUserRights
+- uid: msipcthin2.policydescriptor_interface_java
+  href: PolicyDescriptor.yml
+  name: PolicyDescriptor
+- uid: msipcthin2.policydescriptor_createpolicydescriptorfromuserroles_method_java
+  href: PolicyDescriptor createPolicyDescriptorFromUserRoles.yml
+  name: createPolicyDescriptorFromUserRoles
+- uid: msipcthin2.policydescriptor_getcontentvaliduntil_method_java
+  href: PolicyDescriptor.getContentValidUntil.yml
+  name: getContentValidUntil
+- uid: msipcthin2.policydescriptor_getdescription_method_java
+  href: PolicyDescriptor.getDescription.yml
+  name: getDescription
+- uid: msipcthin2.policydescriptor_getencryptedappdata_method_java
+  href: PolicyDescriptor getEncryptedAppData.yml
+  name: getEncryptedAppData
+- uid: msipcthin2.policydescriptor_getlicensemetadata_java
+  href: PolicyDescriptor getLicenseMetadata.yml
+  name: getLicenseMetadata
+- uid: msipcthin2.policydescriptor_getname_method_java
+  href: PolicyDescriptor.getName.yml
+  name: getName
+- uid: msipcthin2.policydescriptor_getlicensevaliditytimeintervalindays_method_java
+  href: PolicyDescriptor.getOfflineCacheLifetimeInDays.yml
+  name: getOfflineCacheLifetimeInDays
+- uid: msipcthin2.policydescriptor_getreferrer_method_java
+  href: PolicyDescriptor.getReferrer.yml
+  name: getReferrer
+- uid: msipcthin2.policydescriptor_getsignedappdata_method
+  href: PolicyDescriptor getSignedAppData.yml
+  name: getSignedAppData
+- uid: msipcthin2.policydescriptor_getuserrightslist_method_java
+  href: PolicyDescriptor.getUserRightsList.yml
+  name: getUserRightsList
+- uid: msipcthin2.policydescriptor_getuserroleslist_method_java
+  href: PolicyDescriptor getUserRolesList.yml
+  name: getUserRolesList
+- uid: msipcthin2.policydescriptor_setcontentvaliduntil_method_java
+  href: PolicyDescriptor.setContentValidUntil.yml
+  name: setContentValidUntil
+- uid: msipcthin2.policydescriptor_setdescription_method_java
+  href: PolicyDescriptor.setDescription.yml
+  name: setDescription
+- uid: msipcthin2.policydescriptor_setencryptedappdata_method_java
+  href: PolicyDescriptor setEncryptedAppData.yml
+  name: setEncryptedAppData
+- uid: msipcthin2.policydescriptor_setlicensemetadata_java
+  href: PolicyDescriptor setLicenseMetadata.yml
+  name: setLicenseMetadata
+- uid: msipcthin2.policydescriptor_setname_method_java
+  href: PolicyDescriptor.setName.yml
+  name: setName
+- uid: msipcthin2.policydescriptor_setlicensevaliditytimeintervalindays_method_java
+  href: PolicyDescriptor.setOfflineCacheLifetimeInDays.yml
+  name: setOfflineCacheLifetimeInDays
+- uid: msipcthin2.policydescriptor_setsignedappdata_method_java
+  href: PolicyDescriptor setSignedAppData.yml
+  name: setSignedAppData
+- uid: msipcthin2.policydescriptor_setreferrer_method_java
+  href: PolicyDescriptor setReferrer.yml
+  name: setReferrer
